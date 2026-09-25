@@ -298,9 +298,11 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .cartouche { padding: 8px 12px; }
   .cartouche h1 { font-size: 22px; }
   .cartouche h1 .small { font-size: 12px; }
-  .search { top: auto; bottom: 64px; left: 12px; right: 12px; width: auto; }
+  /* Search sits under the title so it never collides with Rejsen at the bottom. */
+  .search { top: 112px; left: 12px; right: 12px; width: auto; }
+  .search input { padding: 8px 12px; }
   .search:has(+ .panel:not([hidden])) { display: none; }
-  .search-results { position: absolute; bottom: 100%; left: 0; right: 0; margin: 0 0 6px; max-height: 45vh; }
+  .search-results { max-height: 45vh; }
   .panel { top: auto; left: 8px; right: 8px; bottom: 8px; width: auto; max-height: 62vh; }
   .panel h2 { font-size: 26px; }
   .legend { display: none; }
