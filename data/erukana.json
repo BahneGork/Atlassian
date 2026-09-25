@@ -85,47 +85,164 @@
     47
    ],
    "people": [
-    "Beril Højmølle",
-    "Celedrial keeper of mielikki suntree",
-    "Clarabel Lancaster",
-    "Daine waymar",
-    "Elvira",
-    "Fafnir",
-    "Hans Baudler",
-    "Krugge",
-    "Krugge's bagermester",
-    "Lord Rupert Solarson",
-    "Lucious Vormend",
-    "Marskal Henry Willsfort",
-    "Merita Verplex",
-    "miri sangstrup",
-    "Pierre",
-    "Tizzelspark",
-    "Tortin Mikkelborg",
-    "Vagtkaptajn Samuel",
-    "Vagtkaptajn ved Nord distriktet i Astley",
-    "Valo",
-    "Verner Mistvale"
+    [
+     "Beril Højmølle",
+     "beril-hojmolle"
+    ],
+    [
+     "Celedrial keeper of mielikki suntree",
+     "celedrial-keeper-of-mielikki-suntree"
+    ],
+    [
+     "Clarabel Lancaster",
+     "clarabel-lancaster"
+    ],
+    [
+     "Daine waymar",
+     "daine-waymar"
+    ],
+    [
+     "Elvira",
+     "elvira"
+    ],
+    [
+     "Fafnir",
+     "fafnir"
+    ],
+    [
+     "Hans Baudler",
+     "hans-baudler"
+    ],
+    [
+     "Krugge",
+     "krugge"
+    ],
+    [
+     "Krugge's bagermester",
+     "krugge-s-bagermester"
+    ],
+    [
+     "Lord Rupert Solarson",
+     "lord-rupert-solarson"
+    ],
+    [
+     "Lucious Vormend",
+     "lucious-vormend"
+    ],
+    [
+     "Marskal Henry Willsfort",
+     "marskal-henry-willsfort"
+    ],
+    [
+     "Merita Verplex",
+     "merita-verplex"
+    ],
+    [
+     "miri sangstrup",
+     "miri-sangstrup"
+    ],
+    [
+     "Pierre",
+     "pierre"
+    ],
+    [
+     "Tizzelspark",
+     "tizzelspark"
+    ],
+    [
+     "Tortin Mikkelborg",
+     "tortin-mikkelborg"
+    ],
+    [
+     "Vagtkaptajn Samuel",
+     "vagtkaptajn-samuel"
+    ],
+    [
+     "Vagtkaptajn ved Nord distriktet i Astley",
+     "vagtkaptajn-ved-nord-distriktet-i-astley"
+    ],
+    [
+     "Valo",
+     "valo"
+    ],
+    [
+     "Verner Mistvale",
+     "verner-mistvale"
+    ]
    ],
    "factions": [
-    "Adelhuset Astleysson",
-    "Adelhuset Urazzan",
-    "Adelhuset Vitano",
-    "Astley Byvagt",
-    "Astley historian society",
-    "Blodrosen",
-    "Dawnspire Family",
-    "Fafnirs gruppe",
-    "Frostheim Klanen",
-    "grøn huderne",
-    "House Magdova",
-    "Jernkniven",
-    "Mielikki tilhængere",
-    "Opal kulten",
-    "Ridderne af Blodrosen",
-    "Sangstrup familien",
-    "Skjoldungerne",
-    "Waning Moon merchant house"
+    [
+     "Adelhuset Astleysson",
+     "adelhuset-astleysson"
+    ],
+    [
+     "Adelhuset Urazzan",
+     "adelhuset-urazzan"
+    ],
+    [
+     "Adelhuset Vitano",
+     "adelhuset-vitano"
+    ],
+    [
+     "Astley Byvagt",
+     "astley-byvagt"
+    ],
+    [
+     "Astley historian society",
+     "astley-historian-society"
+    ],
+    [
+     "Blodrosen",
+     "blodrosen"
+    ],
+    [
+     "Dawnspire Family",
+     "dawnspire-family"
+    ],
+    [
+     "Fafnirs gruppe",
+     "fafnirs-gruppe"
+    ],
+    [
+     "Frostheim Klanen",
+     "frostheim-klanen"
+    ],
+    [
+     "grøn huderne",
+     "gron-huderne"
+    ],
+    [
+     "House Magdova",
+     "house-magdova"
+    ],
+    [
+     "Jernkniven",
+     "jernkniven"
+    ],
+    [
+     "Mielikki tilhængere",
+     "mielikki-tilhaengere"
+    ],
+    [
+     "Opal kulten",
+     "opal-kulten"
+    ],
+    [
+     "Ridderne af Blodrosen",
+     "ridderne-af-blodrosen"
+    ],
+    [
+     "Sangstrup familien",
+     "sangstrup-familien"
+    ],
+    [
+     "Skjoldungerne",
+     "skjoldungerne"
+    ],
+    [
+     "Waning Moon merchant house",
+     "waning-moon-merchant-house"
+    ]
    ],
    "visited": true,
    "noteId": "astley"
@@ -141,7 +258,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
-   "summary": "Soltræet (Sun Tree) er et helligt træ dedikeret til Mielikki i Astley. Det har en pond der passes af Maelar og Celedrial, samt 02 Player/Erukana (Nissen)/Journal/Visdommens kammer hvor Lord Fern opholder sig. Silvara befinder sig også her.",
+   "summary": "Soltræet (Sun Tree) er et helligt træ dedikeret til Mielikki i Astley. Det har en pond der passes af Maelar og Celedrial, samt Visdommens kammer hvor Lord Fern opholder sig. Silvara befinder sig også her.",
    "url": "",
    "sessions": [
     12,
@@ -151,15 +268,36 @@
     46
    ],
    "people": [
-    "Celedrial keeper of mielikki suntree",
-    "Clarabel Lancaster",
-    "Jarell Flick",
-    "Lord Fern",
-    "Maelar",
-    "Sir Winston"
+    [
+     "Celedrial keeper of mielikki suntree",
+     "celedrial-keeper-of-mielikki-suntree"
+    ],
+    [
+     "Clarabel Lancaster",
+     "clarabel-lancaster"
+    ],
+    [
+     "Jarell Flick",
+     "jarell-flick"
+    ],
+    [
+     "Lord Fern",
+     "lord-fern"
+    ],
+    [
+     "Maelar",
+     "maelar"
+    ],
+    [
+     "Sir Winston",
+     "sir-winston"
+    ]
    ],
    "factions": [
-    "Mielikki tilhængere"
+    [
+     "Mielikki tilhængere",
+     "mielikki-tilhaengere"
+    ]
    ],
    "visited": true,
    "noteId": "soltraeet"
@@ -181,10 +319,22 @@
     41
    ],
    "people": [
-    "Clarabel Lancaster",
-    "Jarell Flick",
-    "Lord Fern",
-    "Maelar"
+    [
+     "Clarabel Lancaster",
+     "clarabel-lancaster"
+    ],
+    [
+     "Jarell Flick",
+     "jarell-flick"
+    ],
+    [
+     "Lord Fern",
+     "lord-fern"
+    ],
+    [
+     "Maelar",
+     "maelar"
+    ]
    ],
    "factions": [],
    "visited": true,
@@ -207,7 +357,10 @@
     41
    ],
    "people": [
-    "Clarabel Lancaster"
+    [
+     "Clarabel Lancaster",
+     "clarabel-lancaster"
+    ]
    ],
    "factions": [],
    "visited": true,
@@ -230,12 +383,24 @@
     46
    ],
    "people": [
-    "Clarabel Lancaster",
-    "Lord Fern",
-    "Ægrin"
+    [
+     "Clarabel Lancaster",
+     "clarabel-lancaster"
+    ],
+    [
+     "Lord Fern",
+     "lord-fern"
+    ],
+    [
+     "Ægrin",
+     "aegrin"
+    ]
    ],
    "factions": [
-    "Azur ordenen"
+    [
+     "Azur ordenen",
+     "azur-ordenen"
+    ]
    ],
    "visited": true,
    "noteId": "hjertekammeret"
@@ -276,10 +441,16 @@
     9
    ],
    "people": [
-    "Tyra volkmarr"
+    [
+     "Tyra volkmarr",
+     "tyra-volkmarr"
+    ]
    ],
    "factions": [
-    "Bahamuts Tilhængere"
+    [
+     "Bahamuts Tilhængere",
+     "bahamuts-tilhaengere"
+    ]
    ],
    "visited": true,
    "noteId": "paladine-s-bibliotek-i-astley"
@@ -322,7 +493,10 @@
     7
    ],
    "people": [
-    "Tizzelspark"
+    [
+     "Tizzelspark",
+     "tizzelspark"
+    ]
    ],
    "factions": [],
    "visited": true,
@@ -384,7 +558,10 @@
    "sessions": [],
    "people": [],
    "factions": [
-    "Sølvhånden"
+    [
+     "Sølvhånden",
+     "solvhanden"
+    ]
    ],
    "visited": true,
    "noteId": "alistairs-handelsforretning"
@@ -412,14 +589,32 @@
     44
    ],
    "people": [
-    "Clarabel Lancaster",
-    "Erika Songfelt",
-    "Lord Fern",
-    "Lucious Vormend"
+    [
+     "Clarabel Lancaster",
+     "clarabel-lancaster"
+    ],
+    [
+     "Erika Songfelt",
+     "erika-songfelt"
+    ],
+    [
+     "Lord Fern",
+     "lord-fern"
+    ],
+    [
+     "Lucious Vormend",
+     "lucious-vormend"
+    ]
    ],
    "factions": [
-    "Blodrosen",
-    "Ridderne af Blodrosen"
+    [
+     "Blodrosen",
+     "blodrosen"
+    ],
+    [
+     "Ridderne af Blodrosen",
+     "ridderne-af-blodrosen"
+    ]
    ],
    "visited": true,
    "noteId": "feywood"
@@ -446,10 +641,22 @@
     47
    ],
    "people": [
-    "Clarabel Lancaster",
-    "Kong Norgassa",
-    "Sir Selling",
-    "Sir Winston"
+    [
+     "Clarabel Lancaster",
+     "clarabel-lancaster"
+    ],
+    [
+     "Kong Norgassa",
+     "kong-norgassa"
+    ],
+    [
+     "Sir Selling",
+     "sir-selling"
+    ],
+    [
+     "Sir Winston",
+     "sir-winston"
+    ]
    ],
    "factions": [],
    "visited": true,
@@ -503,22 +710,64 @@
     5
    ],
    "people": [
-    "Archibald Oddsmoke",
-    "Celia Hammerhånd",
-    "Constance Fortright",
-    "Dvalin hammerhånd",
-    "Lady De'evers",
-    "Lizzie Gottmann",
-    "Merryn Foehammer",
-    "Petyr Gottmann",
-    "Qenes Markmoon",
-    "Ulrick Stadtfeldt",
-    "Ulrik Stadtfelt",
-    "Verner Mistvale"
+    [
+     "Archibald Oddsmoke",
+     "archibald-oddsmoke"
+    ],
+    [
+     "Celia Hammerhånd",
+     "celia-hammerhand"
+    ],
+    [
+     "Constance Fortright",
+     "constance-fortright"
+    ],
+    [
+     "Dvalin hammerhånd",
+     "dvalin-hammerhand"
+    ],
+    [
+     "Lady De'evers",
+     "lady-de-evers"
+    ],
+    [
+     "Lizzie Gottmann",
+     "lizzie-gottmann"
+    ],
+    [
+     "Merryn Foehammer",
+     "merryn-foehammer"
+    ],
+    [
+     "Petyr Gottmann",
+     "petyr-gottmann"
+    ],
+    [
+     "Qenes Markmoon",
+     "qenes-markmoon"
+    ],
+    [
+     "Ulrick Stadtfeldt",
+     "ulrick-stadtfeldt"
+    ],
+    [
+     "Ulrik Stadtfelt",
+     "ulrik-stadtfelt"
+    ],
+    [
+     "Verner Mistvale",
+     "verner-mistvale"
+    ]
    ],
    "factions": [
-    "Brakeshield familien",
-    "House De'Evers"
+    [
+     "Brakeshield familien",
+     "brakeshield-familien"
+    ],
+    [
+     "House De'Evers",
+     "house-de-evers"
+    ]
    ],
    "visited": true,
    "noteId": "mistville"
@@ -538,9 +787,18 @@
    "url": "",
    "sessions": [],
    "people": [
-    "Lizzie Gottmann",
-    "Merryn Foehammer",
-    "Qenes Markmoon"
+    [
+     "Lizzie Gottmann",
+     "lizzie-gottmann"
+    ],
+    [
+     "Merryn Foehammer",
+     "merryn-foehammer"
+    ],
+    [
+     "Qenes Markmoon",
+     "qenes-markmoon"
+    ]
    ],
    "factions": [],
    "visited": true,
@@ -590,7 +848,10 @@
     47
    ],
    "people": [
-    "Ægrin"
+    [
+     "Ægrin",
+     "aegrin"
+    ]
    ],
    "factions": [],
    "visited": true,
@@ -617,8 +878,14 @@
    "sessions": [],
    "people": [],
    "factions": [
-    "Baronessens råd",
-    "Opal kulten"
+    [
+     "Baronessens råd",
+     "baronessens-rad"
+    ],
+    [
+     "Opal kulten",
+     "opal-kulten"
+    ]
    ],
    "visited": false,
    "noteId": "colville"
@@ -663,7 +930,10 @@
    "url": "",
    "sessions": [],
    "people": [
-    "Assana Lemieux"
+    [
+     "Assana Lemieux",
+     "assana-lemieux"
+    ]
    ],
    "factions": [],
    "visited": false,
@@ -688,8 +958,14 @@
    "sessions": [],
    "people": [],
    "factions": [
-    "Blodrosen",
-    "Ridderne af Blodrosen"
+    [
+     "Blodrosen",
+     "blodrosen"
+    ],
+    [
+     "Ridderne af Blodrosen",
+     "ridderne-af-blodrosen"
+    ]
    ],
    "visited": false,
    "noteId": "det-rode-pas"
@@ -715,7 +991,10 @@
    ],
    "people": [],
    "factions": [
-    "Dværgene"
+    [
+     "Dværgene",
+     "dvaergene"
+    ]
    ],
    "visited": true,
    "noteId": "dark-gem-kobold-clan-caves"
@@ -792,8 +1071,14 @@
    "url": "",
    "sessions": [],
    "people": [
-    "den store stemme",
-    "hviskeren i mørket"
+    [
+     "den store stemme",
+     "den-store-stemme"
+    ],
+    [
+     "hviskeren i mørket",
+     "hviskeren-i-morket"
+    ]
    ],
    "factions": [],
    "visited": false,
@@ -823,12 +1108,24 @@
     3
    ],
    "people": [
-    "Cret Maart",
-    "Vaelon Dunmere"
+    [
+     "Cret Maart",
+     "cret-maart"
+    ],
+    [
+     "Vaelon Dunmere",
+     "vaelon-dunmere"
+    ]
    ],
    "factions": [
-    "Court of Baron Zhaarko",
-    "Court of Baronesse Avalande"
+    [
+     "Court of Baron Zhaarko",
+     "court-of-baron-zhaarko"
+    ],
+    [
+     "Court of Baronesse Avalande",
+     "court-of-baronesse-avalande"
+    ]
    ],
    "visited": true,
    "noteId": "kegville"
@@ -853,10 +1150,16 @@
    "url": "",
    "sessions": [],
    "people": [
-    "Baron Zhaarko af Eresby"
+    [
+     "Baron Zhaarko af Eresby",
+     "baron-zhaarko-af-eresby"
+    ]
    ],
    "factions": [
-    "Brakeshield familien"
+    [
+     "Brakeshield familien",
+     "brakeshield-familien"
+    ]
    ],
    "visited": false,
    "noteId": "segreve"
@@ -880,7 +1183,10 @@
    "sessions": [],
    "people": [],
    "factions": [
-    "Brakeshield familien"
+    [
+     "Brakeshield familien",
+     "brakeshield-familien"
+    ]
    ],
    "visited": false,
    "noteId": "pembroke"
@@ -905,7 +1211,10 @@
     43
    ],
    "people": [
-    "Vaelon Dunmere"
+    [
+     "Vaelon Dunmere",
+     "vaelon-dunmere"
+    ]
    ],
    "factions": [],
    "visited": true,
@@ -932,10 +1241,16 @@
    "url": "",
    "sessions": [],
    "people": [
-    "Merelda"
+    [
+     "Merelda",
+     "merelda"
+    ]
    ],
    "factions": [
-    "Azur ordenen"
+    [
+     "Azur ordenen",
+     "azur-ordenen"
+    ]
    ],
    "visited": true,
    "noteId": "arcana-tarnet"
@@ -958,7 +1273,10 @@
    "url": "",
    "sessions": [],
    "people": [
-    "Marie Louise Duvall af Miragehill"
+    [
+     "Marie Louise Duvall af Miragehill",
+     "marie-louise-duvall-af-miragehill"
+    ]
    ],
    "factions": [],
    "visited": false,
@@ -982,7 +1300,10 @@
    "url": "",
    "sessions": [],
    "people": [
-    "Marie Louise Duvall af Miragehill"
+    [
+     "Marie Louise Duvall af Miragehill",
+     "marie-louise-duvall-af-miragehill"
+    ]
    ],
    "factions": [],
    "visited": false,
@@ -1075,8 +1396,14 @@
    "sessions": [],
    "people": [],
    "factions": [
-    "Bjergenes Børn",
-    "Dværgene"
+    [
+     "Bjergenes Børn",
+     "bjergenes-born"
+    ],
+    [
+     "Dværgene",
+     "dvaergene"
+    ]
    ],
    "visited": false,
    "noteId": "silverstream-dvaerge-hallerne"
@@ -1141,8 +1468,14 @@
    "sessions": [],
    "people": [],
    "factions": [
-    "Botreaux court",
-    "familien Botreaux"
+    [
+     "Botreaux court",
+     "botreaux-court"
+    ],
+    [
+     "familien Botreaux",
+     "familien-botreaux"
+    ]
    ],
    "visited": false,
    "noteId": "castle-botreaux"
@@ -1166,7 +1499,10 @@
    "sessions": [],
    "people": [],
    "factions": [
-    "Knights of the Realm"
+    [
+     "Knights of the Realm",
+     "knights-of-the-realm"
+    ]
    ],
    "visited": false,
    "noteId": "castle-de-ros"
@@ -1189,7 +1525,10 @@
    "url": "",
    "sessions": [],
    "people": [
-    "Marie Louise Duvall af Miragehill"
+    [
+     "Marie Louise Duvall af Miragehill",
+     "marie-louise-duvall-af-miragehill"
+    ]
    ],
    "factions": [],
    "visited": false,
@@ -1213,16 +1552,40 @@
    "url": "",
    "sessions": [],
    "people": [
-    "Archibald Oddsmoke",
-    "Assana Lemieux",
-    "Hertug Robert De Ros"
+    [
+     "Archibald Oddsmoke",
+     "archibald-oddsmoke"
+    ],
+    [
+     "Assana Lemieux",
+     "assana-lemieux"
+    ],
+    [
+     "Hertug Robert De Ros",
+     "hertug-robert-de-ros"
+    ]
    ],
    "factions": [
-    "Brakeshield familien",
-    "Knights of the Realm",
-    "kongerådet",
-    "Sølvhånden",
-    "The Queensguard"
+    [
+     "Brakeshield familien",
+     "brakeshield-familien"
+    ],
+    [
+     "Knights of the Realm",
+     "knights-of-the-realm"
+    ],
+    [
+     "kongerådet",
+     "kongeradet"
+    ],
+    [
+     "Sølvhånden",
+     "solvhanden"
+    ],
+    [
+     "The Queensguard",
+     "the-queensguard"
+    ]
    ],
    "visited": false,
    "noteId": "wolfenburg"
@@ -1246,7 +1609,10 @@
    "sessions": [],
    "people": [],
    "factions": [
-    "Knights of the Realm"
+    [
+     "Knights of the Realm",
+     "knights-of-the-realm"
+    ]
    ],
    "visited": false,
    "noteId": "castle-feucenberg"
@@ -1291,7 +1657,10 @@
    "url": "",
    "sessions": [],
    "people": [
-    "Lord Helmuth de Valencia"
+    [
+     "Lord Helmuth de Valencia",
+     "lord-helmuth-de-valencia"
+    ]
    ],
    "factions": [],
    "visited": false,
@@ -1337,7 +1706,10 @@
    "url": "",
    "sessions": [],
    "people": [
-    "Baronesse Constance Silkenfall"
+    [
+     "Baronesse Constance Silkenfall",
+     "baronesse-constance-silkenfall"
+    ]
    ],
    "factions": [],
    "visited": false,
@@ -1364,7 +1736,10 @@
    "sessions": [],
    "people": [],
    "factions": [
-    "Familien Narsi"
+    [
+     "Familien Narsi",
+     "familien-narsi"
+    ]
    ],
    "visited": false,
    "noteId": "solstice"
@@ -1392,7 +1767,10 @@
    ],
    "people": [],
    "factions": [
-    "Knoglestammen"
+    [
+     "Knoglestammen",
+     "knoglestammen"
+    ]
    ],
    "visited": true,
    "noteId": "stormbjerget"
@@ -1419,7 +1797,10 @@
    ],
    "people": [],
    "factions": [
-    "Knoglestammen"
+    [
+     "Knoglestammen",
+     "knoglestammen"
+    ]
    ],
    "visited": true,
    "noteId": "knoglestammens-huler"
@@ -1506,7 +1887,10 @@
    ],
    "people": [],
    "factions": [
-    "Draconkin"
+    [
+     "Draconkin",
+     "draconkin"
+    ]
    ],
    "visited": true,
    "noteId": "vardestjernen"
@@ -1532,10 +1916,16 @@
     42
    ],
    "people": [
-    "Kaelen"
+    [
+     "Kaelen",
+     "kaelen"
+    ]
    ],
    "factions": [
-    "Aethor Flåden"
+    [
+     "Aethor Flåden",
+     "aethor-fladen"
+    ]
    ],
    "visited": true,
    "noteId": "port-drakkan"
@@ -1558,8 +1948,14 @@
    ],
    "people": [],
    "factions": [
-    "Aethor Flåden",
-    "Astley Avengers"
+    [
+     "Aethor Flåden",
+     "aethor-fladen"
+    ],
+    [
+     "Astley Avengers",
+     "astley-avengers"
+    ]
    ],
    "visited": true,
    "noteId": "vinterspiret"
@@ -1608,12 +2004,24 @@
     16
    ],
    "people": [
-    "Håkan",
-    "Seiran",
-    "skur"
+    [
+     "Håkan",
+     "hakan"
+    ],
+    [
+     "Seiran",
+     "seiran"
+    ],
+    [
+     "skur",
+     "skur"
+    ]
    ],
    "factions": [
-    "Mielikki tilhængere"
+    [
+     "Mielikki tilhængere",
+     "mielikki-tilhaengere"
+    ]
    ],
    "visited": true,
    "noteId": "grondalen"
@@ -1656,10 +2064,16 @@
    "url": "",
    "sessions": [],
    "people": [
-    "Lady De'evers"
+    [
+     "Lady De'evers",
+     "lady-de-evers"
+    ]
    ],
    "factions": [
-    "House De'Evers"
+    [
+     "House De'Evers",
+     "house-de-evers"
+    ]
    ],
    "visited": false,
    "noteId": "troldmands-tarn-ruin-i-nordlandet"
@@ -1679,17 +2093,44 @@
    "url": "",
    "sessions": [],
    "people": [
-    "Dronningen af Anaksa",
-    "Queen Neferata"
+    [
+     "Dronningen af Anaksa",
+     "dronningen-af-anaksa"
+    ],
+    [
+     "Queen Neferata",
+     "queen-neferata"
+    ]
    ],
    "factions": [
-    "blå nomader",
-    "Hands of the Queen",
-    "Highguard Chapterhouse",
-    "House Magdova",
-    "Knights of the River",
-    "Queensguard Ambassadører",
-    "The Queensguard"
+    [
+     "blå nomader",
+     "bla-nomader"
+    ],
+    [
+     "Hands of the Queen",
+     "hands-of-the-queen"
+    ],
+    [
+     "Highguard Chapterhouse",
+     "highguard-chapterhouse"
+    ],
+    [
+     "House Magdova",
+     "house-magdova"
+    ],
+    [
+     "Knights of the River",
+     "knights-of-the-river"
+    ],
+    [
+     "Queensguard Ambassadører",
+     "queensguard-ambassadorer"
+    ],
+    [
+     "The Queensguard",
+     "the-queensguard"
+    ]
    ],
    "visited": false,
    "noteId": "anaksa"
@@ -1709,10 +2150,16 @@
    "url": "",
    "sessions": [],
    "people": [
-    "Queen Neferata"
+    [
+     "Queen Neferata",
+     "queen-neferata"
+    ]
    ],
    "factions": [
-    "The Queensguard"
+    [
+     "The Queensguard",
+     "the-queensguard"
+    ]
    ],
    "visited": false,
    "noteId": "deltafloden"
@@ -1733,7 +2180,10 @@
    "sessions": [],
    "people": [],
    "factions": [
-    "blå nomader"
+    [
+     "blå nomader",
+     "bla-nomader"
+    ]
    ],
    "visited": false,
    "noteId": "sistana"
@@ -1754,7 +2204,10 @@
    "sessions": [],
    "people": [],
    "factions": [
-    "The Queensguard"
+    [
+     "The Queensguard",
+     "the-queensguard"
+    ]
    ],
    "visited": false,
    "noteId": "den-endelose-orken"
@@ -1774,11 +2227,20 @@
    "url": "",
    "sessions": [],
    "people": [
-    "Assana Lemieux",
-    "Fafnir"
+    [
+     "Assana Lemieux",
+     "assana-lemieux"
+    ],
+    [
+     "Fafnir",
+     "fafnir"
+    ]
    ],
    "factions": [
-    "Jullan trade delegation"
+    [
+     "Jullan trade delegation",
+     "jullan-trade-delegation"
+    ]
    ],
    "visited": false,
    "noteId": "kolitan"
@@ -1818,9 +2280,18 @@
    "sessions": [],
    "people": [],
    "factions": [
-    "Blodrosen",
-    "Frostheim Klanen",
-    "Ridderne af Blodrosen"
+    [
+     "Blodrosen",
+     "blodrosen"
+    ],
+    [
+     "Frostheim Klanen",
+     "frostheim-klanen"
+    ],
+    [
+     "Ridderne af Blodrosen",
+     "ridderne-af-blodrosen"
+    ]
    ],
    "visited": false,
    "noteId": "zezstanie"
@@ -1900,10 +2371,16 @@
     23
    ],
    "people": [
-    "Zarafine"
+    [
+     "Zarafine",
+     "zarafine"
+    ]
    ],
    "factions": [
-    "Tempus tilhængere"
+    [
+     "Tempus tilhængere",
+     "tempus-tilhaengere"
+    ]
    ],
    "visited": true,
    "noteId": "stormens-ed"
@@ -1982,7 +2459,10 @@
    "summary": "Botreaux hertugdømmet fylder midten af Erukana og hen til den østlige kystlinje hvor hovedstaden af kongeriget befinder sig. Grundet sin lokation, er Botreaux et naturligt mødested for en stor den af den handel som foretages i riget. Ca.",
    "url": "",
    "people": [
-    "Hertug Robert De Ros"
+    [
+     "Hertug Robert De Ros",
+     "hertug-robert-de-ros"
+    ]
    ],
    "factions": [],
    "noteId": "hertugdommet-bortreaux"
@@ -2043,12 +2523,24 @@
    "summary": "Baroniet er forholdsvis nyt, blot en generation gammel og hørte på et tidspunkt til Botreaux. Men en egenrådig købmand fra Baroniet Blackmere forsøgte at overtage området. Han blev slået tilbage af Knight Lord Berend de Valencia, en ridder af Botreaux court.",
    "url": "",
    "people": [
-    "Knight Lord Berend de Valencia",
-    "Lord Helmuth de Valencia",
-    "Lord Valencia"
+    [
+     "Knight Lord Berend de Valencia",
+     "knight-lord-berend-de-valencia"
+    ],
+    [
+     "Lord Helmuth de Valencia",
+     "lord-helmuth-de-valencia"
+    ],
+    [
+     "Lord Valencia",
+     "lord-valencia"
+    ]
    ],
    "factions": [
-    "The Silver Drake guild"
+    [
+     "The Silver Drake guild",
+     "the-silver-drake-guild"
+    ]
    ],
    "noteId": "baroniet-valence"
   },
@@ -2108,8 +2600,14 @@
    "summary": "Blackmere baroniet er kendt for riget største handelsflåde som delvist sejler ud fra Vigil’s Rock og Highhome. Et landområde som holder sig uden for resten af rigets interne magtkampe og i stedet har deres øjne fæstnet mod resten af Ceynor. Det som holder baroniet sikkert, er den magt som en handelsnation giver dem.",
    "url": "",
    "people": [
-    "Baronesse Constance Silkenfall",
-    "Vaelon Dunmere"
+    [
+     "Baronesse Constance Silkenfall",
+     "baronesse-constance-silkenfall"
+    ],
+    [
+     "Vaelon Dunmere",
+     "vaelon-dunmere"
+    ]
    ],
    "factions": [],
    "noteId": "baroniet-blackmere"
@@ -2178,18 +2676,48 @@
    "summary": "Eresby er baroniet som grænser op til passet mod syd og det største kontinent i hele Ceynor. Eresby nyder godt af handelskaravaner som kommer igennem, i deres rejse mod Wolfenburg. I sig selv har Eresby ikke meget at byde på ud over frodige vidder hvor landbrug og bomuld udvindes.",
    "url": "",
    "people": [
-    "Baron Zhaarko af Eresby",
-    "Clarabel Lancaster",
-    "den ældre veteran",
-    "Lord Adelston Magdova",
-    "Vaelon Dunmere"
+    [
+     "Baron Zhaarko af Eresby",
+     "baron-zhaarko-af-eresby"
+    ],
+    [
+     "Clarabel Lancaster",
+     "clarabel-lancaster"
+    ],
+    [
+     "den ældre veteran",
+     "den-aeldre-veteran"
+    ],
+    [
+     "Lord Adelston Magdova",
+     "lord-adelston-magdova"
+    ],
+    [
+     "Vaelon Dunmere",
+     "vaelon-dunmere"
+    ]
    ],
    "factions": [
-    "Astley Avengers",
-    "Court of Baron Zhaarko",
-    "Draconkin",
-    "Familien Narsi",
-    "House Magdova"
+    [
+     "Astley Avengers",
+     "astley-avengers"
+    ],
+    [
+     "Court of Baron Zhaarko",
+     "court-of-baron-zhaarko"
+    ],
+    [
+     "Draconkin",
+     "draconkin"
+    ],
+    [
+     "Familien Narsi",
+     "familien-narsi"
+    ],
+    [
+     "House Magdova",
+     "house-magdova"
+    ]
    ],
    "noteId": "baroniet-eresby"
   },
@@ -2265,9 +2793,18 @@
    "summary": "Mowbray er en af to baronier kendt for deres frodige marker og vidder. De er kendetegnet ved deres landbrug og deres modige soldater og våben og rustninger. Landet i sig selv er ikke specielt interessant, men det grænser op til bjergene i vest og elver riget i nord.",
    "url": "",
    "people": [
-    "Merryn Foehammer",
-    "Qenes Markmoon",
-    "Vaelon Dunmere"
+    [
+     "Merryn Foehammer",
+     "merryn-foehammer"
+    ],
+    [
+     "Qenes Markmoon",
+     "qenes-markmoon"
+    ],
+    [
+     "Vaelon Dunmere",
+     "vaelon-dunmere"
+    ]
    ],
    "factions": [],
    "noteId": "baroniet-mowbray"
@@ -2328,13 +2865,28 @@
    "summary": "Welles er et lille baroni og holder sig primært for sig selv. Skønt de hører til Erukana1 og på ingen måde afviser det, så holder de sig afsides. Et mistroisk og hårdtarbejdende folkefærd, som værdsætter deres evne til at klare sig selv.",
    "url": "",
    "people": [
-    "Baronesse Avalande",
-    "Vaelon Dunmere"
+    [
+     "Baronesse Avalande",
+     "baronesse-avalande"
+    ],
+    [
+     "Vaelon Dunmere",
+     "vaelon-dunmere"
+    ]
    ],
    "factions": [
-    "Baronessens råd",
-    "Court of Baronesse Avalande",
-    "House Magdova"
+    [
+     "Baronessens råd",
+     "baronessens-rad"
+    ],
+    [
+     "Court of Baronesse Avalande",
+     "court-of-baronesse-avalande"
+    ],
+    [
+     "House Magdova",
+     "house-magdova"
+    ]
    ],
    "noteId": "baroniet-welles"
   },
@@ -2347,8 +2899,14 @@
    "url": "",
    "people": [],
    "factions": [
-    "Aethor Flåden",
-    "Frost Giant Clan"
+    [
+     "Aethor Flåden",
+     "aethor-fladen"
+    ],
+    [
+     "Frost Giant Clan",
+     "frost-giant-clan"
+    ]
    ],
    "noteId": "nordheim"
   }

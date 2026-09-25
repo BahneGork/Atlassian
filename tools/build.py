@@ -71,8 +71,13 @@ def load_notes():
     return notes
 
 
+def link_label(m):
+    """Visible text of a wikilink; aliases that are full paths show just the note name."""
+    return (m.group(2) or m.group(1)).split("/")[-1].strip()
+
+
 def plain(text):
-    text = WIKILINK.sub(lambda m: m.group(2) or m.group(1), text)
+    text = WIKILINK.sub(link_label, text)
     text = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", text)
     text = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", text)
     text = re.sub(r"<[^>]+>", "", text)
@@ -141,8 +146,8 @@ def reader_markdown(body, ids):
     md = re.sub(r"<svg.*?</svg>", "", md, flags=re.S)
     md = re.sub(r"<[^>]+>", "", md)
     md = re.sub(r"!\[\[[^\]]*\]\]|!\[[^\]]*\]\([^)]*\)", "", md)
-    md = WIKILINK.sub(lambda m: f"[{m.group(2) or m.group(1)}](#note/{ids[m.group(1).strip()]})"
-                      if m.group(1).strip() in ids else (m.group(2) or m.group(1)), md)
+    md = WIKILINK.sub(lambda m: f"[{link_label(m)}](#note/{ids[m.group(1).strip()]})"
+                      if m.group(1).strip() in ids else link_label(m), md)
 
     def garden_link(m):  # [text](/02 Player/.../Title/) links from embeds
         title = unquote(m.group(2).rstrip("/").split("/")[-1].split("#")[0])
@@ -151,6 +156,7 @@ def reader_markdown(body, ids):
     md = re.sub(r"(?m)^\s*(?:#[^\s#][^\s]*\s*)+$", "", md)          # tag-only lines
     md = re.sub(r"(?m)^\[?_Erukana home\]?(?:\([^)]*\))?\s*$", "", md)  # navigation back-link
     md = re.sub(r"(?m)^\{[^}]*\}\s*$", "", md)                       # { .block-language-dataview}
+    md = re.sub(r"(?m)^\s*#+\s*$", "", md)                            # empty headings
     md = re.sub(r"(?m)^([\wæøåÆØÅ ]+):: ?(.*)$", r"**\1:** \2", md)   # dataview inline fields
     return re.sub(r"\n{3,}", "\n\n", md).strip()
 
@@ -275,6 +281,9 @@ def main():
     place_of.update({r["note"]: ("region", rid) for rid, r in REGIONS.items()})
     session_of = {t: num for num, t in session_notes.items()}
     ids = export_notes(notes, place_of, session_of)
+    for item in list(places.values()) + list(regions.values()):
+        for key in ("people", "factions"):
+            item[key] = [[t, ids.get(t)] for t in item[key]]
     for pid, p in PLACES.items():
         places[pid]["noteId"] = ids.get(p["note"])
     for rid, r in REGIONS.items():

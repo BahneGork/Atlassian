@@ -216,12 +216,14 @@
       : null;
     return [el("h3", {}, title), list, more];
   }
-  function chips(title, names, limit = 14) {
-    if (!names.length) return null;
-    const list = el("ul", { class: "chips" }, names.slice(0, limit).map((n) => el("li", {}, n)));
-    const more = names.length > limit
-      ? el("button", { type: "button", class: "more", onclick: (e) => { list.append(...names.slice(limit).map((n) => el("li", {}, n))); e.target.remove(); } },
-          `+ ${names.length - limit} mere`)
+  // entries are [name, noteId]; names with a note open it in the reader
+  function chips(title, entries, limit = 14) {
+    if (!entries.length) return null;
+    const chip = ([name, id]) => el("li", {}, id ? el("a", { href: `#note/${id}` }, name) : name);
+    const list = el("ul", { class: "chips" }, entries.slice(0, limit).map(chip));
+    const more = entries.length > limit
+      ? el("button", { type: "button", class: "more", onclick: (e) => { list.append(...entries.slice(limit).map(chip)); e.target.remove(); } },
+          `+ ${entries.length - limit} mere`)
       : null;
     return [el("h3", {}, title), list, more];
   }

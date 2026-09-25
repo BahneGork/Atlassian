@@ -156,6 +156,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .panel h3::after { content: ""; flex: 1; border-top: 1px solid var(--ink-faint); }
 .chips { display: flex; flex-wrap: wrap; gap: 5px; margin: 0; padding: 0; list-style: none; }
 .chips li { font-size: 15px; padding: 1px 9px; border-radius: 3px; background: rgba(205, 184, 138, 0.35); }
+.chips a { color: var(--ink); text-decoration: none; }
+.chips li:has(a):hover { background: rgba(205, 184, 138, 0.6); }
 .chips button {
   border: 1px solid var(--ink-faint); background: var(--parchment); border-radius: 3px; padding: 1px 9px; font-size: 15px;
 }
