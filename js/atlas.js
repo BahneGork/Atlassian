@@ -1,0 +1,472 @@
+/* Atlas over Erukana – map, pins, panel, search and the session-by-session journey. */
+(async function () {
+  const data = await fetch("data/erukana.json").then((r) => r.json());
+  const { maps, places, regions, sessions, portals, offmap } = data;
+
+  const KIND = {
+    by: "By", borg: "Borg", taarn: "Tårn", hule: "Hule & dybde", helligt: "Helligt sted",
+    havn: "Havn", vildmark: "Vildmark", sted: "Sted",
+  };
+  // 16x16 glyphs drawn inside the seal.
+  const GLYPH = {
+    by: "M3 8.5 8 4l5 4.5V13H9.5v-3h-3v3H3z",
+    borg: "M3 13V5h2v1.6h1.6V5h2.8v1.6H11V5h2v8H9.6v-2.4H6.4V13z",
+    taarn: "M6 13V6.2L8 3l2 3.2V13zM7.3 7.4h1.4v1.8H7.3z",
+    hule: "M2 13c0-5.6 2.6-8.6 6-8.6s6 3 6 8.6h-3.4c0-2.6-1-4.4-2.6-4.4S5.4 10.4 5.4 13z",
+    helligt: "M8 2.2l1.7 3.7 4 .4-3 2.7.9 4L8 11 4.4 13l.9-4-3-2.7 4-.4z",
+    havn: "M7.3 5.6V11a3.3 3.3 0 0 1-2.7-1.9l1-.5-2.5-1L2.6 10l.9-.4A4.8 4.8 0 0 0 8 13a4.8 4.8 0 0 0 4.5-3.4l.9.4-.5-2.4-2.5 1 1 .5A3.3 3.3 0 0 1 8.7 11V5.6a1.6 1.6 0 1 0-1.4 0z",
+    vildmark: "M1.8 13 6 5.4l2 3.4L10.2 5l4 8z",
+    sted: "M8 4.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7z",
+  };
+
+  const $ = (sel, el = document) => el.querySelector(sel);
+  const el = (tag, attrs = {}, ...kids) => {
+    const n = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) {
+      if (k === "class") n.className = v;
+      else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+      else if (v !== false && v != null) n.setAttribute(k, v === true ? "" : v);
+    }
+    n.append(...kids.flat().filter((k) => k != null && k !== false));
+    return n;
+  };
+  const fold = (s) => s.toLowerCase().replace(/æ/g, "ae").replace(/ø/g, "o").replace(/å/g, "a").normalize("NFKD").replace(/[\u0300-\u036f]/g, "");
+
+  // ---------- Geometry helpers ----------
+  const ll = ([x, y]) => L.latLng(-y, x);
+  const children = (id) => Object.keys(places).filter((k) => places[k].parent === id);
+  // Where a place is drawn: its own pin, or the nearest ancestor with one.
+  function anchor(id) {
+    for (let cur = id; cur; cur = places[cur].parent) if (places[cur].at) return cur;
+    return null;
+  }
+  function mapOf(id) {
+    const a = anchor(id);
+    if (a) return places[a].map;
+    let cur = id;
+    while (places[cur].parent) cur = places[cur].parent;
+    const p = places[cur];
+    if (p.region && regions[p.region]) return regions[p.region].map;
+    if (p.offmap && offmap[p.offmap].map) return offmap[p.offmap].map;
+    return null;
+  }
+
+  // ---------- Map ----------
+  const map = L.map("map", {
+    crs: L.CRS.Simple, zoomSnap: 0.25, zoomDelta: 0.5, minZoom: -4, maxZoom: 1.5,
+    attributionControl: false, zoomControl: false, maxBoundsViscosity: 0.8,
+  });
+  L.control.zoom({ position: "bottomright" }).addTo(map);
+
+  const layers = {};
+  for (const [id, m] of Object.entries(maps)) {
+    const [w, h] = m.size;
+    const bounds = L.latLngBounds([[-h, 0], [0, w]]);
+    layers[id] = {
+      bounds,
+      image: L.imageOverlay(m.image, bounds),
+      regions: L.layerGroup(),
+      pins: L.layerGroup(),
+      trail: L.layerGroup(),
+    };
+  }
+
+  const markers = {};
+  function seal(id) {
+    const p = places[id];
+    const cls = ["pin", p.visited && "visited", p.approx && "approx"].filter(Boolean).join(" ");
+    return L.divIcon({
+      className: cls, iconSize: [30, 38], iconAnchor: [15, 38],
+      html: `<div class="pin-seal" role="img" aria-label="${p.name}"><svg viewBox="0 0 30 38" aria-hidden="true">
+        <path class="body" d="M15 37C15 37 2 22.5 2 14.2A13 13 0 0 1 28 14.2C28 22.5 15 37 15 37Z"/>
+        <g transform="translate(7 6)"><path class="glyph" d="${GLYPH[p.kind] || GLYPH.sted}"/></g></svg></div>`,
+    });
+  }
+  for (const [id, p] of Object.entries(places)) {
+    if (!p.at) continue;
+    const m = L.marker(ll(p.at), { icon: seal(id), keyboard: true, riseOnHover: true });
+    m.bindTooltip(p.name, { className: "pin-label", direction: "top", offset: [0, -38] });
+    m.on("click", () => go(`sted/${id}`));
+    m.addTo(layers[p.map].pins);
+    markers[id] = m;
+  }
+  const regionLayers = {};
+  for (const [id, r] of Object.entries(regions)) {
+    if (!r.poly) continue;
+    regionLayers[id] = L.polygon(r.poly.map(ll), { className: "region", interactive: true, smoothFactor: 1.5 })
+      .on("click", (e) => { L.DomEvent.stop(e); go(`region/${id}`); })
+      .addTo(layers[r.map].regions);
+  }
+  const signpost = (at, label, hint, route) =>
+    L.marker(ll(at), {
+      keyboard: true, title: label,
+      icon: L.divIcon({ className: "signpost", iconSize: [0, 0], html: `<span>${label}<small>${hint}</small></span>` }),
+    }).on("click", () => go(route));
+  for (const p of portals) signpost(p.at, `${p.to === "erukana" ? "↓" : "↑"} ${p.label}`, p.hint, `kort/${p.to}`).addTo(layers[p.map].pins);
+  for (const [id, o] of Object.entries(offmap)) {
+    if (o.map) signpost(o.at, `${o.name} →`, o.hint, `udenfor/${id}`).addTo(layers[o.map].pins);
+  }
+
+  // Marker elements are recreated when a map is re-added, so their state lives here.
+  const pinState = { selected: null, here: null, seen: null, onlyVisited: false };
+  function applyPinState() {
+    for (const [id, m] of Object.entries(markers)) {
+      const e = m.getElement();
+      if (!e) continue;
+      e.classList.toggle("selected", id === pinState.selected);
+      e.classList.toggle("current", !!pinState.here?.has(id));
+      e.classList.toggle("dim", !!pinState.seen && !pinState.seen.has(id));
+      e.classList.toggle("hidden", pinState.onlyVisited && !places[id].visited);
+    }
+  }
+
+  // ---------- Map switching ----------
+  let current = null;
+  const tabs = $(".map-tabs");
+  for (const [id, m] of Object.entries(maps)) {
+    tabs.append(el("button", { type: "button", "data-map": id, onclick: () => go(`kort/${id}`) }, m.name));
+  }
+  tabs.append(el("button", { type: "button", "data-map": "", onclick: () => go("udenfor/other") }, "Andre steder"));
+
+  function showMap(id, fit = true) {
+    if (current !== id) {
+      if (current) for (const k of ["image", "regions", "pins", "trail"]) map.removeLayer(layers[current][k]);
+      current = id;
+      const lyr = layers[id];
+      for (const k of ["image", "regions", "pins", "trail"]) lyr[k].addTo(map);
+      // Fit before setting limits, so the limits never trigger their own (animated) zoom.
+      map.setMaxBounds(null);
+      map.options.minZoom = -4;
+      map.fitBounds(lyr.bounds, { animate: false });
+      map.setMinZoom(map.getZoom() - 0.5);
+      map.setMaxBounds(lyr.bounds.pad(0.25));
+      fit = false;
+    }
+    for (const b of tabs.children) b.setAttribute("aria-pressed", String(b.dataset.map === id));
+    if (fit) map.fitBounds(layers[id].bounds, { animate: false });
+    applyPinState();
+  }
+
+  function focusPin(id) {
+    const a = anchor(id);
+    const target = mapOf(id);
+    if (target) showMap(target, false);
+    if (a) {
+      const pt = ll(places[a].at);
+      map.flyToBounds(L.latLngBounds(pt, pt), {
+        maxZoom: Math.max(map.getZoom(), -0.75), duration: 0.6, paddingBottomRight: panelPadding(),
+      });
+    } else if (target) map.fitBounds(layers[target].bounds);
+  }
+
+  // Space taken by the open side panel (right on desktop, bottom sheet on phones).
+  function panelPadding() {
+    if (window.innerWidth <= 720) return [0, Math.round(window.innerHeight * 0.62)];
+    return [424, 0];
+  }
+
+  function select(id) {
+    pinState.selected = id;
+    applyPinState();
+  }
+
+  // ---------- Panel ----------
+  const panel = $(".panel");
+  const body = $(".panel-body");
+  $(".panel-close").addEventListener("click", () => go(""));
+
+  function openPanel(...content) {
+    body.replaceChildren(...content.flat(2).filter(Boolean));
+    panel.hidden = false;
+    body.scrollTop = 0;
+  }
+  function closePanel() {
+    panel.hidden = true;
+    select(null);
+    for (const r of Object.values(regionLayers)) r.getElement()?.classList.remove("selected");
+  }
+
+  const placeButton = (id) => {
+    const p = places[id];
+    return el("li", {}, el("button", { type: "button", onclick: () => go(`sted/${id}`) },
+      el("span", { class: `dot${p.visited ? " visited" : ""}` }), p.name, p.approx ? el("small", {}, "omtrentlig") : null));
+  };
+  function placeList(title, ids, limit = 12) {
+    if (!ids.length) return null;
+    ids = [...ids].sort((a, b) => (places[b].visited - places[a].visited) || places[a].name.localeCompare(places[b].name, "da"));
+    const list = el("ul", { class: "places-list" }, ids.slice(0, limit).map(placeButton));
+    const more = ids.length > limit
+      ? el("button", { type: "button", class: "more", onclick: (e) => { list.append(...ids.slice(limit).map(placeButton)); e.target.remove(); } },
+          `Vis alle ${ids.length}`)
+      : null;
+    return [el("h3", {}, title), list, more];
+  }
+  function chips(title, names, limit = 14) {
+    if (!names.length) return null;
+    const list = el("ul", { class: "chips" }, names.slice(0, limit).map((n) => el("li", {}, n)));
+    const more = names.length > limit
+      ? el("button", { type: "button", class: "more", onclick: (e) => { list.append(...names.slice(limit).map((n) => el("li", {}, n))); e.target.remove(); } },
+          `+ ${names.length - limit} mere`)
+      : null;
+    return [el("h3", {}, title), list, more];
+  }
+  const noteLink = (url) => url
+    ? el("a", { class: "note-link", href: url, target: "_blank", rel: "noopener" }, "Læs hele noten →")
+    : el("span", { class: "note-link", "aria-disabled": "true", title: "Adressen til noterne er ikke sat endnu" }, "Læs hele noten →");
+
+  function crumbs(id) {
+    const trail = [];
+    let cur = places[id].parent;
+    while (cur) { trail.unshift(["sted/" + cur, places[cur].name]); cur = places[cur].parent; }
+    let top = id;
+    while (places[top].parent) top = places[top].parent;
+    const p = places[top];
+    if (p.region && regions[p.region]) trail.unshift([`region/${p.region}`, regions[p.region].name]);
+    const m = mapOf(id);
+    if (m) trail.unshift([`kort/${m}`, maps[m].name]);
+    if (p.offmap) trail.unshift([`udenfor/${p.offmap}`, offmap[p.offmap].name]);
+    return el("p", { class: "crumbs" }, trail.flatMap(([route, name], i) => [
+      i ? " › " : null, el("button", { type: "button", onclick: () => go(route) }, name)]));
+  }
+
+  function showPlace(id) {
+    const p = places[id];
+    const kids = children(id);
+    // Everything that happened inside this place counts towards its sessions.
+    const sess = new Set(p.sessions);
+    const walk = (k) => { places[k].sessions.forEach((s) => sess.add(s)); children(k).forEach(walk); };
+    kids.forEach(walk);
+    openPanel(
+      crumbs(id),
+      el("p", { class: "kicker" }, KIND[p.kind] || "Sted"),
+      el("h2", {}, p.name),
+      el("div", { class: "badges" },
+        p.visited ? el("span", { class: "badge visited" }, "Besøgt") : el("span", { class: "badge" }, "Kun hørt om"),
+        p.approx ? el("span", { class: "badge approx" }, "Omtrentlig placering") : null,
+        !p.at && !anchor(id) ? el("span", { class: "badge approx" }, "Ikke på kortet") : null),
+      p.summary ? el("p", { class: "summary" }, p.summary) : null,
+      p.where ? el("p", { class: "where" }, p.where) : null,
+      sess.size ? [el("h3", {}, "Her har vi været"),
+        el("div", { class: "chips" }, [...sess].sort((a, b) => a - b).map((n) =>
+          el("button", { type: "button", class: "session-chip", title: sessions[n - 1].title, onclick: () => go(`session/${n}`) }, `Session ${n}`)))] : null,
+      placeList("Steder her", kids),
+      chips("Personer", p.people),
+      chips("Fraktioner", p.factions),
+      noteLink(p.url),
+    );
+    focusPin(id);
+    select(anchor(id));
+  }
+
+  function showRegion(id) {
+    const r = regions[id];
+    const members = Object.keys(places).filter((k) => places[k].region === id && !places[k].parent);
+    showMap(r.map, false);
+    openPanel(
+      el("p", { class: "crumbs" }, el("button", { type: "button", onclick: () => go(`kort/${r.map}`) }, maps[r.map].name)),
+      el("p", { class: "kicker" }, r.poly ? "Baroni" : "Land"),
+      el("h2", {}, r.name),
+      r.summary ? el("p", { class: "summary" }, r.summary) : null,
+      placeList(r.poly ? "Steder i baroniet" : "Steder uden kendt placering", members),
+      chips("Personer", r.people),
+      chips("Fraktioner", r.factions),
+      noteLink(r.url),
+    );
+    select(null);
+    for (const [k, l] of Object.entries(regionLayers)) l.getElement()?.classList.toggle("selected", k === id);
+    if (r.poly) map.flyToBounds(L.latLngBounds(r.poly.map(ll)), { duration: 0.6, paddingTopLeft: [40, 40], paddingBottomRight: panelPadding() });
+  }
+
+  function showMapPanel(id) {
+    const regionId = Object.keys(regions).find((k) => regions[k].map === id && !regions[k].poly);
+    showMap(id, true);
+    if (regionId) showRegion(regionId);
+    else closePanel();
+  }
+
+  function showOffmap(id) {
+    const o = offmap[id];
+    if (o.map) showMap(o.map, false);
+    for (const b of tabs.children) b.setAttribute("aria-pressed", String(!o.map && b.dataset.map === ""));
+    openPanel(
+      el("p", { class: "kicker" }, "Uden for kortene"),
+      el("h2", {}, o.name),
+      el("p", { class: "summary" }, id === "east"
+        ? "Riger og egne øst for Erukana, som noterne nævner, men som ikke findes på vores kort."
+        : "Steder fra noterne, hvor vi ikke kender placeringen – eller som slet ikke ligger i denne verden."),
+      placeList("Steder", Object.keys(places).filter((k) => places[k].offmap === id), 30),
+    );
+  }
+
+  // ---------- Search ----------
+  const input = $("#search-input");
+  const results = $(".search-results");
+  const index = [
+    ...Object.entries(places).map(([id, p]) => ({ route: `sted/${id}`, name: p.name, sub: KIND[p.kind], keys: [p.name, ...p.aliases].map(fold) })),
+    ...Object.entries(regions).map(([id, r]) => ({ route: `region/${id}`, name: r.name, sub: r.poly ? "Baroni" : "Land", keys: [fold(r.name)] })),
+  ];
+  let active = 0;
+  function renderResults() {
+    const q = fold(input.value.trim());
+    if (!q) { results.hidden = true; return; }
+    const hits = index
+      .map((e) => ({ e, score: Math.min(...e.keys.map((k) => (k.startsWith(q) ? 0 : k.includes(q) ? 1 : 9))) }))
+      .filter((h) => h.score < 9).sort((a, b) => a.score - b.score || a.e.name.localeCompare(b.e.name, "da")).slice(0, 10);
+    active = 0;
+    results.replaceChildren(...(hits.length ? hits.map(({ e }, i) => el("li", {
+      role: "option", "aria-selected": String(i === 0), onmousedown: (ev) => { ev.preventDefault(); pick(e); },
+    }, e.name, el("small", {}, e.sub))) : [el("li", {}, "Ingen steder fundet")]));
+    results.hits = hits.map((h) => h.e);
+    results.hidden = false;
+  }
+  function pick(e) { input.value = ""; results.hidden = true; input.blur(); go(e.route); }
+  input.addEventListener("input", renderResults);
+  input.addEventListener("blur", () => { results.hidden = true; });
+  input.addEventListener("keydown", (ev) => {
+    const hits = results.hits || [];
+    if (ev.key === "ArrowDown" || ev.key === "ArrowUp") {
+      ev.preventDefault();
+      active = (active + (ev.key === "ArrowDown" ? 1 : -1) + hits.length) % Math.max(hits.length, 1);
+      [...results.children].forEach((li, i) => li.setAttribute("aria-selected", String(i === active)));
+    } else if (ev.key === "Enter" && hits[active]) pick(hits[active]);
+    else if (ev.key === "Escape") { input.value = ""; results.hidden = true; }
+  });
+
+  // ---------- Legend ----------
+  const legendBody = $(".legend-body");
+  $(".legend-toggle").addEventListener("click", (e) => {
+    legendBody.hidden = !legendBody.hidden;
+    e.currentTarget.setAttribute("aria-expanded", String(!legendBody.hidden));
+  });
+  $("#opt-regions").addEventListener("change", (e) => document.body.classList.toggle("regions-off", !e.target.checked));
+  $("#opt-visited").addEventListener("change", (e) => {
+    pinState.onlyVisited = e.target.checked;
+    applyPinState();
+  });
+
+  // ---------- Journey ----------
+  const journey = $(".journey");
+  const jBody = $(".journey-body");
+  const jToggle = $(".journey-toggle");
+  const strip = $(".journey-strip");
+  const card = $(".journey-card");
+  let step = 0;
+  let timer = null;
+
+  const sessionMap = (s) => s.places.map(mapOf).find(Boolean) || null;
+  for (const s of sessions) {
+    strip.append(el("li", {}, el("button", {
+      type: "button", class: `gm-${s.gm.toLowerCase()}${sessionMap(s) ? "" : " offmap"}`,
+      title: `Session ${s.num}: ${s.title}`, onclick: () => go(`session/${s.num}`),
+    }, String(s.num))));
+  }
+  jToggle.addEventListener("click", () => {
+    if (jBody.hidden) go(`session/${step || 1}`);
+    else { stopPlay(); endJourney(); go(""); }
+  });
+  $(".journey-controls").addEventListener("click", (e) => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    if (b.classList.contains("journey-play")) return timer ? stopPlay() : startPlay();
+    stopPlay();
+    go(`session/${Math.min(sessions.length, Math.max(1, step + Number(b.dataset.step)))}`);
+  });
+  function startPlay() {
+    $(".journey-play").textContent = "❚❚";
+    if (step >= sessions.length) go("session/1");
+    timer = setInterval(() => {
+      if (step >= sessions.length) return stopPlay();
+      go(`session/${step + 1}`);
+    }, 2600);
+  }
+  function stopPlay() {
+    clearInterval(timer); timer = null;
+    $(".journey-play").textContent = "▶";
+  }
+
+  function endJourney() {
+    jBody.hidden = true;
+    jToggle.setAttribute("aria-expanded", "false");
+    for (const lyr of Object.values(layers)) lyr.trail.clearLayers();
+    pinState.here = pinState.seen = null;
+    applyPinState();
+  }
+
+  function showSession(n) {
+    step = n;
+    const s = sessions[n - 1];
+    jBody.hidden = false;
+    jToggle.setAttribute("aria-expanded", "true");
+    closePanel();
+    [...strip.children].forEach((li, i) => {
+      const b = li.firstChild;
+      b.classList.toggle("past", i < n - 1);
+      b.setAttribute("aria-current", String(i === n - 1));
+      if (i === n - 1) b.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+    });
+
+    const target = sessionMap(s);
+    const names = s.places.map((id) => places[id].name);
+    card.replaceChildren(
+      el("p", { class: "meta" }, `Session ${s.num}${s.date ? " · " + s.date : ""} · spilleder ${s.gm}`),
+      el("h2", {}, s.title),
+      el("p", {},
+        names.length ? `${[...new Set(names)].join(", ")}. ` : "Uden for kortene. ",
+        s.url ? el("a", { href: s.url, target: "_blank", rel: "noopener" }, "Læs sessionsloggen") : null),
+    );
+
+    // Trail: every earlier stop on this map, in order; the current session's leg in wax.
+    for (const lyr of Object.values(layers)) lyr.trail.clearLayers();
+    const stops = [];
+    for (const t of sessions.slice(0, n)) {
+      for (const id of t.places) {
+        const a = anchor(id);
+        if (!a) continue;
+        const last = stops[stops.length - 1];
+        if (!last || last.id !== a) stops.push({ id: a, map: places[a].map, num: t.num });
+      }
+    }
+    for (const mapId of Object.keys(maps)) {
+      const pts = stops.filter((st) => st.map === mapId);
+      for (let i = 1; i < pts.length; i++) {
+        const now = pts[i].num === n;
+        L.polyline([ll(places[pts[i - 1].id].at), ll(places[pts[i].id].at)], { className: `trail${now ? " now" : ""}`, interactive: false })
+          .addTo(layers[mapId].trail);
+      }
+    }
+
+    const here = new Set(s.places.map(anchor).filter(Boolean));
+    pinState.here = here;
+    pinState.seen = new Set(stops.map((st) => st.id));
+    applyPinState();
+    if (target) {
+      showMap(target, false);
+      const pts = [...here].filter((id) => places[id].map === target).map((id) => ll(places[id].at));
+      if (pts.length) map.flyToBounds(L.latLngBounds(pts), { maxZoom: -0.5, duration: 0.8, padding: [120, 120] });
+      else map.flyToBounds(layers[target].bounds, { duration: 0.8 });
+    }
+  }
+
+  // ---------- Routing (#sted/astley, #region/welles, #session/12, #kort/nordheim) ----------
+  function go(route) {
+    if (location.hash.slice(1) === route) route_(route);
+    else location.hash = route;
+  }
+  function route_(hash) {
+    const [kind, id] = decodeURIComponent(hash).split("/");
+    if (kind !== "session") { stopPlay(); endJourney(); }
+    if (kind === "sted" && places[id]) showPlace(id);
+    else if (kind === "region" && regions[id]) showRegion(id);
+    else if (kind === "session" && sessions[id - 1]) showSession(Number(id));
+    else if (kind === "udenfor" && offmap[id]) showOffmap(id);
+    else if (kind === "kort" && maps[id]) showMapPanel(id);
+    else { closePanel(); showMap(current || "erukana", !current); }
+  }
+  window.addEventListener("hashchange", () => route_(location.hash.slice(1)));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !panel.hidden && document.activeElement !== input) go("");
+  });
+
+  showMap("erukana");
+  route_(location.hash.slice(1));
+})();

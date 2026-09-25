@@ -1,7 +1,7 @@
 # Atlassian — Erukana Atlas — Project Plan
 
 - **Created**: 2026-09-23 · **Revised**: 2026-09-25 (scope cut to a bespoke Erukana atlas)
-- **Status**: Design
+- **Status**: First version built (2026-09-25), awaiting lead-designer notes
 - **Constraint**: hosting and tooling must be free
 
 ## Vision
@@ -47,10 +47,20 @@ A bespoke interactive atlas of **Erukana** for the owner and their RPG group. Th
 - **Names**: session logs were written by ear, so note titles may differ from map labels (Colville/Coleville, Stirring/Sterling). Panels show the note title; the map spelling is kept as a search alias. Uncertain matches are listed for the owner to confirm.
 - **Leaflet**: approved; copy kept in the repo.
 
+## First version (2026-09-25)
+- Two maps: Erukana and Nordheim, linked by signposts at the map edges. "Andre steder" and "Det forbudte øst" list places without a known position.
+- 70 places from the Locations notes: pins for places on the maps; places inside other places (Soltræet in Astley, tunnels in Dark Gem) are listed in their parent's panel.
+- Pins: red wax seal = visited, parchment = only heard of, dashed outline = approximate position.
+- 6 barony/duchy outlines traced roughly along the map's dotted borders.
+- Panel: summary (from the note's description), sessions where the party was there, places inside, people and factions (from People/Factions notes that link to the place), link to the full note.
+- Rejsen: all 43 sessions with a short title each, the trail drawn on the map, play button.
+- Search with aliases (e.g. map spelling "Coleville" finds the note "Colville").
+
 ## Open questions
-1. Panel text: Claude-written summaries (richer, must be kept in sync) vs opening lines of the note?
-2. Test batch first (baronies + ~10 visited places) before placing everything?
-3. Which candidate sub-maps matter?
+1. Garden public URL (needed for "Læs hele noten" links): set `GARDEN_URL` in `tools/curation.py`.
+2. Placements to confirm: Mistville, Kegville, Dark Gem caves, Dvalin's caves, Stirling, Miragehill, Det Røde pas, Vardestjernen, Castle Feucenberg (unlabelled castle?), Arcana tårnet (= map's "Arkana"?).
+3. Where are Grøndalen, Shieldheim and Windbreaker waystation on the Nordheim map?
+4. Which candidate sub-maps (Grøndalen etc.) matter?
 
 ## Tags
 #atlassian #erukana #project-plan #leaflet

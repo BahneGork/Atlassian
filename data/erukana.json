@@ -1,0 +1,2611 @@
+{
+ "maps": {
+  "erukana": {
+   "name": "Erukana",
+   "image": "maps/erukana.webp",
+   "size": [
+    4096,
+    3526
+   ]
+  },
+  "nordheim": {
+   "name": "Nordheim",
+   "image": "maps/nordheim.webp",
+   "size": [
+    2048,
+    1165
+   ],
+   "note": "Nordheim"
+  }
+ },
+ "portals": [
+  {
+   "map": "erukana",
+   "to": "nordheim",
+   "label": "Nordheim",
+   "hint": "over havet mod nord",
+   "at": [
+    1250,
+    110
+   ]
+  },
+  {
+   "map": "nordheim",
+   "to": "erukana",
+   "label": "Erukana",
+   "hint": "syd for Drakespear",
+   "at": [
+    1760,
+    1085
+   ]
+  }
+ ],
+ "offmap": {
+  "east": {
+   "name": "Det forbudte øst",
+   "map": "erukana",
+   "at": [
+    3950,
+    1600
+   ],
+   "hint": "Anaksa, Sistana, ørkenen"
+  },
+  "other": {
+   "name": "Andre steder",
+   "hint": "Steder uden kendt placering"
+  }
+ },
+ "places": {
+  "astley": {
+   "name": "Astley",
+   "kind": "by",
+   "map": "erukana",
+   "at": [
+    2460,
+    2432
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "welles",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Astley er en mellemstor by med ca. 20.000 indbyggere i Baroniet Welles. Byen er beliggende i det nordlige Welles og fungerer som et vigtigt handels- og kulturcenter i baroniet. Byen er hjemsted for Astley Avengers og har en lang historie med riddere og heltemod.",
+   "url": "",
+   "sessions": [
+    6,
+    7,
+    12,
+    16,
+    17,
+    19,
+    20,
+    21
+   ],
+   "people": [
+    "Beril Højmølle",
+    "Celedrial keeper of mielikki suntree",
+    "Daine waymar",
+    "Elvira",
+    "Fafnir",
+    "Hans Baudler",
+    "Krugge",
+    "Krugge's bagermester",
+    "Lord Rupert Solarson",
+    "Lucious Vormend",
+    "Marskal Henry Willsfort",
+    "Merita Verplex",
+    "miri sangstrup",
+    "Pierre",
+    "Tizzelspark",
+    "Vagtkaptajn Samuel",
+    "Vagtkaptajn ved Nord distriktet i Astley",
+    "Valo",
+    "Verner Mistvale"
+   ],
+   "factions": [
+    "Adelhuset Astleysson",
+    "Adelhuset Urazzan",
+    "Adelhuset Vitano",
+    "Astley Byvagt",
+    "Astley historian society",
+    "Blodrosen",
+    "Dawnspire Family",
+    "Fafnirs gruppe",
+    "Frostheim Klanen",
+    "grøn huderne",
+    "House Magdova",
+    "Jernkniven",
+    "Mielikki tilhængere",
+    "Opal kulten",
+    "Ridderne af Blodrosen",
+    "Sangstrup familien",
+    "Skjoldungerne",
+    "Waning Moon merchant house"
+   ],
+   "visited": true
+  },
+  "soltraeet": {
+   "name": "Soltræet",
+   "kind": "helligt",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "astley",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Soltræet (Sun Tree) er et helligt træ dedikeret til Mielikki i Astley. Det har en pond der passes af Maelar og Celedrial, samt Visdommens kammer hvor Lord Fern opholder sig. Silvara befinder sig også her.",
+   "url": "",
+   "sessions": [
+    12,
+    17,
+    41
+   ],
+   "people": [
+    "Celedrial keeper of mielikki suntree",
+    "Jarell Flick",
+    "Lord Fern",
+    "Maelar"
+   ],
+   "factions": [
+    "Mielikki tilhængere"
+   ],
+   "visited": true
+  },
+  "visdommens-kammer": {
+   "name": "Visdommens kammer",
+   "kind": "sted",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "soltraeet",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Visdommens kammer (Chamber of Wisdom) er et kammer i Soltræet hvor Lord Fern opholder sig. Kammeret har en krystal i midten der skifter farve efter årstiden.",
+   "url": "",
+   "sessions": [
+    41
+   ],
+   "people": [
+    "Jarell Flick",
+    "Lord Fern",
+    "Maelar"
+   ],
+   "factions": [],
+   "visited": true
+  },
+  "krypten": {
+   "name": "Krypten",
+   "kind": "hule",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "soltraeet",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Krypten er en krypt beliggende nær Soltræet. Der er en vej der fører om til krypten, hvor der er en revne og sygdom. Lord Fern beder gruppen opsøge ham når de er klar til at undersøge krypten.",
+   "url": "",
+   "sessions": [
+    41
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true
+  },
+  "paladine-templet": {
+   "name": "paladine templet i Astley",
+   "kind": "helligt",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "astley",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Paladine templet i Astley er et tempel dedikeret til Paladine. Det har et stort bibliotek (Paladine's bibliotek i Astley) og fungerer som mødested for modstandsbevægelsen mod Ridderne af Blodrosen. Nogle af de tilstedeværende i biblioteket skjuler Bahamuts mærke.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": true
+  },
+  "paladine-bibliotek": {
+   "name": "Paladine's bibliotek i Astley",
+   "kind": "sted",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "paladine-templet",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Paladine's bibliotek i Astley er et stort bibliotek tilknyttet paladine templet i Astley. Det indeholder historisk information og er et mødested for tilhængere af Paladine og Bahamut. Flere af de tilstedeværende skjuler Bahamuts mærke.",
+   "url": "",
+   "sessions": [
+    9
+   ],
+   "people": [
+    "Tyra volkmarr"
+   ],
+   "factions": [
+    "Bahamuts Tilhængere"
+   ],
+   "visited": true
+  },
+  "svinestien": {
+   "name": "Svinestien",
+   "kind": "sted",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "astley",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Svinestien er et drikkested i Astleys shanty town (slumområde) i udkanten af byen. Det er et sted med kort, terninger og drikke - et samlingspunkt for de mindre velstillede. Her kan man finde information og rygter fra byens underside.",
+   "url": "",
+   "sessions": [
+    9
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true
+  },
+  "kongens-hvil": {
+   "name": "Kongens Hvil",
+   "kind": "sted",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "astley",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Kongens Hvil er et værtshus i Astley der drives af gnomefamilien Tizzelspark. Gruppen overnattede her efter at være blevet frikendt i retten for sammenstødet med Ridderne af Blodrosen.",
+   "url": "",
+   "sessions": [
+    7
+   ],
+   "people": [
+    "Tizzelspark"
+   ],
+   "factions": [],
+   "visited": true
+  },
+  "den-braekkede-knogle": {
+   "name": "Den brækkede knogle",
+   "kind": "sted",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "astley",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Den brækkede knogle er et drikkested i Astley, beliggende i en smal gyde. Stedet er kendt som en dykkerbar fuld af drukkenbolte og er ikke blandt byens finere etablissementer. Kroen drives af en kromutter (krokone).",
+   "url": "",
+   "sessions": [
+    18
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true
+  },
+  "sangstrup": {
+   "name": "Sangstrup-gården",
+   "kind": "sted",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "astley",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Sangstrup home (Sangstrup gården) er hjemmet til Sangstrup familien i Astley. Her bor Miri Sangstrups far og det er stedet hvor gruppen opsøgte ham under mordefterforskningen.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "alistair": {
+   "name": "Waning Moon merchant house",
+   "kind": "sted",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "astley",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Alistairs handelsforretning var Lord Alistairs handelshus i Astley. Efter hans afsløring som dæmon og gruppens sejr, blev forretningen overtaget af Astley Avengers og omdøbt til Waning moon merchant house.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [
+    "Sølvhånden"
+   ],
+   "visited": false
+  },
+  "feywood": {
+   "name": "Feywood",
+   "kind": "vildmark",
+   "map": "erukana",
+   "at": [
+    2650,
+    2520
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "welles",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Feywood er en mystisk og farlig skov nær Astley. Skoven er hjem for et frygtet \"Feywood bæst\" der har en dusør på 500gp. Skoven har levende lianer der kan angribe sovende rejsende, og man føler konstant at man bliver overvåget. Den indeholder også sumpområder og ruiner, herunder resterne af Blackspear vagttårn.",
+   "url": "",
+   "sessions": [
+    9,
+    10,
+    11
+   ],
+   "people": [
+    "Erika Songfelt",
+    "Lord Fern",
+    "Lucious Vormend"
+   ],
+   "factions": [
+    "Blodrosen",
+    "Ridderne af Blodrosen"
+   ],
+   "visited": true
+  },
+  "mausoleum": {
+   "name": "Sir Seillings mausoleum",
+   "kind": "hule",
+   "map": "erukana",
+   "at": [
+    2410,
+    2580
+   ],
+   "approx": true,
+   "parent": null,
+   "region": "welles",
+   "offmap": null,
+   "where": "Syd for Astley ifølge noterne.",
+   "aliases": [
+    "mausoleum"
+   ],
+   "summary": "Sir Seillings mausoleum er et gravkammer beliggende syd for Astley. Det er gravstedet for Sir Seiling og Kong Norgassa, der blev begravet samme sted efter Sigismunds fald. Mausoleet er forbundet med Sir Winstons drømme.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "stirling": {
+   "name": "Stirling",
+   "kind": "borg",
+   "map": "erukana",
+   "at": [
+    2745,
+    2330
+   ],
+   "approx": true,
+   "parent": null,
+   "region": "welles",
+   "offmap": null,
+   "where": "Nord for Feywood og øst for Astley ifølge noterne. Ikke det samme som kortets 'Sterling' i Botreaux.",
+   "aliases": [
+    "Stirring",
+    "Jarlsborg"
+   ],
+   "summary": "Stirling (også stavet Stirring) er et ældgammelt lensherred beliggende nord for Feywood-skoven og øst for Astley. Lenet ligger i Baroniet Welles og styres af Lord Adelston Magdova fra familiens herresæde, Jarlsborg.",
+   "url": "",
+   "sessions": [
+    38
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true
+  },
+  "mistville": {
+   "name": "Mistville",
+   "kind": "by",
+   "map": "erukana",
+   "at": [
+    2300,
+    2290
+   ],
+   "approx": true,
+   "parent": null,
+   "region": "welles",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Lille landsby i Baroniet Welles tæt ved grænsen til Eresby. Her fandt gruppen Brakeshield-statuen hos Archibald Oddsmoke, og her nedkæmpede de nekromantikeren Ulrick Stadtfeldt og hans udøde. Gruppen blev æresmedlemmer af byen.",
+   "url": "",
+   "sessions": [
+    3,
+    5
+   ],
+   "people": [
+    "Archibald Oddsmoke",
+    "Celia Hammerhånd",
+    "Constance Fortright",
+    "Dvalin hammerhånd",
+    "Lady De'evers",
+    "Lizzie Gottmann",
+    "Merryn Foehammer",
+    "Petyr Gottmann",
+    "Qenes Markmoon",
+    "Ulrik Stadtfelt",
+    "Verner Mistvale"
+   ],
+   "factions": [
+    "Brakeshield familien",
+    "House De'Evers"
+   ],
+   "visited": true
+  },
+  "kroen-maanehvil": {
+   "name": "Kroen Månehvil",
+   "kind": "sted",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "mistville",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Kroen Månehvil er en kro beliggende i Mistville. Kroen er ejet af Merryn Foehammer og Qenes Markmoon, med Lizzie Gottmann ansat som kropige.",
+   "url": "",
+   "sessions": [],
+   "people": [
+    "Lizzie Gottmann",
+    "Merryn Foehammer",
+    "Qenes Markmoon"
+   ],
+   "factions": [],
+   "visited": false
+  },
+  "dvalin": {
+   "name": "Dvalins huler",
+   "kind": "hule",
+   "map": "erukana",
+   "at": [
+    2385,
+    2255
+   ],
+   "approx": true,
+   "parent": null,
+   "region": "welles",
+   "offmap": null,
+   "where": "I skoven lige uden for Mistville.",
+   "aliases": [],
+   "summary": "Huler i skoven uden for Mistville, hvor varulven Dvalin Hammerhånd havde opholdt sig. Gruppen fandt hans kone Celia død her.",
+   "url": "",
+   "sessions": [
+    4
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true
+  },
+  "colville": {
+   "name": "Colville",
+   "kind": "by",
+   "map": "erukana",
+   "at": [
+    2425,
+    2686
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "welles",
+   "offmap": null,
+   "where": "",
+   "aliases": [
+    "Coleville"
+   ],
+   "summary": "Colville (også stavet Coleville) er en by i Baroniet Welles med ca. 50.000 indbyggere. Byen er et vigtigt rejsemål for Astley Avengers på deres vej til Baronesse Avalande.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [
+    "Baronessens råd"
+   ],
+   "visited": false
+  },
+  "southwatch": {
+   "name": "Southwatch",
+   "kind": "by",
+   "map": "erukana",
+   "at": [
+    2440,
+    2874
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "welles",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Southwatch er en stor by i Baroniet Welles med ca. 170.000 indbyggere. Det er en af de betydelige byer i baroniet.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "castle-brienne": {
+   "name": "Castle Brienne",
+   "kind": "borg",
+   "map": "erukana",
+   "at": [
+    2340,
+    2925
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "welles",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Castle Brienne er et slot i Baroniet Welles. Det er et kontaktpunkt for Waning Moon og en kilde til krigsmateriale og udstyr.",
+   "url": "",
+   "sessions": [],
+   "people": [
+    "Assana Lemieux"
+   ],
+   "factions": [],
+   "visited": false
+  },
+  "rode-pas": {
+   "name": "Det Røde pas",
+   "kind": "vildmark",
+   "map": "erukana",
+   "at": [
+    3150,
+    2700
+   ],
+   "approx": true,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "Syd-øst for Astley i bjergene.",
+   "aliases": [],
+   "summary": "Det Røde pas er et bjergpas syd-øst for Astley. Det er et strategisk vigtigt punkt hvor Ridderne af Blodrosen har bygget en større konstruktion og samlet styrker.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [
+    "Blodrosen",
+    "Ridderne af Blodrosen"
+   ],
+   "visited": false
+  },
+  "dark-gem": {
+   "name": "Dark Gem-hulerne",
+   "kind": "hule",
+   "map": "erukana",
+   "at": [
+    2470,
+    2150
+   ],
+   "approx": true,
+   "parent": null,
+   "region": "eresby",
+   "offmap": null,
+   "where": "I bakkerne vest for vejen mellem Mistville og The Bronze Keg.",
+   "aliases": [],
+   "summary": "Kobold-klanen Dark Gems huler. Her fandt gruppen timeglasset og tids-scrollen i session 1 og mødte hviskeren i mørket, som fortalte om glemte dværgehaller dybere nede.",
+   "url": "",
+   "sessions": [
+    1
+   ],
+   "people": [],
+   "factions": [
+    "Dværgene"
+   ],
+   "visited": true
+  },
+  "tunnel-violet": {
+   "name": "Tunnel med violet lys",
+   "kind": "sted",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "dark-gem",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Tunnel med violet lys er en af tre tunneler der fører dybere ind i Dark Gem Kobold Clan Caves. Tunnelen er karakteriseret ved et svagt violet lysskær, relateret til den magiske korruption i hulerne.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "tunnel-vandrisle": {
+   "name": "Tunnel med vandrisle-lyde",
+   "kind": "sted",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "dark-gem",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Tunnel med vandrisle lyde er en af tre tunneler der fører dybere ind i Dark Gem Kobold Clan Caves. Tunnelen er opkaldt efter de mystiske vandrisle-agtige lyde der kan høres fra den.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "tunnel-affald": {
+   "name": "Tunnel til affaldsrum",
+   "kind": "sted",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "dark-gem",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Tunnel til affaldsrum er en af tre tunneler der fører dybere ind i Dark Gem Kobold Clan Caves. Tunnelen fører til et affaldsrum brugt af Dark Gem klanen kobolderne.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "dvaerge-haller": {
+   "name": "De glemte dværgehaller",
+   "kind": "hule",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "dark-gem",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "De gamle glemte dværge haller er en serie af antikke dværgeruiner der ligger dybere inde i Dark Gem Clan Caves. Ifølge hviskeren i mørket indeholder hallerne masser af viden. En magisk forseglet dør fører ind til dem. Efter 15 års tidsspring er der set drager ved hallernes bjerge.",
+   "url": "",
+   "sessions": [],
+   "people": [
+    "den store stemme",
+    "hviskeren i mørket"
+   ],
+   "factions": [],
+   "visited": false
+  },
+  "kegville": {
+   "name": "Kegville",
+   "kind": "by",
+   "map": "erukana",
+   "at": [
+    2600,
+    1960
+   ],
+   "approx": true,
+   "parent": null,
+   "region": "eresby",
+   "offmap": null,
+   "where": "I Eresby, 4-5 dages rejse fra Erenborg.",
+   "aliases": [
+    "The Bronze Keg",
+    "Bronze Keg"
+   ],
+   "summary": "Kegville er en by i Baroniet Eresby hvor Astley Avengers startede mange af deres eventyr. Det var her gruppen rejste fra efter at have fundet tids scrollen.",
+   "url": "",
+   "sessions": [
+    2,
+    3
+   ],
+   "people": [
+    "Cret Maart",
+    "Vaelon Dunmere"
+   ],
+   "factions": [
+    "Court of Baron Zhaarko",
+    "Court of Baronesse Avalande"
+   ],
+   "visited": true
+  },
+  "segreve": {
+   "name": "Segreve",
+   "kind": "by",
+   "map": "erukana",
+   "at": [
+    2436,
+    1990
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "eresby",
+   "offmap": null,
+   "where": "",
+   "aliases": [
+    "Segrave"
+   ],
+   "summary": "Segreve (også stavet Segrave) er en by i Baroniet Eresby. Det er her Baron Zhaarko fejrer sin søns fødselsdag, og byen har et marked hvor sølvstatuen blev solgt.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [
+    "Brakeshield familien"
+   ],
+   "visited": false
+  },
+  "pembroke": {
+   "name": "Pembroke",
+   "kind": "by",
+   "map": "erukana",
+   "at": [
+    2080,
+    1880
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "eresby",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Pembroke er en lokation i Erukana hvor et vigtigt slag fandt sted. Slaget ved Pembroke blev tabt af modstanden mod Blodrosen, hvilket førte til at Eresby blev forstærket fra Mowbray.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [
+    "Brakeshield familien"
+   ],
+   "visited": false
+  },
+  "stampenborg": {
+   "name": "Stampenborg",
+   "kind": "borg",
+   "map": "erukana",
+   "at": [
+    2805,
+    1735
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "eresby",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Stampenborg er et sted Vaelon Dunmere nævnte i forbindelse med Evelyn Adairs tilfangetagelse. Muligvis en borg eller fæstning i Baroniet Eresby-regionen.",
+   "url": "",
+   "sessions": [
+    43
+   ],
+   "people": [
+    "Vaelon Dunmere"
+   ],
+   "factions": [],
+   "visited": true
+  },
+  "arcana": {
+   "name": "Arcana tårnet",
+   "kind": "taarn",
+   "map": "erukana",
+   "at": [
+    2005,
+    3020
+   ],
+   "approx": true,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "Muligvis kortets 'Arkana' – noterne kalder det 'det sydlige wizard-tårn'.",
+   "aliases": [
+    "Arkana",
+    "Vogter tårnet"
+   ],
+   "summary": "Arcana tårnet var et troldmandstårn i Baroniet Eresby tilknyttet Baron Zhaarko af Eresby. Tårnet eksploderede i en mystisk hændelse. Det omtales også som \"Det sydlige wizard tårn\" eller \"Vogter tårnet\". En dagbog skrevet af magen Vaelor Drakestone blev fundet i forbindelse med tårnet.",
+   "url": "",
+   "sessions": [],
+   "people": [
+    "Merelda"
+   ],
+   "factions": [
+    "Azur ordenen"
+   ],
+   "visited": false
+  },
+  "grimrock": {
+   "name": "Grimrock Woods",
+   "kind": "vildmark",
+   "map": "erukana",
+   "at": [
+    2870,
+    1590
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "eresby",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Grimrock Woods er en skov i Erukana. Miragehill ligger på den østlige side af skoven, hvor slægten Duvall har deres sæde.",
+   "url": "",
+   "sessions": [],
+   "people": [
+    "Marie Louise Duvall af Miragehill"
+   ],
+   "factions": [],
+   "visited": false
+  },
+  "miragehill": {
+   "name": "Miragehill",
+   "kind": "by",
+   "map": "erukana",
+   "at": [
+    3120,
+    1560
+   ],
+   "approx": true,
+   "parent": null,
+   "region": "eresby",
+   "offmap": null,
+   "where": "På østsiden af Grimrock Woods.",
+   "aliases": [],
+   "summary": "Miragehill er en by der ligger på den østlige side af Grimrock Woods. Byen er sæde for slægten Duvall, en adelig familie med betydelig indflydelse.",
+   "url": "",
+   "sessions": [],
+   "people": [
+    "Marie Louise Duvall af Miragehill"
+   ],
+   "factions": [],
+   "visited": false
+  },
+  "forgotten-tower": {
+   "name": "The Forgotten tower",
+   "kind": "taarn",
+   "map": "erukana",
+   "at": [
+    1913,
+    2195
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "mowbray",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "The Forgotten tower (Det Glemte Tårn) er et forladt tårn i Baroniet Mowbray. Trods sin høje alder er det mystisk nok ikke en ruin.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "ironreach": {
+   "name": "Bjergene i vest og syd",
+   "kind": "vildmark",
+   "map": "erukana",
+   "at": [
+    925,
+    2075
+   ],
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [
+    "Ironreach mountains"
+   ],
+   "summary": "Bjergene i vest og syd er en bjergkæde der grænser op til Baroniet Mowbray. Trusler fra disse bjerge har formet Mowbrays hårde og militaristiske kultur.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "slatestone": {
+   "name": "Slatestone",
+   "kind": "borg",
+   "map": "erukana",
+   "at": [
+    845,
+    1530
+   ],
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Slatestone (også kendt som Slatestone dværgehallerne) er den ældste og mest traditionelle dværgehal i Erukana. Her bevares de gamle traditioner af Bjergenes Børn.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "silverstream": {
+   "name": "Silverstream",
+   "kind": "borg",
+   "map": "erukana",
+   "at": [
+    1660,
+    2590
+   ],
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Den dværgehal blandt Bjergenes Børn, der er mest åben mod omverdenen. Grundlagt af en klan fra Slatestone, og anerkender i dag ikke Slatestones hersker – hvilket har ført til mindre krige mellem hallerne.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [
+    "Bjergenes Børn",
+    "Dværgene"
+   ],
+   "visited": false
+  },
+  "blackforge": {
+   "name": "Blackforge",
+   "kind": "by",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": null,
+   "region": "mowbray",
+   "offmap": null,
+   "where": "Mowbrays hovedstad – ikke tegnet på kortet.",
+   "aliases": [],
+   "summary": "Bemærk: Blackforge er en LOKATION, ikke en person. Blackforge er Baron Breys hovedstad i Baroniet Mowbray med ca. 700.000 indbyggere. Byen er berømt for sin våbensmedning. Denne fil er fejlplaceret i People-mappen.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "botreaux-by": {
+   "name": "Botreaux",
+   "kind": "by",
+   "map": "erukana",
+   "at": [
+    2300,
+    810
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "botreaux",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Botreaux (også stavet Bortreaux) er hovedbyen i Hertugdømmet Botreaux med ca. 150.000 indbyggere. Byen er hjemsted for familien Botreaux og er berømt for sine mure af levende jerntræer.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "castle-botreaux": {
+   "name": "Castle Botreaux",
+   "kind": "borg",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "botreaux-by",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Castle Botreaux er hovedsædet for familien Botreaux og centrum for Hertugdømmet Botreaux. Slottet ligger i Botreaux byen og er berømt for sine mure af levende jerntræer.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [
+    "Botreaux court",
+    "familien Botreaux"
+   ],
+   "visited": false
+  },
+  "castle-de-ros": {
+   "name": "Castle De Ros",
+   "kind": "borg",
+   "map": "erukana",
+   "at": [
+    2340,
+    1455
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "botreaux",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Castle De Ros er et citadel i Hertugdømmet Botreaux. Det blev bygget af familien Botreaux for mange generationer siden og fungerer nu som en stor militær garrison.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [
+    "Knights of the Realm"
+   ],
+   "visited": false
+  },
+  "sentinel": {
+   "name": "The Sentinel",
+   "kind": "taarn",
+   "map": "erukana",
+   "at": [
+    2230,
+    1055
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "botreaux",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "The Sentinel er et troldmandstårn dedikeret til læring og viden om \"The Weave\" i Hertugdømmet Botreaux. Tårnet er mystisk og lukket - kun få besøger det, med mindre man er direkte inviteret.",
+   "url": "",
+   "sessions": [],
+   "people": [
+    "Marie Louise Duvall af Miragehill"
+   ],
+   "factions": [],
+   "visited": false
+  },
+  "wolfenburg": {
+   "name": "Wolfenburg",
+   "kind": "by",
+   "map": "erukana",
+   "at": [
+    3180,
+    1090
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "botreaux",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Wolfenburg er kongestaden i Hertugdømmet Botreaux og en af de vigtigste byer i riget. Byen er kendt for sine store universiteter og akademier, og er centrum for handel og kultur.",
+   "url": "",
+   "sessions": [],
+   "people": [
+    "Archibald Oddsmoke",
+    "Assana Lemieux",
+    "Hertug Robert De Ros"
+   ],
+   "factions": [
+    "Brakeshield familien",
+    "Knights of the Realm",
+    "kongerådet",
+    "Sølvhånden",
+    "The Queensguard"
+   ],
+   "visited": false
+  },
+  "feucenberg": {
+   "name": "Castle Feucenberg",
+   "kind": "borg",
+   "map": "erukana",
+   "at": [
+    2980,
+    1270
+   ],
+   "approx": true,
+   "parent": null,
+   "region": "botreaux",
+   "offmap": null,
+   "where": "Nær Wolfenburg – sandsynligvis den unavngivne borg på kortet.",
+   "aliases": [],
+   "summary": "Castle Feucenberg er en af forsvarsværkerne til Wolfenburg og hovedkvarter for Knights of the Realm, Erukanas nationale ridderorden.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [
+    "Knights of the Realm"
+   ],
+   "visited": false
+  },
+  "chapterhouse": {
+   "name": "Queensguard Chapterhouse",
+   "kind": "borg",
+   "map": "erukana",
+   "at": [
+    3090,
+    1185
+   ],
+   "approx": true,
+   "parent": null,
+   "region": "botreaux",
+   "offmap": null,
+   "where": "Lidt uden for Wolfenburg. Nu ødelagt.",
+   "aliases": [],
+   "summary": "The Queensguard Chapterhouse in Erukana - now destroyed. See The Queensguard#Angrebet På Chapterhouse Erukana for details.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "mortimor": {
+   "name": "Mortimor",
+   "kind": "by",
+   "map": "erukana",
+   "at": [
+    2565,
+    230
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "valence",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Mortimor er hovedstaden i Baroniet Valence med ca. 100.000 indbyggere. Byen er sæde for Lord Helmuth de Valencia.",
+   "url": "",
+   "sessions": [],
+   "people": [
+    "Lord Helmuth de Valencia"
+   ],
+   "factions": [],
+   "visited": false
+  },
+  "vigils-rock": {
+   "name": "Vigil's Rock",
+   "kind": "havn",
+   "map": "erukana",
+   "at": [
+    3410,
+    420
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "blackmere",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Vigil's Rock er en havneby i Baroniet Blackmere. Sammen med Highhome er den base for rigets største handelsflåde.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "highhome": {
+   "name": "Highhome",
+   "kind": "by",
+   "map": "erukana",
+   "at": [
+    3920,
+    470
+   ],
+   "approx": false,
+   "parent": null,
+   "region": "blackmere",
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Highhome er hovedstaden i Baroniet Blackmere med ca. 200.000 indbyggere. Byen er centrum for rigets største handelsflåde og kontaktpunkt for Waning Moon.",
+   "url": "",
+   "sessions": [],
+   "people": [
+    "Baronesse Constance Silkenfall"
+   ],
+   "factions": [],
+   "visited": false
+  },
+  "solstice": {
+   "name": "Solstice",
+   "kind": "by",
+   "map": "erukana",
+   "at": [
+    1994,
+    3300
+   ],
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [
+    "soltice"
+   ],
+   "summary": "Solstice (også stavet \"soltice\") er en by i Erukana hvor Familien Narsi bor. Familien Narsi var i besiddelse af timeglasset og Timescroll før gruppen fandt dem.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [
+    "Familien Narsi"
+   ],
+   "visited": false
+  },
+  "stormbjerget": {
+   "name": "StormBjerget",
+   "kind": "vildmark",
+   "map": "nordheim",
+   "at": [
+    870,
+    520
+   ],
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [
+    "Storms Peak"
+   ],
+   "summary": "StormBjerget er det højeste bjerg i nordlandet. Ifølge myterne er bjerget skabt af forstenede kæmper. Det er omgivet af konstant tordenvejr der vokser i styrke jo tættere man kommer. Bjerget er ekstremt farligt for flyvende væsener. Det siges at et fragment af den sølvdrage-knogle stav (ben-delen) befinder sig her.",
+   "url": "",
+   "sessions": [
+    26
+   ],
+   "people": [],
+   "factions": [
+    "Knoglestammen"
+   ],
+   "visited": true
+  },
+  "knoglestammens-huler": {
+   "name": "Knoglestammens huler",
+   "kind": "hule",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "stormbjerget",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [
+    "knoglestammens huler 1"
+   ],
+   "summary": "Knoglestammens huler er hjemsted for Knoglestammen og ligger i StormBjerget. Hulerne er groft udhugget tunneller der fører til egentlige lokaler og rum. Der er falmet graveringer på væggene der ikke er blevet vedligeholdt. Tronsalen er i forfald men har sikkert været imponerende engang.",
+   "url": "",
+   "sessions": [
+    26,
+    27,
+    28
+   ],
+   "people": [],
+   "factions": [
+    "Knoglestammen"
+   ],
+   "visited": true
+  },
+  "sorrow-vale": {
+   "name": "Sorrow Vale",
+   "kind": "vildmark",
+   "map": "nordheim",
+   "at": [
+    1200,
+    560
+   ],
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [
+    "Sorrows Vale"
+   ],
+   "summary": "Sorrow Vale er en region i Nordheim hvor den guddommelige manta ray Nayaru forlod gruppen og efterlod Crater shrine of Mielikki.",
+   "url": "",
+   "sessions": [
+    31
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true
+  },
+  "crater-shrine": {
+   "name": "Crater shrine of Mielikki",
+   "kind": "helligt",
+   "map": "nordheim",
+   "at": [
+    1040,
+    545
+   ],
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [
+    "Nayaru's Blessing"
+   ],
+   "summary": "Crater shrine of Mielikki er en krater-helligdom efterladt af den guddommelige manta ray Nayaru i Sorrow Vale. Det er et helligt sted dedikeret til Mielikki.",
+   "url": "",
+   "sessions": [
+    29,
+    30,
+    31
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true
+  },
+  "vardestjernen": {
+   "name": "Vardestjernen",
+   "kind": "hule",
+   "map": "nordheim",
+   "at": [
+    1330,
+    445
+   ],
+   "approx": true,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "Nord-øst for Sorrow Vale – en dags rejse efter mantaen.",
+   "aliases": [
+    "Varde stjernen"
+   ],
+   "summary": "Vardestjernen er en oldgammel underjordisk troldmandsfacilitet/bunker, tilhørende Azur Ordenen. Adgang sker via et magisk \"hus\" med en platform af 4 krystalpyloner der synker ned under jorden.",
+   "url": "",
+   "sessions": [
+    32,
+    33,
+    34,
+    39,
+    40,
+    43
+   ],
+   "people": [],
+   "factions": [
+    "Draconkin"
+   ],
+   "visited": true
+  },
+  "port-drakkan": {
+   "name": "Port Drakkan",
+   "kind": "havn",
+   "map": "nordheim",
+   "at": [
+    1907,
+    318
+   ],
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Port Drakkan er en havn på østkysten af Nordheim. Det er et tilflugtssted for alle slags folk - skurke, snigskytte, pirater, lejesoldater og andre opportunistiske folk.",
+   "url": "",
+   "sessions": [
+    40,
+    42
+   ],
+   "people": [
+    "Kaelen"
+   ],
+   "factions": [
+    "Aethor Flåden"
+   ],
+   "visited": true
+  },
+  "vinterspiret": {
+   "name": "Vinterspiret",
+   "kind": "taarn",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "port-drakkan",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Vinterspiret er et 36 meter højt tårn beliggende i Port Drakkan på østkysten af Nordheim. Tårnet var hjemsted for Aethor Flåden - en flådeorganisation der brugte det som skole for flådefolk og officerer. Tårnet var fyldt med skyggevæsener kontrolleret af en skyggengel, men er nu renset.",
+   "url": "",
+   "sessions": [
+    42
+   ],
+   "people": [],
+   "factions": [
+    "Aethor Flåden",
+    "Astley Avengers"
+   ],
+   "visited": true
+  },
+  "port-alexander": {
+   "name": "Port Alexander",
+   "kind": "havn",
+   "map": "nordheim",
+   "at": [
+    1812,
+    752
+   ],
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Port Alexander er en havn/by der blev afsøgt af gruppen da Evelyn Adair blev taget til fange af draconians (Tarsakh 21).",
+   "url": "",
+   "sessions": [
+    43
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true
+  },
+  "grondalen": {
+   "name": "Grøndalen",
+   "kind": "vildmark",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": null,
+   "region": "nordheim",
+   "offmap": null,
+   "where": "Et sted i Nordheim – ikke tegnet på kortet.",
+   "aliases": [],
+   "summary": "Dal i Nordheim, hvor timeglasset sendte gruppen hen. En blå drage og den korrumperede nekromantiker Malgazar havde forpestet dalen; efter sejren blev naturen spolet tilbage.",
+   "url": "",
+   "sessions": [
+    13,
+    14,
+    15,
+    16
+   ],
+   "people": [
+    "Håkan",
+    "Seiran"
+   ],
+   "factions": [
+    "Mielikki tilhængere"
+   ],
+   "visited": true
+  },
+  "vinterskov": {
+   "name": "Vinterskov",
+   "kind": "by",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "grondalen",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Nordisk tømmerby i Grøndalen. Kroværten Håkan tegnede et kort over dalen i jorden på disken.",
+   "url": "",
+   "sessions": [
+    13
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true
+  },
+  "troldmand-ruin": {
+   "name": "Troldmandstårn-ruinen",
+   "kind": "taarn",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": null,
+   "region": "nordheim",
+   "offmap": null,
+   "where": "Et sted i nordlandet.",
+   "aliases": [],
+   "summary": "Troldmands tårn ruin i nordlandet er ruinerne af et gammelt troldmandstårn beliggende i nordlandet. Lady De'evers har givet gruppen en opgave relateret til dette sted.",
+   "url": "",
+   "sessions": [],
+   "people": [
+    "Lady De'evers"
+   ],
+   "factions": [
+    "House De'Evers"
+   ],
+   "visited": false
+  },
+  "anaksa": {
+   "name": "Anaksa",
+   "kind": "by",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": "east",
+   "where": "",
+   "aliases": [],
+   "summary": "Anaksa er et kongerige i verden, hjemsted for Queen Neferata og hovedkvarter for The Queensguard. Det er centrum for ordenens aktiviteter og et vigtigt politisk og religiøst centrum.",
+   "url": "",
+   "sessions": [],
+   "people": [
+    "Dronningen af Anaksa",
+    "Queen Neferata"
+   ],
+   "factions": [
+    "blå nomader",
+    "Hands of the Queen",
+    "Highguard Chapterhouse",
+    "House Magdova",
+    "Knights of the River",
+    "Queensguard Ambassadører",
+    "The Queensguard"
+   ],
+   "visited": false
+  },
+  "deltafloden": {
+   "name": "Deltafloden",
+   "kind": "helligt",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "anaksa",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Deltafloden er en hellig flod i Anaksa. Det var her Dronning Neferata badede og blev transformeret til en avatar af Paladine/Bahamut og Mishakal.",
+   "url": "",
+   "sessions": [],
+   "people": [
+    "Queen Neferata"
+   ],
+   "factions": [
+    "The Queensguard"
+   ],
+   "visited": false
+  },
+  "sistana": {
+   "name": "Sistana",
+   "kind": "vildmark",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": "east",
+   "where": "",
+   "aliases": [],
+   "summary": "Sistana (også kaldet Sestenua) er en region i \"det forbudte øst\", del af samme område som Erukana, Jullan og Anaksa. Det er et kontaktpunkt for Waning Moon.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [
+    "blå nomader"
+   ],
+   "visited": false
+  },
+  "orkenen": {
+   "name": "Den endeløse ørken",
+   "kind": "vildmark",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": "east",
+   "where": "",
+   "aliases": [],
+   "summary": "Den endeløse ørken er en stor ørken øst for Erukana. Det er et geografisk vartegn der adskiller Erukana fra de østlige riger.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [
+    "The Queensguard"
+   ],
+   "visited": false
+  },
+  "kolitan": {
+   "name": "Kolitan",
+   "kind": "by",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": "east",
+   "where": "I Julland.",
+   "aliases": [],
+   "summary": "Kolitan er ikke en person, men en by i Julland. Det er Illyria Starmantles hjemby. Denne fil er fejlplaceret under People; det er en lokation.",
+   "url": "",
+   "sessions": [],
+   "people": [
+    "Assana Lemieux",
+    "Fafnir"
+   ],
+   "factions": [
+    "Jullan trade delegation"
+   ],
+   "visited": false
+  },
+  "landet-mod-nord": {
+   "name": "Landet mod nord over havet",
+   "kind": "vildmark",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": "other",
+   "where": "",
+   "aliases": [],
+   "summary": "Landet mod nord over havet er et mystisk land på den anden side af havet nord for Erukana. Det nævnes i forbindelse med Knight Ab-errants og er potentielt deres oprindelse.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "zezstanie": {
+   "name": "Zezstanie",
+   "kind": "by",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": "other",
+   "where": "",
+   "aliases": [],
+   "summary": "Zezstanie er et sted (muligvis en region eller by) hvor Frostheim Klanen kommer fra. Det er hjemsted for dværge med mørkeblå ansigtstegn som klanens kendetegn.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [
+    "Blodrosen",
+    "Frostheim Klanen",
+    "Ridderne af Blodrosen"
+   ],
+   "visited": false
+  },
+  "angramar": {
+   "name": "Angramar",
+   "kind": "hule",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": "other",
+   "where": "",
+   "aliases": [],
+   "summary": "Angramar er hjemsted for tempelminerne, hvorfra det sorte metal (sort metal ingots) er blevet hentet. Stedet er associeret med en tempel eller helligdom.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "mistport": {
+   "name": "Mistport",
+   "kind": "havn",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": "other",
+   "where": "",
+   "aliases": [],
+   "summary": "Mistport er en by eller havn nævnt i forbindelse med folk der bar Bahamuts symbol. Fire folk fra Mistport besøgte området for ca. et år siden.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
+  "stormens-ed": {
+   "name": "Stormens Ed",
+   "kind": "havn",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": "other",
+   "where": "Et helligt skib i 'himmerige' – nået gennem en portal.",
+   "aliases": [],
+   "summary": "Stormens Ed er et helligt skib tilhørende Tempus-tilhængerne, ført af Zarafine. Skibet er forbandet til evig kamp med pirater indtil et stjålet Tempus-artefakt er taget tilbage.",
+   "url": "",
+   "sessions": [
+    22,
+    23
+   ],
+   "people": [
+    "Zarafine"
+   ],
+   "factions": [
+    "Tempus tilhængere"
+   ],
+   "visited": true
+  }
+ },
+ "regions": {
+  "botreaux": {
+   "name": "Hertugdømmet Botreaux",
+   "map": "erukana",
+   "poly": [
+    [
+     1760,
+     880
+    ],
+    [
+     2000,
+     760
+    ],
+    [
+     2330,
+     650
+    ],
+    [
+     2700,
+     720
+    ],
+    [
+     3040,
+     690
+    ],
+    [
+     3150,
+     900
+    ],
+    [
+     3240,
+     1100
+    ],
+    [
+     3230,
+     1440
+    ],
+    [
+     3000,
+     1440
+    ],
+    [
+     2850,
+     1400
+    ],
+    [
+     2500,
+     1440
+    ],
+    [
+     2200,
+     1515
+    ],
+    [
+     1950,
+     1500
+    ],
+    [
+     1760,
+     1440
+    ],
+    [
+     1700,
+     1150
+    ]
+   ],
+   "label": [
+    2280,
+    890
+   ],
+   "summary": "Botreaux hertugdømmet fylder midten af Erukana og hen til den østlige kystlinje hvor hovedstaden af kongeriget befinder sig. Grundet sin lokation, er Botreaux et naturligt mødested for en stor den af den handel som foretages i riget. Ca.",
+   "url": "",
+   "people": [
+    "Hertug Robert De Ros"
+   ],
+   "factions": []
+  },
+  "valence": {
+   "name": "Baroniet Valence",
+   "map": "erukana",
+   "poly": [
+    [
+     2330,
+     650
+    ],
+    [
+     2380,
+     230
+    ],
+    [
+     2560,
+     160
+    ],
+    [
+     2760,
+     230
+    ],
+    [
+     2950,
+     370
+    ],
+    [
+     3100,
+     400
+    ],
+    [
+     3165,
+     480
+    ],
+    [
+     3050,
+     690
+    ],
+    [
+     2900,
+     720
+    ],
+    [
+     2700,
+     720
+    ],
+    [
+     2500,
+     670
+    ]
+   ],
+   "label": [
+    2720,
+    250
+   ],
+   "summary": "Baroniet er forholdsvis nyt, blot en generation gammel og hørte på et tidspunkt til Botreaux. Men en egenrådig købmand fra Baroniet Blackmere forsøgte at overtage området. Han blev slået tilbage af Knight Lord Berend de Valencia, en ridder af Botreaux court.",
+   "url": "",
+   "people": [
+    "Knight Lord Berend de Valencia",
+    "Lord Helmuth de Valencia",
+    "Lord Valencia"
+   ],
+   "factions": [
+    "The Silver Drake guild"
+   ]
+  },
+  "blackmere": {
+   "name": "Baroniet Blackmere",
+   "map": "erukana",
+   "poly": [
+    [
+     2950,
+     370
+    ],
+    [
+     3000,
+     180
+    ],
+    [
+     3200,
+     120
+    ],
+    [
+     3500,
+     180
+    ],
+    [
+     3800,
+     330
+    ],
+    [
+     4000,
+     480
+    ],
+    [
+     3900,
+     520
+    ],
+    [
+     3500,
+     450
+    ],
+    [
+     3300,
+     450
+    ],
+    [
+     3165,
+     480
+    ],
+    [
+     3100,
+     400
+    ]
+   ],
+   "label": [
+    3450,
+    210
+   ],
+   "summary": "Blackmere baroniet er kendt for riget største handelsflåde som delvist sejler ud fra Vigil’s Rock og Highhome. Et landområde som holder sig uden for resten af rigets interne magtkampe og i stedet har deres øjne fæstnet mod resten af Ceynor. Det som holder baroniet sikkert, er den magt som en handelsnation giver dem.",
+   "url": "",
+   "people": [
+    "Baronesse Constance Silkenfall",
+    "Vaelon Dunmere"
+   ],
+   "factions": []
+  },
+  "eresby": {
+   "name": "Baroniet Eresby",
+   "map": "erukana",
+   "poly": [
+    [
+     2080,
+     1606
+    ],
+    [
+     2300,
+     1560
+    ],
+    [
+     2500,
+     1450
+    ],
+    [
+     2850,
+     1400
+    ],
+    [
+     3230,
+     1450
+    ],
+    [
+     3260,
+     1850
+    ],
+    [
+     2950,
+     2000
+    ],
+    [
+     2740,
+     2310
+    ],
+    [
+     2400,
+     2300
+    ],
+    [
+     2248,
+     2286
+    ],
+    [
+     2110,
+     2150
+    ],
+    [
+     2060,
+     1900
+    ],
+    [
+     2050,
+     1700
+    ]
+   ],
+   "label": [
+    2320,
+    1775
+   ],
+   "summary": "Eresby er baroniet som grænser op til passet mod syd og det største kontinent i hele Ceynor. Eresby nyder godt af handelskaravaner som kommer igennem, i deres rejse mod Wolfenburg. I sig selv har Eresby ikke meget at byde på ud over frodige vidder hvor landbrug og bomuld udvindes.",
+   "url": "",
+   "people": [
+    "den ældre veteran",
+    "Lord Adelston Magdova",
+    "Vaelon Dunmere"
+   ],
+   "factions": [
+    "Astley Avengers",
+    "Court of Baron Zhaarko",
+    "Draconkin",
+    "Familien Narsi",
+    "House Magdova"
+   ]
+  },
+  "mowbray": {
+   "name": "Baroniet Mowbray",
+   "map": "erukana",
+   "poly": [
+    [
+     1425,
+     1760
+    ],
+    [
+     1500,
+     1660
+    ],
+    [
+     1650,
+     1630
+    ],
+    [
+     1850,
+     1600
+    ],
+    [
+     1960,
+     1500
+    ],
+    [
+     2080,
+     1606
+    ],
+    [
+     2050,
+     1700
+    ],
+    [
+     2060,
+     1900
+    ],
+    [
+     2090,
+     2050
+    ],
+    [
+     2110,
+     2150
+    ],
+    [
+     2150,
+     2260
+    ],
+    [
+     1900,
+     2280
+    ],
+    [
+     1500,
+     2300
+    ],
+    [
+     1300,
+     2150
+    ],
+    [
+     1250,
+     1900
+    ]
+   ],
+   "label": [
+    1650,
+    1920
+   ],
+   "summary": "Mowbray er en af to baronier kendt for deres frodige marker og vidder. De er kendetegnet ved deres landbrug og deres modige soldater og våben og rustninger. Landet i sig selv er ikke specielt interessant, men det grænser op til bjergene i vest og elver riget i nord.",
+   "url": "",
+   "people": [
+    "Merryn Foehammer",
+    "Qenes Markmoon",
+    "Vaelon Dunmere"
+   ],
+   "factions": []
+  },
+  "welles": {
+   "name": "Baroniet Welles",
+   "map": "erukana",
+   "poly": [
+    [
+     2197,
+     2300
+    ],
+    [
+     2740,
+     2310
+    ],
+    [
+     2850,
+     2400
+    ],
+    [
+     2800,
+     2650
+    ],
+    [
+     2700,
+     2800
+    ],
+    [
+     2560,
+     2940
+    ],
+    [
+     2339,
+     2981
+    ],
+    [
+     2258,
+     2859
+    ],
+    [
+     2177,
+     2777
+    ],
+    [
+     2136,
+     2605
+    ],
+    [
+     2197,
+     2412
+    ]
+   ],
+   "label": [
+    2290,
+    2510
+   ],
+   "summary": "Welles er et lille baroni og holder sig primært for sig selv. Skønt de hører til Erukana og på ingen måde afviser det, så holder de sig afsides. Et mistroisk og hårdtarbejdende folkefærd, som værdsætter deres evne til at klare sig selv.",
+   "url": "",
+   "people": [
+    "Baronesse Avalande",
+    "Vaelon Dunmere"
+   ],
+   "factions": [
+    "Baronessens råd",
+    "Court of Baronesse Avalande",
+    "House Magdova"
+   ]
+  },
+  "nordheim": {
+   "name": "Nordheim",
+   "map": "nordheim",
+   "poly": null,
+   "label": null,
+   "summary": "Nordlandet over havet nord for Erukana. Hjem for nordiske klaner og stammer som Frostløberne, Bjergkloen, Sortvingen og Flodhviskerne – og for de ukendte stammer som Langfods-stammen og Knoglefolket.",
+   "url": "",
+   "people": [],
+   "factions": [
+    "Aethor Flåden",
+    "Frost Giant Clan"
+   ]
+  }
+ },
+ "sessions": [
+  {
+   "num": 1,
+   "title": "Bagholdet og Dark Gem-hulerne",
+   "places": [
+    "dark-gem"
+   ],
+   "url": "",
+   "date": "08.07.2023",
+   "gm": "Nissen"
+  },
+  {
+   "num": 2,
+   "title": "Uge på The Bronze Keg",
+   "places": [
+    "kegville"
+   ],
+   "url": "",
+   "date": "13.07.2023",
+   "gm": "Nissen"
+  },
+  {
+   "num": 3,
+   "title": "Rejsen til Mistville – de blå nomader",
+   "places": [
+    "kegville",
+    "mistville"
+   ],
+   "url": "",
+   "date": "30.09.2023",
+   "gm": "Nissen"
+  },
+  {
+   "num": 4,
+   "title": "Varulvens huler",
+   "places": [
+    "dvalin"
+   ],
+   "url": "",
+   "date": "09.10.2023",
+   "gm": "Nissen"
+  },
+  {
+   "num": 5,
+   "title": "Mistvilles udøde",
+   "places": [
+    "mistville"
+   ],
+   "url": "",
+   "date": "28.10.2023",
+   "gm": "Nissen"
+  },
+  {
+   "num": 6,
+   "title": "Mod Astley – to roseriddere",
+   "places": [
+    "astley"
+   ],
+   "url": "",
+   "date": "30.10.2023",
+   "gm": "Nissen"
+  },
+  {
+   "num": 7,
+   "title": "Fanget i Astley",
+   "places": [
+    "astley",
+    "kongens-hvil"
+   ],
+   "url": "",
+   "date": "17.02.2024",
+   "gm": "Nissen"
+  },
+  {
+   "num": 8,
+   "title": "Redningen og Tidsrummet",
+   "places": [],
+   "url": "",
+   "date": "16.03.2024",
+   "gm": "Nissen"
+  },
+  {
+   "num": 9,
+   "title": "Dusøren på Feywood-bæstet",
+   "places": [
+    "svinestien",
+    "paladine-bibliotek",
+    "feywood"
+   ],
+   "url": "",
+   "date": "15.05.2024",
+   "gm": "Nissen"
+  },
+  {
+   "num": 10,
+   "title": "Sumpen og Blackspear-ruinerne",
+   "places": [
+    "feywood"
+   ],
+   "url": "",
+   "date": "22.05.2024",
+   "gm": "Nissen"
+  },
+  {
+   "num": 11,
+   "title": "Feywoods korruption",
+   "places": [
+    "feywood"
+   ],
+   "url": "",
+   "date": "13.06.2024",
+   "gm": "Nissen"
+  },
+  {
+   "num": 12,
+   "title": "Downtime i Astley",
+   "places": [
+    "astley",
+    "soltraeet"
+   ],
+   "url": "",
+   "date": "20.06.2024",
+   "gm": "Nissen"
+  },
+  {
+   "num": 13,
+   "title": "Snestorm i Grøndalen",
+   "places": [
+    "grondalen",
+    "vinterskov"
+   ],
+   "url": "",
+   "date": "22.06.2024",
+   "gm": "Steffen"
+  },
+  {
+   "num": 14,
+   "title": "Graven i Grøndalen",
+   "places": [
+    "grondalen"
+   ],
+   "url": "",
+   "date": "19.06.2024",
+   "gm": "Steffen"
+  },
+  {
+   "num": 15,
+   "title": "Alterrummet",
+   "places": [
+    "grondalen"
+   ],
+   "url": "",
+   "date": "11.07.2024",
+   "gm": "Steffen"
+  },
+  {
+   "num": 16,
+   "title": "Malgazar falder",
+   "places": [
+    "grondalen",
+    "astley"
+   ],
+   "url": "",
+   "date": "16.07.2024",
+   "gm": "Steffen"
+  },
+  {
+   "num": 17,
+   "title": "Tilbage i Astley",
+   "places": [
+    "astley",
+    "soltraeet"
+   ],
+   "url": "",
+   "date": "25.06.2024",
+   "gm": "Nissen"
+  },
+  {
+   "num": 18,
+   "title": "Den brækkede knogle",
+   "places": [
+    "den-braekkede-knogle"
+   ],
+   "url": "",
+   "date": "08.08.2024",
+   "gm": "Nissen"
+  },
+  {
+   "num": 19,
+   "title": "Baghold på Alistair-palæet",
+   "places": [
+    "astley"
+   ],
+   "url": "",
+   "date": "14.08.2024",
+   "gm": "Nissen"
+  },
+  {
+   "num": 20,
+   "title": "Vinterfesten",
+   "places": [
+    "astley"
+   ],
+   "url": "",
+   "date": "11.01.2025",
+   "gm": "Nissen"
+  },
+  {
+   "num": 21,
+   "title": "Winstons ridderslag – varehus 13",
+   "places": [
+    "astley"
+   ],
+   "url": "",
+   "date": "22.02.2025",
+   "gm": "Steffen"
+  },
+  {
+   "num": 22,
+   "title": "Slaget i himmerige",
+   "places": [
+    "stormens-ed"
+   ],
+   "url": "",
+   "date": "27.03.2025",
+   "gm": "Steffen"
+  },
+  {
+   "num": 23,
+   "title": "Stormens Ed",
+   "places": [
+    "stormens-ed"
+   ],
+   "url": "",
+   "date": "31.03.2025",
+   "gm": "Steffen"
+  },
+  {
+   "num": 24,
+   "title": "Pirat-kaptajnen og ild-elementalen",
+   "places": [],
+   "url": "",
+   "date": "12.04.2024",
+   "gm": "Steffen"
+  },
+  {
+   "num": 25,
+   "title": "Spøgelsesbyen",
+   "places": [],
+   "url": "",
+   "date": "23.04.2025",
+   "gm": "Steffen"
+  },
+  {
+   "num": 26,
+   "title": "Mod StormBjerget",
+   "places": [
+    "stormbjerget",
+    "knoglestammens-huler"
+   ],
+   "url": "",
+   "date": "31.05.2025",
+   "gm": "Nissen"
+  },
+  {
+   "num": 27,
+   "title": "Knoglestammen",
+   "places": [
+    "knoglestammens-huler"
+   ],
+   "url": "",
+   "date": "21.06.2025",
+   "gm": "Nissen"
+  },
+  {
+   "num": 28,
+   "title": "Blod i sneen",
+   "places": [
+    "knoglestammens-huler"
+   ],
+   "url": "",
+   "date": "05.07.2025",
+   "gm": "Steffen"
+  },
+  {
+   "num": 29,
+   "title": "Windbreaker waystation",
+   "places": [
+    "crater-shrine"
+   ],
+   "url": "",
+   "date": "14.07.2025",
+   "gm": "Steffen"
+  },
+  {
+   "num": 30,
+   "title": "Earthshaker-slaget",
+   "places": [
+    "crater-shrine"
+   ],
+   "url": "",
+   "date": "28.07.2025",
+   "gm": "Steffen"
+  },
+  {
+   "num": 31,
+   "title": "Mantaens gave",
+   "places": [
+    "crater-shrine",
+    "sorrow-vale"
+   ],
+   "url": "",
+   "date": "11.08.2025",
+   "gm": "Steffen"
+  },
+  {
+   "num": 32,
+   "title": "Efter orkerne",
+   "places": [
+    "vardestjernen"
+   ],
+   "url": "",
+   "date": "13.09.2025",
+   "gm": "Steffen"
+  },
+  {
+   "num": 33,
+   "title": "Frostkæmpen i Varde stjernen",
+   "places": [
+    "vardestjernen"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "Steffen"
+  },
+  {
+   "num": 34,
+   "title": "Staven",
+   "places": [
+    "vardestjernen"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "Steffen"
+  },
+  {
+   "num": 35,
+   "title": "Shieldheim",
+   "places": [],
+   "url": "",
+   "date": "25.10.2025",
+   "gm": "Steffen"
+  },
+  {
+   "num": 36,
+   "title": "Helvedesmaskinen",
+   "places": [],
+   "url": "",
+   "date": "",
+   "gm": "Steffen"
+  },
+  {
+   "num": 37,
+   "title": "Tempus' lynkile",
+   "places": [],
+   "url": "",
+   "date": "26.11.2025",
+   "gm": "Steffen"
+  },
+  {
+   "num": 38,
+   "title": "Delegationen til Lord Magdova",
+   "places": [
+    "stirling"
+   ],
+   "url": "",
+   "date": "06.12.2025",
+   "gm": "Nissen"
+  },
+  {
+   "num": 39,
+   "title": "Tilbage til Vardestjernen",
+   "places": [
+    "vardestjernen"
+   ],
+   "url": "",
+   "date": "15.12.2025",
+   "gm": "Steffen"
+  },
+  {
+   "num": 40,
+   "title": "Vardestjernens dybder",
+   "places": [
+    "vardestjernen",
+    "port-drakkan"
+   ],
+   "url": "",
+   "date": "17.01.2026",
+   "gm": "Steffen"
+  },
+  {
+   "num": 41,
+   "title": "Besøg i Soltræet",
+   "places": [
+    "soltraeet",
+    "visdommens-kammer",
+    "krypten"
+   ],
+   "url": "",
+   "date": "10.02.2026",
+   "gm": "Nissen"
+  },
+  {
+   "num": 42,
+   "title": "ShipJacking",
+   "places": [
+    "port-drakkan",
+    "vinterspiret"
+   ],
+   "url": "",
+   "date": "21.02.2026",
+   "gm": "Nissen"
+  },
+  {
+   "num": 43,
+   "title": "Sejlads i skyerne",
+   "places": [
+    "vardestjernen",
+    "port-alexander",
+    "stampenborg"
+   ],
+   "url": "",
+   "date": "28.03.2026",
+   "gm": "Nissen"
+  }
+ ]
+}
