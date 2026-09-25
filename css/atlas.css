@@ -314,6 +314,24 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .badge.stance-neutral { background: var(--neutral); border-color: var(--neutral); color: var(--parchment); }
 .badge.stance-enemy { background: var(--enemy); border-color: var(--enemy); color: var(--parchment); }
 
+/* Faction banner: a small pennant in the faction's stance colour */
+.banner {
+  flex: none; display: inline-block; width: 22px; height: 30px; margin: 0 4px;
+  background: var(--unknown); clip-path: polygon(0 0, 100% 0, 100% 78%, 50% 100%, 0 78%);
+  box-shadow: inset 0 3px 0 rgba(255, 255, 255, 0.25);
+}
+.banner.big { width: 40px; height: 54px; margin: 0 8px; }
+.banner.stance-ally { background: var(--ally); }
+.banner.stance-neutral { background: var(--neutral); }
+.banner.stance-enemy { background: var(--enemy); }
+.influence-btn { margin-top: 10px; border: none; cursor: pointer; }
+.influence-line { stroke: var(--ink); stroke-width: 2; stroke-dasharray: 1 6; stroke-linecap: round; fill: none; opacity: 0.7; }
+.journey-strip button { position: relative; }
+.journey-strip button.featured::after {
+  content: ""; position: absolute; left: 50%; bottom: -5px; width: 6px; height: 6px; margin-left: -3px;
+  border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 1px var(--parchment);
+}
+
 /* ---------- Edit mode ---------- */
 .editbar {
   position: fixed; z-index: 1003; top: 12px; left: 50%; transform: translateX(-50%);

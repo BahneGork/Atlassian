@@ -69,6 +69,7 @@
       regions: L.layerGroup(),
       pins: L.layerGroup(),
       trail: L.layerGroup(),
+      influence: L.layerGroup(),
     };
   }
 
@@ -111,14 +112,14 @@
   }
 
   // Marker elements are recreated when a map is re-added, so their state lives here.
-  const pinState = { selected: null, here: null, seen: null, onlyVisited: false, editing: false };
+  const pinState = { selected: null, here: null, seen: null, lit: null, onlyVisited: false, editing: false };
   function applyPinState() {
     for (const [id, m] of Object.entries(markers)) {
       const e = m.getElement();
       if (!e) continue;
       e.classList.toggle("selected", id === pinState.selected);
       e.classList.toggle("current", !!pinState.here?.has(id));
-      e.classList.toggle("dim", !!pinState.seen && !pinState.seen.has(id));
+      e.classList.toggle("dim", (!!pinState.seen && !pinState.seen.has(id)) || (!!pinState.lit && !pinState.lit.has(id)));
       e.classList.toggle("hidden", pinState.onlyVisited && !places[id].visited);
       e.classList.toggle("moved", !!edits[id]);
       m.options.draggable = pinState.editing;
@@ -137,10 +138,10 @@
 
   function showMap(id, fit = true) {
     if (current !== id) {
-      if (current) for (const k of ["image", "regions", "pins", "trail"]) map.removeLayer(layers[current][k]);
+      if (current) for (const k of ["image", "regions", "pins", "trail", "influence"]) map.removeLayer(layers[current][k]);
       current = id;
       const lyr = layers[id];
-      for (const k of ["image", "regions", "pins", "trail"]) lyr[k].addTo(map);
+      for (const k of ["image", "regions", "pins", "trail", "influence"]) lyr[k].addTo(map);
       // Fit before setting limits, so the limits never trigger their own (animated) zoom.
       map.setMaxBounds(null);
       map.options.minZoom = -4;
@@ -200,6 +201,8 @@
   function closePanel() {
     panel.hidden = true;
     select(null);
+    clearInfluence();
+    markSessions([]);
     for (const r of Object.values(regionLayers)) r.getElement()?.classList.remove("selected");
   }
 
@@ -257,6 +260,9 @@
 
   // ---------- People ----------
   const STANCE = { ally: "Allieret", neutral: "Neutral", enemy: "Fjende", unknown: "Ukendt" };
+  const STATUS = { active: "aktiv", weakened: "svækket", defunct: "opløst", missing: "savnet", undead: "udød",
+    captured: "fanget", unknown: "ukendt" };
+  const statusText = (s) => STATUS[s] || s;
   // A person's place is a place id, or "region:<id>".
   const placeName = (ref) => (!ref ? "Ukendt opholdssted"
     : ref.startsWith("region:") ? regions[ref.slice(7)]?.name : places[ref]?.name) || "Ukendt opholdssted";
@@ -278,6 +284,61 @@
   const byName = (a, b) => people[a].name.localeCompare(people[b].name, "da");
   // All places inside a place (Soltræet and its chambers are inside Astley, …).
   const subtree = (id) => [id, ...children(id).flatMap(subtree)];
+
+  // ---------- Factions ----------
+  const FTYPE = { tribe: "stamme", "knightly-order": "ridderorden", clan: "klan", "noble-house": "adelshus",
+    "religious-order": "religiøs orden", "political-body": "politisk organ", "arcane-order": "arkan orden",
+    court: "hof", guild: "laug", family: "familie", organization: "organisation", military: "militær",
+    cult: "kult", "merchant-guild": "købmandslaug" };
+  const ftype = (t) => t.split(/,\s*/).map((x) => FTYPE[x] || x.replace(/-/g, " ")).join(", ");
+  const banner = (fid, big = false) => el("span", { class: `banner stance-${factions[fid].stance}${big ? " big" : ""}`, "aria-hidden": "true" });
+  const byFaction = (a, b) => factions[a].name.localeCompare(factions[b].name, "da");
+  const factionRow = (fid) => {
+    const f = factions[fid];
+    return el("li", {}, el("a", { class: "person-row", href: `#note/${fid}` }, banner(fid),
+      el("span", {}, el("b", {}, f.name),
+        el("small", {}, [ftype(f.type), f.seat ? placeName(f.seat) : null].filter(Boolean).join(" · ")))));
+  };
+  function factionSection(ids) {
+    ids = [...new Set(ids)].filter((k) => factions[k]).sort(byFaction);
+    if (!ids.length) return null;
+    const list = el("ul", { class: "people-list" }, ids.slice(0, 10).map(factionRow));
+    const more = ids.length > 10
+      ? el("button", { type: "button", class: "more", onclick: (e) => { list.append(...ids.slice(10).map(factionRow)); e.target.remove(); } },
+          `Vis alle ${ids.length}`)
+      : null;
+    return [el("h3", {}, `Factions (${ids.length})`), list, more];
+  }
+  // Factions present at a set of place refs: seated there, members living there, or named in the place's note.
+  const factionsAt = (refs, linked) => Object.keys(factions).filter((fid) => refs.includes(factions[fid].seat)
+    || factions[fid].members.some((pid) => refs.includes(people[pid]?.place))).concat(linked);
+
+  // Sphere of influence: the seat, where members live and places that name the faction, joined by ink lines.
+  function clearInfluence() {
+    for (const lyr of Object.values(layers)) lyr.influence.clearLayers();
+    if (pinState.lit) { pinState.lit = null; applyPinState(); }
+  }
+  function showInfluence(fid) {
+    stopPlay(); endJourney();
+    clearInfluence();
+    const f = factions[fid];
+    const refs = [f.seat, ...f.members.map((pid) => people[pid]?.place),
+      ...Object.keys(places).filter((k) => places[k].factions.some(([, id]) => id === fid))].filter(Boolean);
+    const pins = [...new Set(refs.filter((r) => !r.startsWith("region:")).map(anchor).filter(Boolean))];
+    if (!pins.length) return false;
+    const seat = f.seat && !f.seat.startsWith("region:") ? anchor(f.seat) : null;
+    const target = seat ? places[seat].map
+      : Object.keys(maps).sort((a, b) => pins.filter((k) => places[k].map === b).length - pins.filter((k) => places[k].map === a).length)[0];
+    showMap(target, false);
+    const here = pins.filter((k) => places[k].map === target);
+    if (seat) for (const k of here) if (k !== seat)
+      L.polyline([ll(places[seat].at), ll(places[k].at)], { className: "influence-line", interactive: false }).addTo(layers[target].influence);
+    pinState.lit = new Set(pins);
+    select(seat);
+    flyWithin(L.latLngBounds(here.map((k) => ll(places[k].at))), { maxZoom: -0.5, duration: 0.8,
+      paddingTopLeft: [120, 120], paddingBottomRight: window.innerWidth > 720 ? [660, 120] : [40, Math.round(window.innerHeight * 0.62)] });
+    return true;
+  }
 
   // People list for a place/region panel: residents first, then people whose notes mention it.
   function peopleSection(residents, mentioned) {
@@ -375,7 +436,7 @@
       placeList("Steder her", kids),
       peopleSection(Object.keys(people).filter((k) => subtree(id).includes(people[k].place)),
         subtree(id).flatMap((k) => places[k].people.map(([, pid]) => pid))),
-      chips("Factions", p.factions),
+      factionSection(factionsAt(subtree(id), subtree(id).flatMap((k) => places[k].factions.map(([, fid]) => fid)))),
       noteLink(p.noteId, p.url),
     );
     focusPin(id);
@@ -395,7 +456,8 @@
       peopleSection(Object.keys(people).filter((k) => people[k].place === `region:${id}`
         || (places[people[k].place] && places[anchor(people[k].place) || people[k].place]?.region === id)),
         r.people.map(([, pid]) => pid)),
-      chips("Factions", r.factions),
+      factionSection(factionsAt([`region:${id}`, ...Object.keys(places).filter((k) => places[k].region === id).flatMap(subtree)],
+        r.factions.map(([, fid]) => fid))),
       noteLink(r.noteId, r.url),
     );
     select(null);
@@ -491,6 +553,14 @@
   let step = -1; // index into sessions
   let timer = null;
   const sessionByNum = (num) => sessions.find((s) => String(s.num) === String(num));
+  // Gold dots on the timeline for the sessions of the person/faction being read.
+  function markSessions(nums) {
+    const set = new Set(nums.map(String));
+    [...strip.children].forEach((li, i) => li.firstChild.classList.toggle("featured", set.has(String(sessions[i].num))));
+    // Bring the first dot into view without scrolling the page.
+    const first = strip.querySelector(".featured");
+    if (first && !jBody.hidden) strip.scrollTo({ left: first.offsetLeft - 40, behavior: "smooth" });
+  }
 
   const sessionMap = (s) => s.places.map(mapOf).find(Boolean) || null;
   for (const s of sessions) {
@@ -745,7 +815,7 @@
       el("div", {},
         el("div", { class: "badges" },
           el("span", { class: `badge stance-${person.stance}` }, STANCE[person.stance]),
-          person.dead ? el("span", { class: "badge" }, "Død †") : person.status ? el("span", { class: "badge" }, person.status) : null),
+          person.dead ? el("span", { class: "badge" }, "Død †") : person.status ? el("span", { class: "badge" }, statusText(person.status)) : null),
         el("p", { class: "person-facts" }, [person.race, person.social, person.role].filter(Boolean).join(" · ") || null),
         el("p", { class: "person-facts" }, "Opholdssted: ",
           person.place ? el("a", { href: `#${placeRoute(person.place)}` }, placeName(person.place)) : "ukendt"),
@@ -753,6 +823,35 @@
           person.factions.flatMap((f, i) => [i ? ", " : null, el("a", { href: `#note/${f}` }, factions[f].name)])) : null,
         person.sessions.length ? el("div", { class: "chips" }, person.sessions.map((num) =>
           el("a", { class: "session-link", href: `#session/${num}/laes` }, `Session ${num}`))) : null)) : null;
+
+    const faction = factions[id];
+    let influenceBtn = null;
+    if (faction) {
+      influenceBtn = el("button", { type: "button", class: "note-link influence-btn", onclick: () => {
+        if (pinState.lit) { clearInfluence(); select(null); influenceBtn.textContent = "Vis indflydelse på kortet"; }
+        else if (showInfluence(id)) influenceBtn.textContent = "Skjul indflydelse";
+        else influenceBtn.textContent = "Ingen kendte steder";
+      } }, "Vis indflydelse på kortet");
+    }
+    const members = faction ? [...faction.members].sort(byName) : [];
+    const memberList = el("ul", { class: "people-list" }, members.slice(0, 8).map((k) => personRow(k, true)));
+    const fcard = faction ? el("div", { class: "person-card" },
+      banner(id, true),
+      el("div", {},
+        el("div", { class: "badges" },
+          el("span", { class: `badge stance-${faction.stance}` }, STANCE[faction.stance]),
+          faction.status && faction.status !== "unknown" ? el("span", { class: "badge" }, statusText(faction.status)) : null),
+        faction.type ? el("p", { class: "person-facts" }, ftype(faction.type)) : null,
+        faction.seat ? el("p", { class: "person-facts" }, "Sæde: ", el("a", { href: `#${placeRoute(faction.seat)}` }, placeName(faction.seat))) : null,
+        faction.leader.length ? el("p", { class: "person-facts" }, "Leder: ",
+          faction.leader.flatMap((k, i) => [i ? ", " : null, el("a", { href: `#note/${k}` }, people[k]?.name || k)])) : null,
+        faction.sessions.length ? el("div", { class: "chips" }, faction.sessions.map((num) =>
+          el("a", { class: "session-link", href: `#session/${num}/laes` }, `Session ${num}`))) : null,
+        influenceBtn)) : null;
+    const memberSection = members.length ? [el("h3", {}, `Medlemmer (${members.length})`), memberList,
+      members.length > 8 ? el("button", { type: "button", class: "more",
+        onclick: (e) => { memberList.append(...members.slice(8).map((k) => personRow(k, true))); e.target.remove(); } }, `Vis alle ${members.length}`) : null] : null;
+    markSessions(person?.sessions || faction?.sessions || []);
 
     const text = el("div", { class: "note-md" });
     text.innerHTML = marked.parse(n.md);
@@ -763,6 +862,8 @@
       el("p", { class: "kicker" }, n.group === "Sessioner" ? "Sessionslog" : n.group),
       el("h2", {}, s ? `Session ${s.num}: ${s.title}` : n.title + (person?.dead ? " †" : "")),
       card,
+      fcard,
+      memberSection,
       el("div", { class: "note-actions" },
         placeKind ? el("a", { class: "note-link", href: `#${placeKind}/${placeId}` }, "Vis på kortet") : null,
         s && jBody.hidden ? el("a", { class: "note-link", href: `#session/${s.num}` }, "Vis i Rejsen") : null),
@@ -787,6 +888,7 @@
   }
   function route_(hash) {
     const [kind, id, sub] = decodeURIComponent(hash).split("/");
+    clearInfluence();
     if (kind !== "session" && !(kind === "note" && !jBody.hidden)) { stopPlay(); endJourney(); }
     if (kind === "sted" && places[id]) showPlace(id);
     else if (kind === "region" && regions[id]) showRegion(id);
