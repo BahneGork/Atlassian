@@ -147,7 +147,7 @@ PLACES = {
                       summary="Dal i Nordheim, hvor timeglasset sendte gruppen hen. En blå drage og "
                               "den korrumperede nekromantiker Malgazar havde forpestet dalen; efter "
                               "sejren blev naturen spolet tilbage."),
-    "vinterskov": dict(note="Vinterskov", parent="grondalen", kind="by",
+    "vinterskov": dict(note="Vinterskov", parent="grondalen", kind="by", aliases=["Vinterskov 1"],
                        summary="Nordisk tømmerby i Grøndalen. Kroværten Håkan tegnede et kort over dalen "
                                "i jorden på disken."),
     "troldmand-ruin": dict(note="Troldmands tårn ruin i nordlandet", region="nordheim", kind="taarn",
@@ -263,7 +263,7 @@ SESSIONS = [
 # Location notes that are overviews or misfiled, not places to put on a map.
 NOT_PLACES = {"Erukana", "ErukanaMap", "Locationsvisited", "Region - Bortholme - Erukana",
               "States and Baronies of Erukana", "Troldmands tårne", "Vinterskov - Grøndalen - Erukana.png", "skur",
-              "Nord Heim"}
+              "Nord Heim", "Erukana1"}
 
 # Entries in People/Factions notes that link to a place but are not people or factions there.
 NOT_PEOPLE = {"Mielikki", "Paladine", "Bahamut", "Morgion", "Orker", "Hydra", "Segreve", "Silverstream",

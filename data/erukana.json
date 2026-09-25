@@ -127,7 +127,8 @@
     "Skjoldungerne",
     "Waning Moon merchant house"
    ],
-   "visited": true
+   "visited": true,
+   "noteId": "astley"
   },
   "soltraeet": {
    "name": "Soltræet",
@@ -140,7 +141,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
-   "summary": "Soltræet (Sun Tree) er et helligt træ dedikeret til Mielikki i Astley. Det har en pond der passes af Maelar og Celedrial, samt Visdommens kammer hvor Lord Fern opholder sig. Silvara befinder sig også her.",
+   "summary": "Soltræet (Sun Tree) er et helligt træ dedikeret til Mielikki i Astley. Det har en pond der passes af Maelar og Celedrial, samt 02 Player/Erukana (Nissen)/Journal/Visdommens kammer hvor Lord Fern opholder sig. Silvara befinder sig også her.",
    "url": "",
    "sessions": [
     12,
@@ -160,7 +161,8 @@
    "factions": [
     "Mielikki tilhængere"
    ],
-   "visited": true
+   "visited": true,
+   "noteId": "soltraeet"
   },
   "visdommens-kammer": {
    "name": "Visdommens kammer",
@@ -185,7 +187,8 @@
     "Maelar"
    ],
    "factions": [],
-   "visited": true
+   "visited": true,
+   "noteId": "visdommens-kammer"
   },
   "krypten": {
    "name": "Krypten",
@@ -207,7 +210,8 @@
     "Clarabel Lancaster"
    ],
    "factions": [],
-   "visited": true
+   "visited": true,
+   "noteId": "krypten"
   },
   "hjertekammeret": {
    "name": "Hjertekammeret",
@@ -233,7 +237,8 @@
    "factions": [
     "Azur ordenen"
    ],
-   "visited": true
+   "visited": true,
+   "noteId": "hjertekammeret"
   },
   "paladine-templet": {
    "name": "paladine templet i Astley",
@@ -251,7 +256,8 @@
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": true
+   "visited": true,
+   "noteId": "paladine-templet-i-astley"
   },
   "paladine-bibliotek": {
    "name": "Paladine's bibliotek i Astley",
@@ -275,7 +281,8 @@
    "factions": [
     "Bahamuts Tilhængere"
    ],
-   "visited": true
+   "visited": true,
+   "noteId": "paladine-s-bibliotek-i-astley"
   },
   "svinestien": {
    "name": "Svinestien",
@@ -295,7 +302,8 @@
    ],
    "people": [],
    "factions": [],
-   "visited": true
+   "visited": true,
+   "noteId": "svinestien-bar-i-astley-shanty-town"
   },
   "kongens-hvil": {
    "name": "Kongens Hvil",
@@ -317,7 +325,8 @@
     "Tizzelspark"
    ],
    "factions": [],
-   "visited": true
+   "visited": true,
+   "noteId": "kongens-hvil"
   },
   "den-braekkede-knogle": {
    "name": "Den brækkede knogle",
@@ -337,7 +346,8 @@
    ],
    "people": [],
    "factions": [],
-   "visited": true
+   "visited": true,
+   "noteId": "den-braekkede-knogle"
   },
   "sangstrup": {
    "name": "Sangstrup-gården",
@@ -355,7 +365,8 @@
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "sangstrup-home"
   },
   "alistair": {
    "name": "Waning Moon merchant house",
@@ -375,7 +386,8 @@
    "factions": [
     "Sølvhånden"
    ],
-   "visited": false
+   "visited": true,
+   "noteId": "alistairs-handelsforretning"
   },
   "feywood": {
    "name": "Feywood",
@@ -409,7 +421,8 @@
     "Blodrosen",
     "Ridderne af Blodrosen"
    ],
-   "visited": true
+   "visited": true,
+   "noteId": "feywood"
   },
   "mausoleum": {
    "name": "Sir Seillings mausoleum",
@@ -439,7 +452,8 @@
     "Sir Winston"
    ],
    "factions": [],
-   "visited": true
+   "visited": true,
+   "noteId": "sir-seillings-mausoleum"
   },
   "stirling": {
    "name": "Stirling",
@@ -465,7 +479,8 @@
    ],
    "people": [],
    "factions": [],
-   "visited": true
+   "visited": true,
+   "noteId": "stirring"
   },
   "mistville": {
    "name": "Mistville",
@@ -505,7 +520,8 @@
     "Brakeshield familien",
     "House De'Evers"
    ],
-   "visited": true
+   "visited": true,
+   "noteId": "mistville"
   },
   "kroen-maanehvil": {
    "name": "Kroen Månehvil",
@@ -527,7 +543,8 @@
     "Qenes Markmoon"
    ],
    "factions": [],
-   "visited": false
+   "visited": true,
+   "noteId": "kroen-manehvil"
   },
   "dvalin": {
    "name": "Dvalins huler",
@@ -550,7 +567,8 @@
    ],
    "people": [],
    "factions": [],
-   "visited": true
+   "visited": true,
+   "noteId": "dvalin-werewolf-caves"
   },
   "gamle-tempel": {
    "name": "Det gamle tempel",
@@ -575,7 +593,8 @@
     "Ægrin"
    ],
    "factions": [],
-   "visited": true
+   "visited": true,
+   "noteId": "det-gamle-tempel-nordost-for-colville"
   },
   "colville": {
    "name": "Colville",
@@ -601,7 +620,8 @@
     "Baronessens råd",
     "Opal kulten"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "colville"
   },
   "southwatch": {
    "name": "Southwatch",
@@ -622,7 +642,8 @@
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "southwatch"
   },
   "castle-brienne": {
    "name": "Castle Brienne",
@@ -645,7 +666,8 @@
     "Assana Lemieux"
    ],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "castle-brienne"
   },
   "rode-pas": {
    "name": "Det Røde pas",
@@ -669,7 +691,8 @@
     "Blodrosen",
     "Ridderne af Blodrosen"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "det-rode-pas"
   },
   "dark-gem": {
    "name": "Dark Gem-hulerne",
@@ -694,7 +717,8 @@
    "factions": [
     "Dværgene"
    ],
-   "visited": true
+   "visited": true,
+   "noteId": "dark-gem-kobold-clan-caves"
   },
   "tunnel-violet": {
    "name": "Tunnel med violet lys",
@@ -707,12 +731,13 @@
    "offmap": null,
    "where": "",
    "aliases": [],
-   "summary": "Tunnel med violet lys er en af tre tunneler der fører dybere ind i Dark Gem Kobold Clan Caves. Tunnelen er karakteriseret ved et svagt violet lysskær, relateret til den magiske korruption i hulerne.",
+   "summary": "Tunnel med violet lys er en af tre tunneler der fører dybere ind i Dark Gem Kobold clan caves. Tunnelen er karakteriseret ved et svagt violet lysskær, relateret til den magiske korruption i hulerne.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": true,
+   "noteId": "dark-gem-cave-tunnel-med-violet-lys"
   },
   "tunnel-vandrisle": {
    "name": "Tunnel med vandrisle-lyde",
@@ -725,12 +750,13 @@
    "offmap": null,
    "where": "",
    "aliases": [],
-   "summary": "Tunnel med vandrisle lyde er en af tre tunneler der fører dybere ind i Dark Gem Kobold Clan Caves. Tunnelen er opkaldt efter de mystiske vandrisle-agtige lyde der kan høres fra den.",
+   "summary": "Tunnel med vandrisle lyde er en af tre tunneler der fører dybere ind i Dark Gem Kobold clan caves. Tunnelen er opkaldt efter de mystiske vandrisle-agtige lyde der kan høres fra den.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": true,
+   "noteId": "dark-gem-cave-tunnel-med-vandrisle-lyde"
   },
   "tunnel-affald": {
    "name": "Tunnel til affaldsrum",
@@ -743,12 +769,13 @@
    "offmap": null,
    "where": "",
    "aliases": [],
-   "summary": "Tunnel til affaldsrum er en af tre tunneler der fører dybere ind i Dark Gem Kobold Clan Caves. Tunnelen fører til et affaldsrum brugt af Dark Gem klanen kobolderne.",
+   "summary": "Tunnel til affaldsrum er en af tre tunneler der fører dybere ind i Dark Gem Kobold clan caves. Tunnelen fører til et affaldsrum brugt af Dark Gem klanen kobolderne.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": true,
+   "noteId": "dark-gem-cave-tunnel-til-affaldsrum"
   },
   "dvaerge-haller": {
    "name": "De glemte dværgehaller",
@@ -769,7 +796,8 @@
     "hviskeren i mørket"
    ],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "gamle-glemte-dvaerge-haller"
   },
   "kegville": {
    "name": "Kegville",
@@ -802,7 +830,8 @@
     "Court of Baron Zhaarko",
     "Court of Baronesse Avalande"
    ],
-   "visited": true
+   "visited": true,
+   "noteId": "kegville"
   },
   "segreve": {
    "name": "Segreve",
@@ -829,7 +858,8 @@
    "factions": [
     "Brakeshield familien"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "segreve"
   },
   "pembroke": {
    "name": "Pembroke",
@@ -852,7 +882,8 @@
    "factions": [
     "Brakeshield familien"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "pembroke"
   },
   "stampenborg": {
    "name": "Stampenborg",
@@ -877,7 +908,8 @@
     "Vaelon Dunmere"
    ],
    "factions": [],
-   "visited": true
+   "visited": true,
+   "noteId": "stampenborg"
   },
   "arcana": {
    "name": "Arcana tårnet",
@@ -905,7 +937,8 @@
    "factions": [
     "Azur ordenen"
    ],
-   "visited": false
+   "visited": true,
+   "noteId": "arcana-tarnet"
   },
   "grimrock": {
    "name": "Grimrock Woods",
@@ -928,7 +961,8 @@
     "Marie Louise Duvall af Miragehill"
    ],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "grimrock-woods"
   },
   "miragehill": {
    "name": "Miragehill",
@@ -951,7 +985,8 @@
     "Marie Louise Duvall af Miragehill"
    ],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "miragehill"
   },
   "forgotten-tower": {
    "name": "The Forgotten tower",
@@ -972,7 +1007,8 @@
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "the-forgotten-tower"
   },
   "ironreach": {
    "name": "Bjergene i vest og syd",
@@ -995,7 +1031,8 @@
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "bjergene-i-vest-og-syd"
   },
   "slatestone": {
    "name": "Slatestone",
@@ -1011,12 +1048,13 @@
    "offmap": null,
    "where": "",
    "aliases": [],
-   "summary": "Slatestone (også kendt som Slatestone dværgehallerne) er den ældste og mest traditionelle dværgehal i Erukana. Her bevares de gamle traditioner af Bjergenes Børn.",
+   "summary": "Slatestone (også kendt som Slatestone dværgehallerne) er den ældste og mest traditionelle dværgehal i Erukana1. Her bevares de gamle traditioner af Bjergenes Børn.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "slatestone"
   },
   "silverstream": {
    "name": "Silverstream",
@@ -1040,7 +1078,8 @@
     "Bjergenes Børn",
     "Dværgene"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "silverstream-dvaerge-hallerne"
   },
   "blackforge": {
    "name": "Blackforge",
@@ -1053,12 +1092,13 @@
    "offmap": null,
    "where": "Mowbrays hovedstad – ikke tegnet på kortet.",
    "aliases": [],
-   "summary": "Bemærk: Blackforge er en LOKATION, ikke en person. Blackforge er Baron Breys hovedstad i Baroniet Mowbray med ca. 700.000 indbyggere. Byen er berømt for sin våbensmedning. Denne fil er fejlplaceret i People-mappen.",
+   "summary": "Blackforge er Baron Breys hovedstad i Baroniet Mowbray med ca. 700.000 indbyggere. Byen er berømt for sin våbensmedning.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "blackforge"
   },
   "botreaux-by": {
    "name": "Botreaux",
@@ -1079,7 +1119,8 @@
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "botreaux"
   },
   "castle-botreaux": {
    "name": "Castle Botreaux",
@@ -1100,7 +1141,8 @@
     "Botreaux court",
     "familien Botreaux"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "castle-botreaux"
   },
   "castle-de-ros": {
    "name": "Castle De Ros",
@@ -1123,7 +1165,8 @@
    "factions": [
     "Knights of the Realm"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "castle-de-ros"
   },
   "sentinel": {
    "name": "The Sentinel",
@@ -1146,7 +1189,8 @@
     "Marie Louise Duvall af Miragehill"
    ],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "tarnet-the-sentinel"
   },
   "wolfenburg": {
    "name": "Wolfenburg",
@@ -1177,7 +1221,8 @@
     "Sølvhånden",
     "The Queensguard"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "wolfenburg"
   },
   "feucenberg": {
    "name": "Castle Feucenberg",
@@ -1200,7 +1245,8 @@
    "factions": [
     "Knights of the Realm"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "castle-feucenberg"
   },
   "chapterhouse": {
    "name": "Queensguard Chapterhouse",
@@ -1221,7 +1267,8 @@
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "queensguard-chapterhouse-erukana"
   },
   "mortimor": {
    "name": "Mortimor",
@@ -1244,7 +1291,8 @@
     "Lord Helmuth de Valencia"
    ],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "mortimor"
   },
   "vigils-rock": {
    "name": "Vigil's Rock",
@@ -1265,7 +1313,8 @@
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "vigil-s-rock"
   },
   "highhome": {
    "name": "Highhome",
@@ -1288,7 +1337,8 @@
     "Baronesse Constance Silkenfall"
    ],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "highhome"
   },
   "solstice": {
    "name": "Solstice",
@@ -1306,14 +1356,15 @@
    "aliases": [
     "soltice"
    ],
-   "summary": "Solstice (også stavet \"soltice\") er en by i Erukana hvor Familien Narsi bor. Familien Narsi var i besiddelse af timeglasset og Timescroll før gruppen fandt dem.",
+   "summary": "Solstice (også stavet \"soltice\") er en by i Erukana1 hvor Familien Narsi bor. Familien Narsi var i besiddelse af timeglasset og Timescroll før gruppen fandt dem.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [
     "Familien Narsi"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "solstice"
   },
   "stormbjerget": {
    "name": "StormBjerget",
@@ -1340,7 +1391,8 @@
    "factions": [
     "Knoglestammen"
    ],
-   "visited": true
+   "visited": true,
+   "noteId": "stormbjerget"
   },
   "knoglestammens-huler": {
    "name": "Knoglestammens huler",
@@ -1366,7 +1418,8 @@
    "factions": [
     "Knoglestammen"
    ],
-   "visited": true
+   "visited": true,
+   "noteId": "knoglestammens-huler"
   },
   "sorrow-vale": {
    "name": "Sorrow Vale",
@@ -1391,7 +1444,8 @@
    ],
    "people": [],
    "factions": [],
-   "visited": true
+   "visited": true,
+   "noteId": "sorrow-vale"
   },
   "crater-shrine": {
    "name": "Crater shrine of Mielikki",
@@ -1418,7 +1472,8 @@
    ],
    "people": [],
    "factions": [],
-   "visited": true
+   "visited": true,
+   "noteId": "crater-shrine-of-mielikki"
   },
   "vardestjernen": {
    "name": "Vardestjernen",
@@ -1450,7 +1505,8 @@
    "factions": [
     "Draconkin"
    ],
-   "visited": true
+   "visited": true,
+   "noteId": "vardestjernen"
   },
   "port-drakkan": {
    "name": "Port Drakkan",
@@ -1478,7 +1534,8 @@
    "factions": [
     "Aethor Flåden"
    ],
-   "visited": true
+   "visited": true,
+   "noteId": "port-drakkan"
   },
   "vinterspiret": {
    "name": "Vinterspiret",
@@ -1501,7 +1558,8 @@
     "Aethor Flåden",
     "Astley Avengers"
    ],
-   "visited": true
+   "visited": true,
+   "noteId": "vinterspiret"
   },
   "port-alexander": {
    "name": "Port Alexander",
@@ -1524,7 +1582,8 @@
    ],
    "people": [],
    "factions": [],
-   "visited": true
+   "visited": true,
+   "noteId": "port-alexander"
   },
   "grondalen": {
    "name": "Grøndalen",
@@ -1547,12 +1606,14 @@
    ],
    "people": [
     "Håkan",
-    "Seiran"
+    "Seiran",
+    "skur"
    ],
    "factions": [
     "Mielikki tilhængere"
    ],
-   "visited": true
+   "visited": true,
+   "noteId": "grondalen"
   },
   "vinterskov": {
    "name": "Vinterskov",
@@ -1564,7 +1625,9 @@
    "region": null,
    "offmap": null,
    "where": "",
-   "aliases": [],
+   "aliases": [
+    "Vinterskov 1"
+   ],
    "summary": "Nordisk tømmerby i Grøndalen. Kroværten Håkan tegnede et kort over dalen i jorden på disken.",
    "url": "",
    "sessions": [
@@ -1572,7 +1635,8 @@
    ],
    "people": [],
    "factions": [],
-   "visited": true
+   "visited": true,
+   "noteId": "vinterskov"
   },
   "troldmand-ruin": {
    "name": "Troldmandstårn-ruinen",
@@ -1594,7 +1658,8 @@
    "factions": [
     "House De'Evers"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "troldmands-tarn-ruin-i-nordlandet"
   },
   "anaksa": {
    "name": "Anaksa",
@@ -1623,7 +1688,8 @@
     "Queensguard Ambassadører",
     "The Queensguard"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "anaksa"
   },
   "deltafloden": {
    "name": "Deltafloden",
@@ -1645,7 +1711,8 @@
    "factions": [
     "The Queensguard"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "deltafloden"
   },
   "sistana": {
    "name": "Sistana",
@@ -1658,14 +1725,15 @@
    "offmap": "east",
    "where": "",
    "aliases": [],
-   "summary": "Sistana (også kaldet Sestenua) er en region i \"det forbudte øst\", del af samme område som Erukana, Jullan og Anaksa. Det er et kontaktpunkt for Waning Moon.",
+   "summary": "Sistana (også kaldet Sestenua) er en region i \"det forbudte øst\", del af samme område som Erukana1, Jullan og Anaksa. Det er et kontaktpunkt for Waning Moon.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [
     "blå nomader"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "sistana"
   },
   "orkenen": {
    "name": "Den endeløse ørken",
@@ -1678,14 +1746,15 @@
    "offmap": "east",
    "where": "",
    "aliases": [],
-   "summary": "Den endeløse ørken er en stor ørken øst for Erukana. Det er et geografisk vartegn der adskiller Erukana fra de østlige riger.",
+   "summary": "Den endeløse ørken er en stor ørken øst for Erukana1. Det er et geografisk vartegn der adskiller Erukana1 fra de østlige riger.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [
     "The Queensguard"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "den-endelose-orken"
   },
   "kolitan": {
    "name": "Kolitan",
@@ -1708,7 +1777,8 @@
    "factions": [
     "Jullan trade delegation"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "kolitan"
   },
   "landet-mod-nord": {
    "name": "Landet mod nord over havet",
@@ -1721,12 +1791,13 @@
    "offmap": "other",
    "where": "",
    "aliases": [],
-   "summary": "Landet mod nord over havet er et mystisk land på den anden side af havet nord for Erukana. Det nævnes i forbindelse med Knight Ab-errants og er potentielt deres oprindelse.",
+   "summary": "Landet mod nord over havet er et mystisk land på den anden side af havet nord for Erukana1. Det nævnes i forbindelse med Knight Ab-errants og er potentielt deres oprindelse.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": true,
+   "noteId": "landet-mod-nord-over-havet"
   },
   "zezstanie": {
    "name": "Zezstanie",
@@ -1748,7 +1819,8 @@
     "Frostheim Klanen",
     "Ridderne af Blodrosen"
    ],
-   "visited": false
+   "visited": false,
+   "noteId": "zezstanie"
   },
   "angramar": {
    "name": "Angramar",
@@ -1766,7 +1838,8 @@
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "angramar"
   },
   "mistport": {
    "name": "Mistport",
@@ -1784,7 +1857,8 @@
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": false,
+   "noteId": "mistport"
   },
   "whisperwind": {
    "name": "Whisperwind",
@@ -1802,7 +1876,8 @@
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false
+   "visited": true,
+   "noteId": "the-whisperwind-airship"
   },
   "stormens-ed": {
    "name": "Stormens Ed",
@@ -1827,7 +1902,8 @@
    "factions": [
     "Tempus tilhængere"
    ],
-   "visited": true
+   "visited": true,
+   "noteId": "stormens-ed"
   }
  },
  "regions": {
@@ -1905,7 +1981,8 @@
    "people": [
     "Hertug Robert De Ros"
    ],
-   "factions": []
+   "factions": [],
+   "noteId": "hertugdommet-bortreaux"
   },
   "valence": {
    "name": "Baroniet Valence",
@@ -1969,7 +2046,8 @@
    ],
    "factions": [
     "The Silver Drake guild"
-   ]
+   ],
+   "noteId": "baroniet-valence"
   },
   "blackmere": {
    "name": "Baroniet Blackmere",
@@ -2030,7 +2108,8 @@
     "Baronesse Constance Silkenfall",
     "Vaelon Dunmere"
    ],
-   "factions": []
+   "factions": [],
+   "noteId": "baroniet-blackmere"
   },
   "eresby": {
    "name": "Baroniet Eresby",
@@ -2108,7 +2187,8 @@
     "Draconkin",
     "Familien Narsi",
     "House Magdova"
-   ]
+   ],
+   "noteId": "baroniet-eresby"
   },
   "mowbray": {
    "name": "Baroniet Mowbray",
@@ -2186,7 +2266,8 @@
     "Qenes Markmoon",
     "Vaelon Dunmere"
    ],
-   "factions": []
+   "factions": [],
+   "noteId": "baroniet-mowbray"
   },
   "welles": {
    "name": "Baroniet Welles",
@@ -2241,7 +2322,7 @@
     2290,
     2510
    ],
-   "summary": "Welles er et lille baroni og holder sig primært for sig selv. Skønt de hører til Erukana og på ingen måde afviser det, så holder de sig afsides. Et mistroisk og hårdtarbejdende folkefærd, som værdsætter deres evne til at klare sig selv.",
+   "summary": "Welles er et lille baroni og holder sig primært for sig selv. Skønt de hører til Erukana1 og på ingen måde afviser det, så holder de sig afsides. Et mistroisk og hårdtarbejdende folkefærd, som værdsætter deres evne til at klare sig selv.",
    "url": "",
    "people": [
     "Baronesse Avalande",
@@ -2251,7 +2332,8 @@
     "Baronessens råd",
     "Court of Baronesse Avalande",
     "House Magdova"
-   ]
+   ],
+   "noteId": "baroniet-welles"
   },
   "nordheim": {
    "name": "Nordheim",
@@ -2264,7 +2346,8 @@
    "factions": [
     "Aethor Flåden",
     "Frost Giant Clan"
-   ]
+   ],
+   "noteId": "nordheim"
   }
  },
  "sessions": [
@@ -2276,7 +2359,8 @@
    ],
    "url": "",
    "date": "08.07.2023",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "1-080723-changer-of-time-session-1"
   },
   {
    "num": 2,
@@ -2286,7 +2370,8 @@
    ],
    "url": "",
    "date": "13.07.2023",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "2-130723-changer-of-time-session-2"
   },
   {
    "num": 3,
@@ -2297,7 +2382,8 @@
    ],
    "url": "",
    "date": "30.09.2023",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "3-300923-changer-of-time-session-3"
   },
   {
    "num": 4,
@@ -2307,7 +2393,8 @@
    ],
    "url": "",
    "date": "09.10.2023",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "4-091023-changer-of-time-session-4"
   },
   {
    "num": 5,
@@ -2317,7 +2404,8 @@
    ],
    "url": "",
    "date": "28.10.2023",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "5-281023-changer-of-time-session-5"
   },
   {
    "num": 6,
@@ -2327,7 +2415,8 @@
    ],
    "url": "",
    "date": "30.10.2023",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "6-301023-changer-of-time-session-6"
   },
   {
    "num": 7,
@@ -2338,7 +2427,8 @@
    ],
    "url": "",
    "date": "17.02.2024",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "7-170224-changer-of-time-session-7"
   },
   {
    "num": 8,
@@ -2346,7 +2436,8 @@
    "places": [],
    "url": "",
    "date": "16.03.2024",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "8-160324-changer-of-time-session-8"
   },
   {
    "num": 9,
@@ -2358,7 +2449,8 @@
    ],
    "url": "",
    "date": "15.05.2024",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "9-150524-changer-of-time-session-9"
   },
   {
    "num": 10,
@@ -2368,7 +2460,8 @@
    ],
    "url": "",
    "date": "22.05.2024",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "10-220524-changer-of-time-session-10"
   },
   {
    "num": 11,
@@ -2378,7 +2471,8 @@
    ],
    "url": "",
    "date": "13.06.2024",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "11-130624-changer-of-time-session-11"
   },
   {
    "num": 12,
@@ -2389,7 +2483,8 @@
    ],
    "url": "",
    "date": "20.06.2024",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "12-200624-changer-of-time-session-12-downtime-astley"
   },
   {
    "num": 13,
@@ -2400,7 +2495,8 @@
    ],
    "url": "",
    "date": "22.06.2024",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "13-220624-steffen-session-1"
   },
   {
    "num": 14,
@@ -2410,7 +2506,8 @@
    ],
    "url": "",
    "date": "19.06.2024",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "14-190624-steffen-session-2"
   },
   {
    "num": 15,
@@ -2420,7 +2517,8 @@
    ],
    "url": "",
    "date": "11.07.2024",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "15-110724-steffen-seesion-3"
   },
   {
    "num": 16,
@@ -2431,7 +2529,8 @@
    ],
    "url": "",
    "date": "16.07.2024",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "16-160724-steffen-session-4"
   },
   {
    "num": 17,
@@ -2442,7 +2541,8 @@
    ],
    "url": "",
    "date": "25.06.2024",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "17-250624-changer-of-time-nissen-session-13"
   },
   {
    "num": 18,
@@ -2452,7 +2552,8 @@
    ],
    "url": "",
    "date": "08.08.2024",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "18-080824-changer-of-time-nissen-session-14"
   },
   {
    "num": 19,
@@ -2462,7 +2563,8 @@
    ],
    "url": "",
    "date": "14.08.2024",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "19-140824-changer-of-time-nissen-session-15"
   },
   {
    "num": 20,
@@ -2472,7 +2574,8 @@
    ],
    "url": "",
    "date": "11.01.2025",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "20-110125-changer-of-time-nissen-session-16"
   },
   {
    "num": 21,
@@ -2482,7 +2585,8 @@
    ],
    "url": "",
    "date": "22.02.2025",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "21-220225-changer-of-time-nisse-17-steffen-1"
   },
   {
    "num": 22,
@@ -2492,7 +2596,8 @@
    ],
    "url": "",
    "date": "27.03.2025",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "22-270325-erukana-steffen-2"
   },
   {
    "num": 23,
@@ -2502,7 +2607,8 @@
    ],
    "url": "",
    "date": "31.03.2025",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "23-310325-erukana-steffen-3"
   },
   {
    "num": 24,
@@ -2510,7 +2616,8 @@
    "places": [],
    "url": "",
    "date": "12.04.2024",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "24-120424-erukana-steffen-4"
   },
   {
    "num": 25,
@@ -2518,7 +2625,8 @@
    "places": [],
    "url": "",
    "date": "23.04.2025",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "25-230425-erukana-steffen-5"
   },
   {
    "num": 26,
@@ -2529,7 +2637,8 @@
    ],
    "url": "",
    "date": "31.05.2025",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "26-310525-erukana-nissen-18-frosty-northern-forest"
   },
   {
    "num": 27,
@@ -2539,7 +2648,8 @@
    ],
    "url": "",
    "date": "21.06.2025",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "27-210625-eurkana-nissen-19"
   },
   {
    "num": 28,
@@ -2549,7 +2659,8 @@
    ],
    "url": "",
    "date": "05.07.2025",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "28-050725-erukana-steffen-6"
   },
   {
    "num": 29,
@@ -2559,7 +2670,8 @@
    ],
    "url": "",
    "date": "14.07.2025",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "29-140725-erukana-steffen-7-windbreaker-waystation"
   },
   {
    "num": 30,
@@ -2569,7 +2681,8 @@
    ],
    "url": "",
    "date": "28.07.2025",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "30-280725-eurukana-steffen-8-earthshaker-battle"
   },
   {
    "num": 31,
@@ -2580,7 +2693,8 @@
    ],
    "url": "",
    "date": "11.08.2025",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "31-110825-erukana-steffen-9-surviving-the-manta"
   },
   {
    "num": 32,
@@ -2590,7 +2704,8 @@
    ],
    "url": "",
    "date": "13.09.2025",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "32-130925-erukana-steffen-10-after-the-orks"
   },
   {
    "num": 33,
@@ -2600,7 +2715,8 @@
    ],
    "url": "",
    "date": "",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "33-erukana-steffen-11-varde-stjerne-bosses"
   },
   {
    "num": 34,
@@ -2610,7 +2726,8 @@
    ],
    "url": "",
    "date": "",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "34-erukana-steffen-12"
   },
   {
    "num": 35,
@@ -2618,7 +2735,8 @@
    "places": [],
    "url": "",
    "date": "25.10.2025",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "35-251025-shieldheim-erukana-steffen-13"
   },
   {
    "num": 36,
@@ -2626,7 +2744,8 @@
    "places": [],
    "url": "",
    "date": "",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "36-erukana-steffen-corwin-viktor-14"
   },
   {
    "num": 37,
@@ -2634,7 +2753,8 @@
    "places": [],
    "url": "",
    "date": "26.11.2025",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "37-261125-erukana-steffen-infernal-machine-15"
   },
   {
    "num": 38,
@@ -2644,7 +2764,8 @@
    ],
    "url": "",
    "date": "06.12.2025",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "38-061225-erukana-nissen-clarabel-lord-magdova"
   },
   {
    "num": 39,
@@ -2654,7 +2775,8 @@
    ],
    "url": "",
    "date": "15.12.2025",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "39-151225-erukana-steffen-16-return-to-vardestjernen"
   },
   {
    "num": 40,
@@ -2665,7 +2787,8 @@
    ],
    "url": "",
    "date": "17.01.2026",
-   "gm": "Steffen"
+   "gm": "Steffen",
+   "noteId": "40-170126-steffen-erukana-exploring-vardestjernen-dungeon"
   },
   {
    "num": 41,
@@ -2677,7 +2800,8 @@
    ],
    "url": "",
    "date": "10.02.2026",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "41-100226-nissen-besog-i-soltraeet"
   },
   {
    "num": 42,
@@ -2688,7 +2812,8 @@
    ],
    "url": "",
    "date": "21.02.2026",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "42-210226-erukana-nisen-shipjacking"
   },
   {
    "num": 43,
@@ -2700,7 +2825,8 @@
    ],
    "url": "",
    "date": "28.03.2026",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "43-280326-erukana-nissen-sailing-in-the-clouds"
   },
   {
    "num": 44,
@@ -2711,7 +2837,8 @@
    ],
    "url": "",
    "date": "",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "44-rescue-mission-evelyn-in-feywood-nissen"
   },
   {
    "num": 45,
@@ -2721,7 +2848,8 @@
    ],
    "url": "",
    "date": "",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "45-the-dracolich-attacks-delios-nissen"
   },
   {
    "num": 45.5,
@@ -2729,7 +2857,8 @@
    "places": [],
    "url": "",
    "date": "",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "45-5-logan-s-trip-to-skullborg-nisse-offline"
   },
   {
    "num": 46,
@@ -2740,7 +2869,8 @@
    ],
    "url": "",
    "date": "08.08.2026",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "46-080826-under-soltraeet-nissen"
   },
   {
    "num": 47,
@@ -2752,7 +2882,8 @@
    ],
    "url": "",
    "date": "20.09.2026",
-   "gm": "Nissen"
+   "gm": "Nissen",
+   "noteId": "47-200926-erukana-nissen-after-the-dragon-essence"
   }
  ],
  "unplaced": []

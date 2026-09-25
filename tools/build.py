@@ -10,7 +10,7 @@ import re
 import subprocess
 import sys
 from collections import defaultdict
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 sys.path.insert(0, os.path.dirname(__file__))
 from curation import (GARDEN_URL, MAPS, NOT_PEOPLE, NOT_PLACES, OFFMAP, PLACES,  # noqa: E402
@@ -66,6 +66,7 @@ def load_notes():
             if notes.get(f[:-3], {}).get("folder") == "Locations":
                 continue
             notes[f[:-3]] = {"folder": rel.split(os.sep)[0] if os.sep in rel else "",
+                             "marked_visited": "Locationsvisited" in rel.split(os.sep)[:-1],
                              "permalink": meta.get("permalink"), "body": body}
     return notes
 
@@ -117,6 +118,67 @@ def inside(pt, poly):
     return hit
 
 
+# Note groups shown in the reader, by top-level folder.
+GROUPS = {"Locations": "Steder", "People": "Personer", "Factions": "Factions", "Items": "Genstande",
+          "Loot": "Loot", "Missions": "Missioner", "Journal": "Journal", "Setting lore": "Lore", "Lore": "Lore",
+          "Characters": "Karakterer", "Rules": "Regler", "": "Andet"}
+SKIP_NOTES = {"Erukana Tag list"}  # generated Dataview output, 23 MB
+# Overview notes that link to everything; readable, but not shown as "related".
+HUBS = {"_Erukana home", "_Erukana People List", "Faction list", "Mission Board", "Loot found",
+        "Locationsvisited", "States and Baronies of Erukana"}
+
+
+def slug(title):
+    t = title.lower().replace("æ", "ae").replace("ø", "o").replace("å", "a")
+    return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
+
+
+def reader_markdown(body, ids):
+    """Obsidian/garden markdown -> plain markdown with in-atlas links (#note/<id>)."""
+    md = re.sub(r"```(?:leaflet|dataview|dataviewjs|base)\b.*?```", "", body, flags=re.S)
+    # "Referenced In" and "Tags" repeat what the reader's related-notes box already shows.
+    md = re.sub(r"(?ms)^## (?:Referenced In|Tags)\s*$.*?(?=^## |\Z)", "", md)
+    md = re.sub(r"<svg.*?</svg>", "", md, flags=re.S)
+    md = re.sub(r"<[^>]+>", "", md)
+    md = re.sub(r"!\[\[[^\]]*\]\]|!\[[^\]]*\]\([^)]*\)", "", md)
+    md = WIKILINK.sub(lambda m: f"[{m.group(2) or m.group(1)}](#note/{ids[m.group(1).strip()]})"
+                      if m.group(1).strip() in ids else (m.group(2) or m.group(1)), md)
+
+    def garden_link(m):  # [text](/02 Player/.../Title/) links from embeds
+        title = unquote(m.group(2).rstrip("/").split("/")[-1].split("#")[0])
+        return f"[{m.group(1)}](#note/{ids[title]})" if title in ids else m.group(1)
+    md = re.sub(r"\[([^\]]*)\]\((/02[^)]*)\)", garden_link, md)
+    md = re.sub(r"(?m)^\s*(?:#[^\s#][^\s]*\s*)+$", "", md)          # tag-only lines
+    md = re.sub(r"(?m)^\[?_Erukana home\]?(?:\([^)]*\))?\s*$", "", md)  # navigation back-link
+    md = re.sub(r"(?m)^\{[^}]*\}\s*$", "", md)                       # { .block-language-dataview}
+    md = re.sub(r"(?m)^([\wæøåÆØÅ ]+):: ?(.*)$", r"**\1:** \2", md)   # dataview inline fields
+    return re.sub(r"\n{3,}", "\n\n", md).strip()
+
+
+def export_notes(notes, place_of, session_of):
+    ids = {t: slug(t) for t in notes if t not in SKIP_NOTES and notes[t]["folder"] != "bases"}
+    out = {}
+    for title, nid in ids.items():
+        n = notes[title]
+        # All links, including "Referenced In": that section is how notes point back to sessions.
+        linked = {m.group(1).strip() for m in WIKILINK.finditer(n["body"])}
+        links = sorted({ids[t] for t in linked if t in ids and t != title and t not in HUBS})
+        out[nid] = {"title": title, "group": "Sessioner" if title in session_of else GROUPS.get(n["folder"], "Andet"),
+                    "md": reader_markdown(n["body"], ids), "links": links, "backlinks": []}
+        if title in place_of:
+            out[nid]["place"] = place_of[title]
+        if title in session_of:
+            out[nid]["session"] = session_of[title]
+    for nid, n in out.items():
+        if n["title"] in HUBS:
+            continue
+        for target in n["links"]:
+            out[target]["backlinks"].append(nid)
+    with open(os.path.join(ROOT, "data", "notes.json"), "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, separators=(",", ":"))
+    return ids
+
+
 def main():
     notes = load_notes()
     problems = []
@@ -155,9 +217,11 @@ def main():
             "url": note_url(n), "sessions": sessions_at.get(pid, []),
             "people": sorted(people, key=str.lower), "factions": sorted(factions, key=str.lower),
         }
-    # A place counts as visited if the party was there or in something inside it.
+    # A place counts as visited if the party was there (a session, or its note sits in
+    # Locations/Locationsvisited), or was in something inside it.
     for pid in list(places):
-        if places[pid]["sessions"]:
+        n = notes.get(PLACES[pid]["note"])
+        if places[pid]["sessions"] or (n and n["marked_visited"]):
             cur = pid
             while cur:
                 places[cur]["visited"] = True
@@ -206,6 +270,17 @@ def main():
     uncurated = sorted(t for t, n in notes.items()
                        if n["folder"] == "Locations" and t not in curated and t not in NOT_PLACES)
     unplaced = [{"note": t, "summary": summarize(notes[t]["body"]), "url": note_url(notes[t])} for t in uncurated]
+
+    place_of = {p["note"]: ("sted", pid) for pid, p in PLACES.items()}
+    place_of.update({r["note"]: ("region", rid) for rid, r in REGIONS.items()})
+    session_of = {t: num for num, t in session_notes.items()}
+    ids = export_notes(notes, place_of, session_of)
+    for pid, p in PLACES.items():
+        places[pid]["noteId"] = ids.get(p["note"])
+    for rid, r in REGIONS.items():
+        regions[rid]["noteId"] = ids.get(r["note"])
+    for s in sessions:
+        s["noteId"] = ids.get(session_notes.get(s["num"]))
 
     out = {"maps": MAPS, "portals": PORTALS, "offmap": OFFMAP, "places": places,
            "regions": regions, "sessions": sessions, "unplaced": unplaced}

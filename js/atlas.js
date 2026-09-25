@@ -185,10 +185,13 @@
   // ---------- Panel ----------
   const panel = $(".panel");
   const body = $(".panel-body");
-  $(".panel-close").addEventListener("click", () => go(""));
+  // Closing the panel keeps Rejsen open if it is.
+  const closeRoute = () => (jBody.hidden ? "" : `session/${sessions[step].num}`);
+  $(".panel-close").addEventListener("click", () => go(closeRoute()));
 
   function openPanel(...content) {
     body.replaceChildren(...content.flat(2).filter(Boolean));
+    panel.classList.remove("wide");
     panel.hidden = false;
     body.scrollTop = 0;
   }
@@ -222,9 +225,9 @@
       : null;
     return [el("h3", {}, title), list, more];
   }
-  const noteLink = (url) => url
-    ? el("a", { class: "note-link", href: url, target: "_blank", rel: "noopener" }, "Læs hele noten →")
-    : el("span", { class: "note-link", "aria-disabled": "true", title: "Adressen til noterne er ikke sat endnu" }, "Læs hele noten →");
+  const noteLink = (noteId, url) => el("div", { class: "note-actions" },
+    noteId ? el("a", { class: "note-link", href: `#note/${noteId}` }, "Læs hele noten →") : null,
+    url ? el("a", { class: "garden-link", href: url, target: "_blank", rel: "noopener" }, "Åbn i haven ↗") : null);
 
   function crumbs(id) {
     const trail = [];
@@ -264,7 +267,7 @@
       placeList("Steder her", kids),
       chips("Personer", p.people),
       chips("Factions", p.factions),
-      noteLink(p.url),
+      noteLink(p.noteId, p.url),
     );
     focusPin(id);
     select(anchor(id));
@@ -282,7 +285,7 @@
       placeList(r.poly ? "Steder i baroniet" : "Steder uden kendt placering", members),
       chips("Personer", r.people),
       chips("Factions", r.factions),
-      noteLink(r.url),
+      noteLink(r.noteId, r.url),
     );
     select(null);
     for (const [k, l] of Object.entries(regionLayers)) l.getElement()?.classList.toggle("selected", k === id);
@@ -405,7 +408,7 @@
     applyPinState();
   }
 
-  function showSession(idx) {
+  function showSession(idx, reading = false) {
     step = idx;
     const s = sessions[idx];
     jBody.hidden = false;
@@ -425,7 +428,7 @@
       el("h2", {}, s.title),
       el("p", {},
         names.length ? `${[...new Set(names)].join(", ")}. ` : "Uden for kortene. ",
-        s.url ? el("a", { href: s.url, target: "_blank", rel: "noopener" }, "Læs sessionsloggen") : null),
+        s.noteId ? el("a", { class: "read-session", href: `#session/${s.num}/laes` }, "Læs sessionen og se relaterede noter") : null),
     );
 
     // Trail: every earlier stop on this map, in order; the current session's leg in wax.
@@ -459,13 +462,15 @@
       // re-centring on the same spot makes the small Nordheim map bounce against its edges.
       const card = jBody.getBoundingClientRect();
       const bottomPad = window.innerHeight - card.top + 40;
+      // The reader panel takes the right-hand side on wide screens.
+      const rightPad = reading && window.innerWidth > 720 ? 660 : 120;
       const inView = (pt) => {
         const px = map.latLngToContainerPoint(pt);
         const size = map.getSize();
-        return px.x > 80 && px.x < size.x - 80 && px.y > 80 && px.y < size.y - bottomPad;
+        return px.x > 80 && px.x < size.x - rightPad + 40 && px.y > 80 && px.y < size.y - bottomPad;
       };
       if (pts.length && !pts.every(inView)) {
-        flyWithin(L.latLngBounds(pts), { maxZoom: -0.5, duration: 0.8, paddingTopLeft: [120, 120], paddingBottomRight: [120, bottomPad] });
+        flyWithin(L.latLngBounds(pts), { maxZoom: -0.5, duration: 0.8, paddingTopLeft: [120, 120], paddingBottomRight: [rightPad, bottomPad] });
       } else if (!pts.length) flyWithin(layers[target].bounds, { duration: 0.8 });
     }
   }
@@ -585,24 +590,69 @@
   $("#opt-edit").addEventListener("change", (e) => setEditing(e.target.checked));
   for (const [id, e] of Object.entries(edits)) applyEdit(id, e);
 
+  // ---------- Note reader (#note/<id>) ----------
+  let notes = null;
+  const loadNotes = () => (notes ||= fetch("data/notes.json").then((r) => r.json()));
+  const GROUP_ORDER = ["Sessioner", "Steder", "Personer", "Factions", "Karakterer", "Missioner", "Genstande", "Loot", "Journal", "Lore", "Regler", "Andet"];
+  const sessionOrder = (n) => n.session ?? Infinity;
+
+  async function showNote(id) {
+    const all = await loadNotes();
+    const n = all[id];
+    if (!n) return closePanel();
+    const related = [...new Set([...n.links, ...n.backlinks])].filter((k) => all[k]);
+    const groups = GROUP_ORDER.map((g) => [g, related.filter((k) => all[k].group === g)
+      .sort((a, b) => sessionOrder(all[a]) - sessionOrder(all[b]) || all[a].title.localeCompare(all[b].title, "da"))])
+      .filter(([, ids]) => ids.length);
+    const label = (k) => (all[k].session != null ? `Session ${all[k].session}` : all[k].title);
+    const [placeKind, placeId] = n.place || [];
+    const s = n.session != null ? sessionByNum(n.session) : null;
+
+    const text = el("div", { class: "note-md" });
+    text.innerHTML = marked.parse(n.md);
+    for (const a of text.querySelectorAll("a[href^='http']")) { a.target = "_blank"; a.rel = "noopener"; }
+
+    openPanel(
+      el("p", { class: "kicker" }, n.group === "Sessioner" ? "Sessionslog" : n.group),
+      el("h2", {}, s ? `Session ${s.num}: ${s.title}` : n.title),
+      el("div", { class: "note-actions" },
+        placeKind ? el("a", { class: "note-link", href: `#${placeKind}/${placeId}` }, "Vis på kortet") : null,
+        s && jBody.hidden ? el("a", { class: "note-link", href: `#session/${s.num}` }, "Vis i Rejsen") : null),
+      groups.length ? el("details", { class: "related", open: true },
+        el("summary", {}, `Relaterede noter (${related.length})`),
+        groups.map(([g, ids]) => el("div", { class: "related-group" },
+          el("h4", {}, g),
+          el("ul", { class: "chips" }, ids.map((k) => el("li", {}, el("a", { href: `#note/${k}`, title: all[k].title }, label(k)))))))) : null,
+      text,
+    );
+    panel.classList.add("wide");
+    if (placeKind) {
+      if (placeKind === "sted") { focusPin(placeId); select(anchor(placeId)); }
+    }
+  }
+
   // ---------- Routing (#sted/astley, #region/welles, #session/12, #kort/nordheim) ----------
   function go(route) {
     if (location.hash.slice(1) === route) route_(route);
     else location.hash = route;
   }
   function route_(hash) {
-    const [kind, id] = decodeURIComponent(hash).split("/");
-    if (kind !== "session") { stopPlay(); endJourney(); }
+    const [kind, id, sub] = decodeURIComponent(hash).split("/");
+    if (kind !== "session" && !(kind === "note" && !jBody.hidden)) { stopPlay(); endJourney(); }
     if (kind === "sted" && places[id]) showPlace(id);
     else if (kind === "region" && regions[id]) showRegion(id);
-    else if (kind === "session" && sessionByNum(id)) showSession(sessions.indexOf(sessionByNum(id)));
+    else if (kind === "session" && sessionByNum(id)) {
+      showSession(sessions.indexOf(sessionByNum(id)), sub === "laes");
+      if (sub === "laes" && sessionByNum(id).noteId) showNote(sessionByNum(id).noteId);
+    }
+    else if (kind === "note") showNote(id);
     else if (kind === "udenfor" && offmap[id]) showOffmap(id);
     else if (kind === "kort" && maps[id]) showMapPanel(id);
     else { closePanel(); showMap(current || "erukana", !current); }
   }
   window.addEventListener("hashchange", () => route_(location.hash.slice(1)));
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !panel.hidden && document.activeElement !== input) go("");
+    if (e.key === "Escape" && !panel.hidden && document.activeElement !== input) go(closeRoute());
   });
 
   showMap("erukana");

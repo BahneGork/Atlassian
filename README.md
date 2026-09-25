@@ -36,6 +36,7 @@ python3 tools/build.py
 
 ## Layout
 - `index.html`, `css/atlas.css`, `js/atlas.js`: the site (no build step)
+- `data/erukana.json`: places, regions and sessions; `data/notes.json`: every note as reader-ready markdown with links and back-links (loaded when the reader is first opened)
 - `maps/`: map images (WebP)
-- `vendor/leaflet/`: Leaflet 1.9.4 (BSD-2-Clause)
+- `vendor/leaflet/`: Leaflet 1.9.4 (BSD-2-Clause); `vendor/marked/`: marked 12.0.2 (MIT)
 - `docs/project-plan.md`: scope and decisions
