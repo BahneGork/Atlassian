@@ -4,11 +4,16 @@ Positions are pixel coordinates (x, y) on the source map images, read off a grid
 overlay. `approx=True` marks places not printed on the map, placed from what the
 notes say (e.g. "south of Astley"). Every place is keyed to a note title in
 02 Player/Erukana (Nissen)/Locations.
+
+Kegville, Dark Gem, Det Røde pas, Sir Seillings mausoleum, Miragehill and the Queensguard
+Chapterhouse come from the owner's own Obsidian Leaflet pins (vault "Diamor", map id
+testid99), converted with x = lng * 512, y = -lat * 512.
 """
 
 GARDEN_URL = ""  # e.g. "https://<site>.netlify.app" (no trailing slash)
 
 MAPS = {
+    # Image is Erukana2.jpg (2048 px wide); positions stay in the original 4096 px space.
     "erukana": {"name": "Erukana", "image": "maps/erukana.webp", "size": [4096, 3526]},
     "nordheim": {"name": "Nordheim", "image": "maps/nordheim.webp", "size": [2048, 1165],
                  "note": "Nordheim"},
@@ -38,9 +43,7 @@ PLACES = {
     "alistair": dict(note="Alistairs handelsforretning", parent="astley", kind="sted",
                      name="Waning Moon merchant house"),
     "feywood": dict(note="Feywood", map="erukana", at=[2650, 2520], kind="vildmark", region="welles"),
-    "mausoleum": dict(note="Sir Seillings mausoleum", map="erukana", at=[2410, 2580], approx=True,
-                      kind="hule", region="welles", aliases=["mausoleum"],
-                      where="Syd for Astley ifølge noterne."),
+    "mausoleum": dict(note="Sir Seillings mausoleum", map="erukana", at=[2590, 2743], kind="hule", region="welles", aliases=["mausoleum"]),
     "stirling": dict(note="Stirring", map="erukana", at=[2745, 2330], approx=True, kind="borg",
                      region="welles", name="Stirling", aliases=["Stirring", "Jarlsborg"],
                      where="Nord for Feywood og øst for Astley ifølge noterne. "
@@ -64,13 +67,10 @@ PLACES = {
                      aliases=["Coleville"]),
     "southwatch": dict(note="Southwatch", map="erukana", at=[2440, 2874], kind="by", region="welles"),
     "castle-brienne": dict(note="Castle Brienne", map="erukana", at=[2340, 2925], kind="borg", region="welles"),
-    "rode-pas": dict(note="Det Røde pas", map="erukana", at=[3150, 2700], approx=True, kind="vildmark",
-                     where="Syd-øst for Astley i bjergene."),
+    "rode-pas": dict(note="Det Røde pas", map="erukana", at=[2804, 2593], kind="vildmark"),
 
     # --- Eresby ---
-    "dark-gem": dict(note="Dark Gem Kobold clan caves", map="erukana", at=[2470, 2150], approx=True,
-                     kind="hule", region="eresby", name="Dark Gem-hulerne",
-                     where="I bakkerne vest for vejen mellem Mistville og The Bronze Keg.",
+    "dark-gem": dict(note="Dark Gem Kobold clan caves", map="erukana", at=[2173, 2316], kind="hule", region="eresby", name="Dark Gem-hulerne",
                      summary="Kobold-klanen Dark Gems huler. Her fandt gruppen timeglasset og "
                              "tids-scrollen i session 1 og mødte hviskeren i mørket, som fortalte "
                              "om glemte dværgehaller dybere nede."),
@@ -82,9 +82,8 @@ PLACES = {
                           name="Tunnel til affaldsrum"),
     "dvaerge-haller": dict(note="gamle glemte dværge haller", parent="dark-gem", kind="hule",
                            name="De glemte dværgehaller"),
-    "kegville": dict(note="Kegville", map="erukana", at=[2600, 1960], approx=True, kind="by",
-                     region="eresby", aliases=["The Bronze Keg", "Bronze Keg"],
-                     where="I Eresby, 4-5 dages rejse fra Erenborg."),
+    "kegville": dict(note="Kegville", map="erukana", at=[2114, 2087], kind="by",
+                     region="eresby", aliases=["The Bronze Keg", "Bronze Keg"]),
     "segreve": dict(note="Segreve", map="erukana", at=[2436, 1990], kind="by", region="eresby",
                     aliases=["Segrave"]),
     "pembroke": dict(note="Pembroke", map="erukana", at=[2080, 1880], kind="by"),
@@ -93,7 +92,7 @@ PLACES = {
                    aliases=["Arkana", "Vogter tårnet"],
                    where="Muligvis kortets 'Arkana' – noterne kalder det 'det sydlige wizard-tårn'."),
     "grimrock": dict(note="Grimrock Woods", map="erukana", at=[2870, 1590], kind="vildmark"),
-    "miragehill": dict(note="Miragehill", map="erukana", at=[3120, 1560], approx=True, kind="by",
+    "miragehill": dict(note="Miragehill", map="erukana", at=[3075, 1606], approx=True, kind="by",
                        where="På østsiden af Grimrock Woods."),
 
     # --- Mowbray & the west ---
@@ -107,8 +106,7 @@ PLACES = {
                          summary="Den dværgehal blandt Bjergenes Børn, der er mest åben mod omverdenen. "
                                  "Grundlagt af en klan fra Slatestone, og anerkender i dag ikke "
                                  "Slatestones hersker – hvilket har ført til mindre krige mellem hallerne."),
-    "blackforge": dict(note="Blackforge", region="mowbray", kind="by",
-                       where="Mowbrays hovedstad – ikke tegnet på kortet."),
+    "blackforge": dict(note="Blackforge", map="erukana", at=[1806, 1738], region="mowbray", kind="by"),
 
     # --- Botreaux, Valence, Blackmere ---
     "botreaux-by": dict(note="Botreaux", map="erukana", at=[2300, 810], kind="by", region="botreaux"),
@@ -119,9 +117,9 @@ PLACES = {
     "wolfenburg": dict(note="Wolfenburg", map="erukana", at=[3180, 1090], kind="by", region="botreaux"),
     "feucenberg": dict(note="Castle Feucenberg", map="erukana", at=[2980, 1270], approx=True, kind="borg",
                        region="botreaux", where="Nær Wolfenburg – sandsynligvis den unavngivne borg på kortet."),
-    "chapterhouse": dict(note="Queensguard Chapterhouse Erukana", map="erukana", at=[3090, 1185],
+    "chapterhouse": dict(note="Queensguard Chapterhouse Erukana", map="erukana", at=[2694, 1273],
                          approx=True, kind="borg", region="botreaux", name="Queensguard Chapterhouse",
-                         where="Lidt uden for Wolfenburg. Nu ødelagt."),
+                         where="Usikker placering. Nu ødelagt."),
     "mortimor": dict(note="Mortimor", map="erukana", at=[2565, 230], kind="by", region="valence"),
     "vigils-rock": dict(note="Vigil's Rock", map="erukana", at=[3410, 420], kind="havn", region="blackmere"),
     "highhome": dict(note="Highhome", map="erukana", at=[3920, 470], kind="by", region="blackmere"),

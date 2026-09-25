@@ -596,8 +596,14 @@
   const GROUP_ORDER = ["Sessioner", "Steder", "Personer", "Factions", "Karakterer", "Missioner", "Genstande", "Loot", "Journal", "Lore", "Regler", "Andet"];
   const sessionOrder = (n) => n.session ?? Infinity;
 
+  // With Rejsen open, a session note moves the journey along with the reader.
+  const noteHref = (k) => (notes && !jBody.hidden && sessionByNum(notesCache[k]?.session)
+    ? `#session/${notesCache[k].session}/laes` : `#note/${k}`);
+  let notesCache = {};
+
   async function showNote(id) {
     const all = await loadNotes();
+    notesCache = all;
     const n = all[id];
     if (!n) return closePanel();
     const related = [...new Set([...n.links, ...n.backlinks])].filter((k) => all[k]);
@@ -622,7 +628,7 @@
         el("summary", {}, `Relaterede noter (${related.length})`),
         groups.map(([g, ids]) => el("div", { class: "related-group" },
           el("h4", {}, g),
-          el("ul", { class: "chips" }, ids.map((k) => el("li", {}, el("a", { href: `#note/${k}`, title: all[k].title }, label(k)))))))) : null,
+          el("ul", { class: "chips" }, ids.map((k) => el("li", {}, el("a", { href: noteHref(k), title: all[k].title }, label(k)))))))) : null,
       text,
     );
     panel.classList.add("wide");

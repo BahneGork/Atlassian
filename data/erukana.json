@@ -429,14 +429,14 @@
    "kind": "hule",
    "map": "erukana",
    "at": [
-    2410,
-    2580
+    2590,
+    2743
    ],
-   "approx": true,
+   "approx": false,
    "parent": null,
    "region": "welles",
    "offmap": null,
-   "where": "Syd for Astley ifølge noterne.",
+   "where": "",
    "aliases": [
     "mausoleum"
    ],
@@ -674,14 +674,14 @@
    "kind": "vildmark",
    "map": "erukana",
    "at": [
-    3150,
-    2700
+    2804,
+    2593
    ],
-   "approx": true,
+   "approx": false,
    "parent": null,
-   "region": null,
+   "region": "welles",
    "offmap": null,
-   "where": "Syd-øst for Astley i bjergene.",
+   "where": "",
    "aliases": [],
    "summary": "Det Røde pas er et bjergpas syd-øst for Astley. Det er et strategisk vigtigt punkt hvor Ridderne af Blodrosen har bygget en større konstruktion og samlet styrker.",
    "url": "",
@@ -699,14 +699,14 @@
    "kind": "hule",
    "map": "erukana",
    "at": [
-    2470,
-    2150
+    2173,
+    2316
    ],
-   "approx": true,
+   "approx": false,
    "parent": null,
    "region": "eresby",
    "offmap": null,
-   "where": "I bakkerne vest for vejen mellem Mistville og The Bronze Keg.",
+   "where": "",
    "aliases": [],
    "summary": "Kobold-klanen Dark Gems huler. Her fandt gruppen timeglasset og tids-scrollen i session 1 og mødte hviskeren i mørket, som fortalte om glemte dværgehaller dybere nede.",
    "url": "",
@@ -804,14 +804,14 @@
    "kind": "by",
    "map": "erukana",
    "at": [
-    2600,
-    1960
+    2114,
+    2087
    ],
-   "approx": true,
+   "approx": false,
    "parent": null,
    "region": "eresby",
    "offmap": null,
-   "where": "I Eresby, 4-5 dages rejse fra Erenborg.",
+   "where": "",
    "aliases": [
     "The Bronze Keg",
     "Bronze Keg"
@@ -969,8 +969,8 @@
    "kind": "by",
    "map": "erukana",
    "at": [
-    3120,
-    1560
+    3075,
+    1606
    ],
    "approx": true,
    "parent": null,
@@ -1084,13 +1084,16 @@
   "blackforge": {
    "name": "Blackforge",
    "kind": "by",
-   "map": null,
-   "at": null,
+   "map": "erukana",
+   "at": [
+    1806,
+    1738
+   ],
    "approx": false,
    "parent": null,
    "region": "mowbray",
    "offmap": null,
-   "where": "Mowbrays hovedstad – ikke tegnet på kortet.",
+   "where": "",
    "aliases": [],
    "summary": "Blackforge er Baron Breys hovedstad i Baroniet Mowbray med ca. 700.000 indbyggere. Byen er berømt for sin våbensmedning.",
    "url": "",
@@ -1253,14 +1256,14 @@
    "kind": "borg",
    "map": "erukana",
    "at": [
-    3090,
-    1185
+    2694,
+    1273
    ],
    "approx": true,
    "parent": null,
    "region": "botreaux",
    "offmap": null,
-   "where": "Lidt uden for Wolfenburg. Nu ødelagt.",
+   "where": "Usikker placering. Nu ødelagt.",
    "aliases": [],
    "summary": "The Queensguard Chapterhouse in Erukana - now destroyed. See The Queensguard#Angrebet På Chapterhouse Erukana for details.",
    "url": "",
