@@ -596,16 +596,18 @@
   const GROUP_ORDER = ["Sessioner", "Steder", "Personer", "Factions", "Karakterer", "Missioner", "Genstande", "Loot", "Journal", "Lore", "Regler", "Andet"];
   const sessionOrder = (n) => n.session ?? Infinity;
 
-  // With Rejsen open, a session note moves the journey along with the reader.
-  const noteHref = (k) => (notes && !jBody.hidden && sessionByNum(notesCache[k]?.session)
-    ? `#session/${notesCache[k].session}/laes` : `#note/${k}`);
-  let notesCache = {};
+
+  const noteHref = (all, k) => (all[k]?.session != null && sessionByNum(all[k].session)
+    ? `#session/${all[k].session}/laes` : `#note/${k}`);
 
   async function showNote(id) {
     const all = await loadNotes();
-    notesCache = all;
     const n = all[id];
     if (!n) return closePanel();
+    // Reading a session log with Rejsen open moves the journey there too, whichever link led here
+    // (related box, "Next Session" links in the text, back button).
+    const sIdx = n.session != null ? sessions.indexOf(sessionByNum(n.session)) : -1;
+    if (sIdx >= 0 && (jBody.hidden || sIdx !== step)) showSession(sIdx, true);
     const related = [...new Set([...n.links, ...n.backlinks])].filter((k) => all[k]);
     const groups = GROUP_ORDER.map((g) => [g, related.filter((k) => all[k].group === g)
       .sort((a, b) => sessionOrder(all[a]) - sessionOrder(all[b]) || all[a].title.localeCompare(all[b].title, "da"))])
@@ -617,6 +619,7 @@
     const text = el("div", { class: "note-md" });
     text.innerHTML = marked.parse(n.md);
     for (const a of text.querySelectorAll("a[href^='http']")) { a.target = "_blank"; a.rel = "noopener"; }
+    for (const a of text.querySelectorAll("a[href^='#note/']")) a.setAttribute("href", noteHref(all, a.getAttribute("href").slice(6)));
 
     openPanel(
       el("p", { class: "kicker" }, n.group === "Sessioner" ? "Sessionslog" : n.group),
@@ -628,7 +631,7 @@
         el("summary", {}, `Relaterede noter (${related.length})`),
         groups.map(([g, ids]) => el("div", { class: "related-group" },
           el("h4", {}, g),
-          el("ul", { class: "chips" }, ids.map((k) => el("li", {}, el("a", { href: noteHref(k), title: all[k].title }, label(k)))))))) : null,
+          el("ul", { class: "chips" }, ids.map((k) => el("li", {}, el("a", { href: noteHref(all, k), title: all[k].title }, label(k)))))))) : null,
       text,
     );
     panel.classList.add("wide");
