@@ -1230,14 +1230,16 @@
    "parent": null,
    "region": null,
    "offmap": null,
-   "where": "Muligvis kortets 'Arkana' – noterne kalder det 'det sydlige wizard-tårn'. Gruppen var der mellem session 20 og 21 (missionen 'The fall of Arcana tower', hvor I fik Isilme) – turen har ingen sessionslog.",
+   "where": "Muligvis kortets 'Arkana' – noterne kalder det 'det sydlige wizard-tårn'. Turen (20.5) har ingen sessionslog – den står i missionsnoten 'The fall of Arcana tower'.",
    "aliases": [
     "Arkana",
     "Vogter tårnet"
    ],
    "summary": "Arcana tårnet var et troldmandstårn i [Baroniet Eresby](#note/baroniet-eresby) tilknyttet [Baron Zhaarko af Eresby](#note/baron-zhaarko-af-eresby). Tårnet eksploderede i en mystisk hændelse. Det omtales også som \"Det sydlige wizard tårn\" eller \"Vogter tårnet\".",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    20.5
+   ],
    "people": [
     [
      "Merelda",
@@ -7568,6 +7570,17 @@
    "date": "11.01.2025",
    "gm": "Nissen",
    "noteId": "20-110125-changer-of-time-nissen-session-16"
+  },
+  {
+   "num": 20.5,
+   "title": "The fall of Arcana tower – Isilme",
+   "places": [
+    "arcana"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "Nissen",
+   "noteId": "arcana-tower-explosion"
   },
   {
    "num": 21,

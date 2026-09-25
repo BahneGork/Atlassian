@@ -294,7 +294,7 @@ def main():
                 linked[target][n["folder"]].add(title)
 
     sessions_at = defaultdict(list)
-    for num, _, ids in SESSIONS:
+    for num, _, ids, *_ in SESSIONS:
         for pid in ids:
             if pid not in PLACES:
                 problems.append(f"session {num}: unknown place {pid}")
@@ -350,9 +350,11 @@ def main():
 
     session_notes = {float(re.match(r"\d+(?:\.\d+)?", t).group()): t for t, n in notes.items()
                      if n["folder"] == "" and re.match(r"^\d+(?:\.\d+)?\s*[-\s]", t)}
+    # Journey entries without a session log name their own note (e.g. a mission note).
+    entry_notes = {num: extra[0] for num, _, _, *extra in SESSIONS if extra}
     sessions = []
-    for num, title, ids in SESSIONS:
-        t = session_notes.get(num)
+    for num, title, ids, *_ in SESSIONS:
+        t = entry_notes.get(num) or session_notes.get(num)
         if not t:
             problems.append(f"session {num}: note not found")
         d = re.match(r"^\d+\s*-?\s*(\d{2})(\d{2})(\d{2})\b", t or "")
@@ -371,7 +373,7 @@ def main():
 
     place_of = {p["note"]: ("sted", pid) for pid, p in PLACES.items()}
     place_of.update({r["note"]: ("region", rid) for rid, r in REGIONS.items()})
-    session_of = {t: int(num) if num == int(num) else num for num, t in session_notes.items()}
+    session_of = {t: int(num) if num == int(num) else num for num, t in {**session_notes, **entry_notes}.items()}
     export_notes(notes, note_id, place_of, session_of)
     people, factions = build_people(notes, note_id, session_of)
 
@@ -417,7 +419,7 @@ def main():
     for rid, r in REGIONS.items():
         regions[rid]["noteId"] = note_id.get(r["note"])
     for s in sessions:
-        s["noteId"] = note_id.get(session_notes.get(s["num"]))
+        s["noteId"] = note_id.get(entry_notes.get(s["num"]) or session_notes.get(s["num"]))
 
     out = {"maps": MAPS, "portals": PORTALS, "offmap": OFFMAP, "places": places,
            "people": people, "factions": factions, "threads": threads, "tools": tools,

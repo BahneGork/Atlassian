@@ -91,8 +91,7 @@ PLACES = {
     "arcana": dict(note="Arcana tårnet", map="erukana", at=[2005, 3020], approx=True, kind="taarn",
                    aliases=["Arkana", "Vogter tårnet"],
                    where="Muligvis kortets 'Arkana' – noterne kalder det 'det sydlige wizard-tårn'. "
-                         "Gruppen var der mellem session 20 og 21 (missionen 'The fall of Arcana tower', "
-                         "hvor I fik Isilme) – turen har ingen sessionslog."),
+                         "Turen (20.5) har ingen sessionslog – den står i missionsnoten 'The fall of Arcana tower'."),
     "grimrock": dict(note="Grimrock Woods", map="erukana", at=[2870, 1590], kind="vildmark"),
     "miragehill": dict(note="Miragehill", map="erukana", at=[3075, 1606], approx=True, kind="by",
                        where="På østsiden af Grimrock Woods."),
@@ -208,7 +207,8 @@ REGIONS = {
                              "stammer som Langfods-stammen og Knoglefolket."),
 }
 
-# The journey: one entry per session log. Places are PLACES ids.
+# The journey: one entry per session log. Places are PLACES ids. An optional 4th item names
+# the note to read for entries that have no session log.
 SESSIONS = [
     (1, "Bagholdet og Dark Gem-hulerne", ["dark-gem"]),
     (2, "Uge på The Bronze Keg", ["kegville"]),
@@ -230,6 +230,8 @@ SESSIONS = [
     (18, "Den brækkede knogle", ["den-braekkede-knogle"]),
     (19, "Baghold på Alistair-palæet", ["astley"]),
     (20, "Vinterfesten", ["astley"]),
+    # No session log: the trip is only in the mission note, which is read in its place.
+    (20.5, "The fall of Arcana tower – Isilme", ["arcana"], "Arcana Tower Explosion"),
     (21, "Winstons ridderslag – varehus 13", ["astley"]),
     (22, "Slaget i himmerige", ["stormens-ed"]),
     (23, "Stormens Ed", ["stormens-ed"]),
