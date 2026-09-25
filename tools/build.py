@@ -15,8 +15,8 @@ from urllib.parse import quote, unquote
 
 sys.path.insert(0, os.path.dirname(__file__))
 from curation import (GARDEN_URL, LOCATION_ALIASES, MAPS, NOT_PEOPLE, NOT_PLACES,  # noqa: E402
-                      OFFMAP, PARTY, PARTY_CLASS, PARTY_EXTRA, PARTY_NAMES, PARTY_ORIGIN, PARTY_RACE, PARTY_STATUS,
-                      PLACES, PORTALS,
+                      OFFMAP, PARTY, PARTY_CLASS, PARTY_EXTRA, PARTY_NAMES, PARTY_ORIGIN, PARTY_PERIODS, PARTY_RACE,
+                      PARTY_STATUS, PLACES, PORTALS, SOLO_SESSIONS,
                       REGIONS, SESSIONS)
 import threads as thr  # noqa: E402
 
@@ -439,6 +439,13 @@ def main():
     for group in (people, factions):
         for pid, p in group.items():
             p["sessions"] = sorted({to_int(float(x)) for x in p["sessions"]} | {to_int(x) for x in seen_in.get(pid, ())})
+    # The party: every session while they were with the group, except solo sessions they weren't in.
+    for pid, p in people.items():
+        if p["name"] in PARTY_PERIODS:
+            first, last = PARTY_PERIODS[p["name"]]
+            p["sessions"] = [s["num"] for s in sessions if s["num"] >= first and (last is None or s["num"] <= last)
+                             and (s["num"] not in SOLO_SESSIONS or p["name"] in SOLO_SESSIONS[s["num"]])]
+            p["period"] = [first, last]
     latest = max(session_notes)
     # duplicate notes that the atlas treats as aliases of another place (e.g. "knoglestammens huler 1")
     aliases = {a for p in PLACES.values() for a in p.get("aliases", [])}

@@ -297,6 +297,16 @@ PARTY_NAMES = {"Sir Winston": ["Winston", "Winston Wildwood"], "Nibar": ["Nibar 
                "Clarabel Lancaster": ["Clarabel", "Clara"], "Vargoth Sul": ["Vargoth"], "Bjørn of Nordheim": ["Bjørn"],
                "Viktor Baigorri": ["Viktor", "Victor"], "Corwin": ["Corvin"], "Fritte": ["Fritta"]}
 
+# When each party member was with the group (first, last session; None = still with them), per Bahne.
+# A party member counts as present in every session in that span, not just the ones that name them.
+PARTY_PERIODS = {
+    "Sir Winston": (1, None), "Nibar": (1, None), "Clarabel Lancaster": (1, None), "Vargoth Sul": (1, 27),
+    "Fritte": (13, 19), "Bjørn of Nordheim": (15, 28), "Isilme": (20.5, 27), "Logan": (21, 46),
+    "Evelyn Adair": (28, 46), "Corwin": (28, 36), "Viktor Baigorri": (36, None),
+}
+# Sessions only some of the party played (the log's own "pcs" list): everyone else is left out of them.
+SOLO_SESSIONS = {38: ["Clarabel Lancaster"], 41: ["Clarabel Lancaster"], 45.5: ["Logan"]}
+
 # Class per party member, according to Bahne (overrides the character notes). Race: (race, source) where
 # no character note gives it but the logs do.
 PARTY_CLASS = {

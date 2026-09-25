@@ -288,11 +288,11 @@
     const list = el("div", { class: "chips" }, p.sessions.map((num) =>
       el("a", { class: "session-link", href: `#session/${num}/laes` }, `Session ${num}`)));
     if (!p.pc || p.sessions.length <= 8) return list;
-    const [first, last] = [p.sessions[0], p.sessions[p.sessions.length - 1]];
+    const [first, last] = p.period || [p.sessions[0], p.sessions[p.sessions.length - 1]];
+    const link = (n) => el("a", { class: "session-link", href: `#session/${n}/laes` }, `S${n}`);
     return el("details", { class: "session-summary" },
-      el("summary", {}, `Nævnt ved navn i ${p.sessions.length} af ${sessions.length} sessionslogs · første `,
-        el("a", { class: "session-link", href: `#session/${first}/laes` }, `S${first}`), " · seneste ",
-        el("a", { class: "session-link", href: `#session/${last}/laes` }, `S${last}`)),
+      el("summary", {}, "Med i gruppen fra ", link(first), last != null ? [" til ", link(last)] : " og frem",
+        ` · ${p.sessions.length} sessioner`),
       list);
   }
   // All places inside a place (Soltræet and its chambers are inside Astley, …).
