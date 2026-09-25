@@ -944,13 +944,33 @@
     const pp = Object.keys(people).filter((k) => [people[k].name, ...people[k].aliases].some(has));
     return [pl, pp];
   }
+  // Place and region names in a short text become links to their notes ("Astley og Welles").
+  const nameLinks = (() => {
+    const out = [];
+    for (const p of Object.values(places)) if (p.noteId) [p.name, ...p.aliases].forEach((n) => out.push([n, p.noteId]));
+    for (const r of Object.values(regions)) if (r.noteId) {
+      out.push([r.name, r.noteId]);
+      out.push([r.name.split(" ").pop(), r.noteId]); // "Baroniet Welles" -> "Welles"
+    }
+    return out.filter(([n]) => n.length >= 4).sort((a, b) => b[0].length - a[0].length);
+  })();
+  function linkNames(text) {
+    for (const [name, id] of nameLinks) {
+      const i = text.search(new RegExp(`(^|[^\\wæøå])${name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\wæøå])`));
+      if (i < 0) continue;
+      const start = text.indexOf(name, i);
+      return [...linkNames(text.slice(0, start)), el("a", { href: `#note/${id}` }, name), ...linkNames(text.slice(start + name.length))];
+    }
+    return text ? [text] : [];
+  }
+
   function showThread(id) {
     const t = threads.find((x) => x.id === id);
     if (!t) return showThreads();
     for (const b of tabs.children) b.setAttribute("aria-pressed", String(b.dataset.map === "traade"));
     const [pl, pp] = threadMentions(t);
     openPanel(
-      el("p", { class: "crumbs" }, el("a", { href: "#traade" }, "Tråde"), " › ", t.group),
+      el("p", { class: "crumbs" }, el("a", { href: "#traade" }, "Tråde"), " › ", ...linkNames(t.group)),
       el("h2", {}, t.title),
       t.parts.map(([label, text]) => el("section", { class: `thread-part${label === "Muligt (gæt)" ? " guess" : ""}` },
         label ? el("h3", {}, label) : null, md(text))),
