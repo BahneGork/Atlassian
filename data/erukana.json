@@ -2472,9 +2472,9 @@
    "stance": "ally",
    "dead": false,
    "status": "",
-   "race": "human",
+   "race": "",
    "social": "",
-   "role": "military",
+   "role": "",
    "aliases": [
     "Viktor",
     "Victor",
@@ -2506,7 +2506,7 @@
    "status": "dead",
    "race": "Dwarf",
    "social": "",
-   "role": "",
+   "role": "Cleric (War domain)",
    "aliases": [
     "vargoth"
    ],
@@ -2533,9 +2533,9 @@
    "stance": "ally",
    "dead": false,
    "status": "",
-   "race": "human",
+   "race": "Human",
    "social": "",
-   "role": "religious, druid",
+   "role": "Cleric (War domain)",
    "aliases": [
     "Clara"
    ],
@@ -3358,9 +3358,9 @@
    "stance": "ally",
    "dead": false,
    "status": "",
-   "race": "human",
+   "race": "Gnome",
    "social": "",
-   "role": "paladin, military",
+   "role": "Fighter (Battlemaster)",
    "aliases": [
     "Winston",
     "Winston Wildwood"
@@ -3419,9 +3419,9 @@
    "stance": "ally",
    "dead": false,
    "status": "",
-   "race": "human",
+   "race": "",
    "social": "",
-   "role": "resistance",
+   "role": "",
    "aliases": [],
    "factions": [
     "astley-avengers"
@@ -4207,9 +4207,9 @@
    "stance": "ally",
    "dead": true,
    "status": "dead",
-   "race": "elf",
+   "race": "",
    "social": "",
-   "role": "scholar",
+   "role": "",
    "aliases": [],
    "factions": [
     "astley-avengers"
@@ -4389,9 +4389,9 @@
    "stance": "ally",
    "dead": false,
    "status": "",
-   "race": "gnome",
+   "race": "Gnome",
    "social": "",
-   "role": "scholar",
+   "role": "Wizard",
    "aliases": [],
    "factions": [
     "astley-avengers"
@@ -4925,9 +4925,9 @@
    "stance": "ally",
    "dead": false,
    "status": "",
-   "race": "human",
+   "race": "",
    "social": "",
-   "role": "military",
+   "role": "",
    "aliases": [],
    "factions": [
     "astley-avengers"
@@ -5065,9 +5065,9 @@
    "stance": "ally",
    "dead": false,
    "status": "",
-   "race": "human",
+   "race": "",
    "social": "",
-   "role": "druid",
+   "role": "",
    "aliases": [],
    "factions": [
     "astley-avengers"
@@ -5218,7 +5218,7 @@
    "status": "",
    "race": "",
    "social": "",
-   "role": "præst (Mishakal/Paladine)",
+   "role": "",
    "aliases": [
     "Evelyn",
     "Adare",

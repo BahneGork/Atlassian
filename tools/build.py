@@ -217,8 +217,28 @@ def text_prop(value):
     return ", ".join(WIKILINK.sub(link_label, v) for v in vals)
 
 
+def character_sheets():
+    """Race and class from the player character notes in Characters/, keyed by lower-case name and alias."""
+    sheets = {}
+    for dirpath, _, files in os.walk(os.path.join(NOTES, "Characters")):
+        for f in files:
+            m = re.match(r"^---\n(.*?)\n---\n", open(os.path.join(dirpath, f), encoding="utf-8").read(), re.S)
+            try:
+                pr = json.loads(m.group(1)).get("dg-note-properties", {}) if m else {}
+            except ValueError:
+                continue
+            if pr.get("type") != "pc" or not pr.get("class"):
+                continue
+            cls = pr["class"] + (f" ({pr['subclass']})" if pr.get("subclass") and pr["subclass"] != "uknown" else "")
+            sheet = {"race": pr.get("race", ""), "class": cls}
+            for name in [f[:-3]] + [a for a in pr.get("aliases") or [] if isinstance(a, str)]:
+                sheets[name.lower()] = sheet
+    return sheets
+
+
 def build_people(notes, note_id, session_of):
     """People and factions from their notes' properties, placed on atlas places where possible."""
+    sheets = character_sheets()
     where = {p["note"]: pid for pid, p in PLACES.items()}
     where.update({a: pid for pid, p in PLACES.items() for a in p.get("aliases", [])})
     where.update({r["note"]: f"region:{rid}" for rid, r in REGIONS.items()})
@@ -281,6 +301,11 @@ def build_people(notes, note_id, session_of):
         if in_party:
             # A party member's location in their note is where they come from; they travel with the group.
             people[pid]["origin"], people[pid]["place"] = people[pid]["place"], None
+            # Race and class only from their character note; the People/ properties for the party are unreliable.
+            names = [title.lower()] + [a.lower() for a in people[pid]["aliases"]] + [w.lower() for w in title.split()]
+            sheet = next((sheets[n] for n in names if n in sheets), None)
+            people[pid]["race"] = sheet["race"] if sheet else ""
+            people[pid]["role"] = sheet["class"] if sheet else ""
         for f in fids:
             factions[f]["members"].append(pid)
     # Party members without a note: sessions from their name in the logs.

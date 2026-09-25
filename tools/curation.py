@@ -294,7 +294,7 @@ PARTY_STATUS = {
 }
 # Party members without a note of their own: shown from what the logs say.
 PARTY_EXTRA = {
-    "Evelyn Adair": dict(aliases=["Evelyn", "Adare", "Adair"], race="", social="", role="præst (Mishakal/Paladine)", dead=True,
+    "Evelyn Adair": dict(aliases=["Evelyn", "Adare", "Adair"], race="", social="", role="", dead=True,
                          statusNote="Ifølge Bahne: død. Gav frivilligt sin essens til tidsartifaktet i session 46, "
                                     "til kun kroppen var tilbage."),
 }
