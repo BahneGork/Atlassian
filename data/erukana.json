@@ -1207,9 +1207,7 @@
    "aliases": [],
    "summary": "Stampenborg er et sted [Vaelon Dunmere](#note/vaelon-dunmere) nævnte i forbindelse med Evelyn Adairs tilfangetagelse. Muligvis en borg eller fæstning i [Baroniet Eresby](#note/baroniet-eresby)-regionen.",
    "url": "",
-   "sessions": [
-    43
-   ],
+   "sessions": [],
    "people": [
     [
      "Vaelon Dunmere",
@@ -1217,7 +1215,7 @@
     ]
    ],
    "factions": [],
-   "visited": true,
+   "visited": false,
    "noteId": "stampenborg"
   },
   "arcana": {
@@ -7814,8 +7812,7 @@
    "title": "Sejlads i skyerne",
    "places": [
     "vardestjernen",
-    "port-alexander",
-    "stampenborg"
+    "port-alexander"
    ],
    "url": "",
    "date": "28.03.2026",

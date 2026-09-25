@@ -250,7 +250,7 @@ SESSIONS = [
     (40, "Vardestjernens dybder", ["vardestjernen", "port-drakkan"]),
     (41, "Besøg i Soltræet", ["soltraeet", "visdommens-kammer", "krypten"]),
     (42, "ShipJacking", ["port-drakkan", "vinterspiret"]),
-    (43, "Sejlads i skyerne", ["vardestjernen", "port-alexander", "stampenborg"]),
+    (43, "Sejlads i skyerne", ["vardestjernen", "port-alexander"]),
     (44, "Redningsmission i Feywood – den lilla horde", ["feywood", "astley"]),
     (45, "Dracolichen angriber", ["soltraeet"]),
     (45.5, "Logans tur til Skullborg", []),
