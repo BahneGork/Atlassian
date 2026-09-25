@@ -637,7 +637,7 @@
       el("div", { class: "note-actions" },
         placeKind ? el("a", { class: "note-link", href: `#${placeKind}/${placeId}` }, "Vis på kortet") : null,
         s && jBody.hidden ? el("a", { class: "note-link", href: `#session/${s.num}` }, "Vis i Rejsen") : null),
-      groups.length ? el("details", { class: "related", open: true },
+      groups.length ? el("details", { class: "related" },
         el("summary", {}, `Relaterede noter (${related.length})`),
         groups.map(([g, ids]) => el("div", { class: "related-group" },
           el("h4", {}, g),
