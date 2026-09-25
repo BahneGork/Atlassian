@@ -15,7 +15,7 @@ from urllib.parse import quote, unquote
 
 sys.path.insert(0, os.path.dirname(__file__))
 from curation import (GARDEN_URL, LOCATION_ALIASES, MAPS, NOT_PEOPLE, NOT_PLACES,  # noqa: E402
-                      OFFMAP, PARTY, PARTY_CLASS, PARTY_EXTRA, PARTY_RACE, PARTY_STATUS, PLACES, PORTALS,
+                      OFFMAP, PARTY, PARTY_CLASS, PARTY_EXTRA, PARTY_ORIGIN, PARTY_RACE, PARTY_STATUS, PLACES, PORTALS,
                       REGIONS, SESSIONS)
 import threads as thr  # noqa: E402
 
@@ -301,7 +301,7 @@ def build_people(notes, note_id, session_of):
         }
         if in_party:
             # A party member's location in their note is where they come from; they travel with the group.
-            people[pid]["origin"], people[pid]["place"] = people[pid]["place"], None
+            people[pid]["origin"], people[pid]["place"] = PARTY_ORIGIN.get(title, people[pid]["place"]), None
             # Race and class only from their character note; the People/ properties for the party are unreliable.
             names = [title.lower()] + [a.lower() for a in people[pid]["aliases"]] + [w.lower() for w in title.split()]
             sheet = next((sheets[n] for n in names if n in sheets), None)

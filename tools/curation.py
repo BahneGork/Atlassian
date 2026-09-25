@@ -305,8 +305,12 @@ PARTY_CLASS = {
     "Nibar": "Wizard (Evoker)",
     "Vargoth Sul": "War cleric",
     "Viktor Baigorri": "Fighter (Eldritch Knight) / Wizard",
+    "Fritte": "Rogue",
 }
-PARTY_RACE = {"Evelyn Adair": "Human", "Corwin": "Human", "Isilme": "Elf"}
+PARTY_RACE = {"Evelyn Adair": "Human", "Corwin": "Human", "Isilme": "Elf", "Fritte": "Human", "Logan": "Human",
+              "Viktor Baigorri": "Human", "Bjørn of Nordheim": "Human"}
+# Where a party member comes from, per Bahne, where their note says otherwise (place id or "region:<id>").
+PARTY_ORIGIN = {"Logan": "region:nordheim", "Bjørn of Nordheim": "region:nordheim"}
 
 # Party members without a note of their own: shown from what the logs say.
 PARTY_EXTRA = {

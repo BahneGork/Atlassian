@@ -2450,9 +2450,9 @@
    "stance": "ally",
    "dead": false,
    "status": "active",
-   "race": "",
+   "race": "Human",
    "social": "",
-   "role": "",
+   "role": "Rogue",
    "aliases": [
     "Fritte"
    ],
@@ -2472,7 +2472,7 @@
    "stance": "ally",
    "dead": false,
    "status": "",
-   "race": "",
+   "race": "Human",
    "social": "",
    "role": "Fighter (Eldritch Knight) / Wizard",
    "aliases": [
@@ -3419,7 +3419,7 @@
    "stance": "ally",
    "dead": false,
    "status": "",
-   "race": "",
+   "race": "Human",
    "social": "",
    "role": "Fighter (Battlemaster) / Rogue (Assassin)",
    "aliases": [],
@@ -3434,7 +3434,7 @@
    ],
    "pc": true,
    "statusNote": "",
-   "origin": "astley"
+   "origin": "region:nordheim"
   },
   "hertug-robert-de-ros": {
    "name": "Hertug Robert De Ros",
@@ -4925,7 +4925,7 @@
    "stance": "ally",
    "dead": false,
    "status": "",
-   "race": "",
+   "race": "Human",
    "social": "",
    "role": "Barbarian",
    "aliases": [],
