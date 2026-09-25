@@ -258,6 +258,14 @@ SESSIONS = [
     (47, "Efter drageessensen", ["astley", "mausoleum", "gamle-tempel"]),
 ]
 
+# Location values in People/Factions properties that name a place differently than its note.
+# Values are PLACES ids, or "region:<id>".
+LOCATION_ALIASES = {
+    "Bronzekeg": "kegville", "Dark Gem Clan Caves": "dark-gem", "Stirling": "stirling",
+    "Hertugdømmet Botreaux": "region:botreaux", "Vinterspiret 1": "vinterspiret",
+    "Nordlandet": "region:nordheim", "Nord Heim": "region:nordheim", "De Ældstes Haller": "dvaerge-haller",
+}
+
 # Location notes that are overviews or misfiled, not places to put on a map.
 NOT_PLACES = {"Erukana", "ErukanaMap", "Locationsvisited", "Region - Bortholme - Erukana",
               "States and Baronies of Erukana", "Troldmands tårne", "Vinterskov - Grøndalen - Erukana.png", "skur",

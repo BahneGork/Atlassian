@@ -2,7 +2,7 @@
 (async function () {
   const V = `?v=${window.ATLAS_VERSION || ""}`; // changes on every build, so phones fetch fresh files
   const data = await fetch(`data/erukana.json${V}`).then((r) => r.json());
-  const { maps, places, regions, sessions, portals, offmap, unplaced } = data;
+  const { maps, places, regions, sessions, portals, offmap, unplaced, people, factions } = data;
 
   const KIND = {
     by: "By", borg: "Borg", taarn: "Tårn", hule: "Hule & dybde", helligt: "Helligt sted",
@@ -133,6 +133,7 @@
     tabs.append(el("button", { type: "button", "data-map": id, onclick: () => go(`kort/${id}`) }, m.name));
   }
   tabs.append(el("button", { type: "button", "data-map": "", onclick: () => go("udenfor/other") }, "Andre steder"));
+  tabs.append(el("button", { type: "button", "data-map": "personer", onclick: () => go("personer") }, "Personer"));
 
   function showMap(id, fit = true) {
     if (current !== id) {
@@ -254,6 +255,103 @@
       i ? " › " : null, el("button", { type: "button", onclick: () => go(route) }, name)]));
   }
 
+  // ---------- People ----------
+  const STANCE = { ally: "Allieret", neutral: "Neutral", enemy: "Fjende", unknown: "Ukendt" };
+  // A person's place is a place id, or "region:<id>".
+  const placeName = (ref) => (!ref ? "Ukendt opholdssted"
+    : ref.startsWith("region:") ? regions[ref.slice(7)]?.name : places[ref]?.name) || "Ukendt opholdssted";
+  const placeRoute = (ref) => (ref?.startsWith("region:") ? `region/${ref.slice(7)}` : `sted/${ref}`);
+  const initials = (name) => name.replace(/\(.*?\)/g, "").split(/[\s-]+/).filter((w) => /^[A-ZÆØÅ]/i.test(w))
+    .slice(0, 2).map((w) => w[0].toUpperCase()).join("");
+  const monogram = (pid, big = false) => {
+    const p = people[pid];
+    return el("span", { class: `monogram stance-${p.stance}${p.dead ? " dead" : ""}${big ? " big" : ""}`, "aria-hidden": "true" },
+      initials(p.name), p.dead ? el("i", {}, "†") : null);
+  };
+  const personMeta = (p, withPlace) => [p.social, p.role, withPlace ? placeName(p.place) : null]
+    .filter(Boolean).filter((v, i, a) => a.indexOf(v) === i).join(" · ");
+  const personRow = (pid, withPlace = false) => {
+    const p = people[pid];
+    return el("li", {}, el("a", { class: "person-row", href: `#note/${pid}` },
+      monogram(pid), el("span", {}, el("b", {}, p.name, p.dead ? " †" : ""), el("small", {}, personMeta(p, withPlace)))));
+  };
+  const byName = (a, b) => people[a].name.localeCompare(people[b].name, "da");
+  // All places inside a place (Soltræet and its chambers are inside Astley, …).
+  const subtree = (id) => [id, ...children(id).flatMap(subtree)];
+
+  // People list for a place/region panel: residents first, then people whose notes mention it.
+  function peopleSection(residents, mentioned) {
+    const ids = [...new Set([...residents.sort(byName), ...mentioned.filter((k) => people[k]).sort(byName)])];
+    if (!ids.length) return null;
+    const list = el("ul", { class: "people-list" }, ids.slice(0, 12).map((k) => personRow(k)));
+    const more = ids.length > 12
+      ? el("button", { type: "button", class: "more", onclick: (e) => { list.append(...ids.slice(12).map((k) => personRow(k))); e.target.remove(); } },
+          `Vis alle ${ids.length}`)
+      : null;
+    return [el("h3", {}, `Personer (${ids.length})`), list, more];
+  }
+
+  // Directory (#personer or #personer/<filter>): the way to look for someone.
+  // Properties are mostly English; add the Danish word so "dværg", "præst", "købmand" … also match.
+  const DANISH = { dwarf: "dværg", gnome: "gnom", elf: "elver", human: "menneske", halfling: "halvling",
+    kobold: "kobold", dragonborn: "dragefødt", orc: "ork", giant: "kæmpe", priest: "præst", cleric: "præst",
+    merchant: "købmand", knight: "ridder", commoner: "almindelig borger", royalty: "kongelig", noble: "adelig",
+    officer: "officer", guard: "vagt", soldier: "soldat", innkeeper: "kro krovært", wizard: "troldmand",
+    mage: "troldmand magiker", druid: "druide", scholar: "lærd", thief: "tyv", smith: "smed", blacksmith: "smed",
+    farmer: "bonde", sailor: "sømand", captain: "kaptajn", hunter: "jæger", healer: "healer helbreder" };
+  const danish = (text) => text.toLowerCase().split(/[^a-z]+/).map((w) => DANISH[w] || "").join(" ");
+  const personKeys = Object.fromEntries(Object.entries(people).map(([pid, p]) => [pid, fold([
+    p.name, ...p.aliases, p.role, p.social, p.race, danish(`${p.role} ${p.social} ${p.race}`),
+    placeName(p.place), ...p.factions.map((f) => factions[f]?.name || ""),
+  ].join(" "))]));
+  const DIR_FILTERS = [["ally", "Allierede"], ["neutral", "Neutrale"], ["enemy", "Fjender"], ["unknown", "Ukendte"], ["dead", "Døde"]];
+  const dirState = { q: "", only: null };
+  function showDirectory(q = "") {
+    dirState.q = q;
+    for (const b of tabs.children) b.setAttribute("aria-pressed", String(b.dataset.map === "personer"));
+    const field = el("input", { type: "search", class: "dir-filter", placeholder: "Navn, rolle, sted, faction…", value: q,
+      "aria-label": "Filtrér personer" });
+    const chipsRow = el("div", { class: "dir-chips" });
+    const out = el("div", { class: "dir-results" });
+    const matches = (pid) => {
+      const p = people[pid];
+      const words = fold(dirState.q).split(/\s+/).filter(Boolean);
+      return words.every((w) => personKeys[pid].includes(w))
+        && (!dirState.only || (dirState.only === "dead" ? p.dead : p.stance === dirState.only));
+    };
+    function render() {
+      const textHits = Object.keys(people).filter((pid) => fold(dirState.q).split(/\s+/).filter(Boolean).every((w) => personKeys[pid].includes(w)));
+      chipsRow.replaceChildren(...DIR_FILTERS.map(([key, label]) => {
+        const n = textHits.filter((pid) => (key === "dead" ? people[pid].dead : people[pid].stance === key)).length;
+        return el("button", { type: "button", class: `dir-chip stance-${key}`, "aria-pressed": String(dirState.only === key),
+          onclick: () => { dirState.only = dirState.only === key ? null : key; render(); } }, `${label} ${n}`);
+      }));
+      const hits = Object.keys(people).filter(matches);
+      const groups = {};
+      for (const pid of hits) (groups[people[pid].place || ""] ||= []).push(pid);
+      const order = Object.keys(groups).sort((a, b) => (a === "") - (b === "") || groups[b].length - groups[a].length);
+      out.replaceChildren(
+        el("p", { class: "dir-count" }, `${hits.length} af ${Object.keys(people).length} personer`),
+        ...order.map((ref) => {
+          const ids = groups[ref].sort(byName);
+          const list = el("ul", { class: "people-list" }, ids.slice(0, 8).map((k) => personRow(k)));
+          return el("section", { class: "dir-group" },
+            el("h3", {}, ref ? el("a", { href: `#${placeRoute(ref)}` }, placeName(ref)) : "Ukendt opholdssted", ` (${ids.length})`),
+            list,
+            ids.length > 8 ? el("button", { type: "button", class: "more",
+              onclick: (e) => { list.append(...ids.slice(8).map((k) => personRow(k))); e.target.remove(); } }, `Vis alle ${ids.length}`) : null);
+        }));
+    }
+    field.addEventListener("input", () => {
+      dirState.q = field.value;
+      history.replaceState(null, "", `#personer${field.value ? "/" + encodeURIComponent(field.value) : ""}`);
+      render();
+    });
+    render();
+    openPanel(el("p", { class: "kicker" }, "Personregister"), el("h2", {}, "Personer"), field, chipsRow, out);
+    if (window.innerWidth > 720) field.focus();
+  }
+
   function showPlace(id) {
     const p = places[id];
     const kids = children(id);
@@ -275,7 +373,8 @@
         el("div", { class: "chips" }, [...sess].sort((a, b) => a - b).map((n) =>
           el("button", { type: "button", class: "session-chip", title: sessionByNum(n)?.title, onclick: () => go(`session/${n}`) }, `Session ${n}`)))] : null,
       placeList("Steder her", kids),
-      chips("Personer", p.people),
+      peopleSection(Object.keys(people).filter((k) => subtree(id).includes(people[k].place)),
+        subtree(id).flatMap((k) => places[k].people.map(([, pid]) => pid))),
       chips("Factions", p.factions),
       noteLink(p.noteId, p.url),
     );
@@ -293,7 +392,9 @@
       el("h2", {}, r.name),
       r.summary ? summary(r.summary) : null,
       placeList(r.poly ? "Steder i baroniet" : "Steder uden kendt placering", members),
-      chips("Personer", r.people),
+      peopleSection(Object.keys(people).filter((k) => people[k].place === `region:${id}`
+        || (places[people[k].place] && places[anchor(people[k].place) || people[k].place]?.region === id)),
+        r.people.map(([, pid]) => pid)),
       chips("Factions", r.factions),
       noteLink(r.noteId, r.url),
     );
@@ -324,11 +425,23 @@
   }
 
   // ---------- Search ----------
+  // On phones the search field sits just below the title panel, whose height depends on how the tabs wrap.
+  function placeSearch() {
+    const search = $(".search");
+    search.style.top = window.innerWidth <= 720 ? `${Math.round($(".cartouche").getBoundingClientRect().bottom + 8)}px` : "";
+  }
+  window.addEventListener("resize", placeSearch);
+  document.fonts?.ready.then(placeSearch);
+  placeSearch();
+
   const input = $("#search-input");
   const results = $(".search-results");
   const index = [
     ...Object.entries(places).map(([id, p]) => ({ route: `sted/${id}`, name: p.name, sub: KIND[p.kind], keys: [p.name, ...p.aliases].map(fold) })),
     ...Object.entries(regions).map(([id, r]) => ({ route: `region/${id}`, name: r.name, sub: r.poly ? "Baroni" : "Land", keys: [fold(r.name)] })),
+    ...Object.entries(people).map(([id, p]) => ({ route: `note/${id}`, name: p.name + (p.dead ? " †" : ""),
+      sub: `Person${p.place ? " · " + placeName(p.place) : ""}`, keys: [p.name, ...p.aliases].map(fold) })),
+    ...Object.entries(factions).map(([id, f]) => ({ route: `note/${id}`, name: f.name, sub: "Faction", keys: [fold(f.name)] })),
   ];
   let active = 0;
   function renderResults() {
@@ -626,6 +739,21 @@
     const [placeKind, placeId] = n.place || [];
     const s = n.session != null ? sessionByNum(n.session) : null;
 
+    const person = people[id];
+    const card = person ? el("div", { class: "person-card" },
+      monogram(id, true),
+      el("div", {},
+        el("div", { class: "badges" },
+          el("span", { class: `badge stance-${person.stance}` }, STANCE[person.stance]),
+          person.dead ? el("span", { class: "badge" }, "Død †") : person.status ? el("span", { class: "badge" }, person.status) : null),
+        el("p", { class: "person-facts" }, [person.race, person.social, person.role].filter(Boolean).join(" · ") || null),
+        el("p", { class: "person-facts" }, "Opholdssted: ",
+          person.place ? el("a", { href: `#${placeRoute(person.place)}` }, placeName(person.place)) : "ukendt"),
+        person.factions.length ? el("p", { class: "person-facts" }, "Factions: ",
+          person.factions.flatMap((f, i) => [i ? ", " : null, el("a", { href: `#note/${f}` }, factions[f].name)])) : null,
+        person.sessions.length ? el("div", { class: "chips" }, person.sessions.map((num) =>
+          el("a", { class: "session-link", href: `#session/${num}/laes` }, `Session ${num}`))) : null)) : null;
+
     const text = el("div", { class: "note-md" });
     text.innerHTML = marked.parse(n.md);
     for (const a of text.querySelectorAll("a[href^='http']")) { a.target = "_blank"; a.rel = "noopener"; }
@@ -633,7 +761,8 @@
 
     openPanel(
       el("p", { class: "kicker" }, n.group === "Sessioner" ? "Sessionslog" : n.group),
-      el("h2", {}, s ? `Session ${s.num}: ${s.title}` : n.title),
+      el("h2", {}, s ? `Session ${s.num}: ${s.title}` : n.title + (person?.dead ? " †" : "")),
+      card,
       el("div", { class: "note-actions" },
         placeKind ? el("a", { class: "note-link", href: `#${placeKind}/${placeId}` }, "Vis på kortet") : null,
         s && jBody.hidden ? el("a", { class: "note-link", href: `#session/${s.num}` }, "Vis i Rejsen") : null),
@@ -645,9 +774,10 @@
       text,
     );
     panel.classList.add("wide");
-    if (placeKind) {
-      if (placeKind === "sted") { focusPin(placeId); select(anchor(placeId)); }
-    }
+    if (placeKind === "sted") { focusPin(placeId); select(anchor(placeId)); }
+    // A person's note shows where they live.
+    const home = person?.place;
+    if (home && !home.startsWith("region:") && places[home]) { focusPin(home); select(anchor(home)); }
   }
 
   // ---------- Routing (#sted/astley, #region/welles, #session/12, #kort/nordheim) ----------
@@ -665,6 +795,7 @@
       if (sub === "laes" && sessionByNum(id).noteId) showNote(sessionByNum(id).noteId);
     }
     else if (kind === "note") showNote(id);
+    else if (kind === "personer") showDirectory(id || "");
     else if (kind === "udenfor" && offmap[id]) showOffmap(id);
     else if (kind === "kort" && maps[id]) showMapPanel(id);
     else { closePanel(); showMap(current || "erukana", !current); }

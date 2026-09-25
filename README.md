@@ -2,7 +2,7 @@
 
 An interactive atlas of **Erukana**, the world of our RPG campaign.
 
-The map is the navigation: pins and baronies open panels about each place, with links to the full notes on the published campaign notes site. **Rejsen** (the journey) replays the campaign session by session on the map.
+The map is the navigation: pins and baronies open panels about each place, with links to the full notes on the published campaign notes site. **Rejsen** (the journey) replays the campaign session by session on the map, and every note can be read in the atlas. **Personer** is a people register: filter by name, role, race, place or faction (Danish or English), or by allies, enemies and the dead.
 
 ## Run locally
 The page loads its data with `fetch`, so it needs a web server:

@@ -14,8 +14,8 @@ from datetime import datetime
 from urllib.parse import quote, unquote
 
 sys.path.insert(0, os.path.dirname(__file__))
-from curation import (GARDEN_URL, MAPS, NOT_PEOPLE, NOT_PLACES, OFFMAP, PLACES,  # noqa: E402
-                      PORTALS, REGIONS, SESSIONS)
+from curation import (GARDEN_URL, LOCATION_ALIASES, MAPS, NOT_PEOPLE, NOT_PLACES,  # noqa: E402
+                      OFFMAP, PLACES, PORTALS, REGIONS, SESSIONS)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO = "https://github.com/BahneGork/GMnostes.git"
@@ -68,7 +68,8 @@ def load_notes():
                 continue
             notes[f[:-3]] = {"folder": rel.split(os.sep)[0] if os.sep in rel else "",
                              "marked_visited": "Locationsvisited" in rel.split(os.sep)[:-1],
-                             "permalink": meta.get("permalink"), "body": body}
+                             "permalink": meta.get("permalink"), "body": body,
+                             "props": meta.get("dg-note-properties") or {}}
     return notes
 
 
@@ -192,6 +193,88 @@ def export_notes(notes, ids, place_of, session_of):
     return ids
 
 
+def prop_targets(value):
+    """Note titles named by a property value: [[links]] inside strings, or the plain string itself."""
+    out = []
+    for v in value if isinstance(value, list) else [value]:
+        if not isinstance(v, str) or not v.strip():
+            continue
+        found = [m.group(1).strip() for m in WIKILINK.finditer(v)]
+        out += found or [v.strip()]
+    return out
+
+
+# Disposition / friend-or-foe values -> ally | neutral | enemy | unknown
+STANCE = {"ally": "ally", "friend": "ally", "deceased-ally": "ally", "neutral": "neutral",
+          "conditional": "neutral", "enemy": "enemy", "foe": "enemy", "hostile": "enemy"}
+
+
+def text_prop(value):
+    vals = [v for v in (value if isinstance(value, list) else [value]) if isinstance(v, str) and v.strip()]
+    return ", ".join(WIKILINK.sub(link_label, v) for v in vals)
+
+
+def build_people(notes, note_id, session_of):
+    """People and factions from their notes' properties, placed on atlas places where possible."""
+    where = {p["note"]: pid for pid, p in PLACES.items()}
+    where.update({a: pid for pid, p in PLACES.items() for a in p.get("aliases", [])})
+    where.update({r["note"]: f"region:{rid}" for rid, r in REGIONS.items()})
+    where.update({a: f"region:{rid}" for rid, r in REGIONS.items() for a in r.get("aliases", [])})
+    where.update(LOCATION_ALIASES)
+
+    def place_of(props):
+        for key in ("location_primary", "Location", "location"):
+            for t in prop_targets(props.get(key)):
+                if t in where:
+                    return where[t]
+        return None
+
+    def sessions_of(title, props):
+        nums = {session_of[t] for t in prop_targets(props.get("sessions")) if t in session_of}
+        nums |= {num for t, num in session_of.items() if title in links_in(notes[t]["body"])}
+        return sorted(nums)
+
+    factions = {}
+    for title, n in notes.items():
+        if n["folder"] != "Factions" or title not in note_id:
+            continue
+        pr = n["props"]
+        factions[note_id[title]] = {
+            "name": title, "seat": place_of(pr),
+            "stance": STANCE.get(str(pr.get("friend-or-foe", "")).lower(), "unknown"),
+            "type": text_prop(pr.get("faction_type")), "status": text_prop(pr.get("status")),
+            "leader": [note_id[t] for t in prop_targets(pr.get("leader")) if t in note_id],
+            "sessions": sessions_of(title, pr), "members": [],
+        }
+    people = {}
+    for title, n in notes.items():
+        if n["folder"] != "People" or title not in note_id or title in NOT_PEOPLE \
+                or re.search(r"\.(png|jpe?g|webp)$", title, re.I):  # image notes are not people
+            continue
+        pr = n["props"]
+        disp = str(pr.get("disposition", "")).lower()
+        status = str(pr.get("status", "")).lower()
+        fids = []
+        for key in ("affiliation", "Faction", "faction"):
+            for t in prop_targets(pr.get(key)):
+                if note_id.get(t) in factions and note_id[t] not in fids:
+                    fids.append(note_id[t])
+        pid = note_id[title]
+        people[pid] = {
+            "name": title, "place": place_of(pr), "stance": STANCE.get(disp, "unknown"),
+            "dead": status == "dead" or disp.startswith("deceased"),
+            "status": status if status not in ("", "alive", "unknown") else "",
+            "race": "" if pr.get("race") in (None, "unspecified") else text_prop(pr.get("race")),
+            "social": text_prop(pr.get("social_status")),
+            "role": text_prop(pr.get("role")) or text_prop(pr.get("Profession")),
+            "aliases": [a for a in pr.get("aliases") or [] if isinstance(a, str)],
+            "factions": fids, "sessions": sessions_of(title, pr),
+        }
+        for f in fids:
+            factions[f]["members"].append(pid)
+    return people, factions
+
+
 def main():
     notes = load_notes()
     note_id = note_ids(notes)
@@ -287,8 +370,9 @@ def main():
 
     place_of = {p["note"]: ("sted", pid) for pid, p in PLACES.items()}
     place_of.update({r["note"]: ("region", rid) for rid, r in REGIONS.items()})
-    session_of = {t: num for num, t in session_notes.items()}
+    session_of = {t: int(num) if num == int(num) else num for num, t in session_notes.items()}
     export_notes(notes, note_id, place_of, session_of)
+    people, factions = build_people(notes, note_id, session_of)
     for item in list(places.values()) + list(regions.values()):
         for key in ("people", "factions"):
             item[key] = [[t, note_id.get(t)] for t in item[key]]
@@ -300,6 +384,7 @@ def main():
         s["noteId"] = note_id.get(session_notes.get(s["num"]))
 
     out = {"maps": MAPS, "portals": PORTALS, "offmap": OFFMAP, "places": places,
+           "people": people, "factions": factions,
            "regions": regions, "sessions": sessions, "unplaced": unplaced}
     with open(os.path.join(ROOT, "data", "erukana.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
@@ -313,6 +398,9 @@ def main():
     open(index, "w", encoding="utf-8").write(html)
 
     print(f"{len(places)} places, {len(regions)} regions, {len(sessions)} sessions (version {version})")
+    placed = sum(1 for p in people.values() if p["place"])
+    print(f"{len(people)} people ({placed} placed), {len(factions)} factions "
+          f"({sum(1 for f in factions.values() if f['seat'])} with a seat)")
     print("new location notes, not yet in the atlas:", ", ".join(uncurated) or "none")
     for p in problems:
         print("PROBLEM", p)
