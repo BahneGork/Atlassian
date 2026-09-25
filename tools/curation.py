@@ -44,14 +44,14 @@ PLACES = {
                      region="welles", name="Stirling", aliases=["Stirring", "Jarlsborg"],
                      where="Nord for Feywood og øst for Astley ifølge noterne. "
                            "Ikke det samme som kortets 'Sterling' i Botreaux."),
-    "mistville": dict(note="Mistville", map="erukana", at=[2300, 2290], approx=True, kind="by",
+    "mistville": dict(note="Mistville", map="erukana", at=[2290, 2395], approx=True, kind="by",
                       region="welles",
                       summary="Lille landsby i Baroniet Welles tæt ved grænsen til Eresby. "
                               "Her fandt gruppen Brakeshield-statuen hos Archibald Oddsmoke, "
                               "og her nedkæmpede de nekromantikeren Ulrick Stadtfeldt og hans udøde. "
                               "Gruppen blev æresmedlemmer af byen."),
     "kroen-maanehvil": dict(note="Kroen Månehvil", parent="mistville", kind="sted"),
-    "dvalin": dict(note="Dvalin Werewolf caves", map="erukana", at=[2385, 2255], approx=True,
+    "dvalin": dict(note="Dvalin Werewolf caves", map="erukana", at=[2240, 2350], approx=True,
                    kind="hule", region="welles", name="Dvalins huler",
                    where="I skoven lige uden for Mistville.",
                    summary="Huler i skoven uden for Mistville, hvor varulven Dvalin Hammerhånd "
