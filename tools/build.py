@@ -275,6 +275,9 @@ def build_people(notes, note_id, session_of):
             "factions": fids, "sessions": sessions_of(title, pr),
             "pc": in_party, "statusNote": status_note,
         }
+        if in_party:
+            # A party member's location in their note is where they come from; they travel with the group.
+            people[pid]["origin"], people[pid]["place"] = people[pid]["place"], None
         for f in fids:
             factions[f]["members"].append(pid)
     # Party members without a note: sessions from their name in the logs.

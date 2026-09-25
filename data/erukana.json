@@ -2463,11 +2463,12 @@
     16
    ],
    "pc": true,
-   "statusNote": ""
+   "statusNote": "",
+   "origin": null
   },
   "viktor-baigorri": {
    "name": "Viktor Baigorri",
-   "place": "region:botreaux",
+   "place": null,
    "stance": "ally",
    "dead": false,
    "status": "",
@@ -2494,7 +2495,8 @@
     47
    ],
    "pc": true,
-   "statusNote": ""
+   "statusNote": "",
+   "origin": "region:botreaux"
   },
   "vargoth-sul": {
    "name": "Vargoth Sul",
@@ -2522,11 +2524,12 @@
     31
    ],
    "pc": true,
-   "statusNote": "Faldt i frostkæmpe-bagholdet i session 27, begravet i session 28."
+   "statusNote": "Faldt i frostkæmpe-bagholdet i session 27, begravet i session 28.",
+   "origin": null
   },
   "clarabel-lancaster": {
    "name": "Clarabel Lancaster",
-   "place": "astley",
+   "place": null,
    "stance": "ally",
    "dead": false,
    "status": "",
@@ -2556,7 +2559,8 @@
     47
    ],
    "pc": true,
-   "statusNote": ""
+   "statusNote": "",
+   "origin": "astley"
   },
   "landon-forrester": {
    "name": "Landon Forrester",
@@ -3350,7 +3354,7 @@
   },
   "sir-winston": {
    "name": "Sir Winston",
-   "place": "astley",
+   "place": null,
    "stance": "ally",
    "dead": false,
    "status": "",
@@ -3369,7 +3373,8 @@
     47
    ],
    "pc": true,
-   "statusNote": ""
+   "statusNote": "",
+   "origin": "astley"
   },
   "mishakal": {
    "name": "Mishakal",
@@ -3410,7 +3415,7 @@
   },
   "logan": {
    "name": "Logan",
-   "place": "astley",
+   "place": null,
    "stance": "ally",
    "dead": false,
    "status": "",
@@ -3428,7 +3433,8 @@
     44
    ],
    "pc": true,
-   "statusNote": ""
+   "statusNote": "",
+   "origin": "astley"
   },
   "hertug-robert-de-ros": {
    "name": "Hertug Robert De Ros",
@@ -4214,7 +4220,8 @@
     27
    ],
    "pc": true,
-   "statusNote": ""
+   "statusNote": "",
+   "origin": null
   },
   "vagtkaptajn-ved-nord-distriktet-i-astley": {
    "name": "Vagtkaptajn ved Nord distriktet i Astley",
@@ -4378,7 +4385,7 @@
   },
   "nibar": {
    "name": "Nibar",
-   "place": "astley",
+   "place": null,
    "stance": "ally",
    "dead": false,
    "status": "",
@@ -4401,7 +4408,8 @@
     47
    ],
    "pc": true,
-   "statusNote": ""
+   "statusNote": "",
+   "origin": "astley"
   },
   "mastersergeant-of-arms": {
    "name": "Mastersergeant of arms",
@@ -4913,7 +4921,7 @@
   },
   "bjorn-of-nordheim": {
    "name": "Bjørn of Nordheim",
-   "place": "region:nordheim",
+   "place": null,
    "stance": "ally",
    "dead": false,
    "status": "",
@@ -4926,7 +4934,8 @@
    ],
    "sessions": [],
    "pc": true,
-   "statusNote": ""
+   "statusNote": "",
+   "origin": "region:nordheim"
   },
   "hjalmer-dynn": {
    "name": "Hjalmer Dynn",
@@ -5052,7 +5061,7 @@
   },
   "corwin": {
    "name": "Corwin",
-   "place": "region:nordheim",
+   "place": null,
    "stance": "ally",
    "dead": false,
    "status": "",
@@ -5073,7 +5082,8 @@
     37
    ],
    "pc": true,
-   "statusNote": "Ifølge Bahne: Ærketroldmanden Ægrin antydede i session 47, at Corwin måske er blevet en skurk. Det står ikke i loggen."
+   "statusNote": "Ifølge Bahne: Ærketroldmanden Ægrin antydede i session 47, at Corwin måske er blevet en skurk. Det står ikke i loggen.",
+   "origin": "region:nordheim"
   },
   "edmund-af-vitano": {
    "name": "Edmund af Vitano",

@@ -275,7 +275,7 @@
     return el("span", { class: `monogram stance-${p.stance}${p.dead ? " dead" : ""}${p.pc ? " pc" : ""}${big ? " big" : ""}`, "aria-hidden": "true" },
       initials(p.name), p.dead ? el("i", {}, "†") : null);
   };
-  const personMeta = (p, withPlace) => [p.social, p.role, withPlace ? placeName(p.place) : null]
+  const personMeta = (p, withPlace) => [p.social, p.role, withPlace ? (p.pc ? "med gruppen" : placeName(p.place)) : null]
     .filter(Boolean).filter((v, i, a) => a.indexOf(v) === i).join(" · ");
   const personRow = (pid, withPlace = false) => {
     const p = people[pid];
@@ -390,15 +390,16 @@
       }));
       const hits = Object.keys(people).filter(matches);
       const groups = {};
-      for (const pid of hits) (groups[people[pid].place || ""] ||= []).push(pid);
-      const order = Object.keys(groups).sort((a, b) => (a === "") - (b === "") || groups[b].length - groups[a].length);
+      for (const pid of hits) (groups[people[pid].pc ? "party" : people[pid].place || ""] ||= []).push(pid);
+      const order = Object.keys(groups).sort((a, b) => (b === "party") - (a === "party")
+        || (a === "") - (b === "") || groups[b].length - groups[a].length);
       out.replaceChildren(
         el("p", { class: "dir-count" }, `${hits.length} af ${Object.keys(people).length} personer`),
         ...order.map((ref) => {
           const ids = groups[ref].sort(byName);
           const list = el("ul", { class: "people-list" }, ids.slice(0, 8).map((k) => personRow(k)));
           return el("section", { class: "dir-group" },
-            el("h3", {}, ref ? el("a", { href: `#${placeRoute(ref)}` }, placeName(ref)) : "Ukendt opholdssted", ` (${ids.length})`),
+            el("h3", {}, ref === "party" ? "Med gruppen" : ref ? el("a", { href: `#${placeRoute(ref)}` }, placeName(ref)) : "Ukendt opholdssted", ` (${ids.length})`),
             list,
             ids.length > 8 ? el("button", { type: "button", class: "more",
               onclick: (e) => { list.append(...ids.slice(8).map((k) => personRow(k))); e.target.remove(); } }, `Vis alle ${ids.length}`) : null);
@@ -503,7 +504,7 @@
     ...Object.entries(places).map(([id, p]) => ({ route: `sted/${id}`, name: p.name, sub: KIND[p.kind], keys: [p.name, ...p.aliases].map(fold) })),
     ...Object.entries(regions).map(([id, r]) => ({ route: `region/${id}`, name: r.name, sub: r.poly ? "Baroni" : "Land", keys: [fold(r.name)] })),
     ...Object.entries(people).map(([id, p]) => ({ route: `note/${id}`, name: p.name + (p.dead ? " †" : ""),
-      sub: `Person${p.place ? " · " + placeName(p.place) : ""}`, keys: [p.name, ...p.aliases].map(fold) })),
+      sub: p.pc ? "Gruppen" : `Person${p.place ? " · " + placeName(p.place) : ""}`, keys: [p.name, ...p.aliases].map(fold) })),
     ...Object.entries(factions).map(([id, f]) => ({ route: `note/${id}`, name: f.name, sub: "Faction", keys: [fold(f.name)] })),
   ];
   let active = 0;
@@ -821,8 +822,11 @@
           person.dead ? el("span", { class: "badge", title: person.statusNote || null }, "Død †") : person.status ? el("span", { class: "badge" }, statusText(person.status)) : null),
         person.statusNote ? el("p", { class: "person-facts where" }, person.statusNote) : null,
         el("p", { class: "person-facts" }, [person.race, person.social, person.role].filter(Boolean).join(" · ") || null),
-        el("p", { class: "person-facts" }, "Opholdssted: ",
-          person.place ? el("a", { href: `#${placeRoute(person.place)}` }, placeName(person.place)) : "ukendt"),
+        person.pc
+          ? el("p", { class: "person-facts" }, person.dead ? "Rejste med gruppen" : "Rejser med gruppen",
+              person.origin ? [" · Fra: ", el("a", { href: `#${placeRoute(person.origin)}` }, placeName(person.origin))] : null)
+          : el("p", { class: "person-facts" }, "Opholdssted: ",
+              person.place ? el("a", { href: `#${placeRoute(person.place)}` }, placeName(person.place)) : "ukendt"),
         person.factions.length ? el("p", { class: "person-facts" }, "Factions: ",
           person.factions.flatMap((f, i) => [i ? ", " : null, el("a", { href: `#note/${f}` }, factions[f].name)])) : null,
         person.sessions.length ? el("div", { class: "chips" }, person.sessions.map((num) =>
