@@ -29,7 +29,7 @@ PORTALS = [
 # id -> dict(note, map, at, kind, approx, parent, region, aliases, summary, where)
 PLACES = {
     # --- Welles ---
-    "astley": dict(note="Astley", map="erukana", at=[2460, 2432], kind="by", region="welles"),
+    "astley": dict(note="Astley", map="erukana", at=[2459, 2447], kind="by", region="welles"),
     "soltraeet": dict(note="Soltræet", parent="astley", kind="helligt"),
     "visdommens-kammer": dict(note="Visdommens kammer", parent="soltraeet", kind="sted"),
     "krypten": dict(note="Krypten", parent="soltraeet", kind="hule"),
@@ -42,9 +42,9 @@ PLACES = {
     "sangstrup": dict(note="Sangstrup home", parent="astley", kind="sted", name="Sangstrup-gården"),
     "alistair": dict(note="Alistairs handelsforretning", parent="astley", kind="sted",
                      name="Waning Moon merchant house"),
-    "feywood": dict(note="Feywood", map="erukana", at=[2650, 2520], kind="vildmark", region="welles"),
+    "feywood": dict(note="Feywood", map="erukana", at=[2585, 2485], kind="vildmark", region="welles"),
     "mausoleum": dict(note="Sir Seillings mausoleum", map="erukana", at=[2590, 2743], kind="hule", region="welles", aliases=["mausoleum"]),
-    "stirling": dict(note="Stirring", map="erukana", at=[2745, 2330], approx=True, kind="borg",
+    "stirling": dict(note="Stirring", map="erukana", at=[2527, 2329], approx=True, kind="borg",
                      region="welles", name="Stirling", aliases=["Stirring", "Jarlsborg"],
                      where="Nord for Feywood og øst for Astley ifølge noterne. "
                            "Ikke det samme som kortets 'Sterling' i Botreaux."),
@@ -55,12 +55,12 @@ PLACES = {
                               "og her nedkæmpede de nekromantikeren Ulrick Stadtfeldt og hans udøde. "
                               "Gruppen blev æresmedlemmer af byen."),
     "kroen-maanehvil": dict(note="Kroen Månehvil", parent="mistville", kind="sted"),
-    "dvalin": dict(note="Dvalin Werewolf caves", map="erukana", at=[2240, 2350], approx=True,
+    "dvalin": dict(note="Dvalin Werewolf caves", map="erukana", at=[2230, 2382], approx=True,
                    kind="hule", region="welles", name="Dvalins huler",
                    where="I skoven lige uden for Mistville.",
                    summary="Huler i skoven uden for Mistville, hvor varulven Dvalin Hammerhånd "
                            "havde opholdt sig. Gruppen fandt hans kone Celia død her."),
-    "gamle-tempel": dict(note="Det gamle tempel nordøst for Colville", map="erukana", at=[2570, 2600],
+    "gamle-tempel": dict(note="Det gamle tempel nordøst for Colville", map="erukana", at=[2492, 2657],
                          approx=True, kind="helligt", region="welles", name="Det gamle tempel",
                          where="En halv dags rejse nordøst for Colville."),
     "colville": dict(note="Colville", map="erukana", at=[2425, 2686], kind="by", region="welles",
@@ -70,7 +70,7 @@ PLACES = {
     "rode-pas": dict(note="Det Røde pas", map="erukana", at=[2804, 2593], kind="vildmark"),
 
     # --- Eresby ---
-    "dark-gem": dict(note="Dark Gem Kobold clan caves", map="erukana", at=[2173, 2316], kind="hule", region="eresby", name="Dark Gem-hulerne",
+    "dark-gem": dict(note="Dark Gem Kobold clan caves", map="erukana", at=[2234, 2342], kind="hule", region="eresby", name="Dark Gem-hulerne",
                      summary="Kobold-klanen Dark Gems huler. Her fandt gruppen timeglasset og "
                              "tids-scrollen i session 1 og mødte hviskeren i mørket, som fortalte "
                              "om glemte dværgehaller dybere nede."),
@@ -82,7 +82,7 @@ PLACES = {
                           name="Tunnel til affaldsrum"),
     "dvaerge-haller": dict(note="gamle glemte dværge haller", parent="dark-gem", kind="hule",
                            name="De glemte dværgehaller"),
-    "kegville": dict(note="Kegville", map="erukana", at=[2114, 2087], kind="by",
+    "kegville": dict(note="Kegville", map="erukana", at=[2099, 2068], kind="by",
                      region="eresby", aliases=["The Bronze Keg", "Bronze Keg"]),
     "segreve": dict(note="Segreve", map="erukana", at=[2436, 1990], kind="by", region="eresby",
                     aliases=["Segrave"]),
@@ -107,7 +107,7 @@ PLACES = {
                          summary="Den dværgehal blandt Bjergenes Børn, der er mest åben mod omverdenen. "
                                  "Grundlagt af en klan fra Slatestone, og anerkender i dag ikke "
                                  "Slatestones hersker – hvilket har ført til mindre krige mellem hallerne."),
-    "blackforge": dict(note="Blackforge", map="erukana", at=[1806, 1738], region="mowbray", kind="by"),
+    "blackforge": dict(note="Blackforge", map="erukana", at=[1808, 1771], region="mowbray", kind="by"),
 
     # --- Botreaux, Valence, Blackmere ---
     "botreaux-by": dict(note="Botreaux", map="erukana", at=[2300, 810], kind="by", region="botreaux"),
@@ -127,15 +127,15 @@ PLACES = {
     "solstice": dict(note="Solstice", map="erukana", at=[1994, 3300], kind="by", aliases=["soltice"]),
 
     # --- Nordheim ---
-    "stormbjerget": dict(note="StormBjerget", map="nordheim", at=[870, 520], kind="vildmark",
+    "stormbjerget": dict(note="StormBjerget", map="nordheim", at=[865, 518], kind="vildmark",
                          aliases=["Storms Peak"]),
     "knoglestammens-huler": dict(note="knoglestammens huler", parent="stormbjerget", kind="hule",
                                  name="Knoglestammens huler", aliases=["knoglestammens huler 1"]),
-    "sorrow-vale": dict(note="Sorrow Vale", map="nordheim", at=[1200, 560], kind="vildmark",
+    "sorrow-vale": dict(note="Sorrow Vale", map="nordheim", at=[1101, 557], kind="vildmark",
                         aliases=["Sorrows Vale"]),
-    "crater-shrine": dict(note="Crater shrine of Mielikki", map="nordheim", at=[1040, 545], kind="helligt",
+    "crater-shrine": dict(note="Crater shrine of Mielikki", map="nordheim", at=[1049, 611], kind="helligt",
                           aliases=["Nayaru's Blessing"]),
-    "vardestjernen": dict(note="Vardestjernen", map="nordheim", at=[1330, 445], approx=True, kind="hule",
+    "vardestjernen": dict(note="Vardestjernen", map="nordheim", at=[1036, 589], approx=True, kind="hule",
                           aliases=["Varde stjernen"],
                           where="Nord-øst for Sorrow Vale – en dags rejse efter mantaen."),
     "port-drakkan": dict(note="Port Drakkan", map="nordheim", at=[1907, 318], kind="havn"),
