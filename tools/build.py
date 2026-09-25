@@ -10,6 +10,7 @@ import re
 import subprocess
 import sys
 from collections import defaultdict
+from datetime import datetime
 from urllib.parse import quote, unquote
 
 sys.path.insert(0, os.path.dirname(__file__))
@@ -303,7 +304,15 @@ def main():
     with open(os.path.join(ROOT, "data", "erukana.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
 
-    print(f"{len(places)} places, {len(regions)} regions, {len(sessions)} sessions")
+    # Stamp a new version into index.html so browsers (phones especially) skip cached files.
+    version = datetime.now().strftime("%Y%m%d%H%M%S")
+    index = os.path.join(ROOT, "index.html")
+    html = open(index, encoding="utf-8").read()
+    html = re.sub(r'\?v=[0-9]+"', f'?v={version}"', html)
+    html = re.sub(r'ATLAS_VERSION = "[0-9]*"', f'ATLAS_VERSION = "{version}"', html)
+    open(index, "w", encoding="utf-8").write(html)
+
+    print(f"{len(places)} places, {len(regions)} regions, {len(sessions)} sessions (version {version})")
     print("new location notes, not yet in the atlas:", ", ".join(uncurated) or "none")
     for p in problems:
         print("PROBLEM", p)

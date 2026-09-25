@@ -1,6 +1,7 @@
 /* Atlas over Erukana – map, pins, panel, search and the session-by-session journey. */
 (async function () {
-  const data = await fetch("data/erukana.json").then((r) => r.json());
+  const V = `?v=${window.ATLAS_VERSION || ""}`; // changes on every build, so phones fetch fresh files
+  const data = await fetch(`data/erukana.json${V}`).then((r) => r.json());
   const { maps, places, regions, sessions, portals, offmap, unplaced } = data;
 
   const KIND = {
@@ -601,7 +602,7 @@
 
   // ---------- Note reader (#note/<id>) ----------
   let notes = null;
-  const loadNotes = () => (notes ||= fetch("data/notes.json").then((r) => r.json()));
+  const loadNotes = () => (notes ||= fetch(`data/notes.json${V}`).then((r) => r.json()));
   const GROUP_ORDER = ["Sessioner", "Steder", "Personer", "Factions", "Karakterer", "Missioner", "Genstande", "Loot", "Journal", "Lore", "Regler", "Andet"];
   const sessionOrder = (n) => n.session ?? Infinity;
 
