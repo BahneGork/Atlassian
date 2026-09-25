@@ -2,7 +2,8 @@
 
 - **Skrevet**: 2026-09-25, efter gennemlæsning af alle 48 sessionslogs (1–47 + 45.5) samt lore-, journal- og item-noter.
 - **Status**: Udkast til gennemsyn. Intet af dette er på sitet endnu.
-- **Sådan læses det**: *Spor* er fakta fra noterne med session (S) som kilde. *Min tolkning* er mine egne slutninger og kan være forkerte. *Åbent* er det, noterne ikke svarer på.
+- **Sådan læses det**: *Spor* er fakta fra noterne med session (S) som kilde; "ifølge Bahne" er rettelser fra spilleren. *Min tolkning* er mine egne slutninger og kan være forkerte. *Åbent* er det, noterne ikke svarer på.
+- **Rettet 2026-09-25 (ifølge Bahne)**: Gruppen *er* Tidsvogterne. Avalandes stav er en anden stav. "Nordstjernen" er en myte om en konge i norden – ikke Vardestjernen.
 
 ---
 
@@ -22,7 +23,7 @@
 
 **Min tolkning**
 - Næste skridt peger mod The Moonwood (vest på kortet, ved Farreach og Unicorn's vale).
-- Jormund skrev at fragmenterne gemmes "indtil Tidsvogterne står ved min dør" – og Vardestjernens vogter gav jer adgang (S39). I *er* sandsynligvis de Tidsvogtere, profetien taler om (se 1.4).
+- Jormund gemte fragmenterne "indtil Tidsvogterne står ved min dør" – og gruppen er Tidsvogterne (se 1.4). Det forklarer, hvorfor Vardestjernens vogter gav jer adgang (S39).
 
 **Åbent**: Kan staven genskabes uden blod-delen? Er den ene true resurrection brugt?
 
@@ -53,6 +54,7 @@
 **Åbent**: Hvor ligger de andre tre låsesteder? Hvad sker der, hvis dørene åbnes?
 
 ### 1.4 Tidsvogterne, de blå tatoveringer og stemmen
+**Status**: Gruppen **er** Tidsvogterne – det har I fået at vide (ifølge Bahne).
 **Spor**
 - S1: Alle fire har en **safirblå tatovering**, der lyser når timeglasset aktiveres. Baronesse Avalande har samme tatovering.
 - S6: Vagttårne med vagter i **blå tabarder med et timeglas-symbol**.
@@ -62,7 +64,7 @@
 - S40: Jormund – Tidsvogterne vender tilbage "i en fjern tidsalder".
 - S47: Nibar indgår i Azurbroderskabet – "hvilket ikke er det samme som Tidsvogterne".
 
-**Min tolkning**: Tatoveringerne er Tidsvogternes mærke, bundet til timeglasset. Gruppen er de tilbagevendte Tidsvogtere. Vagterne med timeglas-symbolet (S6) kan være en rest af ordenen – værd at opsøge.
+**Min tolkning**: Tatoveringerne er Tidsvogternes mærke, bundet til timeglasset. Vagterne med timeglas-symbolet (S6) kan være en rest af ordenen – værd at opsøge.
 
 **Åbent**: Hvem er vagterne fra S6? Vender tatoveringernes kræfter tilbage nu, hvor artefaktet er repareret?
 
@@ -181,11 +183,12 @@
 
 ### 4.2 Vardestjernen
 **Spor**: S37 NEXT – elevatoren; S34 – kuplen med stjernekortet; S40 – fragmenterne i fundamentet; S43 – nogen har været der siden: kløede fødder, spor af disintegrate.
-**Min tolkning**: Bjørn lovede at finde en "**ny nordstjerne**" der kan samle klanerne (S27) – og Vardestjernen er en stjerneformet fæstning. Den kunne være nordstjernen.
+**Åbent**: Hvad fører elevatoren til? Hvem var de kløede besøgende?
 
 ### 4.3 Bjørn, Knoglestammen og Urza
 **Spor**: S26 – Wayruths pagt med plagen forbandede slægten; Skarn er forbandet. S27 – Bjørn fælder Skarn og bliver høvding; lover at finde den nye nordstjerne. Urza flygtede (S26). S26: Bjørn virker besat og taler med nogen, der ikke er der.
-**Åbent**: Hvor er Urza? Hvem taler Bjørn med?
+**Ifølge Bahne**: "Nordstjernen" er en myte om en konge i norden – ikke Vardestjernen.
+**Åbent**: Hvor er Urza? Hvem taler Bjørn med? Hvad siger myten om kongen i norden?
 
 ### 4.4 Rimkæmpernes sunkne arkiv
 **Spor**: S28 – nævnt i Grimjaws forbandede bog. Vaelor Drakestones dagbog (S21): **The Drowned Archive**, et sunket arkiv for handel mellem planer.
@@ -210,7 +213,7 @@
 |---|---|---|
 | **Lady De'evers' opgave** | S5 – troldmandstårn-ruinen i nordlandet; betalt med Fireball-scrollen | S24: I kom gennem portal 2 til "en bakketop i et gammelt vagttårns ruin" med et dybt hul og et krystaltræ – *måske* er opgaven allerede løst uden at det blev bemærket |
 | **Hviskeren og dværgehallerne** | S1 – aftale om at bringe "den store stemme"; magisk forseglet dør. S8 – drager ved hallernes bjerge. S20 – "De ældste og børn af stenene skabte fælles haller" | Dark Gem-hallerne og De Ældstes haller (hvor ritualet blev stoppet) hænger måske sammen |
-| **Baronesse Avalande** | S1 – samme tatovering; S8 – knækker sin stav i Nibars syn, forsvundet efter tidsspringet; S12 – var medlem af Azur/safir-ordenen; S38 – "baronessen har valgt tavshedens vej" | Hendes knækkede stav og Nibars drøm om staven der splintres ligner samme begivenhed – hun kan have været med til at dele staven |
+| **Baronesse Avalande** | S1 – samme tatovering; S8 – knækker sin stav i Nibars syn, forsvundet efter tidsspringet; S12 – var medlem af Azur/safir-ordenen; S38 – "baronessen har valgt tavshedens vej" | Med samme tatovering er hun sandsynligvis en tidligere Tidsvogter. *Hendes stav er en anden end sølvdragestaven (ifølge Bahne).* |
 | **Den gule rombe med en pegasus** | S1 – på den døde sellsword | `Quests and Questions` spørger om Vaelon Dunmeres faction og symbolet på hans sølvamulet – måske hans laug |
 | **Den ældre veteran og manden i kulsort rustning** | S1 – amulet af en roseranke; efter tidshoppet er personer "udskiftet" | Rosen peger på Blodrosen; udskiftningerne er et uforklaret tidsparadoks |
 | **City of Steel / Amon'Ka** | S8 – robotbyen, to nøgle-amuletter; S12 – Amon'Ka's fald; Clarabel taler Anakteh | `Quests and Questions`: Archibald lærte om en skat på en fjern ø fra en gammel civilisation via Brakeshield-statuen – måske samme civilisation |
