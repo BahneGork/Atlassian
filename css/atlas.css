@@ -263,8 +263,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .trail.now { stroke: var(--wax); stroke-width: 4; opacity: 0.95; stroke-dasharray: 3 8; }
 
 .region { stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 5 6; stroke-opacity: 0.35; fill: var(--wax); fill-opacity: 0; transition: fill-opacity 0.15s; }
-.region:hover { fill-opacity: 0.07; stroke-opacity: 0.7; }
-.region.selected { fill-opacity: 0.1; stroke: var(--wax-dark); stroke-opacity: 0.9; }
+.region:hover { fill-opacity: 0.2; stroke: var(--wax-dark); stroke-width: 2.5; stroke-opacity: 0.9; }
+.region.selected { fill-opacity: 0.28; stroke: var(--wax-dark); stroke-width: 3; stroke-opacity: 1; }
 .regions-off .region { display: none; }
 
 /* ---------- People ---------- */

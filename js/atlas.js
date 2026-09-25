@@ -686,6 +686,7 @@
   // ---------- Edit mode: move pins, export the changes ----------
   // Changes live in this browser only; "Kopiér ændringer" hands them over for tools/apply_moves.py.
   const EDITS_KEY = "atlas-edits";
+  const REPO = "BahneGork/Atlassian";
   const editbar = $(".editbar");
   const editStatus = $(".editbar-status");
   const editExport = $(".editbar-export");
@@ -694,6 +695,12 @@
   let edits = {};
   let placing = null;
   try { edits = JSON.parse(localStorage.getItem(EDITS_KEY)) || {}; } catch { edits = {}; }
+  // Edits the published data already contains (saved for everyone) are done; drop them.
+  for (const [id, e] of Object.entries(edits)) {
+    const p = places[id];
+    if (p && p.map === e.map && p.at?.[0] === e.at?.[0] && p.at?.[1] === e.at?.[1]) delete edits[id];
+  }
+  try { localStorage.setItem(EDITS_KEY, JSON.stringify(edits)); } catch { /* private mode */ }
 
   const xy = (latlng) => [Math.round(latlng.lng), Math.round(-latlng.lat)];
   function saveEdits() {
@@ -785,6 +792,15 @@
       saveEdits();
       fillPlaceSelect();
       applyPinState();
+    }
+    if (act === "publish") {
+      if (!Object.keys(edits).length) { editStatus.textContent = "Ingen ændringer at gemme."; return; }
+      // Opens GitHub's "new file" page with the moves filled in; committing it starts .github/workflows/apply-moves.yml.
+      const stamp = new Date().toISOString().replace(/\D/g, "").slice(0, 14);
+      const url = `https://github.com/${REPO}/new/main?filename=${encodeURIComponent(`moves/${stamp}.json`)}`
+        + `&value=${encodeURIComponent(JSON.stringify(edits, null, 1))}`;
+      window.open(url, "_blank", "noopener");
+      editStatus.textContent = "Tryk \u201cCommit changes\u201d på GitHub. Kortet er opdateret for alle efter et par minutter.";
     }
     if (act === "copy") {
       const text = JSON.stringify(edits, null, 1);

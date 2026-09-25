@@ -31,8 +31,8 @@ The other views in the tab are computed on every build from the logs and never i
 ### Moving and placing places on the map
 1. On the site, open **Signaturer** and tick **Redigér placeringer**.
 2. Drag pins into place. **Uplacerede steder** lists places without a position and new location notes the atlas doesn't know yet; pick one and click the map where it belongs.
-3. Click **Kopiér ændringer**. Changes are kept in that browser until then.
-4. Apply them:
+3. Changes are kept in that browser only. To publish them, click **Gem for alle**: GitHub opens with the changes as a new file in `moves/`. Click **Commit changes** (needs write access to the repo). The workflow `.github/workflows/apply-moves.yml` applies them, rebuilds and publishes; the map updates for everyone in a few minutes. Once the site has them, they are dropped from the browser automatically.
+4. Or apply them by hand: click **Kopiér ændringer** and run
 
 ```bash
 python3 tools/apply_moves.py moves.json   # or paste the JSON on stdin
