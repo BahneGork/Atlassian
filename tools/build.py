@@ -15,7 +15,8 @@ from urllib.parse import quote, unquote
 
 sys.path.insert(0, os.path.dirname(__file__))
 from curation import (GARDEN_URL, LOCATION_ALIASES, MAPS, NOT_PEOPLE, NOT_PLACES,  # noqa: E402
-                      OFFMAP, PARTY, PARTY_EXTRA, PARTY_STATUS, PLACES, PORTALS, REGIONS, SESSIONS)
+                      OFFMAP, PARTY, PARTY_CLASS, PARTY_EXTRA, PARTY_RACE, PARTY_STATUS, PLACES, PORTALS,
+                      REGIONS, SESSIONS)
 import threads as thr  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -304,8 +305,8 @@ def build_people(notes, note_id, session_of):
             # Race and class only from their character note; the People/ properties for the party are unreliable.
             names = [title.lower()] + [a.lower() for a in people[pid]["aliases"]] + [w.lower() for w in title.split()]
             sheet = next((sheets[n] for n in names if n in sheets), None)
-            people[pid]["race"] = sheet["race"] if sheet else ""
-            people[pid]["role"] = sheet["class"] if sheet else ""
+            people[pid]["race"] = (sheet or {}).get("race") or PARTY_RACE.get(title, "")
+            people[pid]["role"] = PARTY_CLASS.get(title) or (sheet or {}).get("class", "")
         for f in fids:
             factions[f]["members"].append(pid)
     # Party members without a note: sessions from their name in the logs.
@@ -314,7 +315,8 @@ def build_people(notes, note_id, session_of):
         pat = re.compile(r"(?<![\wæøå])(" + "|".join(re.escape(x.lower()) for x in names) + r")(?![\wæøå])")
         nums = sorted(num for t, num in session_of.items() if t in notes and pat.search(plain(notes[t]["body"]).lower()))
         people[slug(name)] = {"name": name, "place": None, "stance": "ally", "dead": extra["dead"], "status": "",
-                              "race": extra["race"], "social": extra["social"], "role": extra["role"],
+                              "race": extra["race"] or PARTY_RACE.get(name, ""), "social": extra["social"],
+                              "role": PARTY_CLASS.get(name) or extra["role"],
                               "aliases": extra["aliases"], "factions": [], "sessions": nums, "pc": True,
                               "statusNote": extra["statusNote"], "noNote": True}
     return people, factions

@@ -292,6 +292,22 @@ PARTY_STATUS = {
     "Corwin": ("", "Ifølge Bahne: Ærketroldmanden Ægrin antydede i session 47, at Corwin måske er blevet en skurk. "
                    "Det står ikke i loggen."),
 }
+# Class per party member, according to Bahne (overrides the character notes). Race: (race, source) where
+# no character note gives it but the logs do.
+PARTY_CLASS = {
+    "Bjørn of Nordheim": "Barbarian",
+    "Sir Winston": "Fighter (Battlemaster), ridder af Queensguarden",
+    "Clarabel Lancaster": "War cleric af Mielikki",
+    "Corwin": "Druid",
+    "Evelyn Adair": "Life cleric af Mishakal",
+    "Isilme": "Druid (Circle of the Moon)",
+    "Logan": "Fighter (Battlemaster) / Rogue (Assassin)",
+    "Nibar": "Wizard (Evoker)",
+    "Vargoth Sul": "War cleric",
+    "Viktor Baigorri": "Fighter (Eldritch Knight) / Wizard",
+}
+PARTY_RACE = {"Evelyn Adair": "Human", "Corwin": "Human", "Isilme": "Elf"}
+
 # Party members without a note of their own: shown from what the logs say.
 PARTY_EXTRA = {
     "Evelyn Adair": dict(aliases=["Evelyn", "Adare", "Adair"], race="", social="", role="", dead=True,
