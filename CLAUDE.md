@@ -9,6 +9,7 @@ This document extends the general Claude instructions with project-specific requ
 - Read notes from the garden repo; never modify it from this project.
 - Every placement and panel statement must be traceable to a note; mark guessed positions as approximate.
 - **Keep GitHub up to date**: repo `BahneGork/Atlassian`. After every change to this project, commit and push to `main`.
+- **Pull before changing anything**: the repo is also updated by GitHub Actions (nightly rebuild at 03:17, map moves saved from the site via `moves/*.json`) and by other sessions. Run `git pull --rebase` first, and again before pushing if a push is rejected.
 
 ## Overrides
 None yet.
