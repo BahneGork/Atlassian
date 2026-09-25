@@ -3,7 +3,7 @@
 - **Skrevet**: 2026-09-25, efter gennemlæsning af alle 48 sessionslogs (1–47 + 45.5) samt lore-, journal- og item-noter.
 - **Status**: Udkast til gennemsyn. Intet af dette er på sitet endnu.
 - **Sådan læses det**: *Spor* er fakta fra noterne med session (S) som kilde; "ifølge Bahne" er rettelser fra spilleren. *Min tolkning* er mine egne slutninger og kan være forkerte. *Åbent* er det, noterne ikke svarer på.
-- **Rettet 2026-09-25 (ifølge Bahne)**: Gruppen *er* Tidsvogterne. Avalandes stav er en anden stav. "Nordstjernen" er en myte om en konge i norden – ikke Vardestjernen.
+- **Rettet 2026-09-25 (ifølge Bahne)**: Gruppen *er* Tidsvogterne. Avalandes stav er en anden stav. "Nordstjernen" er en myte om en konge i norden – ikke Vardestjernen. Rimkæmpernes sunkne arkiv og The Drowned Archive er det samme sted. Om Face er en forvandler eller blot en overløber, ved I ikke.
 
 ---
 
@@ -99,7 +99,7 @@
 - S46: **Face** forrådte gruppen og stak Logan i ryggen. **Sammy** sagde "der er behov for dig andetsteds", og de forsvandt.
 - S17: En gruppe på fire, der lignede et eventyrparty, men alle var troldmænd.
 
-**Min tolkning**: Et mønster af forvandlere/bedragere, der går efter staven, artefaktet og Azur-folk. Navnet "Face" peger på en ansigtsskifter. Sammy har været Fafnirs kontakt siden S13 – enten er hun kompromitteret, eller hun har sin egen dagsorden.
+**Min tolkning**: Et mønster af forvandlere/bedragere, der går efter staven, artefaktet og Azur-folk (doppelgangeren, den falske Daine Waymar). Om **Face** hører til dem eller blot er en overløber, ved I ikke (ifølge Bahne). Sammy har været Fafnirs kontakt siden S13 – enten er hun kompromitteret, eller hun har sin egen dagsorden.
 
 **Åbent**: Hvor er Logan? Hvem er Face? Er Fafnirs gruppe infiltreret?
 
@@ -190,9 +190,10 @@
 **Ifølge Bahne**: "Nordstjernen" er en myte om en konge i norden – ikke Vardestjernen.
 **Åbent**: Hvor er Urza? Hvem taler Bjørn med? Hvad siger myten om kongen i norden?
 
-### 4.4 Rimkæmpernes sunkne arkiv
-**Spor**: S28 – nævnt i Grimjaws forbandede bog. Vaelor Drakestones dagbog (S21): **The Drowned Archive**, et sunket arkiv for handel mellem planer.
-**Min tolkning**: Det sunkne arkiv og The Drowned Archive er muligvis det samme sted.
+### 4.4 Rimkæmpernes sunkne arkiv / The Drowned Archive
+**Spor**: S28 – nævnt i Grimjaws forbandede bog. Vaelor Drakestones dagbog (S21): **The Drowned Archive**, et sunket, halvt oversvømmet arkiv der engang var centrum for handel mellem planer; her fandt han ritualet med fire relikvier (jern, lys, guld, blod) der åbner en glemt portal.
+**Ifølge Bahne**: Det er det samme sted.
+**Åbent**: Hvor ligger det? Hvad står der ellers i arkivet om "the Eclipsed Vault"?
 
 ### 4.5 Det sorte metal og Aethor-flåden
 **Spor**: S42 – ti sorte metalbarrer fra tempelminerne i **Angramar**; skyggeenglen i Vinterspiret: "bliv en del af min flåde"; spionen szas'ramma uconta: "de tilraner sig ting som har med **T.E.** at gøre". S43 – metallet kommer fra **skyggelandet**.
@@ -218,7 +219,7 @@
 | **Den ældre veteran og manden i kulsort rustning** | S1 – amulet af en roseranke; efter tidshoppet er personer "udskiftet" | Rosen peger på Blodrosen; udskiftningerne er et uforklaret tidsparadoks |
 | **City of Steel / Amon'Ka** | S8 – robotbyen, to nøgle-amuletter; S12 – Amon'Ka's fald; Clarabel taler Anakteh | `Quests and Questions`: Archibald lærte om en skat på en fjern ø fra en gammel civilisation via Brakeshield-statuen – måske samme civilisation |
 | **Fafnirs scepter** | S20 – teleporteret væk af lejesoldaterne | Forfølgelsen endte ved ritualet i De Ældstes haller – scepteret nævnes ikke igen |
-| **Ringen med "A.E."** | S18 – fundet på Elvira; lavet af en ildelementar | Muligvis tilfældigt, men "A.E." = Adair, Evelyn |
+| **Ringen med "A.E."** | S18 – skjult på Elvira: guld, kobber og sølv, initialerne A.E., ring of warmth lavet af en ildelementar; Vargoth attunede. S19 – Nibar viste den ved Alistair-palæets bagdør ("hvorfor viser du mig den?") | Hvem var A.E.? Hvor er ringen efter Vargoths død (S27)? |
 | **Knight Ab-errants** | Før kampagnen – fra landet mod nord eller edsbrudte blodroseriddere; set ved nordkysten i Valence. S8 – mange flere i Astley | Muskuløse, halvkæmpeagtige og tatoverede med runer – kunne pege mod Nordheims kæmpeblods-stammer |
 | **Handelsaftalen med Illyria Starmantle** | S20 – fra Kolitan i Julland | – |
 | **Hydraen i handelshuset** | S45 – dukkede op midt i jeres handelshus og drog mod horden | – |
