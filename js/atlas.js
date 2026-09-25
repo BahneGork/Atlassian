@@ -231,6 +231,13 @@
     noteId ? el("a", { class: "note-link", href: `#note/${noteId}` }, "Læs hele noten →") : null,
     url ? el("a", { class: "garden-link", href: url, target: "_blank", rel: "noopener" }, "Åbn i haven ↗") : null);
 
+  // Summaries carry [name](#note/<id>) links to the notes they mention.
+  function summary(md) {
+    const p = el("p", { class: "summary" });
+    p.innerHTML = marked.parseInline(md);
+    return p;
+  }
+
   function crumbs(id) {
     const trail = [];
     let cur = places[id].parent;
@@ -261,7 +268,7 @@
         p.visited ? el("span", { class: "badge visited" }, "Besøgt") : el("span", { class: "badge" }, "Kun hørt om"),
         p.approx ? el("span", { class: "badge approx" }, "Omtrentlig placering") : null,
         !p.at && !anchor(id) ? el("span", { class: "badge approx" }, "Ikke på kortet") : null),
-      p.summary ? el("p", { class: "summary" }, p.summary) : null,
+      p.summary ? summary(p.summary) : null,
       p.where ? el("p", { class: "where" }, p.where) : null,
       sess.size ? [el("h3", {}, "Her har vi været"),
         el("div", { class: "chips" }, [...sess].sort((a, b) => a - b).map((n) =>
@@ -283,7 +290,7 @@
       el("p", { class: "crumbs" }, el("button", { type: "button", onclick: () => go(`kort/${r.map}`) }, maps[r.map].name)),
       el("p", { class: "kicker" }, r.poly ? "Baroni" : "Land"),
       el("h2", {}, r.name),
-      r.summary ? el("p", { class: "summary" }, r.summary) : null,
+      r.summary ? summary(r.summary) : null,
       placeList(r.poly ? "Steder i baroniet" : "Steder uden kendt placering", members),
       chips("Personer", r.people),
       chips("Factions", r.factions),

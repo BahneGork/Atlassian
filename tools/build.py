@@ -76,28 +76,31 @@ def link_label(m):
     return (m.group(2) or m.group(1)).split("/")[-1].strip()
 
 
-def plain(text):
-    text = WIKILINK.sub(link_label, text)
+def plain(text, ids=None):
+    """Strip markdown; with `ids`, wikilinks to known notes become [name](#note/<id>) links."""
     text = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", text)
     text = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", text)
     text = re.sub(r"<[^>]+>", "", text)
-    text = re.sub(r"[*_`]+", "", text)
+    text = re.sub(r"[*_`]+(?![^\[]*\]\])", "", text)
+    text = WIKILINK.sub(lambda m: f"[{link_label(m)}](#note/{ids[m.group(1).strip()]})"
+                        if ids and m.group(1).strip() in ids else link_label(m), text)
     return re.sub(r"\s+", " ", text).strip()
 
 
-def summarize(body):
-    """First descriptive paragraph of a note, cut to at most ~2 sentences."""
+def summarize(body, ids=None):
+    """First descriptive paragraph of a note, cut to at most ~2 sentences (links kept with `ids`)."""
     for pattern in (r"## Description\n+(.+?)(?:\n\n|\n#|$)", r"(?i:#* *beskrivelse):?\s*\n(.+?)(?:\n[A-ZÆØÅ ]{4,}\n|\n#|$)"):
         m = re.search(pattern, body, re.S)
         if m:
-            text = plain(m.group(1))
+            text = plain(m.group(1), ids)
             break
     else:
         return ""
     sentences = re.split(r"(?<=[.!?])\s+", text)
     out = ""
     for s in sentences:
-        if len(out) + len(s) > 320 and out:
+        # never cut inside a link such as [Hr. Flick](#note/...)
+        if len(out) + len(s) > 320 and out and out.count("[") == out.count("]("):
             break
         out = (out + " " + s).strip()
     return out
@@ -161,8 +164,11 @@ def reader_markdown(body, ids):
     return re.sub(r"\n{3,}", "\n\n", md).strip()
 
 
-def export_notes(notes, place_of, session_of):
-    ids = {t: slug(t) for t in notes if t not in SKIP_NOTES and notes[t]["folder"] != "bases"}
+def note_ids(notes):
+    return {t: slug(t) for t in notes if t not in SKIP_NOTES and notes[t]["folder"] != "bases"}
+
+
+def export_notes(notes, ids, place_of, session_of):
     out = {}
     for title, nid in ids.items():
         n = notes[title]
@@ -187,6 +193,7 @@ def export_notes(notes, place_of, session_of):
 
 def main():
     notes = load_notes()
+    note_id = note_ids(notes)
     problems = []
 
     def note(title):
@@ -219,7 +226,7 @@ def main():
             "map": p.get("map"), "at": p.get("at"), "approx": p.get("approx", False),
             "parent": p.get("parent"), "region": p.get("region"), "offmap": p.get("offmap"),
             "where": p.get("where", ""), "aliases": p.get("aliases", []),
-            "summary": p.get("summary") or (summarize(n["body"]) if n else ""),
+            "summary": p.get("summary") or (summarize(n["body"], note_id) if n else ""),
             "url": note_url(n), "sessions": sessions_at.get(pid, []),
             "people": sorted(people, key=str.lower), "factions": sorted(factions, key=str.lower),
         }
@@ -250,7 +257,7 @@ def main():
         titles = [r["note"]] + r.get("aliases", [])
         regions[rid] = {
             "name": r["name"], "map": r["map"], "poly": r["poly"], "label": r.get("label"),
-            "summary": r.get("summary") or (summarize(n["body"]) if n else ""),
+            "summary": r.get("summary") or (summarize(n["body"], note_id) if n else ""),
             "url": note_url(n),
             "people": sorted(set().union(*(linked[t]["People"] for t in titles)), key=str.lower),
             "factions": sorted(set().union(*(linked[t]["Factions"] for t in titles)), key=str.lower),
@@ -280,16 +287,16 @@ def main():
     place_of = {p["note"]: ("sted", pid) for pid, p in PLACES.items()}
     place_of.update({r["note"]: ("region", rid) for rid, r in REGIONS.items()})
     session_of = {t: num for num, t in session_notes.items()}
-    ids = export_notes(notes, place_of, session_of)
+    export_notes(notes, note_id, place_of, session_of)
     for item in list(places.values()) + list(regions.values()):
         for key in ("people", "factions"):
-            item[key] = [[t, ids.get(t)] for t in item[key]]
+            item[key] = [[t, note_id.get(t)] for t in item[key]]
     for pid, p in PLACES.items():
-        places[pid]["noteId"] = ids.get(p["note"])
+        places[pid]["noteId"] = note_id.get(p["note"])
     for rid, r in REGIONS.items():
-        regions[rid]["noteId"] = ids.get(r["note"])
+        regions[rid]["noteId"] = note_id.get(r["note"])
     for s in sessions:
-        s["noteId"] = ids.get(session_notes.get(s["num"]))
+        s["noteId"] = note_id.get(session_notes.get(s["num"]))
 
     out = {"maps": MAPS, "portals": PORTALS, "offmap": OFFMAP, "places": places,
            "regions": regions, "sessions": sessions, "unplaced": unplaced}
