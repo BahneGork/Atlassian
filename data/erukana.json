@@ -2473,7 +2473,7 @@
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "nobility",
+   "social": "",
    "role": "military",
    "aliases": [
     "Viktor",
@@ -2534,7 +2534,7 @@
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "commoner",
+   "social": "",
    "role": "religious, druid",
    "aliases": [
     "Clara"
@@ -3359,7 +3359,7 @@
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "knight",
+   "social": "",
    "role": "paladin, military",
    "aliases": [
     "Winston",
@@ -3420,7 +3420,7 @@
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "commoner",
+   "social": "",
    "role": "resistance",
    "aliases": [],
    "factions": [
@@ -4208,7 +4208,7 @@
    "dead": true,
    "status": "dead",
    "race": "elf",
-   "social": "commoner",
+   "social": "",
    "role": "scholar",
    "aliases": [],
    "factions": [
@@ -4390,7 +4390,7 @@
    "dead": false,
    "status": "",
    "race": "gnome",
-   "social": "commoner",
+   "social": "",
    "role": "scholar",
    "aliases": [],
    "factions": [
@@ -4926,7 +4926,7 @@
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "commoner",
+   "social": "",
    "role": "military",
    "aliases": [],
    "factions": [
@@ -5066,7 +5066,7 @@
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "commoner",
+   "social": "",
    "role": "druid",
    "aliases": [],
    "factions": [

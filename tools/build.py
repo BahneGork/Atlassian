@@ -178,7 +178,9 @@ def export_notes(notes, ids, place_of, session_of):
         # All links, including "Referenced In": that section is how notes point back to sessions.
         linked = {m.group(1).strip() for m in WIKILINK.finditer(n["body"])}
         links = sorted({ids[t] for t in linked if t in ids and t != title and t not in HUBS})
-        out[nid] = {"title": title, "group": "Sessioner" if title in session_of else GROUPS.get(n["folder"], "Andet"),
+        group = ("Sessioner" if title in session_of else "Gruppen" if title in PARTY
+                 else GROUPS.get(n["folder"], "Andet"))
+        out[nid] = {"title": title, "group": group,
                     "md": reader_markdown(n["body"], ids), "links": links, "backlinks": []}
         if title in place_of:
             out[nid]["place"] = place_of[title]
@@ -269,7 +271,8 @@ def build_people(notes, note_id, session_of):
             "dead": status == "dead" or disp.startswith("deceased"),
             "status": status if status not in ("", "alive", "unknown") else "",
             "race": "" if pr.get("race") in (None, "unspecified") else text_prop(pr.get("race")),
-            "social": text_prop(pr.get("social_status")),
+            # social_status is generic filler on the party's notes ("commoner"), so it is left out for them
+            "social": "" if in_party else text_prop(pr.get("social_status")),
             "role": text_prop(pr.get("role")) or text_prop(pr.get("Profession")),
             "aliases": [a for a in pr.get("aliases") or [] if isinstance(a, str)],
             "factions": fids, "sessions": sessions_of(title, pr),

@@ -397,12 +397,13 @@
         el("p", { class: "dir-count" }, `${hits.length} af ${Object.keys(people).length} personer`),
         ...order.map((ref) => {
           const ids = groups[ref].sort(byName);
-          const list = el("ul", { class: "people-list" }, ids.slice(0, 8).map((k) => personRow(k)));
+          const limit = ref === "party" ? Infinity : 8; // the party is always shown in full
+          const list = el("ul", { class: "people-list" }, ids.slice(0, limit).map((k) => personRow(k)));
           return el("section", { class: "dir-group" },
             el("h3", {}, ref === "party" ? "Med gruppen" : ref ? el("a", { href: `#${placeRoute(ref)}` }, placeName(ref)) : "Ukendt opholdssted", ` (${ids.length})`),
             list,
-            ids.length > 8 ? el("button", { type: "button", class: "more",
-              onclick: (e) => { list.append(...ids.slice(8).map((k) => personRow(k))); e.target.remove(); } }, `Vis alle ${ids.length}`) : null);
+            ids.length > limit ? el("button", { type: "button", class: "more",
+              onclick: (e) => { list.append(...ids.slice(limit).map((k) => personRow(k))); e.target.remove(); } }, `Vis alle ${ids.length}`) : null);
         }));
     }
     field.addEventListener("input", () => {
@@ -788,7 +789,7 @@
   // ---------- Note reader (#note/<id>) ----------
   let notes = null;
   const loadNotes = () => (notes ||= fetch(`data/notes.json${V}`).then((r) => r.json()));
-  const GROUP_ORDER = ["Sessioner", "Steder", "Personer", "Factions", "Karakterer", "Missioner", "Genstande", "Loot", "Journal", "Lore", "Regler", "Andet"];
+  const GROUP_ORDER = ["Sessioner", "Gruppen", "Steder", "Personer", "Factions", "Karakterer", "Missioner", "Genstande", "Loot", "Journal", "Lore", "Regler", "Andet"];
   const sessionOrder = (n) => n.session ?? Infinity;
 
 
@@ -867,7 +868,7 @@
     for (const a of text.querySelectorAll("a[href^='#note/']")) a.setAttribute("href", noteHref(all, a.getAttribute("href").slice(6)));
 
     openPanel(
-      el("p", { class: "kicker" }, n.group === "Sessioner" ? "Sessionslog" : n.group),
+      el("p", { class: "kicker" }, n.group === "Sessioner" ? "Sessionslog" : person?.pc ? "Gruppen" : n.group),
       el("h2", {}, s ? `Session ${s.num}: ${s.title}` : n.title + (person?.dead ? " †" : "")),
       card,
       fcard,
