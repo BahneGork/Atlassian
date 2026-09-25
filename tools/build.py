@@ -1,11 +1,13 @@
 """Build data/erukana.json from the curated places and the published notes.
 
 Usage: python3 tools/build.py [path-to-notes]
-Notes are only read, never modified.
+By default the notes are fetched from GitHub (BahneGork/GMnostes), where the Obsidian
+Digital Garden plugin publishes them, into .cache/. Notes are only read, never modified.
 """
 import json
 import os
 import re
+import subprocess
 import sys
 from collections import defaultdict
 from urllib.parse import quote
@@ -15,8 +17,30 @@ from curation import (GARDEN_URL, MAPS, NOT_PEOPLE, NOT_PLACES, OFFMAP, PLACES, 
                       PORTALS, REGIONS, SESSIONS)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-NOTES = sys.argv[1] if len(sys.argv) > 1 else os.path.join(
-    ROOT, "..", "digital-garden", "GMnostes-repo", "src", "site", "notes", "02 Player", "Erukana (Nissen)")
+REPO = "https://github.com/BahneGork/GMnostes.git"
+CACHE = os.path.join(ROOT, ".cache", "GMnostes")
+NOTES_DIR = "src/site/notes/02 Player/Erukana (Nissen)"
+
+
+def fetch_notes():
+    """Sparse, shallow copy of the published notes; refreshed on every build."""
+    git = ["git", "-C", CACHE]
+    try:
+        if not os.path.isdir(CACHE):
+            subprocess.run(["git", "clone", "-q", "--depth", "1", "--filter=blob:none", "--sparse", REPO, CACHE],
+                           check=True)
+            subprocess.run(git + ["sparse-checkout", "set", "--no-cone", f"/{NOTES_DIR}/"], check=True)
+        else:
+            subprocess.run(git + ["fetch", "-q", "--depth", "1", "origin", "main"], check=True)
+            subprocess.run(git + ["reset", "-q", "--hard", "origin/main"], check=True)
+    except (subprocess.CalledProcessError, OSError) as e:
+        print(f"warning: could not update notes from GitHub ({e}); using the cached copy")
+    rev = subprocess.run(git + ["log", "-1", "--format=%h %ci"], capture_output=True, text=True).stdout.strip()
+    print(f"notes: GitHub {rev}")
+    return os.path.join(CACHE, NOTES_DIR)
+
+
+NOTES = sys.argv[1] if len(sys.argv) > 1 else fetch_notes()
 
 WIKILINK = re.compile(r"\[\[(?:[^\]|]*/)?([^\]|/#]+?)(?:#[^\]|]*)?(?:\\?\|([^\]]+))?\]\]")
 
@@ -162,8 +186,8 @@ def main():
             "factions": sorted(set().union(*(linked[t]["Factions"] for t in titles)), key=str.lower),
         }
 
-    session_notes = {int(re.match(r"\d+", t).group()): t for t, n in notes.items()
-                     if n["folder"] == "" and re.match(r"^\d+\s*[-\s]", t)}
+    session_notes = {float(re.match(r"\d+(?:\.\d+)?", t).group()): t for t, n in notes.items()
+                     if n["folder"] == "" and re.match(r"^\d+(?:\.\d+)?\s*[-\s]", t)}
     sessions = []
     for num, title, ids in SESSIONS:
         t = session_notes.get(num)

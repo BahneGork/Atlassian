@@ -28,6 +28,7 @@ PLACES = {
     "soltraeet": dict(note="Soltræet", parent="astley", kind="helligt"),
     "visdommens-kammer": dict(note="Visdommens kammer", parent="soltraeet", kind="sted"),
     "krypten": dict(note="Krypten", parent="soltraeet", kind="hule"),
+    "hjertekammeret": dict(note="Hjertekammeret", parent="soltraeet", kind="hule"),
     "paladine-templet": dict(note="paladine templet i Astley", parent="astley", kind="helligt"),
     "paladine-bibliotek": dict(note="Paladine's bibliotek i Astley", parent="paladine-templet", kind="sted"),
     "svinestien": dict(note="Svinestien - Bar i Astley shanty town", parent="astley", kind="sted", name="Svinestien"),
@@ -56,6 +57,9 @@ PLACES = {
                    where="I skoven lige uden for Mistville.",
                    summary="Huler i skoven uden for Mistville, hvor varulven Dvalin Hammerhånd "
                            "havde opholdt sig. Gruppen fandt hans kone Celia død her."),
+    "gamle-tempel": dict(note="Det gamle tempel nordøst for Colville", map="erukana", at=[2570, 2600],
+                         approx=True, kind="helligt", region="welles", name="Det gamle tempel",
+                         where="En halv dags rejse nordøst for Colville."),
     "colville": dict(note="Colville", map="erukana", at=[2425, 2686], kind="by", region="welles",
                      aliases=["Coleville"]),
     "southwatch": dict(note="Southwatch", map="erukana", at=[2440, 2874], kind="by", region="welles"),
@@ -160,6 +164,9 @@ PLACES = {
     "zezstanie": dict(note="Zezstanie", offmap="other", kind="by"),
     "angramar": dict(note="Angramar", offmap="other", kind="hule"),
     "mistport": dict(note="mistport", offmap="other", kind="havn", name="Mistport"),
+    "whisperwind": dict(note="The Whisperwind Airship", offmap="other", kind="havn", name="Whisperwind",
+                        summary="Det flyvende skib, som gruppen fandt fortøjret ved Vinterspiret i Port Drakkan "
+                                "og styrer med en metal-wand. Draconians bordede skibet og tog Evelyn til fange."),
     "stormens-ed": dict(note="stormens ed", offmap="other", kind="havn", name="Stormens Ed",
                         where="Et helligt skib i 'himmerige' – nået gennem en portal."),
 }
@@ -246,11 +253,17 @@ SESSIONS = [
     (41, "Besøg i Soltræet", ["soltraeet", "visdommens-kammer", "krypten"]),
     (42, "ShipJacking", ["port-drakkan", "vinterspiret"]),
     (43, "Sejlads i skyerne", ["vardestjernen", "port-alexander", "stampenborg"]),
+    (44, "Redningsmission i Feywood – den lilla horde", ["feywood", "astley"]),
+    (45, "Dracolichen angriber", ["soltraeet"]),
+    (45.5, "Logans tur til Skullborg", []),
+    (46, "Under Soltræet", ["soltraeet", "hjertekammeret"]),
+    (47, "Efter drageessensen", ["astley", "mausoleum", "gamle-tempel"]),
 ]
 
 # Location notes that are overviews or misfiled, not places to put on a map.
 NOT_PLACES = {"Erukana", "ErukanaMap", "Locationsvisited", "Region - Bortholme - Erukana",
-              "States and Baronies of Erukana", "Troldmands tårne", "Vinterskov - Grøndalen - Erukana.png", "skur"}
+              "States and Baronies of Erukana", "Troldmands tårne", "Vinterskov - Grøndalen - Erukana.png", "skur",
+              "Nord Heim"}
 
 # Entries in People/Factions notes that link to a place but are not people or factions there.
 NOT_PEOPLE = {"Mielikki", "Paladine", "Bahamut", "Morgion", "Orker", "Hydra", "Segreve", "Silverstream",

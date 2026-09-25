@@ -260,7 +260,7 @@
       p.where ? el("p", { class: "where" }, p.where) : null,
       sess.size ? [el("h3", {}, "Her har vi været"),
         el("div", { class: "chips" }, [...sess].sort((a, b) => a - b).map((n) =>
-          el("button", { type: "button", class: "session-chip", title: sessions[n - 1].title, onclick: () => go(`session/${n}`) }, `Session ${n}`)))] : null,
+          el("button", { type: "button", class: "session-chip", title: sessionByNum(n)?.title, onclick: () => go(`session/${n}`) }, `Session ${n}`)))] : null,
       placeList("Steder her", kids),
       chips("Personer", p.people),
       chips("Factions", p.factions),
@@ -362,8 +362,9 @@
   const jToggle = $(".journey-toggle");
   const strip = $(".journey-strip");
   const card = $(".journey-card");
-  let step = 0;
+  let step = -1; // index into sessions
   let timer = null;
+  const sessionByNum = (num) => sessions.find((s) => String(s.num) === String(num));
 
   const sessionMap = (s) => s.places.map(mapOf).find(Boolean) || null;
   for (const s of sessions) {
@@ -373,7 +374,7 @@
     }, String(s.num))));
   }
   jToggle.addEventListener("click", () => {
-    if (jBody.hidden) go(`session/${step || 1}`);
+    if (jBody.hidden) go(`session/${sessions[Math.max(step, 0)].num}`);
     else { stopPlay(); endJourney(); go(""); }
   });
   $(".journey-controls").addEventListener("click", (e) => {
@@ -381,14 +382,14 @@
     if (!b) return;
     if (b.classList.contains("journey-play")) return timer ? stopPlay() : startPlay();
     stopPlay();
-    go(`session/${Math.min(sessions.length, Math.max(1, step + Number(b.dataset.step)))}`);
+    go(`session/${sessions[Math.min(sessions.length - 1, Math.max(0, step + Number(b.dataset.step)))].num}`);
   });
   function startPlay() {
     $(".journey-play").textContent = "❚❚";
-    if (step >= sessions.length) go("session/1");
+    if (step >= sessions.length - 1) go(`session/${sessions[0].num}`);
     timer = setInterval(() => {
-      if (step >= sessions.length) return stopPlay();
-      go(`session/${step + 1}`);
+      if (step >= sessions.length - 1) return stopPlay();
+      go(`session/${sessions[step + 1].num}`);
     }, 2600);
   }
   function stopPlay() {
@@ -404,17 +405,17 @@
     applyPinState();
   }
 
-  function showSession(n) {
-    step = n;
-    const s = sessions[n - 1];
+  function showSession(idx) {
+    step = idx;
+    const s = sessions[idx];
     jBody.hidden = false;
     jToggle.setAttribute("aria-expanded", "true");
     closePanel();
     [...strip.children].forEach((li, i) => {
       const b = li.firstChild;
-      b.classList.toggle("past", i < n - 1);
-      b.setAttribute("aria-current", String(i === n - 1));
-      if (i === n - 1) b.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+      b.classList.toggle("past", i < idx);
+      b.setAttribute("aria-current", String(i === idx));
+      if (i === idx) b.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
     });
 
     const target = sessionMap(s);
@@ -430,7 +431,7 @@
     // Trail: every earlier stop on this map, in order; the current session's leg in wax.
     for (const lyr of Object.values(layers)) lyr.trail.clearLayers();
     const stops = [];
-    for (const t of sessions.slice(0, n)) {
+    for (const t of sessions.slice(0, idx + 1)) {
       for (const id of t.places) {
         const a = anchor(id);
         if (!a) continue;
@@ -441,7 +442,7 @@
     for (const mapId of Object.keys(maps)) {
       const pts = stops.filter((st) => st.map === mapId);
       for (let i = 1; i < pts.length; i++) {
-        const now = pts[i].num === n;
+        const now = pts[i].num === s.num;
         L.polyline([ll(places[pts[i - 1].id].at), ll(places[pts[i].id].at)], { className: `trail${now ? " now" : ""}`, interactive: false })
           .addTo(layers[mapId].trail);
       }
@@ -594,7 +595,7 @@
     if (kind !== "session") { stopPlay(); endJourney(); }
     if (kind === "sted" && places[id]) showPlace(id);
     else if (kind === "region" && regions[id]) showRegion(id);
-    else if (kind === "session" && sessions[id - 1]) showSession(Number(id));
+    else if (kind === "session" && sessionByNum(id)) showSession(sessions.indexOf(sessionByNum(id)));
     else if (kind === "udenfor" && offmap[id]) showOffmap(id);
     else if (kind === "kort" && maps[id]) showMapPanel(id);
     else { closePanel(); showMap(current || "erukana", !current); }

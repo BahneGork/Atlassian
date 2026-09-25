@@ -80,11 +80,14 @@
     17,
     19,
     20,
-    21
+    21,
+    44,
+    47
    ],
    "people": [
     "Beril Højmølle",
     "Celedrial keeper of mielikki suntree",
+    "Clarabel Lancaster",
     "Daine waymar",
     "Elvira",
     "Fafnir",
@@ -98,6 +101,7 @@
     "miri sangstrup",
     "Pierre",
     "Tizzelspark",
+    "Tortin Mikkelborg",
     "Vagtkaptajn Samuel",
     "Vagtkaptajn ved Nord distriktet i Astley",
     "Valo",
@@ -141,13 +145,17 @@
    "sessions": [
     12,
     17,
-    41
+    41,
+    45,
+    46
    ],
    "people": [
     "Celedrial keeper of mielikki suntree",
+    "Clarabel Lancaster",
     "Jarell Flick",
     "Lord Fern",
-    "Maelar"
+    "Maelar",
+    "Sir Winston"
    ],
    "factions": [
     "Mielikki tilhængere"
@@ -171,6 +179,7 @@
     41
    ],
    "people": [
+    "Clarabel Lancaster",
     "Jarell Flick",
     "Lord Fern",
     "Maelar"
@@ -194,8 +203,36 @@
    "sessions": [
     41
    ],
-   "people": [],
+   "people": [
+    "Clarabel Lancaster"
+   ],
    "factions": [],
+   "visited": true
+  },
+  "hjertekammeret": {
+   "name": "Hjertekammeret",
+   "kind": "hule",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": "soltraeet",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "summary": "Hjertekammeret er et kammer dybt i katakomberne under Soltræet, hvor Blod delen af staven blev gemt, og hvor Seralyths dragelig ligger sammen med det krystalkar som blod-delen har ligget i.",
+   "url": "",
+   "sessions": [
+    46
+   ],
+   "people": [
+    "Clarabel Lancaster",
+    "Lord Fern",
+    "Ægrin"
+   ],
+   "factions": [
+    "Azur ordenen"
+   ],
    "visited": true
   },
   "paladine-templet": {
@@ -359,9 +396,11 @@
    "sessions": [
     9,
     10,
-    11
+    11,
+    44
    ],
    "people": [
+    "Clarabel Lancaster",
     "Erika Songfelt",
     "Lord Fern",
     "Lucious Vormend"
@@ -390,10 +429,17 @@
    ],
    "summary": "Sir Seillings mausoleum er et gravkammer beliggende syd for Astley. Det er gravstedet for Sir Seiling og Kong Norgassa, der blev begravet samme sted efter Sigismunds fald. Mausoleet er forbundet med Sir Winstons drømme.",
    "url": "",
-   "sessions": [],
-   "people": [],
+   "sessions": [
+    47
+   ],
+   "people": [
+    "Clarabel Lancaster",
+    "Kong Norgassa",
+    "Sir Selling",
+    "Sir Winston"
+   ],
    "factions": [],
-   "visited": false
+   "visited": true
   },
   "stirling": {
    "name": "Stirling",
@@ -451,6 +497,7 @@
     "Merryn Foehammer",
     "Petyr Gottmann",
     "Qenes Markmoon",
+    "Ulrick Stadtfeldt",
     "Ulrik Stadtfelt",
     "Verner Mistvale"
    ],
@@ -505,6 +552,31 @@
    "factions": [],
    "visited": true
   },
+  "gamle-tempel": {
+   "name": "Det gamle tempel",
+   "kind": "helligt",
+   "map": "erukana",
+   "at": [
+    2570,
+    2600
+   ],
+   "approx": true,
+   "parent": null,
+   "region": "welles",
+   "offmap": null,
+   "where": "En halv dags rejse nordøst for Colville.",
+   "aliases": [],
+   "summary": "Et gammelt tempel en halv dags rejse nordøst for Colville, hvor Ægrin bad Nibar om at mødes. Det ligner et okkult bygningsværk, noget der ikke er skabt af mundane evner.",
+   "url": "",
+   "sessions": [
+    47
+   ],
+   "people": [
+    "Ægrin"
+   ],
+   "factions": [],
+   "visited": true
+  },
   "colville": {
    "name": "Colville",
    "kind": "by",
@@ -526,7 +598,8 @@
    "sessions": [],
    "people": [],
    "factions": [
-    "Baronessens råd"
+    "Baronessens råd",
+    "Opal kulten"
    ],
    "visited": false
   },
@@ -750,7 +823,9 @@
    "summary": "Segreve (også stavet Segrave) er en by i Baroniet Eresby. Det er her Baron Zhaarko fejrer sin søns fødselsdag, og byen har et marked hvor sølvstatuen blev solgt.",
    "url": "",
    "sessions": [],
-   "people": [],
+   "people": [
+    "Baron Zhaarko af Eresby"
+   ],
    "factions": [
     "Brakeshield familien"
    ],
@@ -1711,6 +1786,24 @@
    "factions": [],
    "visited": false
   },
+  "whisperwind": {
+   "name": "Whisperwind",
+   "kind": "havn",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "parent": null,
+   "region": null,
+   "offmap": "other",
+   "where": "",
+   "aliases": [],
+   "summary": "Det flyvende skib, som gruppen fandt fortøjret ved Vinterspiret i Port Drakkan og styrer med en metal-wand. Draconians bordede skibet og tog Evelyn til fange.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false
+  },
   "stormens-ed": {
    "name": "Stormens Ed",
    "kind": "havn",
@@ -2003,6 +2096,8 @@
    "summary": "Eresby er baroniet som grænser op til passet mod syd og det største kontinent i hele Ceynor. Eresby nyder godt af handelskaravaner som kommer igennem, i deres rejse mod Wolfenburg. I sig selv har Eresby ikke meget at byde på ud over frodige vidder hvor landbrug og bomuld udvindes.",
    "url": "",
    "people": [
+    "Baron Zhaarko af Eresby",
+    "Clarabel Lancaster",
     "den ældre veteran",
     "Lord Adelston Magdova",
     "Vaelon Dunmere"
@@ -2605,6 +2700,58 @@
    ],
    "url": "",
    "date": "28.03.2026",
+   "gm": "Nissen"
+  },
+  {
+   "num": 44,
+   "title": "Redningsmission i Feywood – den lilla horde",
+   "places": [
+    "feywood",
+    "astley"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "Nissen"
+  },
+  {
+   "num": 45,
+   "title": "Dracolichen angriber",
+   "places": [
+    "soltraeet"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "Nissen"
+  },
+  {
+   "num": 45.5,
+   "title": "Logans tur til Skullborg",
+   "places": [],
+   "url": "",
+   "date": "",
+   "gm": "Nissen"
+  },
+  {
+   "num": 46,
+   "title": "Under Soltræet",
+   "places": [
+    "soltraeet",
+    "hjertekammeret"
+   ],
+   "url": "",
+   "date": "08.08.2026",
+   "gm": "Nissen"
+  },
+  {
+   "num": 47,
+   "title": "Efter drageessensen",
+   "places": [
+    "astley",
+    "mausoleum",
+    "gamle-tempel"
+   ],
+   "url": "",
+   "date": "20.09.2026",
    "gm": "Nissen"
   }
  ],

@@ -15,10 +15,10 @@ python3 -m http.server 8000
 ## Update the atlas
 Atlas content lives in two places:
 - `tools/curation.py`: hand-curated places (map position, type, parent place), barony outlines and the session list
-- `tools/build.py`: reads the campaign notes (read-only), adds descriptions, people and factions, and writes `data/erukana.json`
+- `tools/build.py`: fetches the published notes from GitHub (`BahneGork/GMnostes`, where the Obsidian Digital Garden plugin publishes them) into `.cache/`, adds descriptions, people and factions, and writes `data/erukana.json`
 
 ```bash
-python3 tools/build.py            # notes default to ../digital-garden/GMnostes-repo/...
+python3 tools/build.py            # or: python3 tools/build.py <path-to-notes>
 ```
 
 The build lists any location notes not yet in the atlas and any problems it finds.
