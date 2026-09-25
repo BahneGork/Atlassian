@@ -1,20 +1,26 @@
-# Placements saved from the site's edit mode ("Gem for alle") arrive as moves/*.json.
-# Apply them to tools/curation.py, rebuild data/erukana.json and publish.
-name: Apply map moves
+# Rebuilds the atlas from the published notes and publishes it when something changed:
+# - when placements saved from the site's edit mode ("Gem for alle") arrive as moves/*.json
+# - every night, to pick up newly published notes
+# - on demand (Actions tab -> Rebuild atlas -> Run workflow)
+# If the build reports a problem, the run fails (GitHub e-mails the owner) and nothing is published.
+name: Rebuild atlas
 
 on:
   push:
     branches: [main]
     paths: ["moves/*.json"]
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
   pages: write
 
-concurrency: apply-moves
+concurrency: rebuild-atlas
 
 jobs:
-  apply:
+  rebuild:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,26 +29,31 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Apply moves and rebuild
+      - name: Apply saved moves
         run: |
           shopt -s nullglob
           files=(moves/*.json)
-          if [ ${#files[@]} -eq 0 ]; then exit 0; fi
           for f in "${files[@]}"; do python3 tools/apply_moves.py "$f"; done
-          git rm -q "${files[@]}"
-          python3 tools/build.py
+          if [ ${#files[@]} -gt 0 ]; then git rm -q "${files[@]}"; fi
 
-      - name: Commit and push
+      - name: Build
+        run: python3 tools/build.py
+
+      - name: Commit and push if anything changed
+        id: commit
         run: |
+          # index.html only gets a new version stamp; without other changes there is nothing to publish.
+          if git diff --quiet HEAD -- data tools moves; then git checkout -- index.html; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Apply map moves saved from the site"
+          git commit -m "Rebuild atlas (${{ github.event_name }})"
           git push
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
 
       # Pushes made with the workflow token may not start a Pages build on their own.
       - name: Request Pages build
+        if: steps.commit.outputs.pushed == 'true'
         run: gh api -X POST "repos/${{ github.repository }}/pages/builds"
         env:
           GH_TOKEN: ${{ github.token }}

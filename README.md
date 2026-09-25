@@ -28,10 +28,15 @@ The build lists any location notes not yet in the atlas and any problems it find
 
 The other views in the tab are computed on every build from the logs and never infer anything: **Glemte** (mentioned in 2+ sessions but not in the last 12), **Næste skridt** (the group's NEXT lines), **Spørgsmål** (questions written in the logs). The reader also shows which notes are **mentioned in the same sessions**.
 
+### Automatic rebuilds
+The "Rebuild atlas" workflow also runs every night (and on demand from the Actions tab), so newly published notes reach the site without anyone running `build.py`. It only publishes when the data changed. If the build reports a `PROBLEM`, the run fails, GitHub e-mails the owner, and the site keeps its last good version.
+
+Notes renamed in the vault don't break the curated titles in `tools/curation.py`: when a title is missing, the build follows the notes' aliases (the renamed note must list the old title as an alias) and prints `followed rename: old -> new`.
+
 ### Moving and placing places on the map
 1. On the site, open **Signaturer** and tick **Redigér placeringer**.
 2. Drag pins into place. **Uplacerede steder** lists places without a position and new location notes the atlas doesn't know yet; pick one and click the map where it belongs.
-3. Changes are kept in that browser only. To publish them, click **Gem for alle**: GitHub opens with the changes as a new file in `moves/`. Click **Commit changes** (needs write access to the repo). The workflow `.github/workflows/apply-moves.yml` applies them, rebuilds and publishes; the map updates for everyone in a few minutes. Once the site has them, they are dropped from the browser automatically.
+3. Changes are kept in that browser only. To publish them, click **Gem for alle**: GitHub opens with the changes as a new file in `moves/`. Click **Commit changes** (needs write access to the repo). The workflow `.github/workflows/apply-moves.yml` ("Rebuild atlas") applies them, rebuilds and publishes; the map updates for everyone in a few minutes. Once the site has them, they are dropped from the browser automatically.
 4. Or apply them by hand: click **Kopiér ændringer** and run
 
 ```bash

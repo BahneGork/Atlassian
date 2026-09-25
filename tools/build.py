@@ -323,8 +323,39 @@ def build_people(notes, note_id, session_of):
     return people, factions
 
 
+def follow_renames(notes):
+    """Curated titles whose note was renamed in the vault: follow the new note's aliases (any case)."""
+    by_name = {t.lower(): t for t in notes}
+    for t, n in notes.items():
+        for a in n["props"].get("aliases") or []:
+            if isinstance(a, str):
+                by_name.setdefault(a.lower(), t)
+    renamed = {}
+
+    def res(title):
+        new = title if title in notes else by_name.get(title.lower(), title)
+        if new != title:
+            renamed[title] = new
+        return new
+
+    for p in list(PLACES.values()) + list(REGIONS.values()):
+        new = res(p["note"])
+        if new != p["note"]:
+            p.setdefault("aliases", []).append(p["note"])
+            p["note"] = new
+    PARTY[:] = [res(x) for x in PARTY]
+    for d in (PARTY_NAMES, PARTY_STATUS, PARTY_PERIODS, PARTY_CLASS, PARTY_RACE, PARTY_ORIGIN):
+        for k in list(d):
+            if res(k) != k:
+                d[res(k)] = d.pop(k)
+    for names in SOLO_SESSIONS.values():
+        names[:] = [res(x) for x in names]
+    return renamed
+
+
 def main():
     notes = load_notes()
+    renamed = follow_renames(notes)
     note_id = note_ids(notes)
     problems = []
 
@@ -506,8 +537,11 @@ def main():
     print(f"{len(people)} people ({placed} placed), {len(factions)} factions "
           f"({sum(1 for f in factions.values() if f['seat'])} with a seat)")
     print("new location notes, not yet in the atlas:", ", ".join(uncurated) or "none")
+    for old, new in sorted(renamed.items()):
+        print(f"followed rename: {old} -> {new} (update tools/curation.py when convenient)")
     for p in problems:
         print("PROBLEM", p)
+    return 1 if problems else 0
 
 
-main()
+sys.exit(main())
