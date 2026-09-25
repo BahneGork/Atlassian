@@ -90,7 +90,9 @@ PLACES = {
     "stampenborg": dict(note="Stampenborg", map="erukana", at=[2805, 1735], kind="borg", region="eresby"),
     "arcana": dict(note="Arcana tårnet", map="erukana", at=[2005, 3020], approx=True, kind="taarn",
                    aliases=["Arkana", "Vogter tårnet"],
-                   where="Muligvis kortets 'Arkana' – noterne kalder det 'det sydlige wizard-tårn'."),
+                   where="Muligvis kortets 'Arkana' – noterne kalder det 'det sydlige wizard-tårn'. "
+                         "Gruppen var der mellem session 20 og 21 (missionen 'The fall of Arcana tower', "
+                         "hvor I fik Isilme) – turen har ingen sessionslog."),
     "grimrock": dict(note="Grimrock Woods", map="erukana", at=[2870, 1590], kind="vildmark"),
     "miragehill": dict(note="Miragehill", map="erukana", at=[3075, 1606], approx=True, kind="by",
                        where="På østsiden af Grimrock Woods."),
