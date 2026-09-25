@@ -2467,7 +2467,7 @@
   },
   "viktor-baigorri": {
    "name": "Viktor Baigorri",
-   "place": null,
+   "place": "region:botreaux",
    "stance": "ally",
    "dead": false,
    "status": "",
@@ -2810,7 +2810,7 @@
   },
   "sir-selling": {
    "name": "Sir Selling",
-   "place": null,
+   "place": "mausoleum",
    "stance": "ally",
    "dead": true,
    "status": "dead",
@@ -3295,7 +3295,7 @@
   },
   "lord-chaptermaster-cerilian-archhold": {
    "name": "Lord Chaptermaster Cerilian Archhold",
-   "place": null,
+   "place": "anaksa",
    "stance": "ally",
    "dead": true,
    "status": "dead",
@@ -3451,7 +3451,7 @@
   },
   "ukkadin-magmahand": {
    "name": "Ukkadin Magmahånd",
-   "place": null,
+   "place": "slatestone",
    "stance": "neutral",
    "dead": false,
    "status": "",
@@ -3714,7 +3714,7 @@
   },
   "baronesse-avalande": {
    "name": "Baronesse Avalande",
-   "place": null,
+   "place": "region:welles",
    "stance": "ally",
    "dead": false,
    "status": "missing",
@@ -3788,7 +3788,7 @@
   },
   "selenna": {
    "name": "Selenna",
-   "place": null,
+   "place": "whisperwind",
    "stance": "ally",
    "dead": false,
    "status": "",
@@ -3890,7 +3890,7 @@
   },
   "lallana-botreaux": {
    "name": "Lallana Botreaux",
-   "place": null,
+   "place": "botreaux-by",
    "stance": "neutral",
    "dead": false,
    "status": "",
@@ -4530,7 +4530,7 @@
   },
   "hviskeren-i-morket": {
    "name": "hviskeren i mørket",
-   "place": null,
+   "place": "dark-gem",
    "stance": "unknown",
    "dead": false,
    "status": "",
@@ -4650,7 +4650,7 @@
   },
   "mira-wolfsbane": {
    "name": "Mira Wolfsbane",
-   "place": null,
+   "place": "crater-shrine",
    "stance": "neutral",
    "dead": false,
    "status": "",
@@ -4798,7 +4798,7 @@
   },
   "hakan": {
    "name": "Håkan",
-   "place": "region:nordheim",
+   "place": "vinterskov",
    "stance": "ally",
    "dead": false,
    "status": "",
@@ -4962,7 +4962,7 @@
   },
   "blackwing": {
    "name": "blackwing",
-   "place": null,
+   "place": "port-drakkan",
    "stance": "unknown",
    "dead": false,
    "status": "",
@@ -5052,7 +5052,7 @@
   },
   "corwin": {
    "name": "Corwin",
-   "place": null,
+   "place": "region:nordheim",
    "stance": "ally",
    "dead": false,
    "status": "",
@@ -5182,7 +5182,7 @@
   },
   "baron-zhaarko": {
    "name": "Baron Zhaarko",
-   "place": null,
+   "place": "region:eresby",
    "stance": "enemy",
    "dead": false,
    "status": "undead",
@@ -5646,7 +5646,7 @@
   },
   "jullan-trade-delegation": {
    "name": "Jullan trade delegation",
-   "seat": null,
+   "seat": "kolitan",
    "stance": "neutral",
    "type": "political-body",
    "status": "active",

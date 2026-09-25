@@ -268,6 +268,13 @@ LOCATION_ALIASES = {
     "Bronzekeg": "kegville", "Dark Gem Clan Caves": "dark-gem", "Stirling": "stirling",
     "Hertugdømmet Botreaux": "region:botreaux", "Vinterspiret 1": "vinterspiret",
     "Nordlandet": "region:nordheim", "Nord Heim": "region:nordheim", "De Ældstes Haller": "dvaerge-haller",
+    "Baroniet Botreaux": "region:botreaux", "Bortreaux": "botreaux-by", "Welles": "region:welles",
+    "Eresby": "region:eresby", "Slatestone dværgehallerne": "slatestone", "Sir Seillings mausoleum 1": "mausoleum",
+    "Kobold hulerne": "dark-gem", "Windbreaker waystation": "crater-shrine", "Whisperwind": "whisperwind",
+    "Nord distriktet": "astley", "Vestporten": "astley", "Varehusområdet": "astley",
+    "Inn near Grøndalen": "vinterskov", "Nordlandet (jagthytte)": "region:nordheim", "Ettin-øerne": "region:nordheim",
+    "De 6 sølvstykker": "port-drakkan", "De 6 sølvstykker (tavern)": "port-drakkan",
+    "Jullan": "kolitan", "Jullan/Yuulan": "kolitan", "Highguard Chapterhouse": "anaksa",
 }
 
 # Location notes that are overviews or misfiled, not places to put on a map.
