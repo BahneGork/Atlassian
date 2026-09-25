@@ -275,6 +275,23 @@ NOT_PLACES = {"Erukana", "ErukanaMap", "Locationsvisited", "Region - Bortholme -
               "States and Baronies of Erukana", "Troldmands tårne", "Vinterskov - Grøndalen - Erukana.png", "skur",
               "Nord Heim", "Erukana1"}
 
+# The party (player characters and companions), shown in the people register with a "Gruppen" filter.
+# Some live in Characters/, some in People/. Titles as in the notes.
+PARTY = ["Clarabel Lancaster", "Sir Winston", "Nibar", "Vargoth Sul", "Logan", "Isilme", "Bjørn of Nordheim",
+         "Viktor Baigorri", "Fritte", "Corwin"]
+# Status the notes lack but the logs state (note title -> (status, source)).
+PARTY_STATUS = {
+    "Vargoth Sul": ("dead", "Faldt i frostkæmpe-bagholdet i session 27, begravet i session 28."),
+    "Corwin": ("", "Ifølge Bahne: Ærketroldmanden Ægrin antydede i session 47, at Corwin måske er blevet en skurk. "
+                   "Det står ikke i loggen."),
+}
+# Party members without a note of their own: shown from what the logs say.
+PARTY_EXTRA = {
+    "Evelyn Adair": dict(aliases=["Evelyn", "Adare", "Adair"], race="", social="", role="præst (Mishakal/Paladine)", dead=True,
+                         statusNote="Ifølge Bahne: død. Gav frivilligt sin essens til tidsartifaktet i session 46, "
+                                    "til kun kroppen var tilbage."),
+}
+
 # Entries in People/Factions notes that link to a place but are not people or factions there.
 NOT_PEOPLE = {"Mielikki", "Paladine", "Bahamut", "Morgion", "Orker", "Hydra", "Segreve", "Silverstream",
               "Jullan", "Logan", "Nibar", "knight aberrants", "Queensguard Lord Command Promotion Ritual",

@@ -272,7 +272,7 @@
     .slice(0, 2).map((w) => w[0].toUpperCase()).join("");
   const monogram = (pid, big = false) => {
     const p = people[pid];
-    return el("span", { class: `monogram stance-${p.stance}${p.dead ? " dead" : ""}${big ? " big" : ""}`, "aria-hidden": "true" },
+    return el("span", { class: `monogram stance-${p.stance}${p.dead ? " dead" : ""}${p.pc ? " pc" : ""}${big ? " big" : ""}`, "aria-hidden": "true" },
       initials(p.name), p.dead ? el("i", {}, "†") : null);
   };
   const personMeta = (p, withPlace) => [p.social, p.role, withPlace ? placeName(p.place) : null]
@@ -363,10 +363,10 @@
     farmer: "bonde", sailor: "sømand", captain: "kaptajn", hunter: "jæger", healer: "healer helbreder" };
   const danish = (text) => text.toLowerCase().split(/[^a-z]+/).map((w) => DANISH[w] || "").join(" ");
   const personKeys = Object.fromEntries(Object.entries(people).map(([pid, p]) => [pid, fold([
-    p.name, ...p.aliases, p.role, p.social, p.race, danish(`${p.role} ${p.social} ${p.race}`),
+    p.name, ...p.aliases, p.role, p.social, p.race, danish(`${p.role} ${p.social} ${p.race}`), p.pc ? "gruppen spillerkarakter" : "",
     placeName(p.place), ...p.factions.map((f) => factions[f]?.name || ""),
   ].join(" "))]));
-  const DIR_FILTERS = [["ally", "Allierede"], ["neutral", "Neutrale"], ["enemy", "Fjender"], ["unknown", "Ukendte"], ["dead", "Døde"]];
+  const DIR_FILTERS = [["pc", "Gruppen"], ["ally", "Allierede"], ["neutral", "Neutrale"], ["enemy", "Fjender"], ["unknown", "Ukendte"], ["dead", "Døde"]];
   const dirState = { q: "", only: null };
   function showDirectory(q = "") {
     dirState.q = q;
@@ -379,12 +379,12 @@
       const p = people[pid];
       const words = fold(dirState.q).split(/\s+/).filter(Boolean);
       return words.every((w) => personKeys[pid].includes(w))
-        && (!dirState.only || (dirState.only === "dead" ? p.dead : p.stance === dirState.only));
+        && (!dirState.only || (dirState.only === "dead" ? p.dead : dirState.only === "pc" ? p.pc : p.stance === dirState.only));
     };
     function render() {
       const textHits = Object.keys(people).filter((pid) => fold(dirState.q).split(/\s+/).filter(Boolean).every((w) => personKeys[pid].includes(w)));
       chipsRow.replaceChildren(...DIR_FILTERS.map(([key, label]) => {
-        const n = textHits.filter((pid) => (key === "dead" ? people[pid].dead : people[pid].stance === key)).length;
+        const n = textHits.filter((pid) => (key === "dead" ? people[pid].dead : key === "pc" ? people[pid].pc : people[pid].stance === key)).length;
         return el("button", { type: "button", class: `dir-chip stance-${key}`, "aria-pressed": String(dirState.only === key),
           onclick: () => { dirState.only = dirState.only === key ? null : key; render(); } }, `${label} ${n}`);
       }));
@@ -796,7 +796,8 @@
 
   async function showNote(id) {
     const all = await loadNotes();
-    const n = all[id];
+    // A party member without a note of their own gets an empty note, so the card is still shown.
+    const n = all[id] || (people[id]?.noNote ? { title: people[id].name, group: "Personer", md: "", links: [], backlinks: [] } : null);
     if (!n) return closePanel();
     // Reading a session log with Rejsen open moves the journey there too, whichever link led here
     // (related box, "Next Session" links in the text, back button).
@@ -816,7 +817,9 @@
       el("div", {},
         el("div", { class: "badges" },
           el("span", { class: `badge stance-${person.stance}` }, STANCE[person.stance]),
-          person.dead ? el("span", { class: "badge" }, "Død †") : person.status ? el("span", { class: "badge" }, statusText(person.status)) : null),
+          person.pc ? el("span", { class: "badge pc" }, "Gruppen") : null,
+          person.dead ? el("span", { class: "badge", title: person.statusNote || null }, "Død †") : person.status ? el("span", { class: "badge" }, statusText(person.status)) : null),
+        person.statusNote ? el("p", { class: "person-facts where" }, person.statusNote) : null,
         el("p", { class: "person-facts" }, [person.race, person.social, person.role].filter(Boolean).join(" · ") || null),
         el("p", { class: "person-facts" }, "Opholdssted: ",
           person.place ? el("a", { href: `#${placeRoute(person.place)}` }, placeName(person.place)) : "ukendt"),

@@ -2400,7 +2400,9 @@
    "factions": [
     "de-vilde-elvere"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "merchant-konglomeratet": {
    "name": "Merchant Konglomeratet",
@@ -2415,7 +2417,9 @@
     "Merchant Konglomeratets"
    ],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "queen-neferata": {
    "name": "Queen Neferata",
@@ -2436,7 +2440,89 @@
    "factions": [
     "the-queensguard"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "fritte": {
+   "name": "Fritte",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "active",
+   "race": "",
+   "social": "",
+   "role": "",
+   "aliases": [
+    "Fritte"
+   ],
+   "factions": [],
+   "sessions": [
+    13,
+    14,
+    16
+   ],
+   "pc": true,
+   "statusNote": ""
+  },
+  "viktor-baigorri": {
+   "name": "Viktor Baigorri",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "nobility",
+   "role": "military",
+   "aliases": [
+    "Viktor",
+    "Victor",
+    "Viktor Baigorri"
+   ],
+   "factions": [
+    "astley-avengers",
+    "azur-ordenen"
+   ],
+   "sessions": [
+    36,
+    37,
+    39,
+    42,
+    43,
+    44,
+    46,
+    47
+   ],
+   "pc": true,
+   "statusNote": ""
+  },
+  "vargoth-sul": {
+   "name": "Vargoth Sul",
+   "place": null,
+   "stance": "ally",
+   "dead": true,
+   "status": "dead",
+   "race": "Dwarf",
+   "social": "",
+   "role": "",
+   "aliases": [
+    "vargoth"
+   ],
+   "factions": [],
+   "sessions": [
+    1,
+    6,
+    7,
+    8,
+    14,
+    16,
+    21,
+    26,
+    27,
+    31
+   ],
+   "pc": true,
+   "statusNote": "Faldt i frostkæmpe-bagholdet i session 27, begravet i session 28."
   },
   "clarabel-lancaster": {
    "name": "Clarabel Lancaster",
@@ -2468,7 +2554,9 @@
     45,
     46,
     47
-   ]
+   ],
+   "pc": true,
+   "statusNote": ""
   },
   "landon-forrester": {
    "name": "Landon Forrester",
@@ -2483,7 +2571,9 @@
    "factions": [
     "solvhanden"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "mecina": {
    "name": "Mecina",
@@ -2496,7 +2586,9 @@
    "role": "",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "elvira": {
    "name": "Elvira",
@@ -2511,7 +2603,9 @@
    "factions": [],
    "sessions": [
     17
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "kasimer-leitner": {
    "name": "Kasimer Leitner",
@@ -2527,7 +2621,9 @@
     "house-leitner",
     "house-magdova"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "marskal-henry-willsfort": {
    "name": "Marskal Henry Willsfort",
@@ -2540,7 +2636,9 @@
    "role": "military",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "ulricha-leitner": {
    "name": "Ulricha Leitner",
@@ -2557,7 +2655,9 @@
    "factions": [
     "house-leitner"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "aegrin": {
    "name": "Ægrin",
@@ -2576,7 +2676,9 @@
    ],
    "sessions": [
     47
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "archibald-oddsmoke": {
    "name": "Archibald Oddsmoke",
@@ -2592,7 +2694,9 @@
     "Oddball"
    ],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "borthos-hagenhof": {
    "name": "Borthos Hagenhof",
@@ -2605,7 +2709,9 @@
    "role": "Finsmed",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "kaelen": {
    "name": "Kaelen",
@@ -2624,7 +2730,9 @@
    "sessions": [
     40,
     42
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "imale-shawn": {
    "name": "Imale shawn",
@@ -2641,7 +2749,9 @@
    "factions": [],
    "sessions": [
     42
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "kong-norgassa": {
    "name": "Kong Norgassa",
@@ -2658,7 +2768,9 @@
    "factions": [],
    "sessions": [
     47
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "bane": {
    "name": "Bane",
@@ -2673,7 +2785,9 @@
    "factions": [],
    "sessions": [
     28
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "zarafine": {
    "name": "Zarafine",
@@ -2690,7 +2804,9 @@
    ],
    "sessions": [
     23
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "sir-selling": {
    "name": "Sir Selling",
@@ -2707,7 +2823,9 @@
    "factions": [],
    "sessions": [
     47
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "sir-zamal-helheim": {
    "name": "Sir Zamal Helheim",
@@ -2720,7 +2838,9 @@
    "role": "nobility",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-vitano": {
    "name": "Lord Vitano",
@@ -2740,7 +2860,9 @@
    ],
    "sessions": [
     20
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "sargas-slatefist": {
    "name": "Sargas Slatefist",
@@ -2755,7 +2877,9 @@
    "factions": [],
    "sessions": [
     20
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "pirat-kaptajnen-arlis": {
    "name": "pirat kaptajnen Arlis",
@@ -2772,7 +2896,9 @@
    "factions": [],
    "sessions": [
     23
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "yasmina-antuu": {
    "name": "Yasmina AnTuu",
@@ -2787,7 +2913,9 @@
    "factions": [],
    "sessions": [
     3
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "merryn-foehammer": {
    "name": "Merryn Foehammer",
@@ -2802,7 +2930,9 @@
    "factions": [],
    "sessions": [
     5
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "rocielle-de-ang-l": {
    "name": "Rocielle De angél",
@@ -2815,7 +2945,9 @@
    "role": "",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "petyr-gottmann": {
    "name": "Petyr Gottmann",
@@ -2830,7 +2962,9 @@
    "factions": [],
    "sessions": [
     5
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "venor": {
    "name": "Venor",
@@ -2847,7 +2981,9 @@
    ],
    "sessions": [
     7
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "dvalin-hammerhand": {
    "name": "Dvalin hammerhånd",
@@ -2862,7 +2998,9 @@
    "factions": [],
    "sessions": [
     5
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "chauntea": {
    "name": "Chauntea",
@@ -2875,7 +3013,9 @@
    "role": "religious",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "urza": {
    "name": "Urza",
@@ -2893,7 +3033,9 @@
    "sessions": [
     26,
     27
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "erika-songfelt": {
    "name": "Erika Songfelt",
@@ -2910,7 +3052,9 @@
    ],
    "sessions": [
     9
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "lucious-vormend": {
    "name": "Lucious Vormend",
@@ -2926,7 +3070,9 @@
    "sessions": [
     9,
     10
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "skarn": {
    "name": "Skarn",
@@ -2941,7 +3087,9 @@
    "factions": [],
    "sessions": [
     26
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "krugge-s-bagermester": {
    "name": "Krugge's bagermester",
@@ -2960,7 +3108,9 @@
    "sessions": [
     17,
     18
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "de-aeldste": {
    "name": "De Ældste",
@@ -2976,7 +3126,9 @@
    "sessions": [
     20,
     27
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "lady-lucille-vitano": {
    "name": "Lady lucille vitano",
@@ -2993,7 +3145,9 @@
    ],
    "sessions": [
     19
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "marie-louise-duvall-af-miragehill": {
    "name": "Marie Louise Duvall af Miragehill",
@@ -3011,7 +3165,9 @@
    "sessions": [
     1,
     2
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "hjarnak-icebone": {
    "name": "Hjarnak Icebone",
@@ -3028,7 +3184,9 @@
    ],
    "sessions": [
     34
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "amit-antuu": {
    "name": "Amit AnTuu",
@@ -3043,7 +3201,9 @@
    "factions": [],
    "sessions": [
     3
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "celia-hammerhand": {
    "name": "Celia Hammerhånd",
@@ -3056,7 +3216,9 @@
    "role": "Syerske",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "orlock-helmsveil": {
    "name": "Orlock Helmsveil",
@@ -3073,7 +3235,9 @@
    ],
    "sessions": [
     38
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "kobold": {
    "name": "Kobold",
@@ -3091,7 +3255,9 @@
    "sessions": [
     1,
     8
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "archibald-oddball": {
    "name": "Archibald Oddball",
@@ -3106,7 +3272,9 @@
    "factions": [],
    "sessions": [
     5
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "swinson": {
    "name": "Swinson",
@@ -3121,7 +3289,9 @@
    "factions": [],
    "sessions": [
     20
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-chaptermaster-cerilian-archhold": {
    "name": "Lord Chaptermaster Cerilian Archhold",
@@ -3136,7 +3306,9 @@
    "factions": [
     "the-queensguard"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "den-store-stemme": {
    "name": "den store stemme",
@@ -3155,7 +3327,9 @@
     1,
     7,
     8
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "valo": {
    "name": "Valo",
@@ -3170,7 +3344,9 @@
    "factions": [],
    "sessions": [
     21
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "sir-winston": {
    "name": "Sir Winston",
@@ -3191,7 +3367,9 @@
    ],
    "sessions": [
     47
-   ]
+   ],
+   "pc": true,
+   "statusNote": ""
   },
   "mishakal": {
    "name": "Mishakal",
@@ -3208,7 +3386,9 @@
    "factions": [],
    "sessions": [
     39
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-chandler-virmingham": {
    "name": "Lord Chandler Virmingham",
@@ -3224,7 +3404,31 @@
     "the-queensguard",
     "solvhanden"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "logan": {
+   "name": "Logan",
+   "place": "astley",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "commoner",
+   "role": "resistance",
+   "aliases": [],
+   "factions": [
+    "astley-avengers"
+   ],
+   "sessions": [
+    21,
+    26,
+    38,
+    44
+   ],
+   "pc": true,
+   "statusNote": ""
   },
   "hertug-robert-de-ros": {
    "name": "Hertug Robert De Ros",
@@ -3241,7 +3445,9 @@
    "factions": [
     "familien-botreaux"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "ukkadin-magmahand": {
    "name": "Ukkadin Magmahånd",
@@ -3257,7 +3463,9 @@
     "stenvogterne",
     "bjergenes-born"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-steffan-blast-fingers": {
    "name": "Lord Steffan blast fingers",
@@ -3272,7 +3480,9 @@
    "factions": [],
    "sessions": [
     19
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "illyrias-starmantle": {
    "name": "Illyrias Starmantle",
@@ -3285,7 +3495,9 @@
    "role": "Merchant",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "dolph-leitner": {
    "name": "Dolph Leitner",
@@ -3302,7 +3514,9 @@
    ],
    "sessions": [
     38
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "verner-mistvale": {
    "name": "Verner Mistvale",
@@ -3315,7 +3529,9 @@
    "role": "Borgmester, Merchant",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "goshitura-rockshelf": {
    "name": "goshitura rockshelf",
@@ -3332,7 +3548,9 @@
    "factions": [],
    "sessions": [
     42
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "cret-maart": {
    "name": "Cret Maart",
@@ -3345,7 +3563,9 @@
    "role": "",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "overhovdingen-hrothgar": {
    "name": "Overhøvdingen Hrothgar",
@@ -3361,7 +3581,9 @@
     "warpaw-stammen",
     "slette-folket"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "vallis": {
    "name": "Vallis",
@@ -3378,7 +3600,9 @@
    ],
    "sessions": [
     5
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "erik-leitner": {
    "name": "Erik Leitner",
@@ -3393,7 +3617,9 @@
    "factions": [
     "house-leitner"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "pierre": {
    "name": "Pierre",
@@ -3410,7 +3636,9 @@
    ],
    "sessions": [
     12
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "baron-zhaarko-af-eresby": {
    "name": "Baron Zhaarko af Eresby",
@@ -3425,7 +3653,9 @@
    "factions": [
     "court-of-baron-zhaarko"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "tyra-volkmarr": {
    "name": "Tyra volkmarr",
@@ -3442,7 +3672,9 @@
    ],
    "sessions": [
     9
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "qenes-markmoon": {
    "name": "Qenes Markmoon",
@@ -3457,7 +3689,9 @@
    "factions": [],
    "sessions": [
     5
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "beril-hojmolle": {
    "name": "Beril Højmølle",
@@ -3474,7 +3708,9 @@
    ],
    "sessions": [
     7
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "baronesse-avalande": {
    "name": "Baronesse Avalande",
@@ -3497,7 +3733,9 @@
     2,
     7,
     8
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "skur": {
    "name": "skur",
@@ -3512,7 +3750,9 @@
    "factions": [],
    "sessions": [
     13
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "dronningen-af-anaksa": {
    "name": "Dronningen af Anaksa",
@@ -3527,7 +3767,9 @@
    "factions": [
     "the-queensguard"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "knight-lord-berend-de-valencia": {
    "name": "Knight Lord Berend de Valencia",
@@ -3540,7 +3782,9 @@
    "role": "military",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "selenna": {
    "name": "Selenna",
@@ -3557,7 +3801,9 @@
    "factions": [],
    "sessions": [
     43
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "fafnir": {
    "name": "Fafnir",
@@ -3578,7 +3824,9 @@
     17,
     20,
     44
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "tortin-mikkelborg": {
    "name": "Tortin Mikkelborg",
@@ -3598,7 +3846,9 @@
    "sessions": [
     46,
     47
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "karl": {
    "name": "karl",
@@ -3613,7 +3863,9 @@
    "factions": [],
    "sessions": [
     20
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "madam-silvara-dawnspire": {
    "name": "Madam Silvara Dawnspire",
@@ -3632,7 +3884,9 @@
     9,
     12,
     20
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "lallana-botreaux": {
    "name": "Lallana Botreaux",
@@ -3651,7 +3905,9 @@
    ],
    "sessions": [
     20
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "den-aeldre-veteran": {
    "name": "den ældre veteran",
@@ -3666,7 +3922,9 @@
    "factions": [],
    "sessions": [
     1
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "miri-sangstrup": {
    "name": "miri sangstrup",
@@ -3685,7 +3943,9 @@
    ],
    "sessions": [
     17
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "szas-ramma-uconta": {
    "name": "szas'ramma uconta",
@@ -3702,7 +3962,9 @@
    "factions": [],
    "sessions": [
     42
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-lady-of-the-keep": {
    "name": "Lord-lady of the Keep",
@@ -3717,7 +3979,9 @@
    "factions": [
     "the-queensguard"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "celedrial-keeper-of-mielikki-suntree": {
    "name": "Celedrial keeper of mielikki suntree",
@@ -3738,7 +4002,9 @@
     9,
     12,
     41
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "tizzelspark": {
    "name": "Tizzelspark",
@@ -3753,7 +4019,9 @@
    "factions": [],
    "sessions": [
     7
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-lady-of-the-coin": {
    "name": "Lord-lady of the Coin",
@@ -3768,7 +4036,9 @@
    "factions": [
     "the-queensguard"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "lizzie-gottmann": {
    "name": "Lizzie Gottmann",
@@ -3781,7 +4051,9 @@
    "role": "Barmaid",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "baron-bray-of-blackforge": {
    "name": "Baron Bray of blackforge",
@@ -3794,7 +4066,9 @@
    "role": "Baron",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "baron-brey-of-blackforge": {
    "name": "Baron Brey of Blackforge",
@@ -3809,7 +4083,9 @@
     "Baron Bray of blackforge"
    ],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-magnus-flamehand": {
    "name": "Lord Magnus Flamehand",
@@ -3824,7 +4100,9 @@
    "factions": [
     "the-queensguard"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "seiran": {
    "name": "Seiran",
@@ -3841,7 +4119,9 @@
    ],
    "sessions": [
     13
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "sectionmaster": {
    "name": "Sectionmaster",
@@ -3856,7 +4136,9 @@
    "factions": [
     "the-queensguard"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "merita-verplex": {
    "name": "Merita Verplex",
@@ -3873,7 +4155,9 @@
    ],
    "sessions": [
     38
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "quartermaster-of-the-hold": {
    "name": "Quartermaster of the Hold",
@@ -3888,7 +4172,9 @@
    "factions": [
     "the-queensguard"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "lady-de-evers": {
    "name": "Lady De'evers",
@@ -3905,7 +4191,9 @@
    ],
    "sessions": [
     5
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "isilme": {
    "name": "Isilme",
@@ -3924,7 +4212,9 @@
     21,
     23,
     27
-   ]
+   ],
+   "pc": true,
+   "statusNote": ""
   },
   "vagtkaptajn-ved-nord-distriktet-i-astley": {
    "name": "Vagtkaptajn ved Nord distriktet i Astley",
@@ -3942,7 +4232,9 @@
    ],
    "sessions": [
     12
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-fern": {
    "name": "Lord Fern",
@@ -3960,7 +4252,9 @@
     44,
     46,
     47
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "vaelon-dunmere": {
    "name": "Vaelon Dunmere",
@@ -3980,7 +4274,9 @@
     1,
     2,
     43
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "sammy": {
    "name": "Sammy",
@@ -3997,7 +4293,9 @@
    ],
    "sessions": [
     17
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "constance-fortright": {
    "name": "Constance Fortright",
@@ -4012,7 +4310,9 @@
    "factions": [],
    "sessions": [
     5
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "jarek-de-guille": {
    "name": "Jarek De Guille",
@@ -4025,7 +4325,9 @@
    "role": "military",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "baronesse-constance-silkenfall": {
    "name": "Baronesse Constance Silkenfall",
@@ -4038,7 +4340,9 @@
    "role": "nobility",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "lallana-bortreaux": {
    "name": "Lallana Bortreaux",
@@ -4051,7 +4355,9 @@
    "role": "Noble",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "denizar-volmar": {
    "name": "Denizar Volmar",
@@ -4066,7 +4372,36 @@
    "factions": [],
    "sessions": [
     20
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "nibar": {
+   "name": "Nibar",
+   "place": "astley",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "gnome",
+   "social": "commoner",
+   "role": "scholar",
+   "aliases": [],
+   "factions": [
+    "astley-avengers"
+   ],
+   "sessions": [
+    1,
+    8,
+    17,
+    26,
+    43,
+    44,
+    45,
+    46,
+    47
+   ],
+   "pc": true,
+   "statusNote": ""
   },
   "mastersergeant-of-arms": {
    "name": "Mastersergeant of arms",
@@ -4081,7 +4416,9 @@
    "factions": [
     "the-queensguard"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "merelda": {
    "name": "Merelda",
@@ -4099,7 +4436,9 @@
    "sessions": [
     7,
     8
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "maelar": {
    "name": "Maelar",
@@ -4114,7 +4453,9 @@
    "factions": [],
    "sessions": [
     41
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "egil-nordlys": {
    "name": "Egil Nordlys",
@@ -4127,7 +4468,9 @@
    "role": "Militia",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-rupert-solarson": {
    "name": "Lord Rupert Solarson",
@@ -4140,7 +4483,9 @@
    "role": "nobility",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-valencia": {
    "name": "Lord Valencia",
@@ -4153,7 +4498,9 @@
    "role": "nobility",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "jarell-flick": {
    "name": "Jarell Flick",
@@ -4177,7 +4524,9 @@
    "sessions": [
     38,
     41
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "hviskeren-i-morket": {
    "name": "hviskeren i mørket",
@@ -4192,7 +4541,9 @@
    "factions": [],
    "sessions": [
     1
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "nerrin-toftenhoj": {
    "name": "Nerrin Toftenhøj",
@@ -4205,7 +4556,9 @@
    "role": "Sage, Herbalist, Rumor list",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "sigurd-volteman-jernnaeven": {
    "name": "Sigurd Volteman - Jernnæven",
@@ -4220,7 +4573,9 @@
    "factions": [],
    "sessions": [
     20
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "hans-baudler": {
    "name": "Hans Baudler",
@@ -4237,7 +4592,9 @@
    ],
    "sessions": [
     38
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "duvall": {
    "name": "Duvall",
@@ -4255,7 +4612,9 @@
    "sessions": [
     1,
     2
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-marshal-viggo-trenten": {
    "name": "Lord Marshal Viggo Trenten",
@@ -4268,7 +4627,9 @@
    "role": "military",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-commander-of-the-queensguard": {
    "name": "Lord Commander of the Queensguard",
@@ -4283,7 +4644,9 @@
    "factions": [
     "the-queensguard"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "mira-wolfsbane": {
    "name": "Mira Wolfsbane",
@@ -4298,7 +4661,9 @@
    "factions": [],
    "sessions": [
     28
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "knight-commander-of-the-house-guard": {
    "name": "Knight Commander of the House guard",
@@ -4313,7 +4678,9 @@
    "factions": [
     "the-queensguard"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "azul": {
    "name": "Azul",
@@ -4330,7 +4697,9 @@
    ],
    "sessions": [
     3
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "ulrick-stadtfeldt": {
    "name": "Ulrick Stadtfeldt",
@@ -4345,7 +4714,9 @@
    "factions": [],
    "sessions": [
     5
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "danica-dawnspire": {
    "name": "Danica Dawnspire",
@@ -4362,7 +4733,9 @@
    ],
    "sessions": [
     20
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "eldrak": {
    "name": "Eldrak",
@@ -4379,7 +4752,9 @@
    ],
    "sessions": [
     25
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-adelston-magdova": {
    "name": "Lord Adelston Magdova",
@@ -4400,7 +4775,9 @@
    ],
    "sessions": [
     38
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "arakas-zhaarko": {
    "name": "Arakas Zhaarko",
@@ -4415,7 +4792,9 @@
    "factions": [
     "court-of-baron-zhaarko"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "hakan": {
    "name": "Håkan",
@@ -4430,7 +4809,9 @@
    "factions": [],
    "sessions": [
     13
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "ellin-thalor": {
    "name": "Ellin Thalor",
@@ -4443,7 +4824,9 @@
    "role": "",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "icefang": {
    "name": "Icefang",
@@ -4460,7 +4843,9 @@
    ],
    "sessions": [
     32
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "vagtkaptajn-samuel": {
    "name": "Vagtkaptajn Samuel",
@@ -4482,7 +4867,9 @@
    "sessions": [
     17,
     41
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "assana-lemieux": {
    "name": "Assana Lemieux",
@@ -4503,7 +4890,9 @@
    ],
    "sessions": [
     20
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-barriston-samuel": {
    "name": "Lord Barriston Samuel",
@@ -4518,7 +4907,9 @@
    "factions": [
     "the-queensguard"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "bjorn-of-nordheim": {
    "name": "Bjørn of Nordheim",
@@ -4533,7 +4924,9 @@
    "factions": [
     "astley-avengers"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": true,
+   "statusNote": ""
   },
   "hjalmer-dynn": {
    "name": "Hjalmer Dynn",
@@ -4546,7 +4939,9 @@
    "role": "Militia",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "sippi": {
    "name": "sippi",
@@ -4561,7 +4956,9 @@
    "factions": [],
    "sessions": [
     20
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "blackwing": {
    "name": "blackwing",
@@ -4576,7 +4973,9 @@
    "factions": [],
    "sessions": [
     40
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "ulrik-stadtfelt": {
    "name": "Ulrik Stadtfelt",
@@ -4591,7 +4990,9 @@
     "Ulrick Stadtfeldt"
    ],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "voldumand-den-tredje": {
    "name": "Voldumand den tredje",
@@ -4609,7 +5010,9 @@
    "factions": [],
    "sessions": [
     42
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "daine-waymar": {
    "name": "Daine waymar",
@@ -4626,7 +5029,9 @@
    ],
    "sessions": [
     21
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "maria": {
    "name": "Maria",
@@ -4641,7 +5046,9 @@
    "factions": [],
    "sessions": [
     19
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "corwin": {
    "name": "Corwin",
@@ -4664,7 +5071,9 @@
     35,
     36,
     37
-   ]
+   ],
+   "pc": true,
+   "statusNote": "Ifølge Bahne: Ærketroldmanden Ægrin antydede i session 47, at Corwin måske er blevet en skurk. Det står ikke i loggen."
   },
   "edmund-af-vitano": {
    "name": "Edmund af Vitano",
@@ -4682,7 +5091,9 @@
     17,
     20,
     38
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "illyria-starmantle": {
    "name": "Illyria Starmantle",
@@ -4699,7 +5110,9 @@
    "factions": [],
    "sessions": [
     20
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "tani-ebonheart": {
    "name": "Tani Ebonheart",
@@ -4712,7 +5125,9 @@
    "role": "",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "krugge": {
    "name": "Krugge",
@@ -4729,7 +5144,9 @@
    "factions": [],
    "sessions": [
     17
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-of-the-keep": {
    "name": "Lord of the Keep",
@@ -4744,7 +5161,9 @@
    "factions": [
     "the-queensguard"
    ],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "lord-helmuth-de-valencia": {
    "name": "Lord Helmuth de Valencia",
@@ -4757,7 +5176,9 @@
    "role": "nobility",
    "aliases": [],
    "factions": [],
-   "sessions": []
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
   },
   "baron-zhaarko": {
    "name": "Baron Zhaarko",
@@ -4775,7 +5196,45 @@
    "sessions": [
     1,
     8
-   ]
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "evelyn-adair": {
+   "name": "Evelyn Adair",
+   "place": null,
+   "stance": "ally",
+   "dead": true,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "præst (Mishakal/Paladine)",
+   "aliases": [
+    "Evelyn",
+    "Adare",
+    "Adair"
+   ],
+   "factions": [],
+   "sessions": [
+    28,
+    29,
+    31,
+    32,
+    34,
+    35,
+    36,
+    37,
+    39,
+    40,
+    42,
+    43,
+    44,
+    45.5,
+    46
+   ],
+   "pc": true,
+   "statusNote": "Ifølge Bahne: død. Gav frivilligt sin essens til tidsartifaktet i session 46, til kun kroppen var tilbage.",
+   "noNote": true
   }
  },
  "factions": {
@@ -5525,6 +5984,7 @@
     47
    ],
    "members": [
+    "viktor-baigorri",
     "aegrin",
     "baronesse-avalande",
     "merelda"
@@ -5723,9 +6183,12 @@
     43
    ],
    "members": [
+    "viktor-baigorri",
     "clarabel-lancaster",
     "sir-winston",
+    "logan",
     "isilme",
+    "nibar",
     "lord-adelston-magdova",
     "assana-lemieux",
     "bjorn-of-nordheim",
@@ -5863,12 +6326,16 @@
    "title": "Evelyns essens i tidsartifaktet",
    "parts": [
     [
+     "Status",
+     "Evelyn er død (ifølge Bahne)."
+    ],
+    [
      "Spor",
      "- S[46](#session/46/laes): Tidsartifaktet repareres, men prisen er at nogen frivilligt giver sin essens – farven forsvinder fra Evelyn, til kun kroppen er tilbage.\n- S[46](#session/46/laes): Vægbilledet i Hjertekammeret viste Evelyn med det ødelagte artefakt, og derefter et helt artefakt – **uden Evelyn**.\n- S[34](#session/34/laes): Rod of Resurrection har én ladning true resurrection."
     ],
     [
      "Åbent",
-     "Er Evelyn død, eller lever hendes essens i timeglasset?"
+     "Lever hendes essens videre i timeglasset?"
     ]
    ]
   },
@@ -6170,12 +6637,20 @@
   },
   {
    "group": "Nordheim",
-   "id": "corwin",
-   "title": "Corwin",
+   "id": "corwin-ven-eller-fjende",
+   "title": "Corwin – ven eller fjende?",
    "parts": [
     [
      "Spor",
-     "S[36](#session/36/laes) – kaldt nordpå mod **Ettin-øerne** på en solofærd."
+     "S[28](#session/28/laes) – druiden med gevirkronen slutter sig til gruppen; S[36](#session/36/laes) – kaldt nordpå mod **Ettin-øerne** på en solofærd."
+    ],
+    [
+     "Ifølge Bahne",
+     "Ærketroldmanden Ægrin antydede i S[47](#session/47/laes), at Corwin måske er blevet en skurk. Det står ikke i loggen."
+    ],
+    [
+     "Åbent",
+     "Hvad kaldte ham til Ettin-øerne? Hvad ved Ægrin?"
     ]
    ]
   },

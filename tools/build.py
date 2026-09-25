@@ -15,7 +15,7 @@ from urllib.parse import quote, unquote
 
 sys.path.insert(0, os.path.dirname(__file__))
 from curation import (GARDEN_URL, LOCATION_ALIASES, MAPS, NOT_PEOPLE, NOT_PLACES,  # noqa: E402
-                      OFFMAP, PLACES, PORTALS, REGIONS, SESSIONS)
+                      OFFMAP, PARTY, PARTY_EXTRA, PARTY_STATUS, PLACES, PORTALS, REGIONS, SESSIONS)
 import threads as thr  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -249,12 +249,14 @@ def build_people(notes, note_id, session_of):
         }
     people = {}
     for title, n in notes.items():
-        if n["folder"] != "People" or title not in note_id or title in NOT_PEOPLE \
+        in_party = title in PARTY
+        if (n["folder"] != "People" and not (in_party and n["folder"] == "Characters")) or title not in note_id \
+                or (title in NOT_PEOPLE and not in_party) \
                 or re.search(r"\.(png|jpe?g|webp)$", title, re.I):  # image notes are not people
             continue
         pr = n["props"]
         disp = str(pr.get("disposition", "")).lower()
-        status = str(pr.get("status", "")).lower()
+        status, status_note = PARTY_STATUS.get(title, (str(pr.get("status", "")).lower(), ""))
         fids = []
         for key in ("affiliation", "Faction", "faction"):
             for t in prop_targets(pr.get(key)):
@@ -262,7 +264,8 @@ def build_people(notes, note_id, session_of):
                     fids.append(note_id[t])
         pid = note_id[title]
         people[pid] = {
-            "name": title, "place": place_of(pr), "stance": STANCE.get(disp, "unknown"),
+            "name": title, "place": place_of(pr),
+            "stance": STANCE.get(disp, "ally" if in_party else "unknown"),  # party members are allies unless noted
             "dead": status == "dead" or disp.startswith("deceased"),
             "status": status if status not in ("", "alive", "unknown") else "",
             "race": "" if pr.get("race") in (None, "unspecified") else text_prop(pr.get("race")),
@@ -270,9 +273,19 @@ def build_people(notes, note_id, session_of):
             "role": text_prop(pr.get("role")) or text_prop(pr.get("Profession")),
             "aliases": [a for a in pr.get("aliases") or [] if isinstance(a, str)],
             "factions": fids, "sessions": sessions_of(title, pr),
+            "pc": in_party, "statusNote": status_note,
         }
         for f in fids:
             factions[f]["members"].append(pid)
+    # Party members without a note: sessions from their name in the logs.
+    for name, extra in PARTY_EXTRA.items():
+        names = [name] + extra["aliases"]
+        pat = re.compile(r"(?<![\wæøå])(" + "|".join(re.escape(x.lower()) for x in names) + r")(?![\wæøå])")
+        nums = sorted(num for t, num in session_of.items() if t in notes and pat.search(plain(notes[t]["body"]).lower()))
+        people[slug(name)] = {"name": name, "place": None, "stance": "ally", "dead": extra["dead"], "status": "",
+                              "race": extra["race"], "social": extra["social"], "role": extra["role"],
+                              "aliases": extra["aliases"], "factions": [], "sessions": nums, "pc": True,
+                              "statusNote": extra["statusNote"], "noNote": True}
     return people, factions
 
 

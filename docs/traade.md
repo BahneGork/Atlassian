@@ -63,12 +63,13 @@
 **Åbent**: Hvem er vagterne fra S6? Vender tatoveringernes kræfter tilbage nu, hvor artefaktet er repareret?
 
 ### 1.5 Evelyns essens i tidsartifaktet
+**Status**: Evelyn er død (ifølge Bahne).
 **Spor**
 - S46: Tidsartifaktet repareres, men prisen er at nogen frivilligt giver sin essens – farven forsvinder fra Evelyn, til kun kroppen er tilbage.
 - S46: Vægbilledet i Hjertekammeret viste Evelyn med det ødelagte artefakt, og derefter et helt artefakt – **uden Evelyn**.
 - S34: Rod of Resurrection har én ladning true resurrection.
 
-**Åbent**: Er Evelyn død, eller lever hendes essens i timeglasset?
+**Åbent**: Lever hendes essens videre i timeglasset?
 
 ### 1.6 Tiamats fire drager
 **Spor**
@@ -183,8 +184,10 @@ Gruppen regnede med, at hver sten styrer ca. 1/6 af horden (S44).
 **Spor**: S28 – Iris er på vej til sin fars grav og en slagmark; S34 – i Rod of Resurrection's minder sidder en kvinde (Iris) med stentavler og går væk fra landsbyen. S34: Elda Ice Eyes findes i en kælder.
 **Åbent**: Er Iris og Ice Eyes den samme? Hvad ved hun om staven?
 
-### 4.7 Corwin
-**Spor**: S36 – kaldt nordpå mod **Ettin-øerne** på en solofærd.
+### 4.7 Corwin – ven eller fjende?
+**Spor**: S28 – druiden med gevirkronen slutter sig til gruppen; S36 – kaldt nordpå mod **Ettin-øerne** på en solofærd.
+**Ifølge Bahne**: Ærketroldmanden Ægrin antydede i S47, at Corwin måske er blevet en skurk. Det står ikke i loggen.
+**Åbent**: Hvad kaldte ham til Ettin-øerne? Hvad ved Ægrin?
 
 ---
 
