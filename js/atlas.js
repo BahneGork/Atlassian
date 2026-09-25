@@ -1,7 +1,7 @@
 /* Atlas over Erukana – map, pins, panel, search and the session-by-session journey. */
 (async function () {
   const data = await fetch("data/erukana.json").then((r) => r.json());
-  const { maps, places, regions, sessions, portals, offmap } = data;
+  const { maps, places, regions, sessions, portals, offmap, unplaced } = data;
 
   const KIND = {
     by: "By", borg: "Borg", taarn: "Tårn", hule: "Hule & dybde", helligt: "Helligt sted",
@@ -82,14 +82,16 @@
         <g transform="translate(7 6)"><path class="glyph" d="${GLYPH[p.kind] || GLYPH.sted}"/></g></svg></div>`,
     });
   }
-  for (const [id, p] of Object.entries(places)) {
-    if (!p.at) continue;
+  function addMarker(id) {
+    const p = places[id];
     const m = L.marker(ll(p.at), { icon: seal(id), keyboard: true, riseOnHover: true });
     m.bindTooltip(p.name, { className: "pin-label", direction: "top", offset: [0, -38] });
     m.on("click", () => go(`sted/${id}`));
+    m.on("dragend", () => moved(id, m.getLatLng()));
     m.addTo(layers[p.map].pins);
     markers[id] = m;
   }
+  for (const [id, p] of Object.entries(places)) if (p.at) addMarker(id);
   const regionLayers = {};
   for (const [id, r] of Object.entries(regions)) {
     if (!r.poly) continue;
@@ -108,7 +110,7 @@
   }
 
   // Marker elements are recreated when a map is re-added, so their state lives here.
-  const pinState = { selected: null, here: null, seen: null, onlyVisited: false };
+  const pinState = { selected: null, here: null, seen: null, onlyVisited: false, editing: false };
   function applyPinState() {
     for (const [id, m] of Object.entries(markers)) {
       const e = m.getElement();
@@ -117,6 +119,9 @@
       e.classList.toggle("current", !!pinState.here?.has(id));
       e.classList.toggle("dim", !!pinState.seen && !pinState.seen.has(id));
       e.classList.toggle("hidden", pinState.onlyVisited && !places[id].visited);
+      e.classList.toggle("moved", !!edits[id]);
+      m.options.draggable = pinState.editing;
+      if (m.dragging) pinState.editing ? m.dragging.enable() : m.dragging.disable();
     }
   }
 
@@ -251,7 +256,7 @@
           el("button", { type: "button", class: "session-chip", title: sessions[n - 1].title, onclick: () => go(`session/${n}`) }, `Session ${n}`)))] : null,
       placeList("Steder her", kids),
       chips("Personer", p.people),
-      chips("Fraktioner", p.factions),
+      chips("Factions", p.factions),
       noteLink(p.url),
     );
     focusPin(id);
@@ -269,7 +274,7 @@
       r.summary ? el("p", { class: "summary" }, r.summary) : null,
       placeList(r.poly ? "Steder i baroniet" : "Steder uden kendt placering", members),
       chips("Personer", r.people),
-      chips("Fraktioner", r.factions),
+      chips("Factions", r.factions),
       noteLink(r.url),
     );
     select(null);
@@ -446,6 +451,121 @@
       else map.flyToBounds(layers[target].bounds, { duration: 0.8 });
     }
   }
+
+  // ---------- Edit mode: move pins, export the changes ----------
+  // Changes live in this browser only; "Kopiér ændringer" hands them over for tools/apply_moves.py.
+  const EDITS_KEY = "atlas-edits";
+  const editbar = $(".editbar");
+  const editStatus = $(".editbar-status");
+  const editExport = $(".editbar-export");
+  const unplacedList = $(".unplaced-list");
+  const original = Object.fromEntries(Object.entries(places).map(([id, p]) => [id, { map: p.map, at: p.at, offmap: p.offmap }]));
+  let edits = {};
+  let placing = null;
+  try { edits = JSON.parse(localStorage.getItem(EDITS_KEY)) || {}; } catch { edits = {}; }
+
+  const xy = (latlng) => [Math.round(latlng.lng), Math.round(-latlng.lat)];
+  function saveEdits() {
+    try { localStorage.setItem(EDITS_KEY, JSON.stringify(edits)); } catch { /* private mode: keep in memory */ }
+    const n = Object.keys(edits).length;
+    editStatus.textContent = n ? `${n} ${n === 1 ? "ændring" : "ændringer"} gemt i denne browser.` : "Ingen ændringer endnu.";
+    editExport.hidden = true;
+  }
+  function moved(id, latlng) {
+    places[id].at = xy(latlng);
+    edits[id] = { ...edits[id], map: places[id].map, at: places[id].at };
+    saveEdits();
+    applyPinState();
+  }
+  // A location note that is not in the atlas yet becomes a plain place once it is put on the map.
+  function newPlace(id, note) {
+    places[id] = { name: note, note, kind: "sted", approx: true, visited: false, sessions: [], people: [],
+                   factions: [], aliases: [], summary: unplaced.find((u) => u.note === note)?.summary || "",
+                   url: unplaced.find((u) => u.note === note)?.url || "", where: "", isNew: true };
+  }
+  const slug = (s) => fold(s).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  function applyEdit(id, e) {
+    if (!places[id] && e.note) newPlace(id, e.note);
+    const p = places[id];
+    if (!p || !layers[e.map]) return;
+    p.map = e.map;
+    p.at = e.at;
+    if (markers[id]) {
+      markers[id].setLatLng(ll(e.at));
+      if (!layers[e.map].pins.hasLayer(markers[id])) {
+        for (const lyr of Object.values(layers)) lyr.pins.removeLayer(markers[id]);
+        markers[id].addTo(layers[e.map].pins);
+      }
+    } else addMarker(id);
+  }
+  // Places in the atlas without a position, plus location notes the atlas does not know yet.
+  function fillPlaceSelect() {
+    const known = Object.keys(places).filter((id) => !places[id].at && !places[id].parent)
+      .map((id) => ({ id, name: places[id].name, hint: places[id].offmap ? offmap[places[id].offmap].name : "uden position" }));
+    const fresh = unplaced.filter((u) => !places[slug(u.note)])
+      .map((u) => ({ id: slug(u.note), note: u.note, name: u.note, hint: "ny note" }));
+    const items = [...fresh, ...known].sort((a, b) => a.name.localeCompare(b.name, "da"));
+    $(".unplaced-count").textContent = `(${items.length})`;
+    unplacedList.replaceChildren(...items.map((it) => el("li", {},
+      el("button", { type: "button", "aria-pressed": String(placing?.id === it.id), onclick: () => startPlacing(it) },
+        it.name, el("small", {}, it.hint)))));
+  }
+  function startPlacing(it) {
+    placing = it;
+    $(".unplaced").open = false;
+    editStatus.textContent = `Klik på kortet, hvor ${it.name} ligger. (Skift kort øverst til venstre, hvis det er Nordheim.)`;
+    fillPlaceSelect();
+  }
+  function setEditing(on) {
+    pinState.editing = on;
+    $("#opt-edit").checked = on;
+    editbar.hidden = !on;
+    document.body.classList.toggle("editing", on);
+    placing = null;
+    if (on) { fillPlaceSelect(); saveEdits(); }
+    applyPinState();
+  }
+  map.on("click", (e) => {
+    if (!pinState.editing || !placing) return;
+    const { id, note } = placing;
+    placing = null;
+    if (places[id]) places[id].offmap = null;
+    edits[id] = note ? { note, map: current, at: xy(e.latlng) } : { map: current, at: xy(e.latlng) };
+    applyEdit(id, edits[id]);
+    saveEdits();
+    fillPlaceSelect();
+    applyPinState();
+  });
+  editbar.addEventListener("click", async (e) => {
+    const act = e.target.closest("button")?.dataset.act;
+    if (act === "done") setEditing(false);
+    if (act === "reset") {
+      for (const id of Object.keys(edits)) {
+        const o = original[id] || {};
+        if (o.at) applyEdit(id, o);
+        else if (markers[id]) {
+          for (const lyr of Object.values(layers)) lyr.pins.removeLayer(markers[id]);
+          delete markers[id];
+          if (places[id].isNew) delete places[id];
+          else Object.assign(places[id], o);
+        }
+      }
+      edits = {};
+      saveEdits();
+      fillPlaceSelect();
+      applyPinState();
+    }
+    if (act === "copy") {
+      const text = JSON.stringify(edits, null, 1);
+      editExport.value = text;
+      editExport.hidden = false;
+      editExport.select();
+      try { await navigator.clipboard.writeText(text); editStatus.textContent = "Kopieret – indsæt det i chatten."; }
+      catch { editStatus.textContent = "Markér teksten herunder og kopiér den."; }
+    }
+  });
+  $("#opt-edit").addEventListener("change", (e) => setEditing(e.target.checked));
+  for (const [id, e] of Object.entries(edits)) applyEdit(id, e);
 
   // ---------- Routing (#sted/astley, #region/welles, #session/12, #kort/nordheim) ----------
   function go(route) {

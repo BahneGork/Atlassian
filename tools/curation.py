@@ -248,6 +248,10 @@ SESSIONS = [
     (43, "Sejlads i skyerne", ["vardestjernen", "port-alexander", "stampenborg"]),
 ]
 
+# Location notes that are overviews or misfiled, not places to put on a map.
+NOT_PLACES = {"Erukana", "ErukanaMap", "Locationsvisited", "Region - Bortholme - Erukana",
+              "States and Baronies of Erukana", "Troldmands tårne", "Vinterskov - Grøndalen - Erukana.png", "skur"}
+
 # Entries in People/Factions notes that link to a place but are not people or factions there.
 NOT_PEOPLE = {"Mielikki", "Paladine", "Bahamut", "Morgion", "Orker", "Hydra", "Segreve", "Silverstream",
               "Jullan", "Logan", "Nibar", "knight aberrants", "Queensguard Lord Command Promotion Ritual",

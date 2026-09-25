@@ -11,8 +11,8 @@ from collections import defaultdict
 from urllib.parse import quote
 
 sys.path.insert(0, os.path.dirname(__file__))
-from curation import (GARDEN_URL, MAPS, NOT_PEOPLE, OFFMAP, PLACES, PORTALS,  # noqa: E402
-                      REGIONS, SESSIONS)
+from curation import (GARDEN_URL, MAPS, NOT_PEOPLE, NOT_PLACES, OFFMAP, PLACES,  # noqa: E402
+                      PORTALS, REGIONS, SESSIONS)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NOTES = sys.argv[1] if len(sys.argv) > 1 else os.path.join(
@@ -179,15 +179,17 @@ def main():
     # Location notes nobody has curated yet, so updates can spot new places.
     curated = {p["note"] for p in PLACES.values()} | {a for p in PLACES.values() for a in p.get("aliases", [])}
     curated |= {r["note"] for r in REGIONS.values()} | {a for r in REGIONS.values() for a in r.get("aliases", [])}
-    uncurated = sorted(t for t, n in notes.items() if n["folder"] == "Locations" and t not in curated)
+    uncurated = sorted(t for t, n in notes.items()
+                       if n["folder"] == "Locations" and t not in curated and t not in NOT_PLACES)
+    unplaced = [{"note": t, "summary": summarize(notes[t]["body"]), "url": note_url(notes[t])} for t in uncurated]
 
     out = {"maps": MAPS, "portals": PORTALS, "offmap": OFFMAP, "places": places,
-           "regions": regions, "sessions": sessions}
+           "regions": regions, "sessions": sessions, "unplaced": unplaced}
     with open(os.path.join(ROOT, "data", "erukana.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
 
     print(f"{len(places)} places, {len(regions)} regions, {len(sessions)} sessions")
-    print("not in atlas:", ", ".join(uncurated))
+    print("new location notes, not yet in the atlas:", ", ".join(uncurated) or "none")
     for p in problems:
         print("PROBLEM", p)
 

@@ -41,6 +41,7 @@
       </ul>
       <label><input type="checkbox" id="opt-regions" checked> Baroniernes grænser</label>
       <label><input type="checkbox" id="opt-visited"> Kun steder vi har besøgt</label>
+      <label><input type="checkbox" id="opt-edit"> Redigér placeringer</label>
     </div>
   </div>
 
@@ -58,6 +59,21 @@
       <ol class="journey-strip"></ol>
     </div>
   </section>
+
+  <div class="editbar" hidden>
+    <p class="editbar-title">Redigering – træk stederne på plads</p>
+    <p class="editbar-status"></p>
+    <div class="editbar-actions">
+      <button type="button" data-act="copy">Kopiér ændringer</button>
+      <button type="button" data-act="reset">Fortryd alle</button>
+      <button type="button" data-act="done">Færdig</button>
+    </div>
+    <details class="unplaced">
+      <summary>Uplacerede steder <span class="unplaced-count"></span></summary>
+      <ul class="unplaced-list"></ul>
+    </details>
+    <textarea class="editbar-export" readonly hidden aria-label="Ændringer"></textarea>
+  </div>
 
   <script src="vendor/leaflet/leaflet.js"></script>
   <script src="js/atlas.js"></script>

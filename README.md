@@ -23,6 +23,17 @@ python3 tools/build.py            # notes default to ../digital-garden/GMnostes-
 
 The build lists any location notes not yet in the atlas and any problems it finds.
 
+### Moving and placing places on the map
+1. On the site, open **Signaturer** and tick **Redigér placeringer**.
+2. Drag pins into place. **Uplacerede steder** lists places without a position and new location notes the atlas doesn't know yet; pick one and click the map where it belongs.
+3. Click **Kopiér ændringer**. Changes are kept in that browser until then.
+4. Apply them:
+
+```bash
+python3 tools/apply_moves.py moves.json   # or paste the JSON on stdin
+python3 tools/build.py
+```
+
 ## Layout
 - `index.html`, `css/atlas.css`, `js/atlas.js`: the site (no build step)
 - `maps/`: map images (WebP)
