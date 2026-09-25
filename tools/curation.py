@@ -292,6 +292,11 @@ PARTY_STATUS = {
     "Corwin": ("", "Ifølge Bahne: Ærketroldmanden Ægrin antydede i session 47, at Corwin måske er blevet en skurk. "
                    "Det står ikke i loggen."),
 }
+# Other names the logs use for party members, incl. their character note in Characters/.
+PARTY_NAMES = {"Sir Winston": ["Winston", "Winston Wildwood"], "Nibar": ["Nibar Brassbit"],
+               "Clarabel Lancaster": ["Clarabel", "Clara"], "Vargoth Sul": ["Vargoth"], "Bjørn of Nordheim": ["Bjørn"],
+               "Viktor Baigorri": ["Viktor", "Victor"], "Corwin": ["Corvin"], "Fritte": ["Fritta"]}
+
 # Class per party member, according to Bahne (overrides the character notes). Race: (race, source) where
 # no character note gives it but the logs do.
 PARTY_CLASS = {

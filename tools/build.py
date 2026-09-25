@@ -15,7 +15,8 @@ from urllib.parse import quote, unquote
 
 sys.path.insert(0, os.path.dirname(__file__))
 from curation import (GARDEN_URL, LOCATION_ALIASES, MAPS, NOT_PEOPLE, NOT_PLACES,  # noqa: E402
-                      OFFMAP, PARTY, PARTY_CLASS, PARTY_EXTRA, PARTY_ORIGIN, PARTY_RACE, PARTY_STATUS, PLACES, PORTALS,
+                      OFFMAP, PARTY, PARTY_CLASS, PARTY_EXTRA, PARTY_NAMES, PARTY_ORIGIN, PARTY_RACE, PARTY_STATUS,
+                      PLACES, PORTALS,
                       REGIONS, SESSIONS)
 import threads as thr  # noqa: E402
 
@@ -426,8 +427,18 @@ def main():
     # Tråde (hand-written in docs/traade.md) and the automatic tracking tools
     known = {float(s["num"]): s["num"] for s in sessions}
     threads = thr.parse_threads(os.path.join(ROOT, "docs", "traade.md"), known, slug)
-    seen_in = thr.mentions(notes, note_id, session_notes, plain, links_in, WIKILINK,
-                           {pid: p["aliases"] for pid, p in people.items()})
+    names = {pid: p["aliases"] + PARTY_NAMES.get(p["name"], []) for pid, p in people.items()}
+    seen_in = thr.mentions(notes, note_id, session_notes, plain, links_in, WIKILINK, names)
+    # A party member's other notes (e.g. "Winston Wildwood" in Characters/) count as the same person.
+    for pid, p in people.items():
+        for other in PARTY_NAMES.get(p["name"], []):
+            if other in note_id and note_id[other] != pid:
+                seen_in[pid] |= seen_in.get(note_id[other], set())
+    # Cards list every session that links to or names the person/faction, plus the note's own list.
+    to_int = lambda x: int(x) if x == int(x) else x
+    for group in (people, factions):
+        for pid, p in group.items():
+            p["sessions"] = sorted({to_int(float(x)) for x in p["sessions"]} | {to_int(x) for x in seen_in.get(pid, ())})
     latest = max(session_notes)
     # duplicate notes that the atlas treats as aliases of another place (e.g. "knoglestammens huler 1")
     aliases = {a for p in PLACES.values() for a in p.get("aliases", [])}

@@ -313,6 +313,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .person-facts { margin: 2px 0; font-size: 15px; }
 .person-facts a, .person-card .session-link { color: var(--wax-dark); }
 .person-card .chips { margin-top: 6px; gap: 4px 8px; font-size: 14px; }
+.session-summary { margin-top: 6px; font-size: 15px; }
+.session-summary summary { cursor: pointer; }
 .badge.stance-ally { background: var(--ally); border-color: var(--ally); color: var(--parchment); }
 .badge.stance-neutral { background: var(--neutral); border-color: var(--neutral); color: var(--parchment); }
 .badge.stance-enemy { background: var(--enemy); border-color: var(--enemy); color: var(--parchment); }

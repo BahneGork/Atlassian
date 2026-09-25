@@ -283,6 +283,18 @@
       monogram(pid), el("span", {}, el("b", {}, p.name, p.dead ? " †" : ""), el("small", {}, personMeta(p, withPlace)))));
   };
   const byName = (a, b) => people[a].name.localeCompare(people[b].name, "da");
+  // Session chips; the party is in most sessions, so they get a summary with the list folded away.
+  function sessionChips(p) {
+    const list = el("div", { class: "chips" }, p.sessions.map((num) =>
+      el("a", { class: "session-link", href: `#session/${num}/laes` }, `Session ${num}`)));
+    if (!p.pc || p.sessions.length <= 8) return list;
+    const [first, last] = [p.sessions[0], p.sessions[p.sessions.length - 1]];
+    return el("details", { class: "session-summary" },
+      el("summary", {}, `Nævnt ved navn i ${p.sessions.length} af ${sessions.length} sessionslogs · første `,
+        el("a", { class: "session-link", href: `#session/${first}/laes` }, `S${first}`), " · seneste ",
+        el("a", { class: "session-link", href: `#session/${last}/laes` }, `S${last}`)),
+      list);
+  }
   // All places inside a place (Soltræet and its chambers are inside Astley, …).
   const subtree = (id) => [id, ...children(id).flatMap(subtree)];
 
@@ -830,8 +842,7 @@
               person.place ? el("a", { href: `#${placeRoute(person.place)}` }, placeName(person.place)) : "ukendt"),
         person.factions.length ? el("p", { class: "person-facts" }, "Factions: ",
           person.factions.flatMap((f, i) => [i ? ", " : null, el("a", { href: `#note/${f}` }, factions[f].name)])) : null,
-        person.sessions.length ? el("div", { class: "chips" }, person.sessions.map((num) =>
-          el("a", { class: "session-link", href: `#session/${num}/laes` }, `Session ${num}`))) : null)) : null;
+        person.sessions.length ? sessionChips(person) : null)) : null;
 
     const faction = factions[id];
     let influenceBtn = null;

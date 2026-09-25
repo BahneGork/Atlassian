@@ -9,7 +9,7 @@ from collections import defaultdict
 SESSION_REF = re.compile(r"(?<![\w/\[])S(\d+(?:\.\d+)?)(?:\s*[–-]\s*(\d+(?:\.\d+)?))?")
 LABELS = {"Status": "Status", "Spor": "Spor", "Åbent": "Åbent", "Muligt (gæt)": "Muligt (gæt)",
           "Ifølge Bahne": "Ifølge Bahne", "Næste skridt ifølge noterne": "Næste skridt"}
-ENTITY_FOLDERS = ("People", "Locations", "Factions", "Items", "Loot")
+ENTITY_FOLDERS = ("People", "Locations", "Factions", "Items", "Loot", "Characters")
 
 
 def link_sessions(text, known):
