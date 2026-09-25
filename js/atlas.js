@@ -877,6 +877,15 @@
     text.innerHTML = marked.parse(n.md);
     for (const a of text.querySelectorAll("a[href^='http']")) { a.target = "_blank"; a.rel = "noopener"; }
     for (const a of text.querySelectorAll("a[href^='#note/']")) a.setAttribute("href", noteHref(all, a.getAttribute("href").slice(6)));
+    // "### Session 44 – …" headings link to that session, like the timeline's numbers.
+    for (const h of text.querySelectorAll("h1, h2, h3, h4, h5, h6")) {
+      const m = h.textContent.match(/^\s*Session\s+(\d+(?:\.\d+)?)\b/i);
+      if (m && sessionByNum(m[1]) && !h.querySelector("a")) {
+        const a = el("a", { href: `#session/${sessionByNum(m[1]).num}/laes`, class: "heading-link" });
+        a.append(...h.childNodes);
+        h.append(a);
+      }
+    }
 
     openPanel(
       el("p", { class: "kicker" }, n.group === "Sessioner" ? "Sessionslog" : person?.pc ? "Gruppen" : n.group),

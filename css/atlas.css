@@ -202,6 +202,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .note-md ul, .note-md ol { padding-left: 22px; margin: 6px 0; }
 .note-md li { margin: 2px 0; }
 .note-md a { color: var(--wax-dark); }
+.note-md .heading-link { color: inherit; text-decoration: underline; text-decoration-color: var(--ink-faint); text-underline-offset: 3px; }
+.note-md .heading-link:hover { color: var(--wax-dark); }
 .note-md blockquote { margin: 8px 0; padding: 4px 12px; border-left: 3px solid var(--gold); font-style: italic; }
 .note-md table { border-collapse: collapse; font-size: 15px; display: block; overflow-x: auto; }
 .note-md th, .note-md td { border: 1px solid var(--parchment-edge); padding: 3px 8px; }
