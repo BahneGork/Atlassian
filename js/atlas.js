@@ -152,13 +152,20 @@
     applyPinState();
   }
 
+  // flyToBounds ignores maxBounds, so the map flies past the edge and then snaps back.
+  // Clamp the destination first so every move is a single smooth flight.
+  function flyWithin(bounds, opts) {
+    const { center, zoom } = map._getBoundsCenterZoom(bounds, opts);
+    map.flyTo(map._limitCenter(center, zoom, map.options.maxBounds), zoom, { duration: opts.duration });
+  }
+
   function focusPin(id) {
     const a = anchor(id);
     const target = mapOf(id);
     if (target) showMap(target, false);
     if (a) {
       const pt = ll(places[a].at);
-      map.flyToBounds(L.latLngBounds(pt, pt), {
+      flyWithin(L.latLngBounds(pt, pt), {
         maxZoom: Math.max(map.getZoom(), -0.75), duration: 0.6, paddingBottomRight: panelPadding(),
       });
     } else if (target) map.fitBounds(layers[target].bounds);
@@ -279,7 +286,7 @@
     );
     select(null);
     for (const [k, l] of Object.entries(regionLayers)) l.getElement()?.classList.toggle("selected", k === id);
-    if (r.poly) map.flyToBounds(L.latLngBounds(r.poly.map(ll)), { duration: 0.6, paddingTopLeft: [40, 40], paddingBottomRight: panelPadding() });
+    if (r.poly) flyWithin(L.latLngBounds(r.poly.map(ll)), { duration: 0.6, paddingTopLeft: [40, 40], paddingBottomRight: panelPadding() });
   }
 
   function showMapPanel(id) {
@@ -447,8 +454,18 @@
     if (target) {
       showMap(target, false);
       const pts = [...here].filter((id) => places[id].map === target).map((id) => ll(places[id].at));
-      if (pts.length) map.flyToBounds(L.latLngBounds(pts), { maxZoom: -0.5, duration: 0.8, padding: [120, 120] });
-      else map.flyToBounds(layers[target].bounds, { duration: 0.8 });
+      // Only move when this session's places are not already comfortably in view (above the journey card);
+      // re-centring on the same spot makes the small Nordheim map bounce against its edges.
+      const card = jBody.getBoundingClientRect();
+      const bottomPad = window.innerHeight - card.top + 40;
+      const inView = (pt) => {
+        const px = map.latLngToContainerPoint(pt);
+        const size = map.getSize();
+        return px.x > 80 && px.x < size.x - 80 && px.y > 80 && px.y < size.y - bottomPad;
+      };
+      if (pts.length && !pts.every(inView)) {
+        flyWithin(L.latLngBounds(pts), { maxZoom: -0.5, duration: 0.8, paddingTopLeft: [120, 120], paddingBottomRight: [120, bottomPad] });
+      } else if (!pts.length) flyWithin(layers[target].bounds, { duration: 0.8 });
     }
   }
 
