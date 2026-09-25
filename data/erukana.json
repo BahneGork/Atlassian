@@ -5780,6 +5780,1045 @@
    ]
   }
  },
+ "threads": [
+  {
+   "group": "Hovedplottet: Time Ender, staven og fængslet",
+   "id": "staven-tre-af-fire-dele-samlet",
+   "title": "Staven – tre af fire dele samlet",
+   "parts": [
+    [
+     "Status",
+     "Ben, sjæl og ild er i gruppens besiddelse. Blod-delen er ødelagt eller stjålet."
+    ],
+    [
+     "Spor",
+     "- S[26](#session/26/laes): Nibars drøm – en hvidkåbet troldmand med en stav af sølvdrageknogler; staven splintres i **ben, ild, blod, sjæl**. Ben-delen er i StormBjerget.\n- S[26](#session/26/laes)–[27](#session/27/laes): Urza bærer ben-delen i toppen af sin stav; toppen findes på alteret i knoglestammens huler. `Factions/Knoglestammen` kalder den \"korrupteret\".\n- S[34](#session/34/laes): Staven fra Vardestjernen (Rod of Resurrection) – Evelyn drages mod den; \"Nibar leder efter en pind\". Én ladning true resurrection tilbage. *Sjæl-delen ifølge Bahne.*\n- S[40](#session/40/laes): Jormunds dagbog – **fragmenterne** (flertal) blev gemt i Vardestjernens fundament indtil **Tidsvogterne** står ved døren.\n- S[45.5](#session/45.5/laes)–[46](#session/46/laes): Rubinen med den brændende flamme hos Dasdant i Skullborg. Evelyn: *\"Vi har ilden.\"*\n- S[41](#session/41/laes): Lord Fern – sølvdragen gav liv og sjæl til staven; staven og tidsartifaktet er **nøgle og lås til fængslet**.\n- S[47](#session/47/laes): Ægrin – genskabelse kræver ærketroldmand fra broderskabet, elversmed, tidsarkanisten eller en elversmeds efterkommer. Nibar har nu oktogrammet og titlen.\n- S[40](#session/40/laes): Jormund – i **The Moonwood / The Singing Tree** findes måske en vogter med nøglen til at forene staven."
+    ],
+    [
+     "Næste skridt",
+     "The Moonwood / The Singing Tree (Jormund, S[40](#session/40/laes)) – vest på kortet, ved Farreach og Unicorn's vale."
+    ],
+    [
+     "Åbent",
+     "Kan staven genskabes uden blod-delen? Er den ene true resurrection brugt?"
+    ]
+   ]
+  },
+  {
+   "group": "Hovedplottet: Time Ender, staven og fængslet",
+   "id": "blod-delen-hvem-tog-den",
+   "title": "Blod-delen – hvem tog den?",
+   "parts": [
+    [
+     "Spor",
+     "- S[41](#session/41/laes): Ved krypten nær Soltræet er der \"en revne og **sygdom**\"; Clarabel drages koldt derhen.\n- S[46](#session/46/laes): Under Soltræet: Morgions tjenere – en **gedemands-præst af Morgion**, en blight druid og **ember snakes**; et lig drænet for liv/blod.\n- S[38](#session/38/laes): Delegationen angribes af humanoider med **gedebukkeben**, \"mere dæmoniske end fey\", unaturligt varme med en indre glød.\n- S[41](#session/41/laes): Satyrerne bærer **wyrm-symbolet** (en sovende wyrm der bider sig i halen), som Lord Fern forbinder med Time Ender.\n- S[5](#session/5/laes): Nekromantikeren i Mistville, Ulrick Stadtfeldt, tjente **Morgion**. S[10](#session/10/laes): Morgion-bog bind 1 i stenkisten ved Blackspear.\n- S[44](#session/44/laes)–[46](#session/46/laes): Seralyths blod blev korrumperet → Dracolich-aspektet. Krystalkarret i Hjertekammeret er tomt; Viktor tager noget **rent** blod op i sig."
+    ],
+    [
+     "Muligt (gæt)",
+     "Morgions tjenere stod i katakomberne under Soltræet, hvor blod-delen lå, og krypten ved siden af bar tegn på sygdom – de kan stå bag. Men det er ikke fastslået."
+    ],
+    [
+     "Åbent",
+     "Hvor er blod-delen nu? Hvad er det \"rene blod\" i Viktor?"
+    ]
+   ]
+  },
+  {
+   "group": "Hovedplottet: Time Ender, staven og fængslet",
+   "id": "faengslet-og-ojnene-i-spejlet",
+   "title": "Fængslet og øjnene i spejlet",
+   "parts": [
+    [
+     "Spor",
+     "- S[8](#session/8/laes): I Tidsrummet med 8 portaler – et spejl hvor **to store lilla øjne** stirrer; Nibar røres og hans negle bliver til ametyst. \"En måde at kommunikere med noget i fangeskab.\"\n- S[41](#session/41/laes): Den lilla plage = **Time Ender**, fængslet med staven og tidsartifaktet som nøgle og lås.\n- S[8](#session/8/laes)/`krigen i himlen`: I City of Steel – robotmænd og **safir ordenen** mod en stor lilla drage.\n- Kapitel 1-epilog (efter S[20](#session/20/laes)): Ritualet i De Ældstes haller blev stoppet \"lidt over halvvejs\" – fjendens \"herre\" blev ikke **100 %** sat fri.\n- S[46](#session/46/laes): Hjertekammeret er 1 af 4 steder hvor ordenen spærrede staven inde; **to metaldøre** kan måske åbnes med tidsartifaktet. S[47](#session/47/laes): Ægrin fraråder at gå igennem dem.\n- S[46](#session/46/laes): Lord Fern: nu hvor tidsartifaktet er repareret, \"**ved han det**\"."
+    ],
+    [
+     "Åbent",
+     "Hvor ligger de andre tre låsesteder? Hvad sker der, hvis dørene åbnes?"
+    ]
+   ]
+  },
+  {
+   "group": "Hovedplottet: Time Ender, staven og fængslet",
+   "id": "tidsvogterne-de-bla-tatoveringer-og-stemmen",
+   "title": "Tidsvogterne, de blå tatoveringer og stemmen",
+   "parts": [
+    [
+     "Status",
+     "Gruppen **er** Tidsvogterne – det har I fået at vide (ifølge Bahne)."
+    ],
+    [
+     "Spor",
+     "- S[1](#session/1/laes): Alle fire har en **safirblå tatovering**, der lyser når timeglasset aktiveres. Baronesse Avalande har samme tatovering.\n- S[6](#session/6/laes): Vagttårne med vagter i **blå tabarder med et timeglas-symbol**.\n- S[12](#session/12/laes): Tatoveringerne taler – Nibar valgte viden, Winston tjeneste; budskabet: *beskyt imod Ametyst-plagen*.\n- Kapitel 1-epilog: \"modersmærkerne\" blegner efter at artefaktet blev beskadiget.\n- S[39](#session/39/laes): Vardestjernens vogter genkender Nibar og Viktor som \"brødre af ordnen\" og siger at Queensguarden havde kontraktlig adgang.\n- S[40](#session/40/laes): Jormund – Tidsvogterne vender tilbage \"i en fjern tidsalder\".\n- S[47](#session/47/laes): Nibar indgår i Azurbroderskabet – \"hvilket ikke er det samme som Tidsvogterne\"."
+    ],
+    [
+     "Åbent",
+     "Hvem er vagterne fra S[6](#session/6/laes)? Vender tatoveringernes kræfter tilbage nu, hvor artefaktet er repareret?"
+    ]
+   ]
+  },
+  {
+   "group": "Hovedplottet: Time Ender, staven og fængslet",
+   "id": "evelyns-essens-i-tidsartifaktet",
+   "title": "Evelyns essens i tidsartifaktet",
+   "parts": [
+    [
+     "Spor",
+     "- S[46](#session/46/laes): Tidsartifaktet repareres, men prisen er at nogen frivilligt giver sin essens – farven forsvinder fra Evelyn, til kun kroppen er tilbage.\n- S[46](#session/46/laes): Vægbilledet i Hjertekammeret viste Evelyn med det ødelagte artefakt, og derefter et helt artefakt – **uden Evelyn**.\n- S[34](#session/34/laes): Rod of Resurrection har én ladning true resurrection."
+    ],
+    [
+     "Åbent",
+     "Er Evelyn død, eller lever hendes essens i timeglasset?"
+    ]
+   ]
+  },
+  {
+   "group": "Hovedplottet: Time Ender, staven og fængslet",
+   "id": "tiamats-fire-drager",
+   "title": "Tiamats fire drager",
+   "parts": [
+    [
+     "Spor",
+     "- S[16](#session/16/laes): \"De fire drager er ude på i Tiamats navn at bringe den lilla plage tilbage.\" **Malgazar** (den blå drage i Grøndalen) var én af dem.\n- S[13](#session/13/laes): Syn – fire høje skikkelser i kåber chanter i en cirkel; én forvandler sig til en stor blå drage.\n- S[8](#session/8/laes): Drager set ved de gamle dværgehallers bjerge. S[10](#session/10/laes): Et drageæg med **sorte skæl og røde kanter** i stenkisten ved Blackspear.\n- S[43](#session/43/laes): \"Den store lilla eksplosion i bjergene – noget kom ud, og tågen ruller foran det.\"\n- Dragemænd overalt: S[20](#session/20/laes) (konstrukter i De Ældstes haller), S[26](#session/26/laes) (StormBjerget), S[43](#session/43/laes) (draconians tager Evelyn), S[44](#session/44/laes) (\"de **dyrker** dragemænd\", dragonborn-vagter ved ametyststenene), S[12](#session/12/laes) (Amon'Ka belejret af dragemænd).\n- S[20](#session/20/laes): Blodrosens kommandør i Astley, **Sargas Slatefist**, bærer **5 hoveder i 5 farver** på brystpladen. S[17](#session/17/laes)/S20: **Takhisis**-præster og præstinden Danica, der tilbeder \"Tiamat\" med et ukendt symbol."
+    ],
+    [
+     "Åbent",
+     "Hvem er de tre andre drager? Hvor er drageægget nu? Hvilken rolle spiller Blodrosen, når kommandøren bærer et femhovedet symbol, men ordenen kæmper mod plagen?"
+    ]
+   ]
+  },
+  {
+   "group": "Hovedplottet: Time Ender, staven og fængslet",
+   "id": "skyggekompagniet-bedragerne-og-face",
+   "title": "Skyggekompagniet, bedragerne og Face",
+   "parts": [
+    [
+     "Spor",
+     "- S[47](#session/47/laes): Nogen jager Azurbroderskabet; flere er forsvundet. Jægerne kalder sig **Skyggekompagniet**. Brødrene bliver langsomt til safirsten.\n- S[47](#session/47/laes): En **doppelganger** udgav sig for Ægrin og forsøgte at dræbe Nibar.\n- S[21](#session/21/laes): Den \"Daine Waymar\" som Vargoth og Logan talte med, var en **bedrager** (den rigtige havde været død en dag) – måske en dæmon – og han vidste alt om Rod of Resurrection.\n- S[46](#session/46/laes): **Face** forrådte gruppen og stak Logan i ryggen. **Sammy** sagde \"der er behov for dig andetsteds\", og de forsvandt.\n- S[17](#session/17/laes): En gruppe på fire, der lignede et eventyrparty, men alle var troldmænd."
+    ],
+    [
+     "Åbent",
+     "Hvor er Logan? Hvem er Face – forvandler eller overløber? Hvad vil Sammy?"
+    ]
+   ]
+  },
+  {
+   "group": "Astley og Welles",
+   "id": "borgmester-denizar-volmar",
+   "title": "Borgmester Denizar Volmar",
+   "parts": [
+    [
+     "Spor",
+     "- S[20](#session/20/laes): Guldring med **tre ametyster** – plagens tjenere bærer netop sådan en ring. Kold aura; en bleg kvinde af \"udefinerbar alder\" som livvagt.\n- Kapitel 1-epilog: \"Eresby baroniet er direkte forbundet med Den Lilla Plage, og det er **Borgmester Volmar** … også.\"\n- Clarabels rapport (S[38](#session/38/laes)–[40](#session/40/laes)): Borgmesteren har aktivt arbejdet *imod* Baronesse Avalande. Hans modstandere: Fafnirs gruppe, **Adelhuset Vitano**, Urazzan, Astleysson.\n- S[46](#session/46/laes): **Hus Vitano blev angrebet først** under plagens angreb, og ingen af dem er fundet."
+    ],
+    [
+     "Muligt (gæt)",
+     "GM'ens epilog forbinder borgmesteren med plagen, Vitano var blandt hans modstandere, og Vitano blev angrebet først – det kan være ham, der rydder op i sine modstandere."
+    ],
+    [
+     "Åbent",
+     "Hvad skete med Vitano-familien? Hvem er livvagten?"
+    ]
+   ]
+  },
+  {
+   "group": "Astley og Welles",
+   "id": "feywood-tre-ametyststen-tilbage",
+   "title": "Feywood – tre ametyststen tilbage",
+   "parts": [
+    [
+     "Spor",
+     "S[44](#session/44/laes) – seks sites med ametyststen i bautasten; tre ødelagt, hver styrer ca. 1/6 af horden. Hatchet Thule kender stederne. S[41](#session/41/laes): Lord Fern mener korruptionen af naturens væsener ligger i Feywood."
+    ],
+    [
+     "",
+     "Gruppen regnede med, at hver sten styrer ca. 1/6 af horden (S[44](#session/44/laes))."
+    ],
+    [
+     "Åbent",
+     "Hvor er de sidste tre?"
+    ]
+   ]
+  },
+  {
+   "group": "Astley og Welles",
+   "id": "seralyths-dracolich-aspekt",
+   "title": "Seralyths Dracolich-aspekt",
+   "parts": [
+    [
+     "Spor",
+     "S[45](#session/45/laes) – et bundløst ondt \"aspekt\", ikke dragen selv; kun et spørgsmål om tid før hun vrister sig løs. Hun fløj mod den lilla horde. S[46](#session/46/laes): Clarabel sværger at gøre en ende på det."
+    ],
+    [
+     "Åbent",
+     "Hvor er hun nu? Kan hun renses, hvis staven genskabes?"
+    ]
+   ]
+  },
+  {
+   "group": "Astley og Welles",
+   "id": "det-nye-verdenstrae",
+   "title": "Det nye verdenstræ",
+   "parts": [
+    [
+     "Spor",
+     "S[46](#session/46/laes) – Celedriel giver Clarabel et frø til et nyt verdenstræ; kun **to** verdenstræer lever nu. S[40](#session/40/laes) (Jormund): **The Singing Tree** i The Moonwood."
+    ]
+   ]
+  },
+  {
+   "group": "Astley og Welles",
+   "id": "opal-kulten-spejlfangerne-og-fritte",
+   "title": "Opal-kulten, spejlfangerne og Fritte",
+   "parts": [
+    [
+     "Spor",
+     "- S[19](#session/19/laes): Kulten i Alistair-palæet; spejle med rigtige mennesker; ét spejl viste **helvede**; \"ved **GRAZZT**\". Lady Lucille Vitano var involveret. Fritte blev fanget i et spejl; Bjørn tog spejlet med.\n- S[13](#session/13/laes)–[15](#session/15/laes): Fritte er guide i portalrummet; Bjørn kaldte hende ved hendes rigtige navn.\n- S[47](#session/47/laes) (NEXT): \"Befri Fritte i helvede\"; undersøg **den sorte fyrste**, Grazzts underdæmoner og sjælespejle; opsøg Nidviger-familien i Colville."
+    ],
+    [
+     "Åbent",
+     "Hvad er Frittes rigtige navn? Hvordan kommer man til Graz'zts rige?"
+    ]
+   ]
+  },
+  {
+   "group": "Astley og Welles",
+   "id": "morkets-rytter-og-morgion-bogerne",
+   "title": "Mørkets rytter og Morgion-bøgerne",
+   "parts": [
+    [
+     "Spor",
+     "S[17](#session/17/laes) – en udød mørkets ridder fra det negative plan: \"**Jeg kommer tilbage efter bogen og din sjæl!**\" Bøger: Ulricks Morgion-bog (S[5](#session/5/laes)), Morgion bind 1 (S[10](#session/10/laes)), en nekromantisk præstebog af **Chemus** hos Urza (S[27](#session/27/laes)). S[19](#session/19/laes): Nibar befriet for korruptionen fra \"den onde bog\"."
+    ],
+    [
+     "Åbent",
+     "Hvor er bøgerne nu? Hvornår kommer rytteren?"
+    ]
+   ]
+  },
+  {
+   "group": "Astley og Welles",
+   "id": "lord-fern",
+   "title": "Lord Fern",
+   "parts": [
+    [
+     "Spor",
+     "S[41](#session/41/laes) – ar med **lilla omrids**; kvæler Hr. Flick: \"ikke hvem som helst må vide om dette\". S[46](#session/46/laes) – forsvarer Celedriel mod Morgions tjenere; vejleder gruppen."
+    ]
+   ]
+  },
+  {
+   "group": "Astley og Welles",
+   "id": "queensguarden-genrejst",
+   "title": "Queensguarden genrejst",
+   "parts": [
+    [
+     "Spor",
+     "S[20](#session/20/laes) – den korrumperede chaptermaster er død; Silvara er død. S[26](#session/26/laes) – Queensguardens **stormester besøgte Skarn** for et år siden, og siden har stammen trænet til krig. S[46](#session/46/laes) – Tortin og Saren sværger troskab til Winston; S[47](#session/47/laes) – Tortin falder. `Erukana Quests and Questions`: hvem angreb chapterhouset og hvorfor?"
+    ],
+    [
+     "Åbent",
+     "Hvem er stormesteren, og lever han? Hvor er de andre overlevende?"
+    ]
+   ]
+  },
+  {
+   "group": "Astley og Welles",
+   "id": "kongens-udstyr-skal-leveres-tilbage",
+   "title": "Kongens udstyr skal leveres tilbage",
+   "parts": [
+    [
+     "Spor",
+     "S[47](#session/47/laes) – kong Norgassa lånte kronen, hammeren m.m. ud \"hvis vi får det tilbage, når vi kommer tilbage\". Winston og Clarabel svor en ed."
+    ]
+   ]
+  },
+  {
+   "group": "Eresby og krigen",
+   "id": "hvem-styrer-eresby",
+   "title": "Hvem styrer Eresby?",
+   "parts": [
+    [
+     "Spor",
+     "S[20](#session/20/laes) – baronen er en udød styret af sin søn Arakas; sønnen døde i ritualet. Kapitel 1-epilog: hans halvt ødelagte dagbog. S[38](#session/38/laes) – Lightner/Leitner-familien forsøgte at få fodfæste i Welles; Magdovas brev nævner \"Lord Erik Leitdorf\" under Baron Zhaarkof. S[43](#session/43/laes) – Eresby erklærer krig mod Welles; Mowbray støtter Eresby. Clarabels rapport: slaget ved Pembroke er tabt; Zhaarko støtter Merchant Konglomeratet i Wolfenburg."
+    ],
+    [
+     "Åbent",
+     "Hvad står i Arakas' dagbog?"
+    ]
+   ]
+  },
+  {
+   "group": "Eresby og krigen",
+   "id": "hvor-blev-evelyn-holdt-og-avles-der-dragemaend",
+   "title": "Hvor blev Evelyn holdt – og avles der dragemænd?",
+   "parts": [
+    [
+     "Spor",
+     "S[43](#session/43/laes) – Clarabels commune: Eresbys bjerge mod Ceystanya; Vaelon tænker på **Stampenborg**; Viktor og Winston drømmer om en fangetransport gennem Feywood mod en **fæstning ved et lille bjerg**. S[44](#session/44/laes): \"De dyrker dragemænd\". S[45.5](#session/45.5/laes): Evelyns ejendele i **Skullborg**; tiden er mærkelig; plagen \"lukker afdelingen ned\"."
+    ]
+   ]
+  },
+  {
+   "group": "Eresby og krigen",
+   "id": "det-rode-pas",
+   "title": "Det Røde Pas",
+   "parts": [
+    [
+     "Spor",
+     "S[7](#session/7/laes) – en større konstruktion og en samling blodroseriddere; S[9](#session/9/laes) – syd-øst for Astley i bjergene. `Quests and Questions`: måske Blodrosens lejr. S[7](#session/7/laes): Blodrosen kommer østfra."
+    ],
+    [
+     "Åbent",
+     "Aldrig besøgt – hvad bygger de?"
+    ]
+   ]
+  },
+  {
+   "group": "Nordheim",
+   "id": "faestningen-med-den-blaojede-fange",
+   "title": "Fæstningen med den blåøjede fange",
+   "parts": [
+    [
+     "Spor",
+     "S[40](#session/40/laes) – messingsoklens syn: en fæstning bygget ind i en klippeside i nordlandets bjerge (uden sne), en fangekælder, en figur med **blåt lysende øjne**."
+    ],
+    [
+     "Åbent",
+     "Hvem er fangen?"
+    ]
+   ]
+  },
+  {
+   "group": "Nordheim",
+   "id": "vardestjernen",
+   "title": "Vardestjernen",
+   "parts": [
+    [
+     "Spor",
+     "S[37](#session/37/laes) NEXT – elevatoren; S[34](#session/34/laes) – kuplen med stjernekortet; S[40](#session/40/laes) – fragmenterne i fundamentet; S[43](#session/43/laes) – nogen har været der siden: kløede fødder, spor af disintegrate."
+    ],
+    [
+     "Åbent",
+     "Hvad fører elevatoren til? Hvem var de kløede besøgende?"
+    ]
+   ]
+  },
+  {
+   "group": "Nordheim",
+   "id": "bjorn-knoglestammen-og-urza",
+   "title": "Bjørn, Knoglestammen og Urza",
+   "parts": [
+    [
+     "Spor",
+     "S[26](#session/26/laes) – Wayruths pagt med plagen forbandede slægten; Skarn er forbandet. S[27](#session/27/laes) – Bjørn fælder Skarn og bliver høvding; lover at finde den nye nordstjerne. Urza flygtede (S[26](#session/26/laes)). S[26](#session/26/laes): Bjørn virker besat og taler med nogen, der ikke er der."
+    ],
+    [
+     "Ifølge Bahne",
+     "\"Nordstjernen\" er en myte om en konge i norden – ikke Vardestjernen."
+    ],
+    [
+     "Åbent",
+     "Hvor er Urza? Hvem taler Bjørn med? Hvad siger myten om kongen i norden?"
+    ]
+   ]
+  },
+  {
+   "group": "Nordheim",
+   "id": "rimkaempernes-sunkne-arkiv-the-drowned-archive",
+   "title": "Rimkæmpernes sunkne arkiv / The Drowned Archive",
+   "parts": [
+    [
+     "Spor",
+     "S[28](#session/28/laes) – nævnt i Grimjaws forbandede bog. Vaelor Drakestones dagbog (S[21](#session/21/laes)): **The Drowned Archive**, et sunket, halvt oversvømmet arkiv der engang var centrum for handel mellem planer; her fandt han ritualet med fire relikvier (jern, lys, guld, blod) der åbner en glemt portal."
+    ],
+    [
+     "Ifølge Bahne",
+     "Det er det samme sted."
+    ],
+    [
+     "Åbent",
+     "Hvor ligger det? Hvad står der ellers i arkivet om \"the Eclipsed Vault\"?"
+    ]
+   ]
+  },
+  {
+   "group": "Nordheim",
+   "id": "det-sorte-metal-og-aethor-fladen",
+   "title": "Det sorte metal og Aethor-flåden",
+   "parts": [
+    [
+     "Spor",
+     "S[42](#session/42/laes) – ti sorte metalbarrer fra tempelminerne i **Angramar**; skyggeenglen i Vinterspiret: \"bliv en del af min flåde\"; spionen szas'ramma uconta: \"de tilraner sig ting som har med **T.E.** at gøre\". S[43](#session/43/laes) – metallet kommer fra **skyggelandet**."
+    ]
+   ]
+  },
+  {
+   "group": "Nordheim",
+   "id": "iris-ice-eyes",
+   "title": "Iris / Ice Eyes",
+   "parts": [
+    [
+     "Spor",
+     "S[28](#session/28/laes) – Iris er på vej til sin fars grav og en slagmark; S[34](#session/34/laes) – i Rod of Resurrection's minder sidder en kvinde (Iris) med stentavler og går væk fra landsbyen. S[34](#session/34/laes): Elda Ice Eyes findes i en kælder."
+    ],
+    [
+     "Åbent",
+     "Er Iris og Ice Eyes den samme? Hvad ved hun om staven?"
+    ]
+   ]
+  },
+  {
+   "group": "Nordheim",
+   "id": "corwin",
+   "title": "Corwin",
+   "parts": [
+    [
+     "Spor",
+     "S[36](#session/36/laes) – kaldt nordpå mod **Ettin-øerne** på en solofærd."
+    ]
+   ]
+  },
+  {
+   "group": "Gamle løse ender (måske glemt)",
+   "id": "lady-de-evers-opgave",
+   "title": "Lady De'evers' opgave",
+   "parts": [
+    [
+     "Spor",
+     "S[5](#session/5/laes) – troldmandstårn-ruinen i nordlandet; betalt med Fireball-scrollen"
+    ],
+    [
+     "Åbent",
+     "Hvad var opgaven, og er den glemt?"
+    ]
+   ]
+  },
+  {
+   "group": "Gamle løse ender (måske glemt)",
+   "id": "hviskeren-og-dvaergehallerne",
+   "title": "Hviskeren og dværgehallerne",
+   "parts": [
+    [
+     "Spor",
+     "S[1](#session/1/laes) – aftale om at bringe \"den store stemme\"; magisk forseglet dør. S[8](#session/8/laes) – drager ved hallernes bjerge. S[20](#session/20/laes) – \"De ældste og børn af stenene skabte fælles haller\""
+    ],
+    [
+     "Åbent",
+     "Hvad er bag den forseglede dør? Venter hviskeren stadig?"
+    ]
+   ]
+  },
+  {
+   "group": "Gamle løse ender (måske glemt)",
+   "id": "baronesse-avalande",
+   "title": "Baronesse Avalande",
+   "parts": [
+    [
+     "Spor",
+     "S[1](#session/1/laes) – samme tatovering; S[8](#session/8/laes) – knækker sin stav i Nibars syn, forsvundet efter tidsspringet; S[12](#session/12/laes) – var medlem af Azur/safir-ordenen; S[38](#session/38/laes) – \"baronessen har valgt tavshedens vej\""
+    ],
+    [
+     "Åbent",
+     "Hvor er hun? Hvorfor har hun samme tatovering?"
+    ]
+   ]
+  },
+  {
+   "group": "Gamle løse ender (måske glemt)",
+   "id": "den-gule-rombe-med-en-pegasus",
+   "title": "Den gule rombe med en pegasus",
+   "parts": [
+    [
+     "Spor",
+     "S[1](#session/1/laes) – på den døde sellsword"
+    ],
+    [
+     "Åbent",
+     "Hvem bærer symbolet?"
+    ]
+   ]
+  },
+  {
+   "group": "Gamle løse ender (måske glemt)",
+   "id": "den-aeldre-veteran-og-manden-i-kulsort-rustning",
+   "title": "Den ældre veteran og manden i kulsort rustning",
+   "parts": [
+    [
+     "Spor",
+     "S[1](#session/1/laes) – amulet af en roseranke; efter tidshoppet er personer \"udskiftet\""
+    ],
+    [
+     "Åbent",
+     "Hvem var de? Hvorfor blev folk \"udskiftet\" efter tidshoppet?"
+    ]
+   ]
+  },
+  {
+   "group": "Gamle løse ender (måske glemt)",
+   "id": "city-of-steel-amon-ka",
+   "title": "City of Steel / Amon'Ka",
+   "parts": [
+    [
+     "Spor",
+     "S[8](#session/8/laes) – robotbyen, to nøgle-amuletter; S[12](#session/12/laes) – Amon'Ka's fald; Clarabel taler Anakteh"
+    ],
+    [
+     "Åbent",
+     "Hvad åbner de to nøgle-amuletter?"
+    ]
+   ]
+  },
+  {
+   "group": "Gamle løse ender (måske glemt)",
+   "id": "fafnirs-scepter",
+   "title": "Fafnirs scepter",
+   "parts": [
+    [
+     "Spor",
+     "S[20](#session/20/laes) – teleporteret væk af lejesoldaterne"
+    ],
+    [
+     "Åbent",
+     "Hvor er scepteret?"
+    ]
+   ]
+  },
+  {
+   "group": "Gamle løse ender (måske glemt)",
+   "id": "ringen-med-a-e",
+   "title": "Ringen med \"A.E.\"",
+   "parts": [
+    [
+     "Spor",
+     "S[18](#session/18/laes) – skjult på Elvira: guld, kobber og sølv, initialerne A.E., ring of warmth lavet af en ildelementar; Vargoth attunede. S[19](#session/19/laes) – Nibar viste den ved Alistair-palæets bagdør (\"hvorfor viser du mig den?\")"
+    ],
+    [
+     "Åbent",
+     "Hvem var A.E.? Hvor er ringen efter Vargoths død (S[27](#session/27/laes))?"
+    ]
+   ]
+  },
+  {
+   "group": "Gamle løse ender (måske glemt)",
+   "id": "knight-ab-errants",
+   "title": "Knight Ab-errants",
+   "parts": [
+    [
+     "Spor",
+     "Før kampagnen – fra landet mod nord eller edsbrudte blodroseriddere; set ved nordkysten i Valence. S[8](#session/8/laes) – mange flere i Astley"
+    ],
+    [
+     "Åbent",
+     "Hvor kommer de fra?"
+    ]
+   ]
+  },
+  {
+   "group": "Gamle løse ender (måske glemt)",
+   "id": "handelsaftalen-med-illyria-starmantle",
+   "title": "Handelsaftalen med Illyria Starmantle",
+   "parts": [
+    [
+     "Spor",
+     "S[20](#session/20/laes) – fra Kolitan i Julland"
+    ],
+    [
+     "Åbent",
+     "–"
+    ]
+   ]
+  },
+  {
+   "group": "Gamle løse ender (måske glemt)",
+   "id": "hydraen-i-handelshuset",
+   "title": "Hydraen i handelshuset",
+   "parts": [
+    [
+     "Spor",
+     "S[45](#session/45/laes) – dukkede op midt i jeres handelshus og drog mod horden"
+    ],
+    [
+     "Åbent",
+     "–"
+    ]
+   ]
+  }
+ ],
+ "tools": {
+  "forgotten": [
+   {
+    "id": "blodrosen",
+    "title": "Blodrosen",
+    "kind": "Factions",
+    "sessions": [
+     5,
+     7,
+     8,
+     9,
+     12,
+     17,
+     20
+    ],
+    "last": 20
+   },
+   {
+    "id": "ridderne-af-blodrosen",
+    "title": "Ridderne af Blodrosen",
+    "kind": "Factions",
+    "sessions": [
+     5,
+     7,
+     8,
+     9,
+     20
+    ],
+    "last": 20
+   },
+   {
+    "id": "madam-silvara-dawnspire",
+    "title": "Madam Silvara Dawnspire",
+    "kind": "People",
+    "sessions": [
+     7,
+     8,
+     9,
+     12,
+     20
+    ],
+    "last": 20
+   },
+   {
+    "id": "gobliner",
+    "title": "Gobliner",
+    "kind": "Factions",
+    "sessions": [
+     7,
+     10,
+     32,
+     34
+    ],
+    "last": 34
+   },
+   {
+    "id": "baronesse-avalande",
+    "title": "Baronesse Avalande",
+    "kind": "People",
+    "sessions": [
+     1,
+     2,
+     7,
+     8
+    ],
+    "last": 8
+   },
+   {
+    "id": "elvira",
+    "title": "Elvira",
+    "kind": "People",
+    "sessions": [
+     17,
+     18,
+     19
+    ],
+    "last": 19
+   },
+   {
+    "id": "grondalen",
+    "title": "Grøndalen",
+    "kind": "Locations",
+    "sessions": [
+     13,
+     14,
+     17
+    ],
+    "last": 17
+   },
+   {
+    "id": "baroniet-welles",
+    "title": "Baroniet Welles",
+    "kind": "Locations",
+    "sessions": [
+     1,
+     2,
+     8
+    ],
+    "last": 8
+   },
+   {
+    "id": "den-store-stemme",
+    "title": "den store stemme",
+    "kind": "People",
+    "sessions": [
+     1,
+     7,
+     8
+    ],
+    "last": 8
+   },
+   {
+    "id": "frost-giant-clan",
+    "title": "Frost Giant Clan",
+    "kind": "Factions",
+    "sessions": [
+     32,
+     34
+    ],
+    "last": 34
+   },
+   {
+    "id": "orkenstorm",
+    "title": "ørkenstorm",
+    "kind": "Loot",
+    "sessions": [
+     3,
+     29
+    ],
+    "last": 29
+   },
+   {
+    "id": "knoglestammens-huler",
+    "title": "knoglestammens huler",
+    "kind": "Locations",
+    "sessions": [
+     26,
+     27
+    ],
+    "last": 27
+   },
+   {
+    "id": "urza",
+    "title": "Urza",
+    "kind": "People",
+    "sessions": [
+     26,
+     27
+    ],
+    "last": 27
+   },
+   {
+    "id": "bla-tattoovering",
+    "title": "blå tattoovering",
+    "kind": "Items",
+    "sessions": [
+     1,
+     26
+    ],
+    "last": 26
+   },
+   {
+    "id": "stormens-ed",
+    "title": "stormens ed",
+    "kind": "Locations",
+    "sessions": [
+     23,
+     24
+    ],
+    "last": 24
+   },
+   {
+    "id": "arcana-tarnet",
+    "title": "Arcana tårnet",
+    "kind": "Locations",
+    "sessions": [
+     8,
+     21
+    ],
+    "last": 21
+   },
+   {
+    "id": "assana-lemieux",
+    "title": "Assana Lemieux",
+    "kind": "People",
+    "sessions": [
+     20,
+     21
+    ],
+    "last": 21
+   },
+   {
+    "id": "the-queensguard",
+    "title": "The Queensguard",
+    "kind": "Factions",
+    "sessions": [
+     12,
+     20
+    ],
+    "last": 20
+   },
+   {
+    "id": "kongens-hvil",
+    "title": "kongens hvil",
+    "kind": "Locations",
+    "sessions": [
+     7,
+     18
+    ],
+    "last": 18
+   },
+   {
+    "id": "krugge",
+    "title": "Krugge",
+    "kind": "People",
+    "sessions": [
+     17,
+     18
+    ],
+    "last": 18
+   },
+   {
+    "id": "sangstrup-familien",
+    "title": "Sangstrup familien",
+    "kind": "Factions",
+    "sessions": [
+     13,
+     17
+    ],
+    "last": 17
+   },
+   {
+    "id": "safir-ordenen",
+    "title": "safir ordenen",
+    "kind": "Factions",
+    "sessions": [
+     8,
+     12
+    ],
+    "last": 12
+   },
+   {
+    "id": "warhawk",
+    "title": "Warhawk",
+    "kind": "Loot",
+    "sessions": [
+     3,
+     12
+    ],
+    "last": 12
+   },
+   {
+    "id": "lucious-vormend",
+    "title": "Lucious Vormend",
+    "kind": "People",
+    "sessions": [
+     9,
+     10
+    ],
+    "last": 10
+   },
+   {
+    "id": "det-rode-pas",
+    "title": "Det Røde pas",
+    "kind": "Locations",
+    "sessions": [
+     7,
+     9
+    ],
+    "last": 9
+   },
+   {
+    "id": "paladine-s-bibliotek-i-astley",
+    "title": "Paladine's bibliotek i Astley",
+    "kind": "Locations",
+    "sessions": [
+     7,
+     9
+    ],
+    "last": 9
+   },
+   {
+    "id": "paladine-templet-i-astley",
+    "title": "paladine templet i Astley",
+    "kind": "Locations",
+    "sessions": [
+     7,
+     9
+    ],
+    "last": 9
+   },
+   {
+    "id": "gamle-glemte-dvaerge-haller",
+    "title": "gamle glemte dværge haller",
+    "kind": "Locations",
+    "sessions": [
+     1,
+     8
+    ],
+    "last": 8
+   },
+   {
+    "id": "dark-gem-klanen",
+    "title": "Dark Gem klanen",
+    "kind": "Factions",
+    "sessions": [
+     1,
+     8
+    ],
+    "last": 8
+   },
+   {
+    "id": "merelda",
+    "title": "Merelda",
+    "kind": "People",
+    "sessions": [
+     7,
+     8
+    ],
+    "last": 8
+   },
+   {
+    "id": "baron-zhaarko",
+    "title": "Baron Zhaarko",
+    "kind": "People",
+    "sessions": [
+     1,
+     8
+    ],
+    "last": 8
+   },
+   {
+    "id": "tids-scrollen",
+    "title": "tids scrollen",
+    "kind": "Items",
+    "sessions": [
+     1,
+     7
+    ],
+    "last": 7
+   },
+   {
+    "id": "miragehill",
+    "title": "Miragehill",
+    "kind": "Locations",
+    "sessions": [
+     1,
+     2
+    ],
+    "last": 2
+   },
+   {
+    "id": "marie-louise-duvall-af-miragehill",
+    "title": "Marie Louise Duvall af Miragehill",
+    "kind": "People",
+    "sessions": [
+     1,
+     2
+    ],
+    "last": 2
+   },
+   {
+    "id": "duvall",
+    "title": "Duvall",
+    "kind": "People",
+    "sessions": [
+     1,
+     2
+    ],
+    "last": 2
+   },
+   {
+    "id": "jernurt",
+    "title": "jernurt",
+    "kind": "Items",
+    "sessions": [
+     1,
+     2
+    ],
+    "last": 2
+   }
+  ],
+  "latest": 47,
+  "next": [
+   {
+    "session": 2,
+    "items": [
+     "Få en opgave af Vaelon Dunmere i Baroniet Welles så vi har noget at lave på vej ned til Baronesse Avalande"
+    ]
+   },
+   {
+    "session": 17,
+    "items": [
+     "udspørge veninde Elvira om Miri",
+     "udspørge Krugge om Miri",
+     "Melde tilbage til vagtkaptajn Samuel ; vestporten"
+    ]
+   },
+   {
+    "session": 18,
+    "items": [
+     "Ambushe \"Rig dame i sort og rød kjole\" på Den brækked knogle"
+    ]
+   },
+   {
+    "session": 34,
+    "items": [
+     "Nibar undersøger platformen i kuppel bygningen",
+     "Derefter drager vi mod hovedbyen"
+    ]
+   },
+   {
+    "session": 37,
+    "items": [
+     "Undersøg elevatoren i vardestjenen"
+    ]
+   },
+   {
+    "session": 39,
+    "items": [
+     "værkstedet i vardestjerne bunkeren"
+    ]
+   },
+   {
+    "session": 40,
+    "items": [
+     "Vi vil gerne op på flyve skibet, enten igennem spiret eller flyver op til det. Sørger for det er sikkert og så henter vi Kaelen og hans crew op på skibet og finder ud af hvad der skal til for at det er flyveværdigt"
+    ]
+   },
+   {
+    "session": 42,
+    "items": [
+     "få skibet i stand, find ud af det sorte metal, tilbage til mistville eller astley, tilbage til fæstningen"
+    ]
+   },
+   {
+    "session": 45,
+    "items": [
+     "CATACOMBER UNDER SOLTRÆET"
+    ]
+   },
+   {
+    "session": 47,
+    "items": [
+     "Ny mission: Befri Fritte i helvede",
+     "Jægerne af Azurordenen kalder sig skyggekompagniet",
+     "til colville og se om vi kan finde efterkommere af familien nidvig som slog opal kulten ned og se hvad de har af informationer om opal kulten.",
+     "derefter til Astley og biblioteket for at undersøge den sorte fyrste og opal kulten og underdæmoner under Grazzts og sjælespejle"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "session": 3,
+    "text": "Dag1: På Clara's vagt kommer noget flyvende, direkte sydpå måske en drage?"
+   },
+   {
+    "session": 17,
+    "text": "4 dage inden gruppen kommer tilbage ligger det et brev til Nibar i kroen - afleveret af en dværg/halfling ?"
+   },
+   {
+    "session": 17,
+    "text": "Med den forskel at de alle fire lod til at være wizards, men forskellige typer?"
+   },
+   {
+    "session": 37,
+    "text": "En skikkelse forsvinder i skyggerne, måske den rigtige mastermind ??"
+   },
+   {
+    "session": 40,
+    "text": "Skib der flyver: har ligget der i 10-15 år? ingen har gjort krav på det.. sky kaptajnen. Spiret?"
+   }
+  ]
+ },
  "regions": {
   "botreaux": {
    "name": "Hertugdømmet Botreaux",

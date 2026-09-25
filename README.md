@@ -23,6 +23,11 @@ python3 tools/build.py            # or: python3 tools/build.py <path-to-notes>
 
 The build lists any location notes not yet in the atlas and any problems it finds.
 
+### Tråde (threads)
+`docs/traade.md` is the source for the **Tråde** tab: plain Markdown, edited by hand (or by Claude after new sessions). Each `###` heading is a thread; lines starting with `**Status**`, `**Spor**`, `**Åbent**`, `**Muligt (gæt)**` or `**Ifølge Bahne**` become its sections, and session references like `S26` or `S45.5–46` become links into Rejsen. The rows of the table in the last section are short threads.
+
+The other views in the tab are computed on every build from the logs and never infer anything: **Glemte** (mentioned in 2+ sessions but not in the last 12), **Næste skridt** (the group's NEXT lines), **Spørgsmål** (questions written in the logs). The reader also shows which notes are **mentioned in the same sessions**.
+
 ### Moving and placing places on the map
 1. On the site, open **Signaturer** and tick **Redigér placeringer**.
 2. Drag pins into place. **Uplacerede steder** lists places without a position and new location notes the atlas doesn't know yet; pick one and click the map where it belongs.

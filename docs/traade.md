@@ -1,7 +1,7 @@
-# Tråde i Erukana – udkast
+# Tråde i Erukana
 
 - **Skrevet**: 2026-09-25, efter gennemlæsning af alle 48 sessionslogs (1–47 + 45.5) samt lore-, journal- og item-noter.
-- **Status**: Udkast til gennemsyn. Intet af dette er på sitet endnu.
+- **Status**: Vises på sitet under "Tråde". Ret direkte i denne fil – `tools/build.py` læser den.
 - **Sådan læses det**: *Spor* er fakta fra noterne med session (S) som kilde; "ifølge Bahne" er rettelser fra spilleren. *Åbent* er det, noterne ikke svarer på. *Muligt (gæt)* bruges kun få steder, hvor flere uafhængige spor peger samme vej – ikke alt i en kampagne hænger sammen.
 - **Rettet 2026-09-25 (ifølge Bahne)**: Gruppen *er* Tidsvogterne. Avalandes stav er en anden stav. "Nordstjernen" er en myte om en konge i norden – ikke Vardestjernen. Rimkæmpernes sunkne arkiv og The Drowned Archive er det samme sted. Om Face er en forvandler eller blot en overløber, ved I ikke.
 
@@ -81,7 +81,7 @@
 
 **Åbent**: Hvem er de tre andre drager? Hvor er drageægget nu? Hvilken rolle spiller Blodrosen, når kommandøren bærer et femhovedet symbol, men ordenen kæmper mod plagen?
 
-### 1.7 Skyggekompagniet og forvandlerne
+### 1.7 Skyggekompagniet, bedragerne og Face
 **Spor**
 - S47: Nogen jager Azurbroderskabet; flere er forsvundet. Jægerne kalder sig **Skyggekompagniet**. Brødrene bliver langsomt til safirsten.
 - S47: En **doppelganger** udgav sig for Ægrin og forsøgte at dræbe Nibar.

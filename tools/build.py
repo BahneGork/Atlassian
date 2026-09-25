@@ -16,6 +16,7 @@ from urllib.parse import quote, unquote
 sys.path.insert(0, os.path.dirname(__file__))
 from curation import (GARDEN_URL, LOCATION_ALIASES, MAPS, NOT_PEOPLE, NOT_PLACES,  # noqa: E402
                       OFFMAP, PLACES, PORTALS, REGIONS, SESSIONS)
+import threads as thr  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO = "https://github.com/BahneGork/GMnostes.git"
@@ -373,6 +374,41 @@ def main():
     session_of = {t: int(num) if num == int(num) else num for num, t in session_notes.items()}
     export_notes(notes, note_id, place_of, session_of)
     people, factions = build_people(notes, note_id, session_of)
+
+    # Tråde (hand-written in docs/traade.md) and the automatic tracking tools
+    known = {float(s["num"]): s["num"] for s in sessions}
+    threads = thr.parse_threads(os.path.join(ROOT, "docs", "traade.md"), known, slug)
+    seen_in = thr.mentions(notes, note_id, session_notes, plain, links_in, WIKILINK,
+                           {pid: p["aliases"] for pid, p in people.items()})
+    latest = max(session_notes)
+    # duplicate notes that the atlas treats as aliases of another place (e.g. "knoglestammens huler 1")
+    aliases = {a for p in PLACES.values() for a in p.get("aliases", [])}
+    title_of = {v: k for k, v in note_id.items()}
+    kind_of = {note_id[t]: n["folder"] for t, n in notes.items() if t in note_id}
+    to_num = lambda x: int(x) if x == int(x) else x
+    forgotten = sorted(
+        ({"id": nid, "title": title_of[nid], "kind": kind_of[nid], "sessions": [to_num(x) for x in sorted(s)],
+          "last": to_num(max(s))} for nid, s in seen_in.items()
+         if len(s) >= 2 and max(s) <= latest - 12 and title_of[nid] not in NOT_PEOPLE | NOT_PLACES | aliases
+         and not people.get(nid, {}).get("dead")),
+        key=lambda f: (-len(f["sessions"]), -f["last"]))
+    # "Nævnt sammen med": notes sharing the most sessions, leaving out those in over half of all sessions
+    common = {nid for nid, s in seen_in.items() if len(s) > 0.5 * len(session_notes)}
+    together = {}
+    for nid, s in seen_in.items():
+        pairs = sorted(((len(s & t), other) for other, t in seen_in.items()
+                        if other != nid and other not in common and len(s & t) >= 2), reverse=True)[:8]
+        if pairs:
+            together[nid] = [[other, k] for k, other in pairs]
+    tools = {"forgotten": forgotten, "latest": to_num(latest),
+             "next": [{**x, "session": to_num(x["session"])} for x in thr.next_steps(notes, session_notes, plain)],
+             "questions": [{**x, "session": to_num(x["session"])} for x in thr.open_questions(notes, session_notes, plain)]}
+    notes_path = os.path.join(ROOT, "data", "notes.json")
+    notes_out = json.load(open(notes_path, encoding="utf-8"))
+    for nid, pairs in together.items():
+        if nid in notes_out:
+            notes_out[nid]["together"] = pairs
+    json.dump(notes_out, open(notes_path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     for item in list(places.values()) + list(regions.values()):
         for key in ("people", "factions"):
             item[key] = [[t, note_id.get(t)] for t in item[key]]
@@ -384,7 +420,7 @@ def main():
         s["noteId"] = note_id.get(session_notes.get(s["num"]))
 
     out = {"maps": MAPS, "portals": PORTALS, "offmap": OFFMAP, "places": places,
-           "people": people, "factions": factions,
+           "people": people, "factions": factions, "threads": threads, "tools": tools,
            "regions": regions, "sessions": sessions, "unplaced": unplaced}
     with open(os.path.join(ROOT, "data", "erukana.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
@@ -398,6 +434,8 @@ def main():
     open(index, "w", encoding="utf-8").write(html)
 
     print(f"{len(places)} places, {len(regions)} regions, {len(sessions)} sessions (version {version})")
+    print(f"{len(threads)} threads; tools: {len(forgotten)} forgotten, {len(tools['next'])} next steps, "
+          f"{len(tools['questions'])} questions")
     placed = sum(1 for p in people.values() if p["place"])
     print(f"{len(people)} people ({placed} placed), {len(factions)} factions "
           f"({sum(1 for f in factions.values() if f['seat'])} with a seat)")

@@ -2,7 +2,7 @@
 (async function () {
   const V = `?v=${window.ATLAS_VERSION || ""}`; // changes on every build, so phones fetch fresh files
   const data = await fetch(`data/erukana.json${V}`).then((r) => r.json());
-  const { maps, places, regions, sessions, portals, offmap, unplaced, people, factions } = data;
+  const { maps, places, regions, sessions, portals, offmap, unplaced, people, factions, threads, tools } = data;
 
   const KIND = {
     by: "By", borg: "Borg", taarn: "Tårn", hule: "Hule & dybde", helligt: "Helligt sted",
@@ -135,6 +135,7 @@
   }
   tabs.append(el("button", { type: "button", "data-map": "", onclick: () => go("udenfor/other") }, "Andre steder"));
   tabs.append(el("button", { type: "button", "data-map": "personer", onclick: () => go("personer") }, "Personer"));
+  tabs.append(el("button", { type: "button", "data-map": "traade", onclick: () => go("traade") }, "Tråde"));
 
   function showMap(id, fit = true) {
     if (current !== id) {
@@ -864,6 +865,9 @@
       card,
       fcard,
       memberSection,
+      n.together?.length ? el("div", { class: "together" }, el("h4", {}, "Nævnt i de samme sessioner som"),
+        el("ul", { class: "chips" }, n.together.filter(([k]) => all[k]).map(([k, c]) =>
+          el("li", {}, el("a", { href: `#note/${k}`, title: `${c} fælles sessioner` }, all[k].title, el("small", {}, ` ${c}`)))))) : null,
       el("div", { class: "note-actions" },
         placeKind ? el("a", { class: "note-link", href: `#${placeKind}/${placeId}` }, "Vis på kortet") : null,
         s && jBody.hidden ? el("a", { class: "note-link", href: `#session/${s.num}` }, "Vis i Rejsen") : null),
@@ -879,6 +883,82 @@
     // A person's note shows where they live.
     const home = person?.place;
     if (home && !home.startsWith("region:") && places[home]) { focusPin(home); select(anchor(home)); }
+  }
+
+  // ---------- Tråde and tracking tools (#traade, #traade/<view>, #traad/<id>) ----------
+  // Threads are hand-written in docs/traade.md; the tools only list what the logs say.
+  const VIEWS = [["", "Tråde"], ["glemte", "Glemte"], ["naeste", "Næste skridt"], ["spoergsmaal", "Spørgsmål"]];
+  const sessionLink = (num) => el("a", { class: "session-link", href: `#session/${num}/laes` }, `S${num}`);
+  const md = (text, inline = false) => {
+    const n = el(inline ? "span" : "div", { class: inline ? "" : "note-md thread-md" });
+    n.innerHTML = inline ? marked.parseInline(text) : marked.parse(text);
+    return n;
+  };
+  function threadsHeader(view) {
+    for (const b of tabs.children) b.setAttribute("aria-pressed", String(b.dataset.map === "traade"));
+    return [
+      el("p", { class: "kicker" }, "Tråde og spor"),
+      el("h2", {}, VIEWS.find(([k]) => k === view)[1]),
+      el("nav", { class: "segments", "aria-label": "Visning" }, VIEWS.map(([k, label]) =>
+        el("a", { href: `#traade${k ? "/" + k : ""}`, "aria-current": String(k === view) }, label))),
+    ];
+  }
+  const firstText = (t) => {
+    const part = t.parts.find(([l]) => l === "Status") || t.parts.find(([l]) => l === "Åbent") || t.parts[0];
+    return part ? part[1].replace(/\[([^\]]+)\]\([^)]*\)/g, "$1").replace(/[*`_]/g, "").split("\n")[0] : "";
+  };
+  function showThreads(view = "") {
+    const body = [];
+    if (view === "") {
+      const groups = [...new Set(threads.map((t) => t.group))];
+      body.push(el("p", { class: "dir-count" }, "Skrevet ud fra alle sessionslogs. Hvert spor linker til sin session."));
+      for (const g of groups) {
+        body.push(el("h3", {}, g), el("ul", { class: "thread-list" }, threads.filter((t) => t.group === g).map((t) =>
+          el("li", {}, el("a", { href: `#traad/${t.id}` }, el("b", {}, t.title), el("small", {}, firstText(t)))))));
+      }
+    } else if (view === "glemte") {
+      body.push(el("p", { class: "dir-count" },
+        `Nævnt i mindst to sessioner, men ikke siden session ${tools.latest - 12}. Døde personer er udeladt, når noten siger det.`));
+      const KINDS = { People: "Person", Locations: "Sted", Factions: "Faction", Items: "Genstand", Loot: "Loot" };
+      body.push(el("ul", { class: "thread-list" }, tools.forgotten.map((f) => el("li", {},
+        el("a", { href: `#note/${f.id}` }, el("b", {}, f.title),
+          el("small", {}, `${KINDS[f.kind] || f.kind} · nævnt i ${f.sessions.length} sessioner · sidst i session ${f.last}`))))));
+    } else if (view === "naeste") {
+      body.push(el("p", { class: "dir-count" }, "Gruppens egne NEXT-linjer fra loggene, nyeste først."));
+      body.push(...[...tools.next].reverse().map((x, i) => el("section", { class: `next-step${i === 0 ? " latest" : ""}` },
+        el("h4", {}, i === 0 ? "Seneste · " : "", sessionLink(x.session), " ", sessionByNum(x.session)?.title || ""),
+        el("ul", {}, x.items.map((it) => el("li", {}, it))))));
+    } else if (view === "spoergsmaal") {
+      body.push(el("p", { class: "dir-count" }, "Spørgsmål I selv har skrevet i loggene."));
+      body.push(el("ul", { class: "thread-list" }, tools.questions.map((q) =>
+        el("li", {}, el("span", {}, q.text), el("small", {}, sessionLink(q.session))))));
+    }
+    openPanel(...threadsHeader(view), ...body);
+    panel.classList.add("wide");
+  }
+  // Places and people named in a thread, found by name in its text.
+  function threadMentions(t) {
+    const text = fold(t.parts.map(([, x]) => x.replace(/\([^)]*\)/g, "")).join(" "));
+    const has = (name) => name.length >= 5 && new RegExp(`(^|[^a-z0-9])${fold(name).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}([^a-z0-9]|$)`).test(text);
+    const pl = Object.keys(places).filter((k) => [places[k].name, ...places[k].aliases].some(has));
+    const pp = Object.keys(people).filter((k) => [people[k].name, ...people[k].aliases].some(has));
+    return [pl, pp];
+  }
+  function showThread(id) {
+    const t = threads.find((x) => x.id === id);
+    if (!t) return showThreads();
+    for (const b of tabs.children) b.setAttribute("aria-pressed", String(b.dataset.map === "traade"));
+    const [pl, pp] = threadMentions(t);
+    openPanel(
+      el("p", { class: "crumbs" }, el("a", { href: "#traade" }, "Tråde"), " › ", t.group),
+      el("h2", {}, t.title),
+      t.parts.map(([label, text]) => el("section", { class: `thread-part${label === "Muligt (gæt)" ? " guess" : ""}` },
+        label ? el("h3", {}, label) : null, md(text))),
+      pl.length ? [el("h3", {}, "Steder"), el("ul", { class: "chips" }, pl.map((k) =>
+        el("li", {}, el("a", { href: `#sted/${k}` }, places[k].name))))] : null,
+      pp.length ? [el("h3", {}, "Personer"), el("ul", { class: "people-list" }, pp.map((k) => personRow(k, true)))] : null,
+    );
+    panel.classList.add("wide");
   }
 
   // ---------- Routing (#sted/astley, #region/welles, #session/12, #kort/nordheim) ----------
@@ -898,6 +978,8 @@
     }
     else if (kind === "note") showNote(id);
     else if (kind === "personer") showDirectory(id || "");
+    else if (kind === "traade") showThreads(VIEWS.some(([k]) => k === (id || "")) ? id || "" : "");
+    else if (kind === "traad") showThread(id);
     else if (kind === "udenfor" && offmap[id]) showOffmap(id);
     else if (kind === "kort" && maps[id]) showMapPanel(id);
     else { closePanel(); showMap(current || "erukana", !current); }

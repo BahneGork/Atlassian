@@ -135,7 +135,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .panel-body { overflow-y: auto; padding: 18px 22px 22px; }
 .crumbs { font-size: 14px; color: var(--ink-soft); margin: 0 28px 6px 0; }
-.crumbs button { border: none; background: none; padding: 0; text-decoration: underline; text-decoration-color: var(--ink-faint); }
+.crumbs button, .crumbs a { border: none; background: none; padding: 0; color: inherit; text-decoration: underline; text-decoration-color: var(--ink-faint); }
 .kicker { font-family: var(--font-title); font-size: 14px; letter-spacing: 0.1em; color: var(--ink-soft); margin: 0; }
 .panel h2 {
   font-family: var(--font-title); font-weight: 400; font-size: 32px; line-height: 1.05; margin: 2px 28px 10px 0;
@@ -331,6 +331,35 @@ button { font: inherit; color: inherit; cursor: pointer; }
   content: ""; position: absolute; left: 50%; bottom: -5px; width: 6px; height: 6px; margin-left: -3px;
   border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 1px var(--parchment);
 }
+
+/* ---------- Tråde ---------- */
+.segments { display: flex; flex-wrap: wrap; gap: 4px; margin: 0 0 12px; }
+.segments a {
+  padding: 3px 12px; border: 1px solid var(--ink-faint); border-radius: 999px; font-size: 15px;
+  color: var(--ink); text-decoration: none;
+}
+.segments a[aria-current="true"] { background: var(--ink); color: var(--parchment); border-color: var(--ink); }
+.thread-list { list-style: none; margin: 0; padding: 0; }
+.thread-list li { border-top: 1px dotted var(--ink-faint); padding: 6px 2px; display: flex; flex-direction: column; gap: 2px; }
+.thread-list li:first-child { border-top: none; }
+.thread-list a { color: var(--ink); text-decoration: none; display: flex; flex-direction: column; }
+.thread-list a:hover b { text-decoration: underline; }
+.thread-list b { font-weight: 500; }
+.thread-list small { color: var(--ink-soft); font-size: 14px; line-height: 1.3; }
+.thread-list .session-link, .next-step .session-link, .thread-md a { color: var(--wax-dark); }
+.thread-part h3 { margin-top: 14px; }
+.thread-md { border-top: none; padding-top: 0; }
+.thread-md p { margin: 4px 0; }
+.thread-part.guess { border: 1px dashed var(--ink-faint); border-radius: 4px; padding: 2px 12px 8px; margin-top: 12px;
+  background: rgba(205, 184, 138, 0.15); }
+.thread-part.guess h3::after { display: none; }
+.next-step { border-top: 1px dotted var(--ink-faint); padding: 6px 0; }
+.next-step h4 { margin: 0 0 2px; font-weight: 500; font-size: 15px; color: var(--ink-soft); }
+.next-step ul { margin: 0; padding-left: 20px; }
+.next-step.latest { border: 1px solid var(--parchment-edge); border-radius: 4px; padding: 8px 12px; background: rgba(205, 184, 138, 0.25); }
+.together { margin: 0 0 12px; }
+.together h4 { margin: 0 0 4px; font-size: 13px; font-variant: small-caps; letter-spacing: 0.08em; color: var(--ink-soft); font-weight: 500; }
+.together small { color: var(--ink-soft); }
 
 /* ---------- Edit mode ---------- */
 .editbar {
