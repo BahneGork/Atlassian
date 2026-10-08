@@ -94,12 +94,12 @@
      "celedrial-keeper-of-mielikki-suntree"
     ],
     [
-     "Clarabel Lancaster",
-     "clarabel-lancaster"
-    ],
-    [
      "Daine waymar",
      "daine-waymar"
+    ],
+    [
+     "Edmund af Vitano",
+     "edmund-af-vitano"
     ],
     [
      "Elvira",
@@ -138,12 +138,16 @@
      "merita-verplex"
     ],
     [
-     "miri sangstrup",
-     "miri-sangstrup"
-    ],
-    [
      "Pierre",
      "pierre"
+    ],
+    [
+     "Samy",
+     "samy"
+    ],
+    [
+     "Saren Valensia",
+     "saren-valensia"
     ],
     [
      "Tizzelspark",
@@ -190,10 +194,6 @@
     [
      "Astley historian society",
      "astley-historian-society"
-    ],
-    [
-     "Blodrosen",
-     "blodrosen"
     ],
     [
      "Dawnspire Family",
@@ -277,10 +277,6 @@
      "celedrial-keeper-of-mielikki-suntree"
     ],
     [
-     "Clarabel Lancaster",
-     "clarabel-lancaster"
-    ],
-    [
      "Jarell Flick",
      "jarell-flick"
     ],
@@ -291,10 +287,6 @@
     [
      "Maelar",
      "maelar"
-    ],
-    [
-     "Sir Winston",
-     "sir-winston"
     ]
    ],
    "factions": [
@@ -323,10 +315,6 @@
     41
    ],
    "people": [
-    [
-     "Clarabel Lancaster",
-     "clarabel-lancaster"
-    ],
     [
      "Jarell Flick",
      "jarell-flick"
@@ -360,12 +348,7 @@
    "sessions": [
     41
    ],
-   "people": [
-    [
-     "Clarabel Lancaster",
-     "clarabel-lancaster"
-    ]
-   ],
+   "people": [],
    "factions": [],
    "visited": true,
    "noteId": "krypten"
@@ -387,10 +370,6 @@
     46
    ],
    "people": [
-    [
-     "Clarabel Lancaster",
-     "clarabel-lancaster"
-    ],
     [
      "Lord Fern",
      "lord-fern"
@@ -538,7 +517,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
-   "summary": "Sangstrup home (Sangstrup gården) er hjemmet til Sangstrup familien i [Astley](#note/astley). Her bor [Miri Sangstrup](#note/miri-sangstrup)s far og det er stedet hvor gruppen opsøgte ham under mordefterforskningen.",
+   "summary": "Sangstrup home (Sangstrup gården) er hjemmet til Sangstrup familien i [Astley](#note/astley). Her bor Miri Sangstrups far og det er stedet hvor gruppen opsøgte ham under mordefterforskningen.",
    "url": "",
    "sessions": [],
    "people": [],
@@ -594,10 +573,6 @@
    ],
    "people": [
     [
-     "Clarabel Lancaster",
-     "clarabel-lancaster"
-    ],
-    [
      "Erika Songfelt",
      "erika-songfelt"
     ],
@@ -611,10 +586,6 @@
     ]
    ],
    "factions": [
-    [
-     "Blodrosen",
-     "blodrosen"
-    ],
     [
      "Ridderne af Blodrosen",
      "ridderne-af-blodrosen"
@@ -639,27 +610,23 @@
    "aliases": [
     "mausoleum"
    ],
-   "summary": "Sir Seillings mausoleum er et gravkammer beliggende syd for [Astley](#note/astley). Det er gravstedet for Sir Seiling og Kong Norgassa, der blev begravet samme sted efter Sigismunds fald. Mausoleet er forbundet med [Sir Winston](#note/sir-winston)s drømme.",
+   "summary": "Sir Seillings mausoleum er et gravkammer beliggende syd for [Astley](#note/astley). Det er gravstedet for [Sir Seiling](#note/sir-seilling) og Kong Norgassa, der blev begravet samme sted efter Sigismunds fald. Mausoleet er forbundet med [Sir Winston](#note/winston-wildwood)s drømme.",
    "url": "",
    "sessions": [
     47
    ],
    "people": [
     [
-     "Clarabel Lancaster",
-     "clarabel-lancaster"
+     "Edmund af Vitano",
+     "edmund-af-vitano"
     ],
     [
      "Kong Norgassa",
      "kong-norgassa"
     ],
     [
-     "Sir Selling",
-     "sir-selling"
-    ],
-    [
-     "Sir Winston",
-     "sir-winston"
+     "Sir Seilling",
+     "sir-seilling"
     ]
    ],
    "factions": [],
@@ -681,17 +648,28 @@
    "where": "Nord for Feywood og øst for Astley ifølge noterne. Ikke det samme som kortets 'Sterling' i Botreaux.",
    "aliases": [
     "Stirring",
-    "Jarlsborg"
+    "Jarlsborg",
+    "Stirring"
    ],
-   "summary": "Stirling (også stavet Stirring) er et ældgammelt lensherred beliggende nord for [Feywood](#note/feywood)-skoven og øst for [Astley](#note/astley). Lenet ligger i [Baroniet Welles](#note/baroniet-welles) og styres af [Lord Adelston Magdova](#note/lord-adelston-magdova) fra familiens herresæde, Jarlsborg.",
+   "summary": "Stirling (også stavet Stirring) er et lensherred i [Baroniet Welles](#note/baroniet-welles), styret af [Lord Adelston Magdova](#note/lord-adelston-magdova). Det ligger nord for [Feywood](#note/feywood)-skoven og øst for [Astley](#note/astley).",
    "url": "",
    "sessions": [
     38
    ],
-   "people": [],
-   "factions": [],
+   "people": [
+    [
+     "Lord Adelston Magdova",
+     "lord-adelston-magdova"
+    ]
+   ],
+   "factions": [
+    [
+     "House Magdova",
+     "house-magdova"
+    ]
+   ],
    "visited": true,
-   "noteId": "stirring"
+   "noteId": "stirling"
   },
   "mistville": {
    "name": "Mistville",
@@ -753,10 +731,6 @@
     [
      "Ulrick Stadtfeldt",
      "ulrick-stadtfeldt"
-    ],
-    [
-     "Ulrik Stadtfelt",
-     "ulrik-stadtfelt"
     ],
     [
      "Verner Mistvale",
@@ -963,10 +937,6 @@
    "people": [],
    "factions": [
     [
-     "Blodrosen",
-     "blodrosen"
-    ],
-    [
      "Ridderne af Blodrosen",
      "ridderne-af-blodrosen"
     ]
@@ -993,8 +963,29 @@
    "sessions": [
     1
    ],
-   "people": [],
+   "people": [
+    [
+     "den store stemme",
+     "den-store-stemme"
+    ],
+    [
+     "hviskeren i mørket",
+     "hviskeren-i-morket"
+    ],
+    [
+     "Kobold",
+     "kobold"
+    ]
+   ],
    "factions": [
+    [
+     "Dark Gem klanen",
+     "dark-gem-klanen"
+    ],
+    [
+     "dark gem kobolder",
+     "dark-gem-kobolder"
+    ],
     [
      "Dværgene",
      "dvaergene"
@@ -1071,7 +1062,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
-   "summary": "De gamle glemte dværge haller er en serie af antikke dværgeruiner der ligger dybere inde i Dark Gem Clan Caves. Ifølge [hviskeren i mørket](#note/hviskeren-i-morket) indeholder hallerne masser af viden. En magisk forseglet dør fører ind til dem. Efter 15 års tidsspring er der set drager ved hallernes bjerge.",
+   "summary": "De gamle glemte dværge haller er en serie af antikke dværgeruiner der ligger dybere inde i [Dark Gem Clan Caves](#note/dark-gem-kobold-clan-caves). Ifølge [hviskeren i mørket](#note/hviskeren-i-morket) indeholder hallerne masser af viden. En magisk forseglet dør fører ind til dem.",
    "url": "",
    "sessions": [],
    "people": [
@@ -1182,7 +1173,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
-   "summary": "Pembroke er en lokation i Erukana hvor et vigtigt slag fandt sted. Slaget ved Pembroke blev tabt af modstanden mod [Blodrosen](#note/blodrosen), hvilket førte til at Eresby blev forstærket fra Mowbray.",
+   "summary": "Pembroke er en lokation i Erukana hvor et vigtigt slag fandt sted. Slaget ved Pembroke blev tabt af modstanden mod [Blodrosen](#note/ridderne-af-blodrosen), hvilket førte til at Eresby blev forstærket fra Mowbray.",
    "url": "",
    "sessions": [],
    "people": [],
@@ -1426,7 +1417,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
-   "summary": "Blackforge er Baron Breys hovedstad i Baroniet Mowbray med ca. 700.000 indbyggere. Byen er berømt for sin våbensmedning.",
+   "summary": "Blackforge er hovedstaden i [Baroniet Mowbray](#note/baroniet-mowbray) og sæde for Baron Brey. Byen har ca. 700.000 indbyggere og er berømt for sin våbensmedning.",
    "url": "",
    "sessions": [],
    "people": [],
@@ -1435,7 +1426,7 @@
    "noteId": "blackforge"
   },
   "botreaux-by": {
-   "name": "Botreaux",
+   "name": "Hertugdømmet Botreaux",
    "kind": "by",
    "map": "erukana",
    "at": [
@@ -1447,17 +1438,57 @@
    "region": "botreaux",
    "offmap": null,
    "where": "",
-   "aliases": [],
-   "summary": "Botreaux (også stavet Bortreaux) er hovedbyen i Hertugdømmet Botreaux med ca. 150.000 indbyggere. Byen er hjemsted for [familien Botreaux](#note/familien-botreaux) og er berømt for sine mure af [levende jerntræer](#note/levende-jerntraeer).",
+   "aliases": [
+    "Botreaux"
+   ],
+   "summary": "Botreaux hertugdømmet fylder midten af Erukana og hen til den østlige kystlinje hvor hovedstaden af kongeriget befinder sig. Grundet sin lokation, er Botreaux et naturligt mødested for en stor den af den handel som foretages i riget. Ca.",
    "url": "",
    "sessions": [],
-   "people": [],
-   "factions": [],
+   "people": [
+    [
+     "Hertug Robert De Ros",
+     "hertug-robert-de-ros"
+    ],
+    [
+     "Lord Helmuth de Valencia",
+     "lord-helmuth-de-valencia"
+    ]
+   ],
+   "factions": [
+    [
+     "Botreaux court",
+     "botreaux-court"
+    ],
+    [
+     "Draconkin",
+     "draconkin"
+    ],
+    [
+     "Dværgene",
+     "dvaergene"
+    ],
+    [
+     "familien Botreaux",
+     "familien-botreaux"
+    ],
+    [
+     "Knights of the Realm",
+     "knights-of-the-realm"
+    ],
+    [
+     "The Sentinel",
+     "the-sentinel"
+    ],
+    [
+     "The Silver Drake guild",
+     "the-silver-drake-guild"
+    ]
+   ],
    "visited": false,
-   "noteId": "botreaux"
+   "noteId": "hertugdommet-botreaux"
   },
   "castle-botreaux": {
-   "name": "Castle Botreaux",
+   "name": "Hertugdømmet Botreaux",
    "kind": "borg",
    "map": null,
    "at": null,
@@ -1466,23 +1497,54 @@
    "region": null,
    "offmap": null,
    "where": "",
-   "aliases": [],
-   "summary": "Castle Botreaux er hovedsædet for [familien Botreaux](#note/familien-botreaux) og centrum for Hertugdømmet Botreaux. Slottet ligger i Botreaux byen og er berømt for sine mure af [levende jerntræer](#note/levende-jerntraeer).",
+   "aliases": [
+    "Castle Botreaux"
+   ],
+   "summary": "Botreaux hertugdømmet fylder midten af Erukana og hen til den østlige kystlinje hvor hovedstaden af kongeriget befinder sig. Grundet sin lokation, er Botreaux et naturligt mødested for en stor den af den handel som foretages i riget. Ca.",
    "url": "",
    "sessions": [],
-   "people": [],
+   "people": [
+    [
+     "Hertug Robert De Ros",
+     "hertug-robert-de-ros"
+    ],
+    [
+     "Lord Helmuth de Valencia",
+     "lord-helmuth-de-valencia"
+    ]
+   ],
    "factions": [
     [
      "Botreaux court",
      "botreaux-court"
     ],
     [
+     "Draconkin",
+     "draconkin"
+    ],
+    [
+     "Dværgene",
+     "dvaergene"
+    ],
+    [
      "familien Botreaux",
      "familien-botreaux"
+    ],
+    [
+     "Knights of the Realm",
+     "knights-of-the-realm"
+    ],
+    [
+     "The Sentinel",
+     "the-sentinel"
+    ],
+    [
+     "The Silver Drake guild",
+     "the-silver-drake-guild"
     ]
    ],
    "visited": false,
-   "noteId": "castle-botreaux"
+   "noteId": "hertugdommet-botreaux"
   },
   "castle-de-ros": {
    "name": "Castle De Ros",
@@ -1498,7 +1560,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
-   "summary": "Castle De Ros er et citadel i Hertugdømmet Botreaux. Det blev bygget af [familien Botreaux](#note/familien-botreaux) for mange generationer siden og fungerer nu som en stor militær garrison.",
+   "summary": "Castle De Ros er et citadel i [Hertugdømmet Botreaux](#note/hertugdommet-botreaux). Det blev bygget af [familien Botreaux](#note/familien-botreaux) for mange generationer siden og fungerer nu som en stor militær garrison.",
    "url": "",
    "sessions": [],
    "people": [],
@@ -1525,7 +1587,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
-   "summary": "The Sentinel er et troldmandstårn dedikeret til læring og viden om \"The Weave\" i Hertugdømmet Botreaux. Tårnet er mystisk og lukket - kun få besøger det, med mindre man er direkte inviteret.",
+   "summary": "The Sentinel er et troldmandstårn dedikeret til læring og viden om \"The Weave\" i [Hertugdømmet Botreaux](#note/hertugdommet-botreaux). Tårnet er mystisk og lukket - kun få besøger det, med mindre man er direkte inviteret.",
    "url": "",
    "sessions": [],
    "people": [
@@ -1552,7 +1614,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
-   "summary": "Wolfenburg er kongestaden i Hertugdømmet Botreaux og en af de vigtigste byer i riget. Byen er kendt for sine store universiteter og akademier, og er centrum for handel og kultur.",
+   "summary": "Wolfenburg er kongestaden i [Hertugdømmet Botreaux](#note/hertugdommet-botreaux) og en af de vigtigste byer i riget. Byen er kendt for sine store universiteter og akademier, og er centrum for handel og kultur.",
    "url": "",
    "sessions": [],
    "people": [
@@ -1735,7 +1797,7 @@
    "aliases": [
     "soltice"
    ],
-   "summary": "Solstice (også stavet \"soltice\") er en by i [Erukana1](#note/erukana1) hvor [Familien Narsi](#note/familien-narsi) bor. Familien Narsi var i besiddelse af [timeglasset](#note/timeglasset) og [Timescroll](#note/timescroll) før gruppen fandt dem.",
+   "summary": "Solstice (også stavet \"soltice\") er en by i [Erukana](#note/erukana1) hvor [Familien Narsi](#note/familien-narsi) bor. Familien Narsi var i besiddelse af [timeglasset](#note/timeglasset) og [Timescroll](#note/timescroll) før gruppen fandt dem.",
    "url": "",
    "sessions": [],
    "people": [],
@@ -1950,7 +2012,28 @@
    "sessions": [
     42
    ],
-   "people": [],
+   "people": [
+    [
+     "goshitura rockshelf",
+     "goshitura-rockshelf"
+    ],
+    [
+     "Imale shawn",
+     "imale-shawn"
+    ],
+    [
+     "Kaelen",
+     "kaelen"
+    ],
+    [
+     "szas'ramma uconta",
+     "szas-ramma-uconta"
+    ],
+    [
+     "Voldumand den tredje",
+     "voldumand-den-tredje"
+    ]
+   ],
    "factions": [
     [
      "Aethor Flåden",
@@ -2285,10 +2368,6 @@
    "people": [],
    "factions": [
     [
-     "Blodrosen",
-     "blodrosen"
-    ],
-    [
      "Frostheim Klanen",
      "frostheim-klanen"
     ],
@@ -2391,6 +2470,124 @@
   }
  },
  "people": {
+  "logan": {
+   "name": "Logan",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "Human",
+   "social": "",
+   "role": "Fighter (Battlemaster) / Rogue (Assassin)",
+   "aliases": [],
+   "factions": [
+    "astley-avengers"
+   ],
+   "sessions": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    39,
+    40,
+    42,
+    43,
+    44,
+    45,
+    45.5,
+    46
+   ],
+   "pc": true,
+   "statusNote": "",
+   "origin": "region:nordheim",
+   "period": [
+    21,
+    46
+   ]
+  },
+  "bjorn-of-nordheim": {
+   "name": "Bjørn of Nordheim",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "Human",
+   "social": "",
+   "role": "Barbarian",
+   "aliases": [],
+   "factions": [
+    "astley-avengers"
+   ],
+   "sessions": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    20.5,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+   ],
+   "pc": true,
+   "statusNote": "",
+   "origin": "region:nordheim",
+   "period": [
+    15,
+    28
+   ]
+  },
+  "corwin": {
+   "name": "Corwin",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "Human",
+   "social": "",
+   "role": "Druid",
+   "aliases": [],
+   "factions": [
+    "astley-avengers"
+   ],
+   "sessions": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+   ],
+   "pc": true,
+   "statusNote": "Ifølge Bahne: Ærketroldmanden Ægrin antydede i session 47, at Corwin måske er blevet en skurk. Det står ikke i loggen.",
+   "origin": "region:nordheim",
+   "period": [
+    28,
+    36
+   ]
+  },
   "fritte": {
    "name": "Fritte",
    "place": null,
@@ -2419,6 +2616,111 @@
    "period": [
     13,
     19
+   ]
+  },
+  "isilme": {
+   "name": "Isilme",
+   "place": null,
+   "stance": "ally",
+   "dead": true,
+   "status": "dead",
+   "race": "Elf",
+   "social": "",
+   "role": "Druid (Circle of the Moon)",
+   "aliases": [],
+   "factions": [
+    "astley-avengers"
+   ],
+   "sessions": [
+    20.5,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+   ],
+   "pc": true,
+   "statusNote": "",
+   "origin": null,
+   "period": [
+    20.5,
+    27
+   ]
+  },
+  "winston-wildwood": {
+   "name": "Winston Wildwood",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "Gnome",
+   "social": "",
+   "role": "Fighter (Battlemaster), ridder af Queensguarden",
+   "aliases": [
+    "winston",
+    "Sir Winston",
+    "Sir Wildwood"
+   ],
+   "factions": [
+    "the-queensguard",
+    "astley-avengers"
+   ],
+   "sessions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    20.5,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    39,
+    40,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+   ],
+   "pc": true,
+   "statusNote": "",
+   "origin": "astley",
+   "period": [
+    1,
+    null
    ]
   },
   "vargoth-sul": {
@@ -2472,6 +2774,77 @@
     27
    ]
   },
+  "nibar-brassbit": {
+   "name": "Nibar Brassbit",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "Gnome",
+   "social": "",
+   "role": "Wizard (Evoker)",
+   "aliases": [
+    "Nibar"
+   ],
+   "factions": [
+    "astley-avengers"
+   ],
+   "sessions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    20.5,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    39,
+    40,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+   ],
+   "pc": true,
+   "statusNote": "",
+   "origin": "astley",
+   "period": [
+    1,
+    null
+   ]
+  },
   "viktor-baigorri": {
    "name": "Viktor Baigorri",
    "place": null,
@@ -2520,6 +2893,8 @@
    "social": "",
    "role": "War cleric af Mielikki",
    "aliases": [
+    "Clarabel Lancaster",
+    "Clarabel",
     "Clara"
    ],
    "factions": [
@@ -2583,29 +2958,6 @@
     null
    ]
   },
-  "queen-neferata": {
-   "name": "Queen Neferata",
-   "place": "anaksa",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "royalty",
-   "role": "nobility, religious",
-   "aliases": [
-    "Neferata",
-    "Nerferate",
-    "Nerferata",
-    "Dronning Neferata",
-    "Dronning af Anaksa"
-   ],
-   "factions": [
-    "the-queensguard"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
   "lord-fern": {
    "name": "Lord Fern",
    "place": "visdommens-kammer",
@@ -2623,21 +2975,6 @@
     46,
     47
    ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "baron-bray-of-blackforge": {
-   "name": "Baron Bray of blackforge",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Baron",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
    "pc": false,
    "statusNote": ""
   },
@@ -2668,6 +3005,31 @@
    "aliases": [],
    "factions": [],
    "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "samy": {
+   "name": "Samy",
+   "place": "astley",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "commoner",
+   "role": "spy, resistance",
+   "aliases": [
+    "Sammy"
+   ],
+   "factions": [
+    "fafnirs-gruppe"
+   ],
+   "sessions": [
+    17,
+    20,
+    21,
+    45.5,
+    46
+   ],
    "pc": false,
    "statusNote": ""
   },
@@ -2862,54 +3224,6 @@
    "pc": false,
    "statusNote": ""
   },
-  "logan": {
-   "name": "Logan",
-   "place": null,
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "Human",
-   "social": "",
-   "role": "Fighter (Battlemaster) / Rogue (Assassin)",
-   "aliases": [],
-   "factions": [
-    "astley-avengers"
-   ],
-   "sessions": [
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
-    28,
-    29,
-    30,
-    31,
-    32,
-    33,
-    34,
-    35,
-    36,
-    37,
-    39,
-    40,
-    42,
-    43,
-    44,
-    45,
-    45.5,
-    46
-   ],
-   "pc": true,
-   "statusNote": "",
-   "origin": "region:nordheim",
-   "period": [
-    21,
-    46
-   ]
-  },
   "den-store-stemme": {
    "name": "den store stemme",
    "place": "dark-gem",
@@ -2930,44 +3244,6 @@
    ],
    "pc": false,
    "statusNote": ""
-  },
-  "bjorn-of-nordheim": {
-   "name": "Bjørn of Nordheim",
-   "place": null,
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "Human",
-   "social": "",
-   "role": "Barbarian",
-   "aliases": [],
-   "factions": [
-    "astley-avengers"
-   ],
-   "sessions": [
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    20.5,
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
-    28
-   ],
-   "pc": true,
-   "statusNote": "",
-   "origin": "region:nordheim",
-   "period": [
-    15,
-    28
-   ]
   },
   "jarell-flick": {
    "name": "Jarell Flick",
@@ -2994,38 +3270,6 @@
    ],
    "pc": false,
    "statusNote": ""
-  },
-  "corwin": {
-   "name": "Corwin",
-   "place": null,
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "Human",
-   "social": "",
-   "role": "Druid",
-   "aliases": [],
-   "factions": [
-    "astley-avengers"
-   ],
-   "sessions": [
-    28,
-    29,
-    30,
-    31,
-    32,
-    33,
-    34,
-    35,
-    36
-   ],
-   "pc": true,
-   "statusNote": "Ifølge Bahne: Ærketroldmanden Ægrin antydede i session 47, at Corwin måske er blevet en skurk. Det står ikke i loggen.",
-   "origin": "region:nordheim",
-   "period": [
-    28,
-    36
-   ]
   },
   "chauntea": {
    "name": "Chauntea",
@@ -3564,27 +3808,6 @@
    "pc": false,
    "statusNote": ""
   },
-  "miri-sangstrup": {
-   "name": "miri sangstrup",
-   "place": "astley",
-   "stance": "ally",
-   "dead": true,
-   "status": "dead",
-   "race": "human",
-   "social": "commoner",
-   "role": "merchant",
-   "aliases": [
-    "Miri"
-   ],
-   "factions": [
-    "sangstrup-familien"
-   ],
-   "sessions": [
-    17
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
   "sectionmaster": {
    "name": "Sectionmaster",
    "place": "anaksa",
@@ -3709,75 +3932,6 @@
    "pc": false,
    "statusNote": ""
   },
-  "nibar": {
-   "name": "Nibar",
-   "place": null,
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "Gnome",
-   "social": "",
-   "role": "Wizard (Evoker)",
-   "aliases": [],
-   "factions": [
-    "astley-avengers"
-   ],
-   "sessions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    20.5,
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
-    28,
-    29,
-    30,
-    31,
-    32,
-    33,
-    34,
-    35,
-    36,
-    37,
-    39,
-    40,
-    42,
-    43,
-    44,
-    45,
-    46,
-    47
-   ],
-   "pc": true,
-   "statusNote": "",
-   "origin": "astley",
-   "period": [
-    1,
-    null
-   ]
-  },
   "krugge": {
    "name": "Krugge",
    "place": "astley",
@@ -3851,21 +4005,6 @@
    "pc": false,
    "statusNote": ""
   },
-  "illyrias-starmantle": {
-   "name": "Illyrias Starmantle",
-   "place": "astley",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Merchant",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
   "constance-fortright": {
    "name": "Constance Fortright",
    "place": "mistville",
@@ -3922,47 +4061,19 @@
    "pc": false,
    "statusNote": ""
   },
-  "isilme": {
-   "name": "Isilme",
-   "place": null,
-   "stance": "ally",
-   "dead": true,
-   "status": "dead",
-   "race": "Elf",
-   "social": "",
-   "role": "Druid (Circle of the Moon)",
-   "aliases": [],
-   "factions": [
-    "astley-avengers"
-   ],
-   "sessions": [
-    20.5,
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27
-   ],
-   "pc": true,
-   "statusNote": "",
-   "origin": null,
-   "period": [
-    20.5,
-    27
-   ]
-  },
   "ulrick-stadtfeldt": {
    "name": "Ulrick Stadtfeldt",
    "place": "mistville",
-   "stance": "unknown",
+   "stance": "enemy",
    "dead": false,
    "status": "",
-   "race": "",
-   "social": "",
-   "role": "Præst",
-   "aliases": [],
+   "race": "human",
+   "social": "priest",
+   "role": "religious, antagonist",
+   "aliases": [
+    "Ulrik Stadtfelt",
+    "Ulrik"
+   ],
    "factions": [],
    "sessions": [
     5
@@ -4010,7 +4121,7 @@
   },
   "lallana-botreaux": {
    "name": "Lallana Botreaux",
-   "place": "botreaux-by",
+   "place": "region:botreaux",
    "stance": "neutral",
    "dead": false,
    "status": "",
@@ -4028,79 +4139,6 @@
    ],
    "pc": false,
    "statusNote": ""
-  },
-  "sir-winston": {
-   "name": "Sir Winston",
-   "place": null,
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "Gnome",
-   "social": "",
-   "role": "Fighter (Battlemaster), ridder af Queensguarden",
-   "aliases": [
-    "Winston",
-    "Winston Wildwood"
-   ],
-   "factions": [
-    "the-queensguard",
-    "astley-avengers"
-   ],
-   "sessions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    20.5,
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
-    28,
-    29,
-    30,
-    31,
-    32,
-    33,
-    34,
-    35,
-    36,
-    37,
-    39,
-    40,
-    42,
-    43,
-    44,
-    45,
-    46,
-    47
-   ],
-   "pc": true,
-   "statusNote": "",
-   "origin": "astley",
-   "period": [
-    1,
-    null
-   ]
   },
   "kobold": {
    "name": "Kobold",
@@ -4579,7 +4617,7 @@
    "aliases": [],
    "factions": [
     "court-of-baron-zhaarko",
-    "merchant-konglomeratet"
+    "merchant-konglomeratet-1"
    ],
    "sessions": [
     1,
@@ -4730,27 +4768,6 @@
    "factions": [],
    "sessions": [
     5
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "sammy": {
-   "name": "Sammy",
-   "place": "astley",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "commoner",
-   "role": "resistance",
-   "aliases": [],
-   "factions": [
-    "fafnirs-gruppe"
-   ],
-   "sessions": [
-    17,
-    21,
-    46
    ],
    "pc": false,
    "statusNote": ""
@@ -5039,27 +5056,44 @@
    "pc": false,
    "statusNote": ""
   },
-  "lord-vitano": {
-   "name": "Lord Vitano",
-   "place": "astley",
+  "queen-neferata": {
+   "name": "Queen Neferata",
+   "place": "anaksa",
    "stance": "ally",
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "lord",
-   "role": "nobility",
+   "social": "royalty",
+   "role": "nobility, religious",
    "aliases": [
-    "Edmund Vitano",
-    "Edmund af Vitano"
+    "Neferata",
+    "Nerferate",
+    "Nerferata",
+    "Dronning Neferata",
+    "Dronning af Anaksa"
    ],
    "factions": [
-    "adelhuset-vitano"
+    "the-queensguard"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "saren-valensia": {
+   "name": "Saren Valensia",
+   "place": "astley",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "knight",
+   "role": "military",
+   "aliases": [],
+   "factions": [
+    "the-queensguard"
    ],
    "sessions": [
-    12,
-    17,
-    20,
-    38
+    46
    ],
    "pc": false,
    "statusNote": ""
@@ -5131,25 +5165,6 @@
    "factions": [],
    "sessions": [
     23
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "ulrik-stadtfelt": {
-   "name": "Ulrik Stadtfelt",
-   "place": "mistville",
-   "stance": "enemy",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "priest",
-   "role": "religious, antagonist",
-   "aliases": [
-    "Ulrick Stadtfeldt"
-   ],
-   "factions": [],
-   "sessions": [
-    5
    ],
    "pc": false,
    "statusNote": ""
@@ -5243,6 +5258,27 @@
    "pc": false,
    "statusNote": ""
   },
+  "sir-seilling": {
+   "name": "Sir Seilling",
+   "place": "mausoleum",
+   "stance": "ally",
+   "dead": true,
+   "status": "dead",
+   "race": "human",
+   "social": "knight",
+   "role": "nobility, servant",
+   "aliases": [
+    "Sir Seiling",
+    "Sir Selling"
+   ],
+   "factions": [],
+   "sessions": [
+    12,
+    47
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
   "kaelen": {
    "name": "Kaelen",
    "place": "port-drakkan",
@@ -5267,19 +5303,27 @@
   "edmund-af-vitano": {
    "name": "Edmund af Vitano",
    "place": "astley",
-   "stance": "unknown",
+   "stance": "ally",
    "dead": false,
    "status": "",
-   "race": "",
-   "social": "",
-   "role": "Noble",
-   "aliases": [],
-   "factions": [],
+   "race": "human",
+   "social": "lord",
+   "role": "religious, nobility",
+   "aliases": [
+    "Lord Vitano",
+    "Edmund Vitano",
+    "Sir Edmund af Vitano"
+   ],
+   "factions": [
+    "adelhuset-vitano",
+    "bahamuts-tilhaengere"
+   ],
    "sessions": [
     12,
     17,
     20,
-    38
+    38,
+    46
    ],
    "pc": false,
    "statusNote": ""
@@ -5322,8 +5366,8 @@
    "name": "Assana Lemieux",
    "place": "astley",
    "stance": "ally",
-   "dead": false,
-   "status": "",
+   "dead": true,
+   "status": "dead",
    "race": "human",
    "social": "merchant",
    "role": "merchant",
@@ -5337,27 +5381,8 @@
    ],
    "sessions": [
     20,
-    21
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "sir-selling": {
-   "name": "Sir Selling",
-   "place": "mausoleum",
-   "stance": "ally",
-   "dead": true,
-   "status": "dead",
-   "race": "human",
-   "social": "knight",
-   "role": "nobility, servant",
-   "aliases": [
-    "Sir Seiling"
-   ],
-   "factions": [],
-   "sessions": [
-    12,
-    47
+    21,
+    46
    ],
    "pc": false,
    "statusNote": ""
@@ -5473,41 +5498,6 @@
   }
  },
  "factions": {
-  "merchant-konglomeratet": {
-   "name": "Merchant Konglomeratet",
-   "seat": "wolfenburg",
-   "stance": "enemy",
-   "type": "merchant-guild",
-   "status": "active",
-   "leader": [],
-   "sessions": [],
-   "members": [
-    "baron-zhaarko"
-   ]
-  },
-  "hvidhvalen": {
-   "name": "Hvidhvalen",
-   "seat": null,
-   "stance": "neutral",
-   "type": "tribe",
-   "status": "active",
-   "leader": [],
-   "sessions": [],
-   "members": []
-  },
-  "safir-ordenen": {
-   "name": "safir ordenen",
-   "seat": null,
-   "stance": "unknown",
-   "type": "arcane-order",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [
-    8,
-    12
-   ],
-   "members": []
-  },
   "stenvogterne": {
    "name": "Stenvogterne",
    "seat": null,
@@ -5576,7 +5566,7 @@
    "members": [
     "pierre",
     "orlock-helmsveil",
-    "lord-vitano"
+    "edmund-af-vitano"
    ]
   },
   "de-vilde-elvere": {
@@ -5647,9 +5637,7 @@
     13,
     17
    ],
-   "members": [
-    "miri-sangstrup"
-   ]
+   "members": []
   },
   "house-de-evers": {
    "name": "House De'Evers",
@@ -5711,7 +5699,7 @@
     44
    ],
    "members": [
-    "sammy",
+    "samy",
     "beril-hojmolle",
     "fafnir"
    ]
@@ -5756,6 +5744,18 @@
    "leader": [],
    "sessions": [],
    "members": []
+  },
+  "merchant-konglomeratet-1": {
+   "name": "Merchant Konglomeratet 1",
+   "seat": null,
+   "stance": "unknown",
+   "type": "",
+   "status": "",
+   "leader": [],
+   "sessions": [],
+   "members": [
+    "baron-zhaarko"
+   ]
   },
   "the-sentinel": {
    "name": "The Sentinel",
@@ -5901,7 +5901,7 @@
     20
    ],
    "members": [
-    "queen-neferata",
+    "winston-wildwood",
     "quartermaster-of-the-hold",
     "lord-lady-of-the-coin",
     "lord-barriston-samuel",
@@ -5910,24 +5910,15 @@
     "tortin-mikkelborg",
     "lord-commander-of-the-queensguard",
     "sectionmaster",
-    "sir-winston",
     "lord-chaptermaster-cerilian-archhold",
     "lord-chandler-virmingham",
     "lord-magnus-flamehand",
     "lord-lady-of-the-keep",
     "knight-commander-of-the-house-guard",
+    "queen-neferata",
+    "saren-valensia",
     "dronningen-af-anaksa"
    ]
-  },
-  "bone-tribe": {
-   "name": "Bone Tribe",
-   "seat": null,
-   "stance": "ally",
-   "type": "",
-   "status": "",
-   "leader": [],
-   "sessions": [],
-   "members": []
   },
   "nordlandets-stammer": {
    "name": "Nordlandets stammer",
@@ -6017,6 +6008,18 @@
    ],
    "members": []
   },
+  "dark-gem-kobolder": {
+   "name": "dark gem kobolder",
+   "seat": null,
+   "stance": "enemy",
+   "type": "clan",
+   "status": "active",
+   "leader": [],
+   "sessions": [
+    1
+   ],
+   "members": []
+  },
   "waning-moon-merchant-house": {
    "name": "Waning Moon merchant house",
    "seat": "astley",
@@ -6028,7 +6031,9 @@
    ],
    "sessions": [
     38,
-    41
+    41,
+    45,
+    46
    ],
    "members": [
     "assana-lemieux"
@@ -6080,6 +6085,16 @@
     "zarafine"
    ]
   },
+  "merchant-konglomeratet": {
+   "name": "Merchant Konglomeratet",
+   "seat": "wolfenburg",
+   "stance": "enemy",
+   "type": "merchant-guild",
+   "status": "active",
+   "leader": [],
+   "sessions": [],
+   "members": []
+  },
   "astley-avengers": {
    "name": "Astley Avengers",
    "seat": "astley",
@@ -6096,15 +6111,15 @@
     44
    ],
    "members": [
-    "viktor-baigorri",
-    "clarabel-lancaster",
     "logan",
     "bjorn-of-nordheim",
     "corwin",
-    "lord-adelston-magdova",
-    "nibar",
     "isilme",
-    "sir-winston",
+    "winston-wildwood",
+    "nibar-brassbit",
+    "viktor-baigorri",
+    "clarabel-lancaster",
+    "lord-adelston-magdova",
     "assana-lemieux"
    ]
   },
@@ -6155,6 +6170,16 @@
    "members": [
     "daine-waymar"
    ]
+  },
+  "hvidhvalen": {
+   "name": "Hvidhvalen",
+   "seat": null,
+   "stance": "neutral",
+   "type": "tribe",
+   "status": "active",
+   "leader": [],
+   "sessions": [],
+   "members": []
   },
   "azur-ordenen": {
    "name": "Azur ordenen",
@@ -6222,7 +6247,8 @@
    ],
    "members": [
     "vagtkaptajn-ved-nord-distriktet-i-astley",
-    "tyra-volkmarr"
+    "tyra-volkmarr",
+    "edmund-af-vitano"
    ]
   },
   "flodhvisker-stammen": {
@@ -6403,26 +6429,6 @@
    "members": [
     "seiran"
    ]
-  },
-  "blodrosen": {
-   "name": "Blodrosen",
-   "seat": null,
-   "stance": "enemy",
-   "type": "knightly-order",
-   "status": "active",
-   "leader": [
-    "sargas-slatefist"
-   ],
-   "sessions": [
-    5,
-    7,
-    8,
-    9,
-    12,
-    17,
-    20
-   ],
-   "members": []
   },
   "hands-of-the-queen": {
    "name": "Hands of the Queen",
@@ -7102,7 +7108,7 @@
    {
     "id": "bjorn-of-nordheim",
     "title": "Bjørn of Nordheim",
-    "kind": "People",
+    "kind": "Characters",
     "sessions": [
      15,
      16,
@@ -7119,21 +7125,6 @@
      32
     ],
     "last": 32
-   },
-   {
-    "id": "blodrosen",
-    "title": "Blodrosen",
-    "kind": "Factions",
-    "sessions": [
-     5,
-     7,
-     8,
-     9,
-     12,
-     17,
-     20
-    ],
-    "last": 20
    },
    {
     "id": "madam-silvara-dawnspire",
@@ -7300,16 +7291,6 @@
     "last": 21
    },
    {
-    "id": "assana-lemieux",
-    "title": "Assana Lemieux",
-    "kind": "People",
-    "sessions": [
-     20,
-     21
-    ],
-    "last": 21
-   },
-   {
     "id": "the-queensguard",
     "title": "The Queensguard",
     "kind": "Factions",
@@ -7355,16 +7336,6 @@
     "kind": "Loot",
     "sessions": [
      3,
-     12
-    ],
-    "last": 12
-   },
-   {
-    "id": "safir-ordenen",
-    "title": "safir ordenen",
-    "kind": "Factions",
-    "sessions": [
-     8,
      12
     ],
     "last": 12
@@ -7668,10 +7639,43 @@
     [
      "Hertug Robert De Ros",
      "hertug-robert-de-ros"
+    ],
+    [
+     "Lord Helmuth de Valencia",
+     "lord-helmuth-de-valencia"
     ]
    ],
-   "factions": [],
-   "noteId": "hertugdommet-bortreaux"
+   "factions": [
+    [
+     "Botreaux court",
+     "botreaux-court"
+    ],
+    [
+     "Draconkin",
+     "draconkin"
+    ],
+    [
+     "Dværgene",
+     "dvaergene"
+    ],
+    [
+     "familien Botreaux",
+     "familien-botreaux"
+    ],
+    [
+     "Knights of the Realm",
+     "knights-of-the-realm"
+    ],
+    [
+     "The Sentinel",
+     "the-sentinel"
+    ],
+    [
+     "The Silver Drake guild",
+     "the-silver-drake-guild"
+    ]
+   ],
+   "noteId": "hertugdommet-botreaux"
   },
   "valence": {
    "name": "Baroniet Valence",
@@ -7726,7 +7730,7 @@
     2720,
     250
    ],
-   "summary": "Baroniet er forholdsvis nyt, blot en generation gammel og hørte på et tidspunkt til [Botreaux](#note/botreaux). Men en egenrådig købmand fra [Baroniet Blackmere](#note/baroniet-blackmere) forsøgte at overtage området.",
+   "summary": "Baroniet er forholdsvis nyt, blot en generation gammel og hørte på et tidspunkt til [Botreaux](#note/hertugdommet-botreaux). Men en egenrådig købmand fra [Baroniet Blackmere](#note/baroniet-blackmere) forsøgte at overtage området.",
    "url": "",
    "people": [
     [
@@ -7885,10 +7889,6 @@
     [
      "Baron Zhaarko af Eresby",
      "baron-zhaarko-af-eresby"
-    ],
-    [
-     "Clarabel Lancaster",
-     "clarabel-lancaster"
     ],
     [
      "den ældre veteran",
