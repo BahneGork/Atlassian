@@ -47,7 +47,7 @@ PLACES = {
     "alistair": dict(note="Alistairs handelsforretning", parent="astley", kind="sted",
                      name="Waning Moon merchant house"),
     "feywood": dict(note="Feywood", map="erukana", at=[2585, 2485], kind="vildmark", region="welles"),
-    "mausoleum": dict(note="Sir Seillings mausoleum", map="erukana", at=[2590, 2743], kind="hule", region="welles", aliases=["mausoleum"],
+    "mausoleum": dict(note="Sir Seillings mausoleum", map="erukana", at=[2537, 2610], kind="hule", region="welles", aliases=["mausoleum"],
                       travel="Teleportationscirkel. Nibar åbnede en cirkel hertil (session 47)."),
     "stirling": dict(note="Stirring", map="erukana", at=[2527, 2329], approx=True, kind="borg",
                      region="welles", name="Stirling", aliases=["Stirring", "Jarlsborg"],
