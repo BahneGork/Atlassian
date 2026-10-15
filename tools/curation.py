@@ -28,6 +28,7 @@ PORTALS = [
 # kind: by | borg | taarn | hule | helligt | havn | vildmark | sted
 # id -> dict(note, map, at, kind, approx, parent, region, aliases, summary, where, travel)
 # travel: a way to travel from here (teleportation circle and the like), as the logs describe it.
+# travel_lost=True: the way is still there, but the group no longer knows it (e.g. a forgotten sequence).
 PLACES = {
     # --- Welles ---
     "astley": dict(note="Astley", map="erukana", at=[2459, 2447], kind="by", region="welles",
@@ -142,7 +143,10 @@ PLACES = {
     "vardestjernen": dict(note="Vardestjernen", map="nordheim", at=[1036, 589], approx=True, kind="hule",
                           aliases=["Varde stjernen"],
                           where="Nord-øst for Sorrow Vale – en dags rejse efter mantaen.",
-                          travel="Teleportationscirkel i portalkammeret. Gruppen teleporterede herfra til Port Drakkan (session 40)."),
+                          travel="Teleportationscirkel i portalkammeret. Gruppen teleporterede herfra til Port Drakkan (session 40). "
+                                 "Sekvensen er glemt: Nibar, Winston og Victor betalte for overfarten over Saltfloden "
+                                 "med mindet om Vardestjernen (session 48), og kun Logan husker at stedet findes.",
+                          travel_lost=True),
     "port-drakkan": dict(note="Port Drakkan", map="nordheim", at=[1907, 318], kind="havn",
                          travel="Teleportationscirkel i et kammer i byen. Gruppen ankom hertil fra Vardestjernen (session 40)."),
     "vinterspiret": dict(note="Vinterspiret", parent="port-drakkan", kind="taarn"),

@@ -95,6 +95,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .pin.visited .pin-seal .glyph { fill: var(--parchment); }
 .pin.approx .pin-seal .body { stroke-dasharray: 3 2.2; }
 .pin-seal .travel-ring { fill: var(--parchment); stroke: var(--gold); stroke-width: 2.2; }
+.pin.travel-lost .pin-seal .travel-ring { stroke: var(--ink-soft); stroke-dasharray: 2 1.6; }
 .pin:hover .pin-seal, .pin:focus .pin-seal, .pin.selected .pin-seal { transform: scale(1.18); }
 .pin.selected .pin-seal .body { stroke: var(--gold); stroke-width: 2.4; }
 .pin.dim { opacity: 0.28; }
@@ -149,6 +150,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .badge.visited { background: var(--wax); border-color: var(--wax-dark); color: var(--parchment); }
 .badge.approx { border-style: dashed; }
 .badge.travel { border-color: var(--gold); background: rgba(184, 146, 58, 0.25); }
+.badge.travel.lost { border-color: var(--ink-soft); border-style: dashed; background: none; }
 .summary { margin: 0 0 12px; }
 .summary a { color: var(--wax-dark); }
 .where { font-style: italic; color: var(--ink-soft); margin: 0 0 14px; font-size: 16px; }
@@ -228,6 +230,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .pin-sample.visited { background: var(--wax); border-color: var(--wax-dark); }
 .pin-sample.approx { border-style: dashed; }
 .pin-sample.travel { border: 2.2px solid var(--gold); }
+.pin-sample.travel.lost { border: 2.2px dashed var(--ink-soft); }
 
 /* ---------- Journey ---------- */
 .journey {

@@ -36,8 +36,11 @@
   // ---------- Geometry helpers ----------
   const ll = ([x, y]) => L.latLng(-y, x);
   const children = (id) => Object.keys(places).filter((k) => places[k].parent === id);
-  // A pin has a travel connection (teleportation circle and the like) if it or a place inside it does.
-  const hasTravel = (id) => !!places[id].travel || children(id).some(hasTravel);
+  // Travel connections (teleportation circles and the like) at a place or inside it.
+  const travelAt = (id) => [...(places[id].travel ? [id] : []), ...children(id).flatMap(travelAt)];
+  const hasTravel = (id) => travelAt(id).length > 0;
+  // Lost: the group no longer knows any of the ways at this pin.
+  const travelLost = (id) => travelAt(id).every((k) => places[k].travelLost);
   // Where a place is drawn: its own pin, or the nearest ancestor with one.
   function anchor(id) {
     for (let cur = id; cur; cur = places[cur].parent) if (places[cur].at) return cur;
@@ -78,7 +81,7 @@
   const markers = {};
   function seal(id) {
     const p = places[id];
-    const cls = ["pin", p.visited && "visited", p.approx && "approx", hasTravel(id) && "travel"].filter(Boolean).join(" ");
+    const cls = ["pin", p.visited && "visited", p.approx && "approx", hasTravel(id) && "travel", hasTravel(id) && travelLost(id) && "travel-lost"].filter(Boolean).join(" ");
     return L.divIcon({
       className: cls, iconSize: [30, 38], iconAnchor: [15, 38],
       html: `<div class="pin-seal" role="img" aria-label="${p.name}"><svg viewBox="0 0 30 38" aria-hidden="true">
@@ -445,7 +448,7 @@
       el("div", { class: "badges" },
         p.visited ? el("span", { class: "badge visited" }, "Besøgt") : el("span", { class: "badge" }, "Kun hørt om"),
         p.approx ? el("span", { class: "badge approx" }, "Omtrentlig placering") : null,
-        p.travel ? el("span", { class: "badge travel" }, "Rejsemulighed") : null,
+        p.travel ? el("span", { class: `badge travel${p.travelLost ? " lost" : ""}` }, p.travelLost ? "Rejsemulighed – glemt" : "Rejsemulighed") : null,
         !p.at && !anchor(id) ? el("span", { class: "badge approx" }, "Ikke på kortet") : null),
       p.summary ? summary(p.summary) : null,
       p.where ? el("p", { class: "where" }, p.where) : null,
