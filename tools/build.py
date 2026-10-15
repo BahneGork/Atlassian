@@ -388,7 +388,7 @@ def main():
             "name": p.get("name", p["note"]), "kind": p["kind"],
             "map": p.get("map"), "at": p.get("at"), "approx": p.get("approx", False),
             "parent": p.get("parent"), "region": p.get("region"), "offmap": p.get("offmap"),
-            "where": p.get("where", ""), "aliases": p.get("aliases", []),
+            "where": p.get("where", ""), "aliases": p.get("aliases", []), "travel": p.get("travel", ""),
             "summary": p.get("summary") or (summarize(n["body"], note_id) if n else ""),
             "url": note_url(n), "sessions": sessions_at.get(pid, []),
             "people": sorted(people, key=str.lower), "factions": sorted(factions, key=str.lower),

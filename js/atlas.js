@@ -36,6 +36,8 @@
   // ---------- Geometry helpers ----------
   const ll = ([x, y]) => L.latLng(-y, x);
   const children = (id) => Object.keys(places).filter((k) => places[k].parent === id);
+  // A pin has a travel connection (teleportation circle and the like) if it or a place inside it does.
+  const hasTravel = (id) => !!places[id].travel || children(id).some(hasTravel);
   // Where a place is drawn: its own pin, or the nearest ancestor with one.
   function anchor(id) {
     for (let cur = id; cur; cur = places[cur].parent) if (places[cur].at) return cur;
@@ -76,12 +78,13 @@
   const markers = {};
   function seal(id) {
     const p = places[id];
-    const cls = ["pin", p.visited && "visited", p.approx && "approx"].filter(Boolean).join(" ");
+    const cls = ["pin", p.visited && "visited", p.approx && "approx", hasTravel(id) && "travel"].filter(Boolean).join(" ");
     return L.divIcon({
       className: cls, iconSize: [30, 38], iconAnchor: [15, 38],
       html: `<div class="pin-seal" role="img" aria-label="${p.name}"><svg viewBox="0 0 30 38" aria-hidden="true">
         <path class="body" d="M15 37C15 37 2 22.5 2 14.2A13 13 0 0 1 28 14.2C28 22.5 15 37 15 37Z"/>
-        <g transform="translate(7 6)"><path class="glyph" d="${GLYPH[p.kind] || GLYPH.sted}"/></g></svg></div>`,
+        <g transform="translate(7 6)"><path class="glyph" d="${GLYPH[p.kind] || GLYPH.sted}"/></g>
+        ${hasTravel(id) ? '<circle class="travel-ring" cx="25.5" cy="5" r="4.2"/>' : ""}</svg></div>`,
     });
   }
   function addMarker(id) {
@@ -112,7 +115,7 @@
   }
 
   // Marker elements are recreated when a map is re-added, so their state lives here.
-  const pinState = { selected: null, here: null, seen: null, lit: null, onlyVisited: false, editing: false };
+  const pinState = { selected: null, here: null, seen: null, lit: null, onlyVisited: false, onlyTravel: false, editing: false };
   function applyPinState() {
     for (const [id, m] of Object.entries(markers)) {
       const e = m.getElement();
@@ -120,7 +123,7 @@
       e.classList.toggle("selected", id === pinState.selected);
       e.classList.toggle("current", !!pinState.here?.has(id));
       e.classList.toggle("dim", (!!pinState.seen && !pinState.seen.has(id)) || (!!pinState.lit && !pinState.lit.has(id)));
-      e.classList.toggle("hidden", pinState.onlyVisited && !places[id].visited);
+      e.classList.toggle("hidden", (pinState.onlyVisited && !places[id].visited) || (pinState.onlyTravel && !hasTravel(id)));
       e.classList.toggle("moved", !!edits[id]);
       m.options.draggable = pinState.editing;
       if (m.dragging) pinState.editing ? m.dragging.enable() : m.dragging.disable();
@@ -442,9 +445,11 @@
       el("div", { class: "badges" },
         p.visited ? el("span", { class: "badge visited" }, "Besøgt") : el("span", { class: "badge" }, "Kun hørt om"),
         p.approx ? el("span", { class: "badge approx" }, "Omtrentlig placering") : null,
+        p.travel ? el("span", { class: "badge travel" }, "Rejsemulighed") : null,
         !p.at && !anchor(id) ? el("span", { class: "badge approx" }, "Ikke på kortet") : null),
       p.summary ? summary(p.summary) : null,
       p.where ? el("p", { class: "where" }, p.where) : null,
+      p.travel ? el("p", { class: "travel" }, p.travel) : null,
       sess.size ? [el("h3", {}, "Her har vi været"),
         el("div", { class: "chips" }, [...sess].sort((a, b) => a - b).map((n) =>
           el("button", { type: "button", class: "session-chip", title: sessionByNum(n)?.title, onclick: () => go(`session/${n}`) }, `Session ${n}`)))] : null,
@@ -556,6 +561,10 @@
   $("#opt-regions").addEventListener("change", (e) => document.body.classList.toggle("regions-off", !e.target.checked));
   $("#opt-visited").addEventListener("change", (e) => {
     pinState.onlyVisited = e.target.checked;
+    applyPinState();
+  });
+  $("#opt-travel").addEventListener("change", (e) => {
+    pinState.onlyTravel = e.target.checked;
     applyPinState();
   });
 

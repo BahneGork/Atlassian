@@ -70,6 +70,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "Teleportationscirkel i Ye Olde Magic Shop. Nibar fik sekvensen fra butikken (session 43), og gruppen kom hjem gennem den fra Feywood (session 44).",
    "summary": "Astley er en mellemstor by med ca. 20.000 indbyggere i [Baroniet Welles](#note/baroniet-welles). Byen er beliggende i det nordlige Welles og fungerer som et vigtigt handels- og kulturcenter i baroniet. Byen er hjemsted for [Astley Avengers](#note/astley-avengers) og har en lang historie med riddere og heltemod.",
    "url": "",
    "sessions": [
@@ -262,6 +263,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Soltræet (Sun Tree) er et helligt træ dedikeret til [Mielikki](#note/mielikki) i [Astley](#note/astley). Det har en pond der passes af [Maelar](#note/maelar) og [Celedrial](#note/celedrial-keeper-of-mielikki-suntree), samt [Visdommens kammer](#note/visdommens-kammer) hvor [Lord Fern](#note/lord-fern) opholder sig.",
    "url": "",
    "sessions": [
@@ -309,6 +311,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Visdommens kammer (Chamber of Wisdom) er et kammer i [Soltræet](#note/soltraeet) hvor [Lord Fern](#note/lord-fern) opholder sig. Kammeret har en krystal i midten der skifter farve efter årstiden.",
    "url": "",
    "sessions": [
@@ -343,6 +346,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Krypten er en krypt beliggende nær [Soltræet](#note/soltraeet). Der er en vej der fører om til krypten, hvor der er en revne og sygdom. [Lord Fern](#note/lord-fern) beder gruppen opsøge ham når de er klar til at undersøge krypten.",
    "url": "",
    "sessions": [
@@ -364,6 +368,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Hjertekammeret er et kammer dybt i katakomberne under [Soltræet](#note/soltraeet), hvor [Blod delen af staven](#note/blod-delen-af-staven) blev gemt, og hvor [Seralyths](#note/solvdragen) dragelig ligger sammen med det krystalkar som blod-delen har ligget i.",
    "url": "",
    "sessions": [
@@ -399,6 +404,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Paladine templet i [Astley](#note/astley) er et tempel dedikeret til Paladine. Det har et stort bibliotek ([Paladine's bibliotek i Astley](#note/paladine-s-bibliotek-i-astley)) og fungerer som mødested for modstandsbevægelsen mod [Ridderne af Blodrosen](#note/ridderne-af-blodrosen).",
    "url": "",
    "sessions": [],
@@ -418,6 +424,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Paladine's bibliotek i [Astley](#note/astley) er et stort bibliotek tilknyttet [paladine templet i Astley](#note/paladine-templet-i-astley). Det indeholder historisk information og er et mødested for tilhængere af Paladine og Bahamut. Flere af de tilstedeværende skjuler Bahamuts mærke.",
    "url": "",
    "sessions": [
@@ -449,6 +456,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Svinestien er et drikkested i [Astley](#note/astley)s shanty town (slumområde) i udkanten af byen. Det er et sted med kort, terninger og drikke - et samlingspunkt for de mindre velstillede. Her kan man finde information og rygter fra byens underside.",
    "url": "",
    "sessions": [
@@ -470,6 +478,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Kongens Hvil er et værtshus i [Astley](#note/astley) der drives af gnomefamilien [Tizzelspark](#note/tizzelspark). Gruppen overnattede her efter at være blevet frikendt i retten for sammenstødet med [Ridderne af Blodrosen](#note/ridderne-af-blodrosen).",
    "url": "",
    "sessions": [
@@ -496,6 +505,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Den brækkede knogle er et drikkested i [Astley](#note/astley), beliggende i en smal gyde. Stedet er kendt som en dykkerbar fuld af drukkenbolte og er ikke blandt byens finere etablissementer. Kroen drives af en kromutter (krokone).",
    "url": "",
    "sessions": [
@@ -517,6 +527,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Sangstrup home (Sangstrup gården) er hjemmet til Sangstrup familien i [Astley](#note/astley). Her bor Miri Sangstrups far og det er stedet hvor gruppen opsøgte ham under mordefterforskningen.",
    "url": "",
    "sessions": [],
@@ -536,6 +547,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Alistairs handelsforretning var Lord Alistairs handelshus i [Astley](#note/astley). Efter hans afsløring som dæmon og gruppens sejr, blev forretningen overtaget af [Astley Avengers](#note/astley-avengers) og omdøbt til [Waning moon merchant house](#note/waning-moon-merchant-house).",
    "url": "",
    "sessions": [],
@@ -563,6 +575,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Feywood er en mystisk og farlig skov nær [Astley](#note/astley). Skoven er hjem for et frygtet \"Feywood bæst\" der har en dusør på 500gp. Skoven har levende lianer der kan angribe sovende rejsende, og man føler konstant at man bliver overvåget.",
    "url": "",
    "sessions": [
@@ -610,6 +623,7 @@
    "aliases": [
     "mausoleum"
    ],
+   "travel": "Teleportationscirkel. Nibar åbnede en cirkel hertil (session 47).",
    "summary": "Sir Seillings mausoleum er et gravkammer beliggende syd for [Astley](#note/astley). Det er gravstedet for [Sir Seiling](#note/sir-seilling) og Kong Norgassa, der blev begravet samme sted efter Sigismunds fald. Mausoleet er forbundet med [Sir Winston](#note/winston-wildwood)s drømme.",
    "url": "",
    "sessions": [
@@ -651,6 +665,7 @@
     "Jarlsborg",
     "Stirring"
    ],
+   "travel": "",
    "summary": "Stirling (også stavet Stirring) er et lensherred i [Baroniet Welles](#note/baroniet-welles), styret af [Lord Adelston Magdova](#note/lord-adelston-magdova). Det ligger nord for [Feywood](#note/feywood)-skoven og øst for [Astley](#note/astley).",
    "url": "",
    "sessions": [
@@ -685,6 +700,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Lille landsby i Baroniet Welles tæt ved grænsen til Eresby. Her fandt gruppen Brakeshield-statuen hos Archibald Oddsmoke, og her nedkæmpede de nekromantikeren Ulrick Stadtfeldt og hans udøde. Gruppen blev æresmedlemmer af byen.",
    "url": "",
    "sessions": [
@@ -761,6 +777,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Kroen Månehvil er en kro beliggende i [Mistville](#note/mistville). Kroen er ejet af [Merryn Foehammer](#note/merryn-foehammer) og [Qenes Markmoon](#note/qenes-markmoon), med [Lizzie Gottmann](#note/lizzie-gottmann) ansat som kropige.",
    "url": "",
    "sessions": [],
@@ -796,6 +813,7 @@
    "offmap": null,
    "where": "I skoven lige uden for Mistville.",
    "aliases": [],
+   "travel": "",
    "summary": "Huler i skoven uden for Mistville, hvor varulven Dvalin Hammerhånd havde opholdt sig. Gruppen fandt hans kone Celia død her.",
    "url": "",
    "sessions": [
@@ -820,6 +838,7 @@
    "offmap": null,
    "where": "En halv dags rejse nordøst for Colville.",
    "aliases": [],
+   "travel": "",
    "summary": "Et gammelt tempel en halv dags rejse nordøst for [Colville](#note/colville), hvor [Ægrin](#note/aegrin) bad [Nibar](#note/nibar-brassbit) om at mødes. Det ligner et okkult bygningsværk, noget der ikke er skabt af mundane evner.",
    "url": "",
    "sessions": [
@@ -851,6 +870,7 @@
    "aliases": [
     "Coleville"
    ],
+   "travel": "",
    "summary": "Colville (også stavet Coleville) er en by i [Baroniet Welles](#note/baroniet-welles) med ca. 50.000 indbyggere. Byen er et vigtigt rejsemål for [Astley Avengers](#note/astley-avengers) på deres vej til [Baronesse Avalande](#note/baronesse-avalande).",
    "url": "",
    "sessions": [],
@@ -882,6 +902,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Southwatch er en stor by i [Baroniet Welles](#note/baroniet-welles) med ca. 170.000 indbyggere. Det er en af de betydelige byer i baroniet.",
    "url": "",
    "sessions": [],
@@ -904,6 +925,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Castle Brienne er et slot i [Baroniet Welles](#note/baroniet-welles). Det er et kontaktpunkt for [Waning Moon](#note/waning-moon) og en kilde til krigsmateriale og udstyr.",
    "url": "",
    "sessions": [],
@@ -931,6 +953,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Det Røde pas er et bjergpas syd-øst for [Astley](#note/astley). Det er et strategisk vigtigt punkt hvor [Ridderne af Blodrosen](#note/ridderne-af-blodrosen) har bygget en større konstruktion og samlet styrker.",
    "url": "",
    "sessions": [],
@@ -958,6 +981,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Kobold-klanen Dark Gems huler. Her fandt gruppen timeglasset og tids-scrollen i session 1 og mødte hviskeren i mørket, som fortalte om glemte dværgehaller dybere nede.",
    "url": "",
    "sessions": [
@@ -1005,6 +1029,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Tunnel med violet lys er en af tre tunneler der fører dybere ind i [Dark Gem Kobold clan caves](#note/dark-gem-kobold-clan-caves). Tunnelen er karakteriseret ved et svagt violet lysskær, relateret til den magiske korruption i hulerne.",
    "url": "",
    "sessions": [],
@@ -1024,6 +1049,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Tunnel med vandrisle lyde er en af tre tunneler der fører dybere ind i [Dark Gem Kobold clan caves](#note/dark-gem-kobold-clan-caves). Tunnelen er opkaldt efter de mystiske vandrisle-agtige lyde der kan høres fra den.",
    "url": "",
    "sessions": [],
@@ -1043,6 +1069,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Tunnel til affaldsrum er en af tre tunneler der fører dybere ind i [Dark Gem Kobold clan caves](#note/dark-gem-kobold-clan-caves). Tunnelen fører til et affaldsrum brugt af [Dark Gem klanen](#note/dark-gem-klanen) kobolderne.",
    "url": "",
    "sessions": [],
@@ -1062,6 +1089,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "De gamle glemte dværge haller er en serie af antikke dværgeruiner der ligger dybere inde i [Dark Gem Clan Caves](#note/dark-gem-kobold-clan-caves). Ifølge [hviskeren i mørket](#note/hviskeren-i-morket) indeholder hallerne masser af viden. En magisk forseglet dør fører ind til dem.",
    "url": "",
    "sessions": [],
@@ -1096,6 +1124,7 @@
     "The Bronze Keg",
     "Bronze Keg"
    ],
+   "travel": "",
    "summary": "Kegville er en by i [Baroniet Eresby](#note/baroniet-eresby) hvor [Astley Avengers](#note/astley-avengers) startede mange af deres eventyr. Det var her gruppen rejste fra efter at have fundet [tids scrollen](#note/timescroll).",
    "url": "",
    "sessions": [
@@ -1141,6 +1170,7 @@
    "aliases": [
     "Segrave"
    ],
+   "travel": "",
    "summary": "Segreve (også stavet Segrave) er en by i [Baroniet Eresby](#note/baroniet-eresby). Det er her [Baron Zhaarko](#note/baron-zhaarko-af-eresby) fejrer sin søns fødselsdag, og byen har et marked hvor [sølvstatuen](#note/the-silver-statue-heirloom) blev solgt.",
    "url": "",
    "sessions": [],
@@ -1173,6 +1203,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Pembroke er en lokation i Erukana hvor et vigtigt slag fandt sted. Slaget ved Pembroke blev tabt af modstanden mod [Blodrosen](#note/ridderne-af-blodrosen), hvilket førte til at Eresby blev forstærket fra Mowbray.",
    "url": "",
    "sessions": [],
@@ -1200,6 +1231,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Stampenborg er et sted [Vaelon Dunmere](#note/vaelon-dunmere) nævnte i forbindelse med Evelyn Adairs tilfangetagelse. Muligvis en borg eller fæstning i [Baroniet Eresby](#note/baroniet-eresby)-regionen.",
    "url": "",
    "sessions": [],
@@ -1230,6 +1262,7 @@
     "Arkana",
     "Vogter tårnet"
    ],
+   "travel": "",
    "summary": "Arcana tårnet var et troldmandstårn i [Baroniet Eresby](#note/baroniet-eresby) tilknyttet [Baron Zhaarko af Eresby](#note/baron-zhaarko-af-eresby). Tårnet eksploderede i en mystisk hændelse. Det omtales også som \"Det sydlige wizard tårn\" eller \"Vogter tårnet\".",
    "url": "",
    "sessions": [
@@ -1264,6 +1297,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Grimrock Woods er en skov i Erukana. [Miragehill](#note/miragehill) ligger på den østlige side af skoven, hvor slægten [Duvall](#note/duvall) har deres sæde.",
    "url": "",
    "sessions": [],
@@ -1291,6 +1325,7 @@
    "offmap": null,
    "where": "På østsiden af Grimrock Woods.",
    "aliases": [],
+   "travel": "",
    "summary": "Miragehill er en by der ligger på den østlige side af [Grimrock Woods](#note/grimrock-woods). Byen er sæde for slægten [Duvall](#note/duvall), en adelig familie med betydelig indflydelse.",
    "url": "",
    "sessions": [],
@@ -1318,6 +1353,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "The Forgotten tower (Det Glemte Tårn) er et forladt tårn i [Baroniet Mowbray](#note/baroniet-mowbray). Trods sin høje alder er det mystisk nok ikke en ruin.",
    "url": "",
    "sessions": [],
@@ -1342,6 +1378,7 @@
    "aliases": [
     "Ironreach mountains"
    ],
+   "travel": "",
    "summary": "Bjergene i vest og syd er en bjergkæde der grænser op til [Baroniet Mowbray](#note/baroniet-mowbray). Trusler fra disse bjerge har formet Mowbrays hårde og militaristiske kultur.",
    "url": "",
    "sessions": [],
@@ -1364,6 +1401,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Slatestone (også kendt som Slatestone dværgehallerne) er den ældste og mest traditionelle dværgehal i [Erukana1](#note/erukana1). Her bevares de gamle traditioner af [Bjergenes Børn](#note/bjergenes-born).",
    "url": "",
    "sessions": [],
@@ -1386,6 +1424,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Den dværgehal blandt Bjergenes Børn, der er mest åben mod omverdenen. Grundlagt af en klan fra Slatestone, og anerkender i dag ikke Slatestones hersker – hvilket har ført til mindre krige mellem hallerne.",
    "url": "",
    "sessions": [],
@@ -1417,6 +1456,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Blackforge er hovedstaden i [Baroniet Mowbray](#note/baroniet-mowbray) og sæde for Baron Brey. Byen har ca. 700.000 indbyggere og er berømt for sin våbensmedning.",
    "url": "",
    "sessions": [],
@@ -1441,6 +1481,7 @@
    "aliases": [
     "Botreaux"
    ],
+   "travel": "",
    "summary": "Botreaux hertugdømmet fylder midten af Erukana og hen til den østlige kystlinje hvor hovedstaden af kongeriget befinder sig. Grundet sin lokation, er Botreaux et naturligt mødested for en stor den af den handel som foretages i riget. Ca.",
    "url": "",
    "sessions": [],
@@ -1500,6 +1541,7 @@
    "aliases": [
     "Castle Botreaux"
    ],
+   "travel": "",
    "summary": "Botreaux hertugdømmet fylder midten af Erukana og hen til den østlige kystlinje hvor hovedstaden af kongeriget befinder sig. Grundet sin lokation, er Botreaux et naturligt mødested for en stor den af den handel som foretages i riget. Ca.",
    "url": "",
    "sessions": [],
@@ -1560,6 +1602,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Castle De Ros er et citadel i [Hertugdømmet Botreaux](#note/hertugdommet-botreaux). Det blev bygget af [familien Botreaux](#note/familien-botreaux) for mange generationer siden og fungerer nu som en stor militær garrison.",
    "url": "",
    "sessions": [],
@@ -1587,6 +1630,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "The Sentinel er et troldmandstårn dedikeret til læring og viden om \"The Weave\" i [Hertugdømmet Botreaux](#note/hertugdommet-botreaux). Tårnet er mystisk og lukket - kun få besøger det, med mindre man er direkte inviteret.",
    "url": "",
    "sessions": [],
@@ -1614,6 +1658,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Wolfenburg er kongestaden i [Hertugdømmet Botreaux](#note/hertugdommet-botreaux) og en af de vigtigste byer i riget. Byen er kendt for sine store universiteter og akademier, og er centrum for handel og kultur.",
    "url": "",
    "sessions": [],
@@ -1670,6 +1715,7 @@
    "offmap": null,
    "where": "Nær Wolfenburg – sandsynligvis den unavngivne borg på kortet.",
    "aliases": [],
+   "travel": "",
    "summary": "Castle Feucenberg er en af forsvarsværkerne til [Wolfenburg](#note/wolfenburg) og hovedkvarter for [Knights of the Realm](#note/knights-of-the-realm), Erukanas nationale ridderorden.",
    "url": "",
    "sessions": [],
@@ -1697,6 +1743,7 @@
    "offmap": null,
    "where": "Usikker placering. Nu ødelagt.",
    "aliases": [],
+   "travel": "",
    "summary": "The Queensguard Chapterhouse in Erukana - now destroyed. See [The Queensguard#Angrebet På Chapterhouse Erukana](#note/the-queensguard) for details.",
    "url": "",
    "sessions": [],
@@ -1719,6 +1766,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Mortimor er hovedstaden i [Baroniet Valence](#note/baroniet-valence) med ca. 100.000 indbyggere. Byen er sæde for [Lord Helmuth de Valencia](#note/lord-helmuth-de-valencia).",
    "url": "",
    "sessions": [],
@@ -1746,6 +1794,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Vigil's Rock er en havneby i [Baroniet Blackmere](#note/baroniet-blackmere). Sammen med [Highhome](#note/highhome) er den base for rigets største handelsflåde.",
    "url": "",
    "sessions": [],
@@ -1768,6 +1817,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Highhome er hovedstaden i [Baroniet Blackmere](#note/baroniet-blackmere) med ca. 200.000 indbyggere. Byen er centrum for rigets største handelsflåde og kontaktpunkt for [Waning Moon](#note/waning-moon).",
    "url": "",
    "sessions": [],
@@ -1797,6 +1847,7 @@
    "aliases": [
     "soltice"
    ],
+   "travel": "",
    "summary": "Solstice (også stavet \"soltice\") er en by i [Erukana](#note/erukana1) hvor [Familien Narsi](#note/familien-narsi) bor. Familien Narsi var i besiddelse af [timeglasset](#note/timeglasset) og [Timescroll](#note/timescroll) før gruppen fandt dem.",
    "url": "",
    "sessions": [],
@@ -1826,6 +1877,7 @@
    "aliases": [
     "Storms Peak"
    ],
+   "travel": "",
    "summary": "StormBjerget er det højeste bjerg i nordlandet. Ifølge myterne er bjerget skabt af forstenede kæmper. Det er omgivet af konstant tordenvejr der vokser i styrke jo tættere man kommer. Bjerget er ekstremt farligt for flyvende væsener. Det siges at et fragment af den sølvdrage-knogle stav (ben-delen) befinder sig her.",
    "url": "",
    "sessions": [
@@ -1854,6 +1906,7 @@
    "aliases": [
     "knoglestammens huler 1"
    ],
+   "travel": "",
    "summary": "Knoglestammens huler er hjemsted for [Knoglestammen](#note/knoglestammen) og ligger i [StormBjerget](#note/stormbjerget). Hulerne er groft udhugget tunneller der fører til egentlige lokaler og rum. Der er falmet graveringer på væggene der ikke er blevet vedligeholdt.",
    "url": "",
    "sessions": [
@@ -1887,6 +1940,7 @@
    "aliases": [
     "Sorrows Vale"
    ],
+   "travel": "",
    "summary": "Sorrow Vale er en region i [Nordheim](#note/nordheim) hvor den guddommelige manta ray Nayaru forlod gruppen og efterlod [Crater shrine of Mielikki](#note/crater-shrine-of-mielikki).",
    "url": "",
    "sessions": [
@@ -1913,6 +1967,7 @@
    "aliases": [
     "Nayaru's Blessing"
    ],
+   "travel": "",
    "summary": "Crater shrine of Mielikki er en krater-helligdom efterladt af den guddommelige manta ray Nayaru i [Sorrow Vale](#note/sorrow-vale). Det er et helligt sted dedikeret til [Mielikki](#note/mielikki).",
    "url": "",
    "sessions": [
@@ -1941,6 +1996,7 @@
    "aliases": [
     "Varde stjernen"
    ],
+   "travel": "Teleportationscirkel i portalkammeret. Gruppen teleporterede herfra til Port Drakkan (session 40).",
    "summary": "Vardestjernen er en oldgammel underjordisk troldmandsfacilitet/bunker, tilhørende [Azur Ordenen](#note/azur-ordenen). Adgang sker via et magisk \"hus\" med en platform af 4 krystalpyloner der synker ned under jorden.",
    "url": "",
    "sessions": [
@@ -1975,6 +2031,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "Teleportationscirkel i et kammer i byen. Gruppen ankom hertil fra Vardestjernen (session 40).",
    "summary": "Port Drakkan er en havn på østkysten af [Nordheim](#note/nordheim). Det er et tilflugtssted for alle slags folk - skurke, snigskytte, pirater, lejesoldater og andre opportunistiske folk.",
    "url": "",
    "sessions": [
@@ -2007,6 +2064,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Vinterspiret er et 36 meter højt tårn beliggende i [Port Drakkan](#note/port-drakkan) på østkysten af [Nordheim](#note/nordheim). Tårnet var hjemsted for [Aethor Flåden](#note/aethor-fladen) - en flådeorganisation der brugte det som skole for flådefolk og officerer.",
    "url": "",
    "sessions": [
@@ -2061,6 +2119,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Port Alexander er en havn/by der blev afsøgt af gruppen da Evelyn Adair blev taget til fange af draconians (Tarsakh 21).",
    "url": "",
    "sessions": [
@@ -2082,6 +2141,7 @@
    "offmap": null,
    "where": "Et sted i Nordheim – ikke tegnet på kortet.",
    "aliases": [],
+   "travel": "",
    "summary": "Dal i Nordheim, hvor timeglasset sendte gruppen hen. En blå drage og den korrumperede nekromantiker Malgazar havde forpestet dalen; efter sejren blev naturen spolet tilbage.",
    "url": "",
    "sessions": [
@@ -2126,6 +2186,7 @@
    "aliases": [
     "Vinterskov 1"
    ],
+   "travel": "",
    "summary": "Nordisk tømmerby i Grøndalen. Kroværten Håkan tegnede et kort over dalen i jorden på disken.",
    "url": "",
    "sessions": [
@@ -2147,6 +2208,7 @@
    "offmap": null,
    "where": "Et sted i nordlandet.",
    "aliases": [],
+   "travel": "",
    "summary": "Troldmands tårn ruin i nordlandet er ruinerne af et gammelt troldmandstårn beliggende i nordlandet. [Lady De'evers](#note/lady-de-evers) har givet gruppen en opgave relateret til dette sted.",
    "url": "",
    "sessions": [],
@@ -2176,6 +2238,7 @@
    "offmap": "east",
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Anaksa er et kongerige i verden, hjemsted for [Queen Neferata](#note/queen-neferata) og hovedkvarter for [The Queensguard](#note/the-queensguard). Det er centrum for ordenens aktiviteter og et vigtigt politisk og religiøst centrum.",
    "url": "",
    "sessions": [],
@@ -2233,6 +2296,7 @@
    "offmap": null,
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Deltafloden er en hellig flod i [Anaksa](#note/anaksa). Det var her [Dronning Neferata](#note/queen-neferata) badede og blev transformeret til en avatar af [Paladine](#note/paladine)/[Bahamut](#note/bahamut) og [Mishakal](#note/mishakal).",
    "url": "",
    "sessions": [],
@@ -2262,6 +2326,7 @@
    "offmap": "east",
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Sistana (også kaldet Sestenua) er en region i \"det forbudte øst\", del af samme område som [Erukana1](#note/erukana1), [Jullan](#note/jullan) og [Anaksa](#note/anaksa). Det er et kontaktpunkt for [Waning Moon](#note/waning-moon).",
    "url": "",
    "sessions": [],
@@ -2286,6 +2351,7 @@
    "offmap": "east",
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Den endeløse ørken er en stor ørken øst for [Erukana1](#note/erukana1). Det er et geografisk vartegn der adskiller [Erukana1](#note/erukana1) fra de østlige riger.",
    "url": "",
    "sessions": [],
@@ -2310,6 +2376,7 @@
    "offmap": "east",
    "where": "I Julland.",
    "aliases": [],
+   "travel": "",
    "summary": "Kolitan er ikke en person, men en by i [Julland](#note/jullan). Det er [Illyria Starmantle](#note/illyria-starmantle)s hjemby. Denne fil er fejlplaceret under People; det er en lokation.",
    "url": "",
    "sessions": [],
@@ -2343,6 +2410,7 @@
    "offmap": "other",
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Landet mod nord over havet er et mystisk land på den anden side af havet nord for [Erukana1](#note/erukana1). Det nævnes i forbindelse med Knight Ab-errants og er potentielt deres oprindelse.",
    "url": "",
    "sessions": [],
@@ -2362,6 +2430,7 @@
    "offmap": "other",
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Zezstanie er et sted (muligvis en region eller by) hvor [Frostheim Klanen](#note/frostheim-klanen) kommer fra. Det er hjemsted for dværge med mørkeblå ansigtstegn som klanens kendetegn.",
    "url": "",
    "sessions": [],
@@ -2390,6 +2459,7 @@
    "offmap": "other",
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Angramar er hjemsted for tempelminerne, hvorfra det sorte metal (sort metal ingots) er blevet hentet. Stedet er associeret med en tempel eller helligdom.",
    "url": "",
    "sessions": [],
@@ -2409,6 +2479,7 @@
    "offmap": "other",
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Mistport er en by eller havn nævnt i forbindelse med folk der bar [Bahamuts](#note/bahamuts-tilhaengere) symbol. Fire folk fra Mistport besøgte området for ca. et år siden.",
    "url": "",
    "sessions": [],
@@ -2428,6 +2499,7 @@
    "offmap": "other",
    "where": "",
    "aliases": [],
+   "travel": "",
    "summary": "Det flyvende skib, som gruppen fandt fortøjret ved Vinterspiret i Port Drakkan og styrer med en metal-wand. Draconians bordede skibet og tog Evelyn til fange.",
    "url": "",
    "sessions": [],
@@ -2447,6 +2519,7 @@
    "offmap": "other",
    "where": "Et helligt skib i 'himmerige' – nået gennem en portal.",
    "aliases": [],
+   "travel": "",
    "summary": "Stormens Ed er et helligt skib tilhørende Tempus-tilhængerne, ført af [Zarafine](#note/zarafine). Skibet er forbandet til evig kamp med pirater indtil et stjålet Tempus-artefakt er taget tilbage.",
    "url": "",
    "sessions": [
@@ -2470,6 +2543,107 @@
   }
  },
  "people": {
+  "nibar-brassbit": {
+   "name": "Nibar Brassbit",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "Gnome",
+   "social": "",
+   "role": "Wizard (Evoker)",
+   "aliases": [
+    "Nibar"
+   ],
+   "factions": [
+    "astley-avengers"
+   ],
+   "sessions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    20.5,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    39,
+    40,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+   ],
+   "pc": true,
+   "statusNote": "",
+   "origin": "astley",
+   "period": [
+    1,
+    null
+   ]
+  },
+  "fritte": {
+   "name": "Fritte",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "active",
+   "race": "Human",
+   "social": "",
+   "role": "Rogue",
+   "aliases": [
+    "Fritte"
+   ],
+   "factions": [],
+   "sessions": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "pc": true,
+   "statusNote": "",
+   "origin": null,
+   "period": [
+    13,
+    19
+   ]
+  },
   "logan": {
    "name": "Logan",
    "place": null,
@@ -2518,6 +2692,126 @@
     46
    ]
   },
+  "viktor-baigorri": {
+   "name": "Viktor Baigorri",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "Human",
+   "social": "",
+   "role": "Fighter (Eldritch Knight) / Wizard",
+   "aliases": [
+    "Viktor",
+    "Victor",
+    "Viktor Baigorri"
+   ],
+   "factions": [
+    "astley-avengers",
+    "azur-ordenen"
+   ],
+   "sessions": [
+    36,
+    37,
+    39,
+    40,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+   ],
+   "pc": true,
+   "statusNote": "",
+   "origin": "region:botreaux",
+   "period": [
+    36,
+    null
+   ]
+  },
+  "vargoth-sul": {
+   "name": "Vargoth Sul",
+   "place": null,
+   "stance": "ally",
+   "dead": true,
+   "status": "dead",
+   "race": "Dwarf",
+   "social": "",
+   "role": "War cleric",
+   "aliases": [
+    "vargoth"
+   ],
+   "factions": [],
+   "sessions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    20.5,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+   ],
+   "pc": true,
+   "statusNote": "Faldt i frostkæmpe-bagholdet i session 27, begravet i session 28.",
+   "origin": null,
+   "period": [
+    1,
+    27
+   ]
+  },
+  "isilme": {
+   "name": "Isilme",
+   "place": null,
+   "stance": "ally",
+   "dead": true,
+   "status": "dead",
+   "race": "Elf",
+   "social": "",
+   "role": "Druid (Circle of the Moon)",
+   "aliases": [],
+   "factions": [
+    "astley-avengers"
+   ],
+   "sessions": [
+    20.5,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+   ],
+   "pc": true,
+   "statusNote": "",
+   "origin": null,
+   "period": [
+    20.5,
+    27
+   ]
+  },
   "bjorn-of-nordheim": {
    "name": "Bjørn of Nordheim",
    "place": null,
@@ -2554,99 +2848,6 @@
    "period": [
     15,
     28
-   ]
-  },
-  "corwin": {
-   "name": "Corwin",
-   "place": null,
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "Human",
-   "social": "",
-   "role": "Druid",
-   "aliases": [],
-   "factions": [
-    "astley-avengers"
-   ],
-   "sessions": [
-    28,
-    29,
-    30,
-    31,
-    32,
-    33,
-    34,
-    35,
-    36
-   ],
-   "pc": true,
-   "statusNote": "Ifølge Bahne: Ærketroldmanden Ægrin antydede i session 47, at Corwin måske er blevet en skurk. Det står ikke i loggen.",
-   "origin": "region:nordheim",
-   "period": [
-    28,
-    36
-   ]
-  },
-  "fritte": {
-   "name": "Fritte",
-   "place": null,
-   "stance": "ally",
-   "dead": false,
-   "status": "active",
-   "race": "Human",
-   "social": "",
-   "role": "Rogue",
-   "aliases": [
-    "Fritte"
-   ],
-   "factions": [],
-   "sessions": [
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19
-   ],
-   "pc": true,
-   "statusNote": "",
-   "origin": null,
-   "period": [
-    13,
-    19
-   ]
-  },
-  "isilme": {
-   "name": "Isilme",
-   "place": null,
-   "stance": "ally",
-   "dead": true,
-   "status": "dead",
-   "race": "Elf",
-   "social": "",
-   "role": "Druid (Circle of the Moon)",
-   "aliases": [],
-   "factions": [
-    "astley-avengers"
-   ],
-   "sessions": [
-    20.5,
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27
-   ],
-   "pc": true,
-   "statusNote": "",
-   "origin": null,
-   "period": [
-    20.5,
-    27
    ]
   },
   "winston-wildwood": {
@@ -2723,101 +2924,20 @@
     null
    ]
   },
-  "vargoth-sul": {
-   "name": "Vargoth Sul",
-   "place": null,
-   "stance": "ally",
-   "dead": true,
-   "status": "dead",
-   "race": "Dwarf",
-   "social": "",
-   "role": "War cleric",
-   "aliases": [
-    "vargoth"
-   ],
-   "factions": [],
-   "sessions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    20.5,
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27
-   ],
-   "pc": true,
-   "statusNote": "Faldt i frostkæmpe-bagholdet i session 27, begravet i session 28.",
-   "origin": null,
-   "period": [
-    1,
-    27
-   ]
-  },
-  "nibar-brassbit": {
-   "name": "Nibar Brassbit",
+  "corwin": {
+   "name": "Corwin",
    "place": null,
    "stance": "ally",
    "dead": false,
    "status": "",
-   "race": "Gnome",
+   "race": "Human",
    "social": "",
-   "role": "Wizard (Evoker)",
-   "aliases": [
-    "Nibar"
-   ],
+   "role": "Druid",
+   "aliases": [],
    "factions": [
     "astley-avengers"
    ],
    "sessions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    20.5,
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
     28,
     29,
     30,
@@ -2826,61 +2946,14 @@
     33,
     34,
     35,
-    36,
-    37,
-    39,
-    40,
-    42,
-    43,
-    44,
-    45,
-    46,
-    47
+    36
    ],
    "pc": true,
-   "statusNote": "",
-   "origin": "astley",
+   "statusNote": "Ifølge Bahne: Ærketroldmanden Ægrin antydede i session 47, at Corwin måske er blevet en skurk. Det står ikke i loggen.",
+   "origin": "region:nordheim",
    "period": [
-    1,
-    null
-   ]
-  },
-  "viktor-baigorri": {
-   "name": "Viktor Baigorri",
-   "place": null,
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "Human",
-   "social": "",
-   "role": "Fighter (Eldritch Knight) / Wizard",
-   "aliases": [
-    "Viktor",
-    "Victor",
-    "Viktor Baigorri"
-   ],
-   "factions": [
-    "astley-avengers",
-    "azur-ordenen"
-   ],
-   "sessions": [
-    36,
-    37,
-    39,
-    40,
-    42,
-    43,
-    44,
-    45,
-    46,
-    47
-   ],
-   "pc": true,
-   "statusNote": "",
-   "origin": "region:botreaux",
-   "period": [
-    36,
-    null
+    28,
+    36
    ]
   },
   "clarabel-lancaster": {
@@ -2958,368 +3031,6 @@
     null
    ]
   },
-  "lord-fern": {
-   "name": "Lord Fern",
-   "place": "visdommens-kammer",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "lord",
-   "role": "druid, scholar",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    41,
-    44,
-    46,
-    47
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "jarek-de-guille": {
-   "name": "Jarek De Guille",
-   "place": "astley",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "unknown",
-   "role": "military",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "baronesse-constance-silkenfall": {
-   "name": "Baronesse Constance Silkenfall",
-   "place": "highhome",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "baron",
-   "role": "nobility",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "samy": {
-   "name": "Samy",
-   "place": "astley",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "commoner",
-   "role": "spy, resistance",
-   "aliases": [
-    "Sammy"
-   ],
-   "factions": [
-    "fafnirs-gruppe"
-   ],
-   "sessions": [
-    17,
-    20,
-    21,
-    45.5,
-    46
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "blackwing": {
-   "name": "blackwing",
-   "place": "port-drakkan",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "commoner",
-   "role": "commoner",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    40
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "sippi": {
-   "name": "sippi",
-   "place": "region:nordheim",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "commoner",
-   "role": "commoner",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    20
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "hakan": {
-   "name": "Håkan",
-   "place": "vinterskov",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "commoner",
-   "role": "commoner",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    13
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "rocielle-de-ang-l": {
-   "name": "Rocielle De angél",
-   "place": "astley",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "quartermaster-of-the-hold": {
-   "name": "Quartermaster of the Hold",
-   "place": "anaksa",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Quartermaster",
-   "aliases": [],
-   "factions": [
-    "the-queensguard"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lord-valencia": {
-   "name": "Lord Valencia",
-   "place": "region:valence",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "baron",
-   "role": "nobility",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lady-lucille-vitano": {
-   "name": "Lady lucille vitano",
-   "place": "astley",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Noble",
-   "aliases": [],
-   "factions": [
-    "opal-kulten"
-   ],
-   "sessions": [
-    19
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lord-marshal-viggo-trenten": {
-   "name": "Lord Marshal Viggo Trenten",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "officer",
-   "role": "military",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "sargas-slatefist": {
-   "name": "Sargas Slatefist",
-   "place": "astley",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Kommandør",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    20
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "celedrial-keeper-of-mielikki-suntree": {
-   "name": "Celedrial keeper of mielikki suntree",
-   "place": "soltraeet",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "hybrid",
-   "social": "priest",
-   "role": "druid, religious",
-   "aliases": [
-    "Celedrial",
-    "Celedriels"
-   ],
-   "factions": [],
-   "sessions": [
-    7,
-    9,
-    12,
-    17,
-    41,
-    46
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "denizar-volmar": {
-   "name": "Denizar Volmar",
-   "place": "astley",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Borgmester",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    20
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "den-store-stemme": {
-   "name": "den store stemme",
-   "place": "dark-gem",
-   "stance": "enemy",
-   "dead": false,
-   "status": "",
-   "race": "kobold",
-   "social": "lord",
-   "role": "antagonist, shaman",
-   "aliases": [],
-   "factions": [
-    "dark-gem-klanen"
-   ],
-   "sessions": [
-    1,
-    7,
-    8
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "jarell-flick": {
-   "name": "Jarell Flick",
-   "place": "astley",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "commoner",
-   "role": "scholar",
-   "aliases": [
-    "Jarrell Flick",
-    "Jarrell",
-    "Jarrel",
-    "Hr. Flick",
-    "Hr.Flick"
-   ],
-   "factions": [
-    "astley-historian-society"
-   ],
-   "sessions": [
-    38,
-    41
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "chauntea": {
-   "name": "Chauntea",
-   "place": null,
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "royalty",
-   "role": "religious",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "icefang": {
-   "name": "Icefang",
-   "place": "region:nordheim",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "item",
-   "role": "",
-   "aliases": [],
-   "factions": [
-    "frost-giant-clan"
-   ],
-   "sessions": [
-    32
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "egil-nordlys": {
-   "name": "Egil Nordlys",
-   "place": "mistville",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Militia",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
   "landon-forrester": {
    "name": "Landon Forrester",
    "place": "astley",
@@ -3337,182 +3048,8 @@
    "pc": false,
    "statusNote": ""
   },
-  "borthos-hagenhof": {
-   "name": "Borthos Hagenhof",
-   "place": "astley",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Finsmed",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lord-lady-of-the-coin": {
-   "name": "Lord-lady of the Coin",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "lord",
-   "role": "military",
-   "aliases": [],
-   "factions": [
-    "the-queensguard"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lord-barriston-samuel": {
-   "name": "Lord Barriston Samuel",
-   "place": null,
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "knight",
-   "role": "military, paladin",
-   "aliases": [],
-   "factions": [
-    "the-queensguard"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "karl": {
-   "name": "karl",
-   "place": "region:nordheim",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "commoner",
-   "role": "commoner",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    20
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "ukkadin-magmahand": {
-   "name": "Ukkadin Magmahånd",
-   "place": "slatestone",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "dwarf",
-   "social": "lord",
-   "role": "religious, nobility",
-   "aliases": [],
-   "factions": [
-    "stenvogterne",
-    "bjergenes-born"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "amit-antuu": {
-   "name": "Amit AnTuu",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Nomade, Chieftain",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    3
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "daine-waymar": {
-   "name": "Daine waymar",
-   "place": "astley",
-   "stance": "ally",
-   "dead": true,
-   "status": "dead",
-   "race": "human",
-   "social": "priest",
-   "role": "religious, spy",
-   "aliases": [],
-   "factions": [
-    "pillar-of-truth"
-   ],
-   "sessions": [
-    21
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "mastersergeant-of-arms": {
-   "name": "Mastersergeant of arms",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "officer",
-   "role": "military",
-   "aliases": [],
-   "factions": [
-    "the-queensguard"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "duvall": {
-   "name": "Duvall",
-   "place": "miragehill",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "lord",
-   "role": "spy, scholar",
-   "aliases": [],
-   "factions": [
-    "the-sentinel"
-   ],
-   "sessions": [
-    1,
-    2
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "merryn-foehammer": {
-   "name": "Merryn Foehammer",
-   "place": "mistville",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "dwarf",
-   "social": "",
-   "role": "Innkeeper",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    5
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "skarn": {
-   "name": "Skarn",
+  "mecina": {
+   "name": "Mecina",
    "place": null,
    "stance": "unknown",
    "dead": false,
@@ -3522,124 +3059,44 @@
    "role": "",
    "aliases": [],
    "factions": [],
-   "sessions": [
-    26
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lizzie-gottmann": {
-   "name": "Lizzie Gottmann",
-   "place": "mistville",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Barmaid",
-   "aliases": [],
-   "factions": [],
    "sessions": [],
    "pc": false,
    "statusNote": ""
   },
-  "dolph-leitner": {
-   "name": "Dolph Leitner",
+  "elvira": {
+   "name": "Elvira",
    "place": "astley",
-   "stance": "enemy",
-   "dead": true,
-   "status": "dead",
-   "race": "human",
-   "social": "lord",
-   "role": "nobility, antagonist",
-   "aliases": [],
-   "factions": [
-    "house-leitner"
-   ],
-   "sessions": [
-    38
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lord-adelston-magdova": {
-   "name": "Lord Adelston Magdova",
-   "place": "stirling",
-   "stance": "ally",
+   "stance": "neutral",
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "noble",
-   "role": "noble, lord",
-   "aliases": [
-    "Lord Magdova",
-    "Adelston Magdova"
-   ],
-   "factions": [
-    "house-magdova",
-    "astley-avengers"
-   ],
-   "sessions": [
-    38
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "archibald-oddball": {
-   "name": "Archibald Oddball",
-   "place": "mistville",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Merchant",
+   "social": "commoner",
+   "role": "merchant, commoner",
    "aliases": [],
    "factions": [],
-   "sessions": [
-    5
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lord-of-the-keep": {
-   "name": "Lord of the Keep",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "lord",
-   "role": "military",
-   "aliases": [],
-   "factions": [
-    "the-queensguard"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "vagtkaptajn-samuel": {
-   "name": "Vagtkaptajn Samuel",
-   "place": "astley",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "officer",
-   "role": "military",
-   "aliases": [
-    "Vagtkaptajn Samuels",
-    "Samuel",
-    "Samuels"
-   ],
-   "factions": [
-    "astley-byvagt"
-   ],
    "sessions": [
     17,
-    41
+    18,
+    19
    ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "kasimer-leitner": {
+   "name": "Kasimer Leitner",
+   "place": null,
+   "stance": "enemy",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "lord",
+   "role": "nobility",
+   "aliases": [],
+   "factions": [
+    "house-leitner",
+    "house-magdova"
+   ],
+   "sessions": [],
    "pc": false,
    "statusNote": ""
   },
@@ -3677,34 +3134,166 @@
    "pc": false,
    "statusNote": ""
   },
-  "vagtkaptajn-ved-nord-distriktet-i-astley": {
-   "name": "Vagtkaptajn ved Nord distriktet i Astley",
-   "place": "astley",
+  "aegrin": {
+   "name": "Ægrin",
+   "place": "gamle-tempel",
    "stance": "ally",
    "dead": false,
    "status": "",
-   "race": "human",
-   "social": "officer",
-   "role": "military, religious",
-   "aliases": [],
+   "race": "",
+   "social": "unspecified",
+   "role": "scholar, mentor",
+   "aliases": [
+    "Nibars læremester"
+   ],
    "factions": [
-    "astley-byvagt",
-    "bahamuts-tilhaengere"
+    "azur-ordenen"
    ],
    "sessions": [
-    12
+    47
    ],
    "pc": false,
    "statusNote": ""
   },
-  "lord-helmuth-de-valencia": {
-   "name": "Lord Helmuth de Valencia",
-   "place": "mortimor",
+  "archibald-oddsmoke": {
+   "name": "Archibald Oddsmoke",
+   "place": "mistville",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "gnome",
+   "social": "merchant",
+   "role": "merchant",
+   "aliases": [
+    "Archibald Oddball",
+    "Oddball"
+   ],
+   "factions": [],
+   "sessions": [
+    5
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "borthos-hagenhof": {
+   "name": "Borthos Hagenhof",
+   "place": "astley",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Finsmed",
+   "aliases": [],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "kaelen": {
+   "name": "Kaelen",
+   "place": "port-drakkan",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "officer",
+   "role": "military",
+   "aliases": [
+    "Kaelen",
+    "sky kaptajn Kaelen"
+   ],
+   "factions": [],
+   "sessions": [
+    40,
+    42
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "imale-shawn": {
+   "name": "Imale shawn",
+   "place": "vinterspiret",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "dragonborn",
+   "social": "unknown",
+   "role": "",
+   "aliases": [
+    "Imale shawn"
+   ],
+   "factions": [],
+   "sessions": [
+    42
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "kong-norgassa": {
+   "name": "Kong Norgassa",
+   "place": "mausoleum",
+   "stance": "neutral",
+   "dead": true,
+   "status": "dead",
+   "race": "",
+   "social": "royalty",
+   "role": "nobility",
+   "aliases": [
+    "Norgassa"
+   ],
+   "factions": [],
+   "sessions": [
+    12,
+    47
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "bane": {
+   "name": "Bane",
+   "place": null,
+   "stance": "enemy",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "royalty",
+   "role": "religious",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    28
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "zarafine": {
+   "name": "Zarafine",
+   "place": "stormens-ed",
    "stance": "neutral",
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "baron",
+   "social": "priest",
+   "role": "religious, pirate",
+   "aliases": [],
+   "factions": [
+    "tempus-tilhaengere"
+   ],
+   "sessions": [
+    23
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "sir-zamal-helheim": {
+   "name": "Sir Zamal Helheim",
+   "place": null,
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "lord",
    "role": "nobility",
    "aliases": [],
    "factions": [],
@@ -3712,19 +3301,275 @@
    "pc": false,
    "statusNote": ""
   },
-  "den-aeldre-veteran": {
-   "name": "den ældre veteran",
-   "place": "region:eresby",
+  "sargas-slatefist": {
+   "name": "Sargas Slatefist",
+   "place": "astley",
    "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Kommandør",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    20
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "pirat-kaptajnen-arlis": {
+   "name": "pirat kaptajnen Arlis",
+   "place": null,
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "commoner",
+   "role": "pirate",
+   "aliases": [
+    "Arlis"
+   ],
+   "factions": [],
+   "sessions": [
+    23
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "yasmina-antuu": {
+   "name": "Yasmina AnTuu",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Merchant",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    3
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "merryn-foehammer": {
+   "name": "Merryn Foehammer",
+   "place": "mistville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "dwarf",
+   "social": "",
+   "role": "Innkeeper",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    5
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "rocielle-de-ang-l": {
+   "name": "Rocielle De angél",
+   "place": "astley",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "",
+   "aliases": [],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "petyr-gottmann": {
+   "name": "Petyr Gottmann",
+   "place": "mistville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Marskal",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    5
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "samy": {
+   "name": "Samy",
+   "place": "astley",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "commoner",
+   "role": "spy, resistance",
+   "aliases": [
+    "Sammy"
+   ],
+   "factions": [
+    "fafnirs-gruppe"
+   ],
+   "sessions": [
+    17,
+    20,
+    21,
+    45.5,
+    46
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "venor": {
+   "name": "Venor",
+   "place": null,
+   "stance": "enemy",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "knight",
+   "role": "military, antagonist",
+   "aliases": [],
+   "factions": [
+    "ridderne-af-blodrosen"
+   ],
+   "sessions": [
+    7
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "dvalin-hammerhand": {
+   "name": "Dvalin hammerhånd",
+   "place": "mistville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Skovridder",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    5
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "chauntea": {
+   "name": "Chauntea",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "royalty",
+   "role": "religious",
+   "aliases": [],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "urza": {
+   "name": "Urza",
+   "place": "knoglestammens-huler",
+   "stance": "enemy",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "priest",
+   "role": "shaman, antagonist",
+   "aliases": [],
+   "factions": [
+    "knoglestammen"
+   ],
+   "sessions": [
+    26,
+    27
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "erika-songfelt": {
+   "name": "Erika Songfelt",
+   "place": "feywood",
+   "stance": "neutral",
    "dead": false,
    "status": "",
    "race": "human",
    "social": "commoner",
    "role": "military",
    "aliases": [],
+   "factions": [
+    "ridderne-af-blodrosen"
+   ],
+   "sessions": [
+    9
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lucious-vormend": {
+   "name": "Lucious Vormend",
+   "place": "feywood",
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "officer",
+   "role": "military",
+   "aliases": [],
    "factions": [],
    "sessions": [
-    1
+    9,
+    10
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "skarn": {
+   "name": "Skarn",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    26
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "krugge-s-bagermester": {
+   "name": "Krugge's bagermester",
+   "place": "astley",
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "merchant",
+   "role": "merchant",
+   "aliases": [
+    "Bager",
+    "Bageren"
+   ],
+   "factions": [],
+   "sessions": [
+    17,
+    18
    ],
    "pc": false,
    "statusNote": ""
@@ -3748,248 +3593,8 @@
    "pc": false,
    "statusNote": ""
   },
-  "aegrin": {
-   "name": "Ægrin",
-   "place": "gamle-tempel",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "unspecified",
-   "role": "scholar, mentor",
-   "aliases": [
-    "Nibars læremester"
-   ],
-   "factions": [
-    "azur-ordenen"
-   ],
-   "sessions": [
-    47
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "tortin-mikkelborg": {
-   "name": "Tortin Mikkelborg",
-   "place": "astley",
-   "stance": "ally",
-   "dead": true,
-   "status": "dead",
-   "race": "",
-   "social": "knight",
-   "role": "military",
-   "aliases": [
-    "Tortrin"
-   ],
-   "factions": [
-    "the-queensguard"
-   ],
-   "sessions": [
-    46,
-    47
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lord-commander-of-the-queensguard": {
-   "name": "Lord Commander of the Queensguard",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "lord",
-   "role": "military",
-   "aliases": [],
-   "factions": [
-    "the-queensguard"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "sectionmaster": {
-   "name": "Sectionmaster",
-   "place": "anaksa",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Sectionmaster",
-   "aliases": [],
-   "factions": [
-    "the-queensguard"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "goshitura-rockshelf": {
-   "name": "goshitura rockshelf",
-   "place": "vinterspiret",
-   "stance": "unknown",
-   "dead": true,
-   "status": "dead",
-   "race": "",
-   "social": "unknown",
-   "role": "military",
-   "aliases": [
-    "goshitura rockshelf"
-   ],
-   "factions": [],
-   "sessions": [
-    42
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "hans-baudler": {
-   "name": "Hans Baudler",
-   "place": "astley",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "officer",
-   "role": "military",
-   "aliases": [],
-   "factions": [
-    "skjoldungerne"
-   ],
-   "sessions": [
-    38
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "valo": {
-   "name": "Valo",
-   "place": "astley",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "criminal",
-   "role": "commoner",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    21
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lord-steffan-blast-fingers": {
-   "name": "Lord Steffan blast fingers",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "lord",
-   "role": "nobility",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    19
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "yasmina-antuu": {
-   "name": "Yasmina AnTuu",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Merchant",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    3
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "overhovdingen-hrothgar": {
-   "name": "Overhøvdingen Hrothgar",
-   "place": null,
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "lord",
-   "role": "military, nobility",
-   "aliases": [],
-   "factions": [
-    "warpaw-stammen",
-    "slette-folket"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "krugge": {
-   "name": "Krugge",
-   "place": "astley",
-   "stance": "unknown",
-   "dead": false,
-   "status": "missing",
-   "race": "human",
-   "social": "commoner",
-   "role": "commoner",
-   "aliases": [
-    "Kruger"
-   ],
-   "factions": [],
-   "sessions": [
-    17,
-    18
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "mira-wolfsbane": {
-   "name": "Mira Wolfsbane",
-   "place": "crater-shrine",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "commoner",
-   "role": "commoner",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    28
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "seiran": {
-   "name": "Seiran",
-   "place": "grondalen",
-   "stance": "ally",
-   "dead": false,
-   "status": "missing",
-   "race": "human",
-   "social": "priest",
-   "role": "druid",
-   "aliases": [],
-   "factions": [
-    "mielikki-tilhaengere"
-   ],
-   "sessions": [
-    13
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lallana-bortreaux": {
-   "name": "Lallana Bortreaux",
+  "lady-lucille-vitano": {
+   "name": "Lady lucille vitano",
    "place": "astley",
    "stance": "unknown",
    "dead": false,
@@ -3998,46 +3603,31 @@
    "social": "",
    "role": "Noble",
    "aliases": [],
-   "factions": [],
+   "factions": [
+    "opal-kulten"
+   ],
    "sessions": [
-    20
+    19
    ],
    "pc": false,
    "statusNote": ""
   },
-  "constance-fortright": {
-   "name": "Constance Fortright",
-   "place": "mistville",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Smed",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    5
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "voldumand-den-tredje": {
-   "name": "Voldumand den tredje",
+  "marie-louise-duvall-af-miragehill": {
+   "name": "Marie Louise Duvall af Miragehill",
    "place": null,
    "stance": "unknown",
    "dead": false,
    "status": "",
    "race": "",
-   "social": "unknown",
-   "role": "scholar",
-   "aliases": [
-    "Voldumand den tredje",
-    "Voldumand III"
+   "social": "",
+   "role": "",
+   "aliases": [],
+   "factions": [
+    "court-of-baron-zhaarko"
    ],
-   "factions": [],
    "sessions": [
-    42
+    1,
+    2
    ],
    "pc": false,
    "statusNote": ""
@@ -4061,81 +3651,53 @@
    "pc": false,
    "statusNote": ""
   },
-  "ulrick-stadtfeldt": {
-   "name": "Ulrick Stadtfeldt",
-   "place": "mistville",
-   "stance": "enemy",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "priest",
-   "role": "religious, antagonist",
-   "aliases": [
-    "Ulrik Stadtfelt",
-    "Ulrik"
-   ],
-   "factions": [],
-   "sessions": [
-    5
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "eldrak": {
-   "name": "Eldrak",
+  "amit-antuu": {
+   "name": "Amit AnTuu",
    "place": null,
-   "stance": "neutral",
+   "stance": "unknown",
    "dead": false,
    "status": "",
    "race": "",
-   "social": "deity",
-   "role": "religious",
+   "social": "",
+   "role": "Nomade, Chieftain",
    "aliases": [],
-   "factions": [
-    "druid-circles"
-   ],
+   "factions": [],
    "sessions": [
-    25
+    3
    ],
    "pc": false,
    "statusNote": ""
   },
-  "lady-de-evers": {
-   "name": "Lady De'evers",
+  "celia-hammerhand": {
+   "name": "Celia Hammerhånd",
    "place": "mistville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Syerske",
+   "aliases": [],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "orlock-helmsveil": {
+   "name": "Orlock Helmsveil",
+   "place": "astley",
    "stance": "ally",
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "lord",
-   "role": "nobility",
+   "social": "servant",
+   "role": "servant",
    "aliases": [],
    "factions": [
-    "house-de-evers"
+    "adelhuset-vitano"
    ],
    "sessions": [
-    5
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lallana-botreaux": {
-   "name": "Lallana Botreaux",
-   "place": "region:botreaux",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "lord",
-   "role": "nobility",
-   "aliases": [
-    "Lallana"
-   ],
-   "factions": [
-    "familien-botreaux"
-   ],
-   "sessions": [
-    20
+    38
    ],
    "pc": false,
    "statusNote": ""
@@ -4162,6 +3724,23 @@
    "pc": false,
    "statusNote": ""
   },
+  "archibald-oddball": {
+   "name": "Archibald Oddball",
+   "place": "mistville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Merchant",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    5
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
   "swinson": {
    "name": "Swinson",
    "place": "region:nordheim",
@@ -4176,41 +3755,6 @@
    "sessions": [
     20
    ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "kong-norgassa": {
-   "name": "Kong Norgassa",
-   "place": "mausoleum",
-   "stance": "neutral",
-   "dead": true,
-   "status": "dead",
-   "race": "",
-   "social": "royalty",
-   "role": "nobility",
-   "aliases": [
-    "Norgassa"
-   ],
-   "factions": [],
-   "sessions": [
-    12,
-    47
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lord-rupert-solarson": {
-   "name": "Lord Rupert Solarson",
-   "place": "astley",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "lord",
-   "role": "nobility",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
    "pc": false,
    "statusNote": ""
   },
@@ -4231,37 +3775,381 @@
    "pc": false,
    "statusNote": ""
   },
-  "zarafine": {
-   "name": "Zarafine",
-   "place": "stormens-ed",
-   "stance": "neutral",
+  "den-store-stemme": {
+   "name": "den store stemme",
+   "place": "dark-gem",
+   "stance": "enemy",
    "dead": false,
    "status": "",
-   "race": "human",
-   "social": "priest",
-   "role": "religious, pirate",
+   "race": "kobold",
+   "social": "lord",
+   "role": "antagonist, shaman",
    "aliases": [],
    "factions": [
-    "tempus-tilhaengere"
+    "dark-gem-klanen"
    ],
    "sessions": [
-    23
+    1,
+    7,
+    8
    ],
    "pc": false,
    "statusNote": ""
   },
-  "venor": {
-   "name": "Venor",
+  "valo": {
+   "name": "Valo",
+   "place": "astley",
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "criminal",
+   "role": "commoner",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    21
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "saren-valensia": {
+   "name": "Saren Valensia",
+   "place": "astley",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "knight",
+   "role": "military",
+   "aliases": [],
+   "factions": [
+    "the-queensguard"
+   ],
+   "sessions": [
+    46
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "mishakal": {
+   "name": "Mishakal",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Gudinde",
+   "aliases": [
+    "Mishakals"
+   ],
+   "factions": [],
+   "sessions": [
+    39
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lord-chandler-virmingham": {
+   "name": "Lord Chandler Virmingham",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "lord",
+   "role": "nobility, military",
+   "aliases": [],
+   "factions": [
+    "the-queensguard",
+    "solvhanden"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "hertug-robert-de-ros": {
+   "name": "Hertug Robert De Ros",
+   "place": "wolfenburg",
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "duke",
+   "role": "nobility",
+   "aliases": [
+    "Hertug De Ros"
+   ],
+   "factions": [
+    "familien-botreaux"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "ukkadin-magmahand": {
+   "name": "Ukkadin Magmahånd",
+   "place": "slatestone",
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "dwarf",
+   "social": "lord",
+   "role": "religious, nobility",
+   "aliases": [],
+   "factions": [
+    "stenvogterne",
+    "bjergenes-born"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lord-steffan-blast-fingers": {
+   "name": "Lord Steffan blast fingers",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "lord",
+   "role": "nobility",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    19
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "dolph-leitner": {
+   "name": "Dolph Leitner",
+   "place": "astley",
+   "stance": "enemy",
+   "dead": true,
+   "status": "dead",
+   "race": "human",
+   "social": "lord",
+   "role": "nobility, antagonist",
+   "aliases": [],
+   "factions": [
+    "house-leitner"
+   ],
+   "sessions": [
+    38
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "sir-seilling": {
+   "name": "Sir Seilling",
+   "place": "mausoleum",
+   "stance": "ally",
+   "dead": true,
+   "status": "dead",
+   "race": "human",
+   "social": "knight",
+   "role": "nobility, servant",
+   "aliases": [
+    "Sir Seiling",
+    "Sir Selling"
+   ],
+   "factions": [],
+   "sessions": [
+    12,
+    47
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "verner-mistvale": {
+   "name": "Verner Mistvale",
+   "place": "mistville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Borgmester, Merchant",
+   "aliases": [],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "goshitura-rockshelf": {
+   "name": "goshitura rockshelf",
+   "place": "vinterspiret",
+   "stance": "unknown",
+   "dead": true,
+   "status": "dead",
+   "race": "",
+   "social": "unknown",
+   "role": "military",
+   "aliases": [
+    "goshitura rockshelf"
+   ],
+   "factions": [],
+   "sessions": [
+    42
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "cret-maart": {
+   "name": "Cret Maart",
+   "place": "kegville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "",
+   "aliases": [],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "overhovdingen-hrothgar": {
+   "name": "Overhøvdingen Hrothgar",
+   "place": null,
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "lord",
+   "role": "military, nobility",
+   "aliases": [],
+   "factions": [
+    "warpaw-stammen",
+    "slette-folket"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "vallis": {
+   "name": "Vallis",
+   "place": "astley",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "servant",
+   "role": "servant",
+   "aliases": [],
+   "factions": [
+    "house-de-evers"
+   ],
+   "sessions": [
+    5
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "erik-leitner": {
+   "name": "Erik Leitner",
    "place": null,
    "stance": "enemy",
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "knight",
-   "role": "military, antagonist",
+   "social": "lord",
+   "role": "nobility, antagonist",
    "aliases": [],
    "factions": [
-    "ridderne-af-blodrosen"
+    "house-leitner"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "pierre": {
+   "name": "Pierre",
+   "place": "astley",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "servant",
+   "role": "servant",
+   "aliases": [],
+   "factions": [
+    "adelhuset-vitano"
+   ],
+   "sessions": [
+    12
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "baron-zhaarko-af-eresby": {
+   "name": "Baron Zhaarko af Eresby",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Noble, Baron",
+   "aliases": [],
+   "factions": [
+    "court-of-baron-zhaarko"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "tyra-volkmarr": {
+   "name": "Tyra volkmarr",
+   "place": "paladine-bibliotek",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "dwarf",
+   "social": "priest",
+   "role": "religious",
+   "aliases": [],
+   "factions": [
+    "bahamuts-tilhaengere"
+   ],
+   "sessions": [
+    9
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "qenes-markmoon": {
+   "name": "Qenes Markmoon",
+   "place": "mistville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "",
+   "role": "Innkeeper",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    5
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "beril-hojmolle": {
+   "name": "Beril Højmølle",
+   "place": "astley",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "priest",
+   "role": "religious, resistance",
+   "aliases": [],
+   "factions": [
+    "fafnirs-gruppe"
    ],
    "sessions": [
     7
@@ -4294,128 +4182,8 @@
    "pc": false,
    "statusNote": ""
   },
-  "celia-hammerhand": {
-   "name": "Celia Hammerhånd",
-   "place": "mistville",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Syerske",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "archibald-oddsmoke": {
-   "name": "Archibald Oddsmoke",
-   "place": "mistville",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "gnome",
-   "social": "merchant",
-   "role": "merchant",
-   "aliases": [
-    "Archibald Oddball",
-    "Oddball"
-   ],
-   "factions": [],
-   "sessions": [
-    5
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "erika-songfelt": {
-   "name": "Erika Songfelt",
-   "place": "feywood",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "commoner",
-   "role": "military",
-   "aliases": [],
-   "factions": [
-    "ridderne-af-blodrosen"
-   ],
-   "sessions": [
-    9
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "hjalmer-dynn": {
-   "name": "Hjalmer Dynn",
-   "place": "mistville",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Militia",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "baron-brey-of-blackforge": {
-   "name": "Baron Brey of Blackforge",
-   "place": "blackforge",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "baron",
-   "role": "nobility",
-   "aliases": [
-    "Baron Bray of blackforge"
-   ],
-   "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "elvira": {
-   "name": "Elvira",
-   "place": "astley",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "commoner",
-   "role": "merchant, commoner",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    17,
-    18,
-    19
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "nerrin-toftenhoj": {
-   "name": "Nerrin Toftenhøj",
-   "place": "mistville",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "",
-   "role": "Sage, Herbalist, Rumor list",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "mecina": {
-   "name": "Mecina",
+  "skur": {
+   "name": "skur",
    "place": null,
    "stance": "unknown",
    "dead": false,
@@ -4425,61 +4193,24 @@
    "role": "",
    "aliases": [],
    "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "madam-silvara-dawnspire": {
-   "name": "Madam Silvara Dawnspire",
-   "place": "astley",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Knight",
-   "aliases": [],
-   "factions": [],
    "sessions": [
-    7,
-    8,
-    9,
-    12,
-    20
+    13
    ],
    "pc": false,
    "statusNote": ""
   },
-  "baron-zhaarko-af-eresby": {
-   "name": "Baron Zhaarko af Eresby",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Noble, Baron",
-   "aliases": [],
-   "factions": [
-    "court-of-baron-zhaarko"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lord-chandler-virmingham": {
-   "name": "Lord Chandler Virmingham",
-   "place": null,
-   "stance": "unknown",
+  "dronningen-af-anaksa": {
+   "name": "Dronningen af Anaksa",
+   "place": "anaksa",
+   "stance": "ally",
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "lord",
-   "role": "nobility, military",
+   "social": "royalty",
+   "role": "nobility, religious, paladin",
    "aliases": [],
    "factions": [
-    "the-queensguard",
-    "solvhanden"
+    "the-queensguard"
    ],
    "sessions": [],
    "pc": false,
@@ -4500,480 +4231,21 @@
    "pc": false,
    "statusNote": ""
   },
-  "marie-louise-duvall-af-miragehill": {
-   "name": "Marie Louise Duvall af Miragehill",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "",
-   "aliases": [],
-   "factions": [
-    "court-of-baron-zhaarko"
-   ],
-   "sessions": [
-    1,
-    2
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "azul": {
-   "name": "Azul",
-   "place": null,
+  "selenna": {
+   "name": "Selenna",
+   "place": "whisperwind",
    "stance": "ally",
    "dead": false,
    "status": "",
-   "race": "human",
+   "race": "",
    "social": "commoner",
    "role": "military",
-   "aliases": [],
-   "factions": [
-    "zazmir-stamme"
-   ],
-   "sessions": [
-    3
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "cret-maart": {
-   "name": "Cret Maart",
-   "place": "kegville",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "skur": {
-   "name": "skur",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    13
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "verner-mistvale": {
-   "name": "Verner Mistvale",
-   "place": "mistville",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Borgmester, Merchant",
-   "aliases": [],
-   "factions": [],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "vallis": {
-   "name": "Vallis",
-   "place": "astley",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "servant",
-   "role": "servant",
-   "aliases": [],
-   "factions": [
-    "house-de-evers"
-   ],
-   "sessions": [
-    5
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "baron-zhaarko": {
-   "name": "Baron Zhaarko",
-   "place": "region:eresby",
-   "stance": "enemy",
-   "dead": false,
-   "status": "undead",
-   "race": "human",
-   "social": "baron",
-   "role": "nobility, antagonist",
-   "aliases": [],
-   "factions": [
-    "court-of-baron-zhaarko",
-    "merchant-konglomeratet-1"
-   ],
-   "sessions": [
-    1,
-    8
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lord-magnus-flamehand": {
-   "name": "Lord Magnus Flamehand",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "lord",
-   "role": "military",
-   "aliases": [],
-   "factions": [
-    "the-queensguard"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "vaelon-dunmere": {
-   "name": "Vaelon Dunmere",
-   "place": "kegville",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Patron",
    "aliases": [
-    "Vaelon",
-    "Dunmere"
+    "Selenna"
    ],
    "factions": [],
    "sessions": [
-    1,
-    2,
     43
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "hertug-robert-de-ros": {
-   "name": "Hertug Robert De Ros",
-   "place": "wolfenburg",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "duke",
-   "role": "nobility",
-   "aliases": [
-    "Hertug De Ros"
-   ],
-   "factions": [
-    "familien-botreaux"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lord-lady-of-the-keep": {
-   "name": "Lord-lady of the Keep",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "lord",
-   "role": "military",
-   "aliases": [],
-   "factions": [
-    "the-queensguard"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "knight-commander-of-the-house-guard": {
-   "name": "Knight Commander of the House guard",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "officer",
-   "role": "military",
-   "aliases": [],
-   "factions": [
-    "the-queensguard"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "maria": {
-   "name": "Maria",
-   "place": "astley",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "commoner",
-   "role": "servant",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    19
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "merelda": {
-   "name": "Merelda",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "commoner",
-   "role": "scholar",
-   "aliases": [],
-   "factions": [
-    "azur-ordenen"
-   ],
-   "sessions": [
-    7,
-    8
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "qenes-markmoon": {
-   "name": "Qenes Markmoon",
-   "place": "mistville",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "",
-   "role": "Innkeeper",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    5
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "arakas-zhaarko": {
-   "name": "Arakas Zhaarko",
-   "place": "dvaerge-haller",
-   "stance": "ally",
-   "dead": true,
-   "status": "dead",
-   "race": "human",
-   "social": "lord",
-   "role": "antagonist, scholar",
-   "aliases": [],
-   "factions": [
-    "court-of-baron-zhaarko"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "urza": {
-   "name": "Urza",
-   "place": "knoglestammens-huler",
-   "stance": "enemy",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "priest",
-   "role": "shaman, antagonist",
-   "aliases": [],
-   "factions": [
-    "knoglestammen"
-   ],
-   "sessions": [
-    26,
-    27
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "tizzelspark": {
-   "name": "Tizzelspark",
-   "place": "astley",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "gnome",
-   "social": "merchant",
-   "role": "merchant",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    7
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "merita-verplex": {
-   "name": "Merita Verplex",
-   "place": "astley",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "commoner",
-   "role": "military",
-   "aliases": [],
-   "factions": [
-    "skjoldungerne"
-   ],
-   "sessions": [
-    38
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "beril-hojmolle": {
-   "name": "Beril Højmølle",
-   "place": "astley",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "priest",
-   "role": "religious, resistance",
-   "aliases": [],
-   "factions": [
-    "fafnirs-gruppe"
-   ],
-   "sessions": [
-    7
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "illyria-starmantle": {
-   "name": "Illyria Starmantle",
-   "place": "kolitan",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "merchant",
-   "role": "merchant",
-   "aliases": [
-    "Illyrias Starmantle"
-   ],
-   "factions": [],
-   "sessions": [
-    20
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "krugge-s-bagermester": {
-   "name": "Krugge's bagermester",
-   "place": "astley",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "merchant",
-   "role": "merchant",
-   "aliases": [
-    "Bager",
-    "Bageren"
-   ],
-   "factions": [],
-   "sessions": [
-    17,
-    18
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "pierre": {
-   "name": "Pierre",
-   "place": "astley",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "servant",
-   "role": "servant",
-   "aliases": [],
-   "factions": [
-    "adelhuset-vitano"
-   ],
-   "sessions": [
-    12
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "imale-shawn": {
-   "name": "Imale shawn",
-   "place": "vinterspiret",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "dragonborn",
-   "social": "unknown",
-   "role": "",
-   "aliases": [
-    "Imale shawn"
-   ],
-   "factions": [],
-   "sessions": [
-    42
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "hviskeren-i-morket": {
-   "name": "hviskeren i mørket",
-   "place": "dark-gem",
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    1
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "mishakal": {
-   "name": "Mishakal",
-   "place": null,
-   "stance": "unknown",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "",
-   "role": "Gudinde",
-   "aliases": [
-    "Mishakals"
-   ],
-   "factions": [],
-   "sessions": [
-    39
    ],
    "pc": false,
    "statusNote": ""
@@ -5003,18 +4275,296 @@
    "pc": false,
    "statusNote": ""
   },
-  "orlock-helmsveil": {
-   "name": "Orlock Helmsveil",
+  "tortin-mikkelborg": {
+   "name": "Tortin Mikkelborg",
+   "place": "astley",
+   "stance": "ally",
+   "dead": true,
+   "status": "dead",
+   "race": "",
+   "social": "knight",
+   "role": "military",
+   "aliases": [
+    "Tortrin"
+   ],
+   "factions": [
+    "the-queensguard"
+   ],
+   "sessions": [
+    46,
+    47
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "karl": {
+   "name": "karl",
+   "place": "region:nordheim",
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "commoner",
+   "role": "commoner",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    20
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "madam-silvara-dawnspire": {
+   "name": "Madam Silvara Dawnspire",
+   "place": "astley",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Knight",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    7,
+    8,
+    9,
+    12,
+    20
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lallana-botreaux": {
+   "name": "Lallana Botreaux",
+   "place": "region:botreaux",
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "lord",
+   "role": "nobility",
+   "aliases": [
+    "Lallana"
+   ],
+   "factions": [
+    "familien-botreaux"
+   ],
+   "sessions": [
+    20
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "den-aeldre-veteran": {
+   "name": "den ældre veteran",
+   "place": "region:eresby",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "commoner",
+   "role": "military",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    1
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "szas-ramma-uconta": {
+   "name": "szas'ramma uconta",
+   "place": "vinterspiret",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "criminal",
+   "role": "spy",
+   "aliases": [
+    "szas'ramma uconta"
+   ],
+   "factions": [],
+   "sessions": [
+    42
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lord-lady-of-the-keep": {
+   "name": "Lord-lady of the Keep",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "lord",
+   "role": "military",
+   "aliases": [],
+   "factions": [
+    "the-queensguard"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "celedrial-keeper-of-mielikki-suntree": {
+   "name": "Celedrial keeper of mielikki suntree",
+   "place": "soltraeet",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "hybrid",
+   "social": "priest",
+   "role": "druid, religious",
+   "aliases": [
+    "Celedrial",
+    "Celedriels"
+   ],
+   "factions": [],
+   "sessions": [
+    7,
+    9,
+    12,
+    17,
+    41,
+    46
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "tizzelspark": {
+   "name": "Tizzelspark",
+   "place": "astley",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "gnome",
+   "social": "merchant",
+   "role": "merchant",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    7
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lord-lady-of-the-coin": {
+   "name": "Lord-lady of the Coin",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "lord",
+   "role": "military",
+   "aliases": [],
+   "factions": [
+    "the-queensguard"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lizzie-gottmann": {
+   "name": "Lizzie Gottmann",
+   "place": "mistville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Barmaid",
+   "aliases": [],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "baron-brey-of-blackforge": {
+   "name": "Baron Brey of Blackforge",
+   "place": "blackforge",
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "baron",
+   "role": "nobility",
+   "aliases": [
+    "Baron Bray of blackforge"
+   ],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lord-magnus-flamehand": {
+   "name": "Lord Magnus Flamehand",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "lord",
+   "role": "military",
+   "aliases": [],
+   "factions": [
+    "the-queensguard"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "seiran": {
+   "name": "Seiran",
+   "place": "grondalen",
+   "stance": "ally",
+   "dead": false,
+   "status": "missing",
+   "race": "human",
+   "social": "priest",
+   "role": "druid",
+   "aliases": [],
+   "factions": [
+    "mielikki-tilhaengere"
+   ],
+   "sessions": [
+    13
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "sectionmaster": {
+   "name": "Sectionmaster",
+   "place": "anaksa",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Sectionmaster",
+   "aliases": [],
+   "factions": [
+    "the-queensguard"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "merita-verplex": {
+   "name": "Merita Verplex",
    "place": "astley",
    "stance": "ally",
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "servant",
-   "role": "servant",
+   "social": "commoner",
+   "role": "military",
    "aliases": [],
    "factions": [
-    "adelhuset-vitano"
+    "skjoldungerne"
    ],
    "sessions": [
     38
@@ -5022,56 +4572,16 @@
    "pc": false,
    "statusNote": ""
   },
-  "erik-leitner": {
-   "name": "Erik Leitner",
-   "place": null,
-   "stance": "enemy",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "lord",
-   "role": "nobility, antagonist",
-   "aliases": [],
-   "factions": [
-    "house-leitner"
-   ],
-   "sessions": [],
-   "pc": false,
-   "statusNote": ""
-  },
-  "petyr-gottmann": {
-   "name": "Petyr Gottmann",
-   "place": "mistville",
+  "quartermaster-of-the-hold": {
+   "name": "Quartermaster of the Hold",
+   "place": "anaksa",
    "stance": "unknown",
    "dead": false,
    "status": "",
    "race": "",
    "social": "",
-   "role": "Marskal",
+   "role": "Quartermaster",
    "aliases": [],
-   "factions": [],
-   "sessions": [
-    5
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "queen-neferata": {
-   "name": "Queen Neferata",
-   "place": "anaksa",
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "royalty",
-   "role": "nobility, religious",
-   "aliases": [
-    "Neferata",
-    "Nerferate",
-    "Nerferata",
-    "Dronning Neferata",
-    "Dronning af Anaksa"
-   ],
    "factions": [
     "the-queensguard"
    ],
@@ -5079,29 +4589,10 @@
    "pc": false,
    "statusNote": ""
   },
-  "saren-valensia": {
-   "name": "Saren Valensia",
-   "place": "astley",
+  "lady-de-evers": {
+   "name": "Lady De'evers",
+   "place": "mistville",
    "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "",
-   "social": "knight",
-   "role": "military",
-   "aliases": [],
-   "factions": [
-    "the-queensguard"
-   ],
-   "sessions": [
-    46
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "kasimer-leitner": {
-   "name": "Kasimer Leitner",
-   "place": null,
-   "stance": "enemy",
    "dead": false,
    "status": "",
    "race": "human",
@@ -5109,39 +4600,85 @@
    "role": "nobility",
    "aliases": [],
    "factions": [
-    "house-leitner",
-    "house-magdova"
+    "house-de-evers"
    ],
-   "sessions": [],
+   "sessions": [
+    5
+   ],
    "pc": false,
    "statusNote": ""
   },
-  "dronningen-af-anaksa": {
-   "name": "Dronningen af Anaksa",
-   "place": "anaksa",
+  "vagtkaptajn-ved-nord-distriktet-i-astley": {
+   "name": "Vagtkaptajn ved Nord distriktet i Astley",
+   "place": "astley",
    "stance": "ally",
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "royalty",
-   "role": "nobility, religious, paladin",
+   "social": "officer",
+   "role": "military, religious",
    "aliases": [],
    "factions": [
-    "the-queensguard"
+    "astley-byvagt",
+    "bahamuts-tilhaengere"
    ],
-   "sessions": [],
+   "sessions": [
+    12
+   ],
    "pc": false,
    "statusNote": ""
   },
-  "dvalin-hammerhand": {
-   "name": "Dvalin hammerhånd",
+  "lord-fern": {
+   "name": "Lord Fern",
+   "place": "visdommens-kammer",
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "lord",
+   "role": "druid, scholar",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    41,
+    44,
+    46,
+    47
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "vaelon-dunmere": {
+   "name": "Vaelon Dunmere",
+   "place": "kegville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Patron",
+   "aliases": [
+    "Vaelon",
+    "Dunmere"
+   ],
+   "factions": [],
+   "sessions": [
+    1,
+    2,
+    43
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "constance-fortright": {
+   "name": "Constance Fortright",
    "place": "mistville",
    "stance": "unknown",
    "dead": false,
    "status": "",
    "race": "",
    "social": "",
-   "role": "Skovridder",
+   "role": "Smed",
    "aliases": [],
    "factions": [],
    "sessions": [
@@ -5150,40 +4687,103 @@
    "pc": false,
    "statusNote": ""
   },
-  "pirat-kaptajnen-arlis": {
-   "name": "pirat kaptajnen Arlis",
-   "place": null,
+  "jarek-de-guille": {
+   "name": "Jarek De Guille",
+   "place": "astley",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "unknown",
+   "role": "military",
+   "aliases": [],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "baronesse-constance-silkenfall": {
+   "name": "Baronesse Constance Silkenfall",
+   "place": "highhome",
    "stance": "neutral",
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "commoner",
-   "role": "pirate",
-   "aliases": [
-    "Arlis"
-   ],
+   "social": "baron",
+   "role": "nobility",
+   "aliases": [],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lallana-bortreaux": {
+   "name": "Lallana Bortreaux",
+   "place": "astley",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Noble",
+   "aliases": [],
    "factions": [],
    "sessions": [
-    23
+    20
    ],
    "pc": false,
    "statusNote": ""
   },
-  "tyra-volkmarr": {
-   "name": "Tyra volkmarr",
-   "place": "paladine-bibliotek",
-   "stance": "ally",
+  "denizar-volmar": {
+   "name": "Denizar Volmar",
+   "place": "astley",
+   "stance": "unknown",
    "dead": false,
    "status": "",
-   "race": "dwarf",
-   "social": "priest",
-   "role": "religious",
+   "race": "",
+   "social": "",
+   "role": "Borgmester",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    20
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "mastersergeant-of-arms": {
+   "name": "Mastersergeant of arms",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "officer",
+   "role": "military",
    "aliases": [],
    "factions": [
-    "bahamuts-tilhaengere"
+    "the-queensguard"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "merelda": {
+   "name": "Merelda",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "commoner",
+   "role": "scholar",
+   "aliases": [],
+   "factions": [
+    "azur-ordenen"
    ],
    "sessions": [
-    9
+    7,
+    8
    ],
    "pc": false,
    "statusNote": ""
@@ -5201,6 +4801,270 @@
    "factions": [],
    "sessions": [
     41
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "egil-nordlys": {
+   "name": "Egil Nordlys",
+   "place": "mistville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Militia",
+   "aliases": [],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lord-rupert-solarson": {
+   "name": "Lord Rupert Solarson",
+   "place": "astley",
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "lord",
+   "role": "nobility",
+   "aliases": [],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lord-valencia": {
+   "name": "Lord Valencia",
+   "place": "region:valence",
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "baron",
+   "role": "nobility",
+   "aliases": [],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "jarell-flick": {
+   "name": "Jarell Flick",
+   "place": "astley",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "commoner",
+   "role": "scholar",
+   "aliases": [
+    "Jarrell Flick",
+    "Jarrell",
+    "Jarrel",
+    "Hr. Flick",
+    "Hr.Flick"
+   ],
+   "factions": [
+    "astley-historian-society"
+   ],
+   "sessions": [
+    38,
+    41
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "hviskeren-i-morket": {
+   "name": "hviskeren i mørket",
+   "place": "dark-gem",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    1
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "nerrin-toftenhoj": {
+   "name": "Nerrin Toftenhøj",
+   "place": "mistville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "",
+   "role": "Sage, Herbalist, Rumor list",
+   "aliases": [],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "sigurd-volteman-jernnaeven": {
+   "name": "Sigurd Volteman - Jernnæven",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Kaptajn",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    20
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "hans-baudler": {
+   "name": "Hans Baudler",
+   "place": "astley",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "officer",
+   "role": "military",
+   "aliases": [],
+   "factions": [
+    "skjoldungerne"
+   ],
+   "sessions": [
+    38
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "duvall": {
+   "name": "Duvall",
+   "place": "miragehill",
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "lord",
+   "role": "spy, scholar",
+   "aliases": [],
+   "factions": [
+    "the-sentinel"
+   ],
+   "sessions": [
+    1,
+    2
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lord-marshal-viggo-trenten": {
+   "name": "Lord Marshal Viggo Trenten",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "officer",
+   "role": "military",
+   "aliases": [],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lord-commander-of-the-queensguard": {
+   "name": "Lord Commander of the Queensguard",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "lord",
+   "role": "military",
+   "aliases": [],
+   "factions": [
+    "the-queensguard"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "mira-wolfsbane": {
+   "name": "Mira Wolfsbane",
+   "place": "crater-shrine",
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "commoner",
+   "role": "commoner",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    28
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "knight-commander-of-the-house-guard": {
+   "name": "Knight Commander of the House guard",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "officer",
+   "role": "military",
+   "aliases": [],
+   "factions": [
+    "the-queensguard"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "azul": {
+   "name": "Azul",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "commoner",
+   "role": "military",
+   "aliases": [],
+   "factions": [
+    "zazmir-stamme"
+   ],
+   "sessions": [
+    3
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "ulrick-stadtfeldt": {
+   "name": "Ulrick Stadtfeldt",
+   "place": "mistville",
+   "stance": "enemy",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "priest",
+   "role": "religious, antagonist",
+   "aliases": [
+    "Ulrik Stadtfelt",
+    "Ulrik"
+   ],
+   "factions": [],
+   "sessions": [
+    5
    ],
    "pc": false,
    "statusNote": ""
@@ -5224,14 +5088,90 @@
    "pc": false,
    "statusNote": ""
   },
-  "tani-ebonheart": {
-   "name": "Tani Ebonheart",
-   "place": "astley",
-   "stance": "unknown",
+  "eldrak": {
+   "name": "Eldrak",
+   "place": null,
+   "stance": "neutral",
    "dead": false,
    "status": "",
    "race": "",
-   "social": "",
+   "social": "deity",
+   "role": "religious",
+   "aliases": [],
+   "factions": [
+    "druid-circles"
+   ],
+   "sessions": [
+    25
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lord-adelston-magdova": {
+   "name": "Lord Adelston Magdova",
+   "place": "stirling",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "noble",
+   "role": "noble, lord",
+   "aliases": [
+    "Lord Magdova",
+    "Adelston Magdova"
+   ],
+   "factions": [
+    "house-magdova",
+    "astley-avengers"
+   ],
+   "sessions": [
+    38
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "arakas-zhaarko": {
+   "name": "Arakas Zhaarko",
+   "place": "dvaerge-haller",
+   "stance": "ally",
+   "dead": true,
+   "status": "dead",
+   "race": "human",
+   "social": "lord",
+   "role": "antagonist, scholar",
+   "aliases": [],
+   "factions": [
+    "court-of-baron-zhaarko"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "hakan": {
+   "name": "Håkan",
+   "place": "vinterskov",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "commoner",
+   "role": "commoner",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    13
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "ellin-thalor": {
+   "name": "Ellin Thalor",
+   "place": null,
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "elf",
+   "social": "faction",
    "role": "",
    "aliases": [],
    "factions": [],
@@ -5239,63 +5179,192 @@
    "pc": false,
    "statusNote": ""
   },
-  "selenna": {
-   "name": "Selenna",
-   "place": "whisperwind",
-   "stance": "ally",
+  "icefang": {
+   "name": "Icefang",
+   "place": "region:nordheim",
+   "stance": "unknown",
    "dead": false,
    "status": "",
    "race": "",
-   "social": "commoner",
-   "role": "military",
-   "aliases": [
-    "Selenna"
+   "social": "item",
+   "role": "",
+   "aliases": [],
+   "factions": [
+    "frost-giant-clan"
    ],
-   "factions": [],
    "sessions": [
-    43
+    32
    ],
    "pc": false,
    "statusNote": ""
   },
-  "sir-seilling": {
-   "name": "Sir Seilling",
-   "place": "mausoleum",
+  "vagtkaptajn-samuel": {
+   "name": "Vagtkaptajn Samuel",
+   "place": "astley",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "officer",
+   "role": "military",
+   "aliases": [
+    "Vagtkaptajn Samuels",
+    "Samuel",
+    "Samuels"
+   ],
+   "factions": [
+    "astley-byvagt"
+   ],
+   "sessions": [
+    17,
+    41
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "assana-lemieux": {
+   "name": "Assana Lemieux",
+   "place": "astley",
    "stance": "ally",
    "dead": true,
    "status": "dead",
    "race": "human",
-   "social": "knight",
-   "role": "nobility, servant",
+   "social": "merchant",
+   "role": "merchant",
    "aliases": [
-    "Sir Seiling",
-    "Sir Selling"
+    "Assana Lemiuex",
+    "Frøken Lemieux"
    ],
-   "factions": [],
+   "factions": [
+    "waning-moon-merchant-house",
+    "astley-avengers"
+   ],
    "sessions": [
-    12,
-    47
+    20,
+    21,
+    46
    ],
    "pc": false,
    "statusNote": ""
   },
-  "kaelen": {
-   "name": "Kaelen",
-   "place": "port-drakkan",
+  "lord-barriston-samuel": {
+   "name": "Lord Barriston Samuel",
+   "place": null,
    "stance": "ally",
    "dead": false,
    "status": "",
+   "race": "human",
+   "social": "knight",
+   "role": "military, paladin",
+   "aliases": [],
+   "factions": [
+    "the-queensguard"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "hjalmer-dynn": {
+   "name": "Hjalmer Dynn",
+   "place": "mistville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
    "race": "",
-   "social": "officer",
-   "role": "military",
+   "social": "",
+   "role": "Militia",
+   "aliases": [],
+   "factions": [],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "sippi": {
+   "name": "sippi",
+   "place": "region:nordheim",
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "commoner",
+   "role": "commoner",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    20
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "blackwing": {
+   "name": "blackwing",
+   "place": "port-drakkan",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "commoner",
+   "role": "commoner",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    40
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "voldumand-den-tredje": {
+   "name": "Voldumand den tredje",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "unknown",
+   "role": "scholar",
    "aliases": [
-    "Kaelen",
-    "sky kaptajn Kaelen"
+    "Voldumand den tredje",
+    "Voldumand III"
    ],
    "factions": [],
    "sessions": [
-    40,
     42
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "daine-waymar": {
+   "name": "Daine waymar",
+   "place": "astley",
+   "stance": "ally",
+   "dead": true,
+   "status": "dead",
+   "race": "human",
+   "social": "priest",
+   "role": "religious, spy",
+   "aliases": [],
+   "factions": [
+    "pillar-of-truth"
+   ],
+   "sessions": [
+    21
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "maria": {
+   "name": "Maria",
+   "place": "astley",
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "commoner",
+   "role": "servant",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    19
    ],
    "pc": false,
    "statusNote": ""
@@ -5328,16 +5397,18 @@
    "pc": false,
    "statusNote": ""
   },
-  "sigurd-volteman-jernnaeven": {
-   "name": "Sigurd Volteman - Jernnæven",
-   "place": null,
-   "stance": "unknown",
+  "illyria-starmantle": {
+   "name": "Illyria Starmantle",
+   "place": "kolitan",
+   "stance": "neutral",
    "dead": false,
    "status": "",
-   "race": "",
-   "social": "",
-   "role": "Kaptajn",
-   "aliases": [],
+   "race": "human",
+   "social": "merchant",
+   "role": "merchant",
+   "aliases": [
+    "Illyrias Starmantle"
+   ],
    "factions": [],
    "sessions": [
     20
@@ -5345,74 +5416,37 @@
    "pc": false,
    "statusNote": ""
   },
-  "bane": {
-   "name": "Bane",
-   "place": null,
-   "stance": "enemy",
+  "queen-neferata": {
+   "name": "Queen Neferata",
+   "place": "anaksa",
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "royalty",
+   "role": "nobility, religious",
+   "aliases": [
+    "Neferata",
+    "Nerferate",
+    "Nerferata",
+    "Dronning Neferata",
+    "Dronning af Anaksa"
+   ],
+   "factions": [
+    "the-queensguard"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "tani-ebonheart": {
+   "name": "Tani Ebonheart",
+   "place": "astley",
+   "stance": "unknown",
    "dead": false,
    "status": "",
    "race": "",
-   "social": "royalty",
-   "role": "religious",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    28
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "assana-lemieux": {
-   "name": "Assana Lemieux",
-   "place": "astley",
-   "stance": "ally",
-   "dead": true,
-   "status": "dead",
-   "race": "human",
-   "social": "merchant",
-   "role": "merchant",
-   "aliases": [
-    "Assana Lemiuex",
-    "Frøken Lemieux"
-   ],
-   "factions": [
-    "waning-moon-merchant-house",
-    "astley-avengers"
-   ],
-   "sessions": [
-    20,
-    21,
-    46
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "lucious-vormend": {
-   "name": "Lucious Vormend",
-   "place": "feywood",
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "human",
-   "social": "officer",
-   "role": "military",
-   "aliases": [],
-   "factions": [],
-   "sessions": [
-    9,
-    10
-   ],
-   "pc": false,
-   "statusNote": ""
-  },
-  "ellin-thalor": {
-   "name": "Ellin Thalor",
-   "place": null,
-   "stance": "neutral",
-   "dead": false,
-   "status": "",
-   "race": "elf",
-   "social": "faction",
+   "social": "",
    "role": "",
    "aliases": [],
    "factions": [],
@@ -5420,14 +5454,51 @@
    "pc": false,
    "statusNote": ""
   },
-  "sir-zamal-helheim": {
-   "name": "Sir Zamal Helheim",
+  "krugge": {
+   "name": "Krugge",
+   "place": "astley",
+   "stance": "unknown",
+   "dead": false,
+   "status": "missing",
+   "race": "human",
+   "social": "commoner",
+   "role": "commoner",
+   "aliases": [
+    "Kruger"
+   ],
+   "factions": [],
+   "sessions": [
+    17,
+    18
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lord-of-the-keep": {
+   "name": "Lord of the Keep",
    "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "lord",
+   "role": "military",
+   "aliases": [],
+   "factions": [
+    "the-queensguard"
+   ],
+   "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "lord-helmuth-de-valencia": {
+   "name": "Lord Helmuth de Valencia",
+   "place": "mortimor",
    "stance": "neutral",
    "dead": false,
    "status": "",
    "race": "human",
-   "social": "lord",
+   "social": "baron",
    "role": "nobility",
    "aliases": [],
    "factions": [],
@@ -5435,21 +5506,23 @@
    "pc": false,
    "statusNote": ""
   },
-  "szas-ramma-uconta": {
-   "name": "szas'ramma uconta",
-   "place": "vinterspiret",
-   "stance": "unknown",
+  "baron-zhaarko": {
+   "name": "Baron Zhaarko",
+   "place": "region:eresby",
+   "stance": "enemy",
    "dead": false,
-   "status": "",
-   "race": "",
-   "social": "criminal",
-   "role": "spy",
-   "aliases": [
-    "szas'ramma uconta"
+   "status": "undead",
+   "race": "human",
+   "social": "baron",
+   "role": "nobility, antagonist",
+   "aliases": [],
+   "factions": [
+    "court-of-baron-zhaarko",
+    "merchant-konglomeratet-1"
    ],
-   "factions": [],
    "sessions": [
-    42
+    1,
+    8
    ],
    "pc": false,
    "statusNote": ""
@@ -5498,146 +5571,52 @@
   }
  },
  "factions": {
-  "stenvogterne": {
-   "name": "Stenvogterne",
-   "seat": null,
-   "stance": "neutral",
-   "type": "religious-order",
-   "status": "weakened",
-   "leader": [
-    "ukkadin-magmahand"
-   ],
-   "sessions": [
-    25
-   ],
-   "members": [
-    "ukkadin-magmahand"
-   ]
-  },
-  "gobliner": {
-   "name": "Gobliner",
+  "grimskulls": {
+   "name": "Grimskulls",
    "seat": null,
    "stance": "enemy",
    "type": "tribe",
    "status": "unknown",
    "leader": [],
-   "sessions": [
-    7,
-    10,
-    32,
-    34
-   ],
+   "sessions": [],
    "members": []
   },
-  "heste-folket": {
-   "name": "Heste folket",
+  "dvaergene": {
+   "name": "Dværgene",
    "seat": null,
    "stance": "neutral",
-   "type": "tribe",
+   "type": "clan",
    "status": "active",
    "leader": [],
    "sessions": [],
    "members": []
   },
-  "astley-historian-society": {
-   "name": "Astley historian society",
-   "seat": "astley",
-   "stance": "ally",
-   "type": "political-body",
-   "status": "active",
+  "de-aeldste-af-bjergenes-born": {
+   "name": "de Ældste af Bjergenes Børn",
+   "seat": null,
+   "stance": "neutral",
+   "type": "clan",
+   "status": "unknown",
    "leader": [],
-   "sessions": [
-    38
-   ],
-   "members": [
-    "jarell-flick"
-   ]
+   "sessions": [],
+   "members": []
   },
-  "adelhuset-vitano": {
-   "name": "Adelhuset Vitano",
-   "seat": "astley",
+  "house-magdova": {
+   "name": "House Magdova",
+   "seat": "stirling",
    "stance": "ally",
    "type": "noble-house",
    "status": "active",
    "leader": [
-    "edmund-af-vitano"
+    "lord-adelston-magdova"
    ],
-   "sessions": [],
-   "members": [
-    "pierre",
-    "orlock-helmsveil",
-    "edmund-af-vitano"
-   ]
-  },
-  "de-vilde-elvere": {
-   "name": "De vilde elvere",
-   "seat": null,
-   "stance": "neutral",
-   "type": "tribe",
-   "status": "active",
-   "leader": [],
-   "sessions": [],
-   "members": []
-  },
-  "adelhuset-astleysson": {
-   "name": "Adelhuset Astleysson",
-   "seat": "astley",
-   "stance": "neutral",
-   "type": "noble-house",
-   "status": "active",
-   "leader": [],
-   "sessions": [],
-   "members": []
-  },
-  "rod-tand-stammen": {
-   "name": "Rød tand stammen",
-   "seat": null,
-   "stance": "enemy",
-   "type": "tribe",
-   "status": "active",
-   "leader": [],
    "sessions": [
-    1
-   ],
-   "members": []
-  },
-  "dawnspire-family": {
-   "name": "Dawnspire Family",
-   "seat": "astley",
-   "stance": "unknown",
-   "type": "",
-   "status": "",
-   "leader": [],
-   "sessions": [
-    20,
     38
    ],
    "members": [
-    "danica-dawnspire"
+    "kasimer-leitner",
+    "lord-adelston-magdova"
    ]
-  },
-  "the-silver-drake-guild": {
-   "name": "The Silver Drake guild",
-   "seat": "region:valence",
-   "stance": "neutral",
-   "type": "merchant-guild",
-   "status": "active",
-   "leader": [],
-   "sessions": [],
-   "members": []
-  },
-  "sangstrup-familien": {
-   "name": "Sangstrup familien",
-   "seat": "astley",
-   "stance": "unknown",
-   "type": "",
-   "status": "",
-   "leader": [],
-   "sessions": [
-    13,
-    17
-   ],
-   "members": []
   },
   "house-de-evers": {
    "name": "House De'Evers",
@@ -5652,36 +5631,75 @@
     5
    ],
    "members": [
-    "lady-de-evers",
-    "vallis"
+    "vallis",
+    "lady-de-evers"
    ]
   },
-  "knights-of-the-realm": {
-   "name": "Knights of the Realm",
+  "slette-folket": {
+   "name": "Slette folket",
+   "seat": null,
+   "stance": "neutral",
+   "type": "tribe",
+   "status": "active",
+   "leader": [
+    "overhovdingen-hrothgar"
+   ],
+   "sessions": [],
+   "members": [
+    "overhovdingen-hrothgar"
+   ]
+  },
+  "frost-giant-clan": {
+   "name": "Frost Giant Clan",
+   "seat": "region:nordheim",
+   "stance": "neutral",
+   "type": "clan",
+   "status": "active",
+   "leader": [],
+   "sessions": [
+    32,
+    34
+   ],
+   "members": [
+    "hjarnak-icebone",
+    "icefang"
+   ]
+  },
+  "dragefolket": {
+   "name": "dragefolket",
    "seat": null,
    "stance": "unknown",
-   "type": "knightly-order",
+   "type": "tribe",
    "status": "unknown",
    "leader": [],
    "sessions": [],
    "members": []
   },
-  "knoglestammen": {
-   "name": "Knoglestammen",
-   "seat": "region:nordheim",
-   "stance": "neutral",
+  "skyggefolket": {
+   "name": "skyggefolket",
+   "seat": null,
+   "stance": "unknown",
    "type": "tribe",
-   "status": "active",
+   "status": "unknown",
    "leader": [],
    "sessions": [
-    26,
-    27,
     28,
-    43
+    32,
+    37
    ],
-   "members": [
-    "urza"
-   ]
+   "members": []
+  },
+  "familien-narsi": {
+   "name": "Familien Narsi",
+   "seat": "solstice",
+   "stance": "neutral",
+   "type": "family",
+   "status": "unknown",
+   "leader": [],
+   "sessions": [
+    1
+   ],
+   "members": []
   },
   "fafnirs-gruppe": {
    "name": "Fafnirs gruppe",
@@ -5704,99 +5722,143 @@
     "fafnir"
    ]
   },
-  "zazmir-stamme": {
-   "name": "Zazmir stamme",
-   "seat": null,
-   "stance": "unknown",
-   "type": "tribe",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [
-    3
-   ],
-   "members": [
-    "azul"
-   ]
-  },
-  "house-magdova": {
-   "name": "House Magdova",
-   "seat": "stirling",
-   "stance": "ally",
-   "type": "noble-house",
+  "botreaux-court": {
+   "name": "Botreaux court",
+   "seat": "region:botreaux",
+   "stance": "neutral",
+   "type": "court",
    "status": "active",
-   "leader": [
-    "lord-adelston-magdova"
-   ],
-   "sessions": [
-    38
-   ],
-   "members": [
-    "lord-adelston-magdova",
-    "kasimer-leitner"
-   ]
+   "leader": [],
+   "sessions": [],
+   "members": []
   },
-  "de-aeldste-af-bjergenes-born": {
-   "name": "de Ældste af Bjergenes Børn",
+  "hvidhvalen": {
+   "name": "Hvidhvalen",
    "seat": null,
    "stance": "neutral",
-   "type": "clan",
+   "type": "tribe",
+   "status": "active",
+   "leader": [],
+   "sessions": [],
+   "members": []
+  },
+  "jernkniven": {
+   "name": "Jernkniven",
+   "seat": "astley",
+   "stance": "neutral",
+   "type": "thieves-guild",
+   "status": "defunct",
+   "leader": [],
+   "sessions": [
+    7
+   ],
+   "members": []
+  },
+  "emerald-enclave": {
+   "name": "Emerald enclave",
+   "seat": null,
+   "stance": "neutral",
+   "type": "druid-circle",
    "status": "unknown",
    "leader": [],
    "sessions": [],
    "members": []
   },
-  "merchant-konglomeratet-1": {
-   "name": "Merchant Konglomeratet 1",
-   "seat": null,
-   "stance": "unknown",
-   "type": "",
-   "status": "",
-   "leader": [],
-   "sessions": [],
-   "members": [
-    "baron-zhaarko"
-   ]
-  },
-  "the-sentinel": {
-   "name": "The Sentinel",
-   "seat": "region:botreaux",
-   "stance": "unknown",
-   "type": "arcane-order",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [],
-   "members": [
-    "duvall"
-   ]
-  },
-  "horden": {
-   "name": "Horden",
+  "rod-tand-stammen": {
+   "name": "Rød tand stammen",
    "seat": null,
    "stance": "enemy",
    "type": "tribe",
-   "status": "unknown",
+   "status": "active",
    "leader": [],
    "sessions": [
-    44,
-    45
+    1
    ],
    "members": []
   },
-  "house-leitner": {
-   "name": "House Leitner",
-   "seat": "region:eresby",
-   "stance": "enemy",
-   "type": "noble-house",
-   "status": "weakened",
+  "de-vilde-elvere": {
+   "name": "De vilde elvere",
+   "seat": null,
+   "stance": "neutral",
+   "type": "tribe",
+   "status": "active",
+   "leader": [],
+   "sessions": [],
+   "members": []
+  },
+  "aethor-fladen": {
+   "name": "Aethor Flåden",
+   "seat": "region:nordheim",
+   "stance": "neutral",
+   "type": "fleet",
+   "status": "defunct",
    "leader": [],
    "sessions": [
-    38
+    42
+   ],
+   "members": []
+  },
+  "knoglestammen": {
+   "name": "Knoglestammen",
+   "seat": "region:nordheim",
+   "stance": "neutral",
+   "type": "tribe",
+   "status": "active",
+   "leader": [],
+   "sessions": [
+    26,
+    27,
+    28,
+    43
    ],
    "members": [
-    "dolph-leitner",
-    "ulricha-leitner",
-    "erik-leitner",
-    "kasimer-leitner"
+    "urza"
+   ]
+  },
+  "opal-kulten": {
+   "name": "Opal kulten",
+   "seat": null,
+   "stance": "enemy",
+   "type": "religious-order",
+   "status": "active",
+   "leader": [],
+   "sessions": [
+    1,
+    8,
+    20,
+    47
+   ],
+   "members": [
+    "lady-lucille-vitano"
+   ]
+  },
+  "merchant-konglomeratet": {
+   "name": "Merchant Konglomeratet",
+   "seat": "wolfenburg",
+   "stance": "enemy",
+   "type": "merchant-guild",
+   "status": "active",
+   "leader": [],
+   "sessions": [],
+   "members": []
+  },
+  "waning-moon-merchant-house": {
+   "name": "Waning Moon merchant house",
+   "seat": "astley",
+   "stance": "ally",
+   "type": "merchant-company",
+   "status": "active",
+   "leader": [
+    "assana-lemieux"
+   ],
+   "sessions": [
+    38,
+    41,
+    45,
+    46
+   ],
+   "members": [
+    "assana-lemieux"
    ]
   },
   "ridderne-af-blodrosen": {
@@ -5830,63 +5892,114 @@
    "sessions": [],
    "members": []
   },
-  "emerald-enclave": {
-   "name": "Emerald enclave",
+  "bla-nomader": {
+   "name": "blå nomader",
    "seat": null,
    "stance": "neutral",
-   "type": "druid-circle",
+   "type": "tribe",
+   "status": "unknown",
+   "leader": [],
+   "sessions": [
+    3
+   ],
+   "members": []
+  },
+  "gnollerne": {
+   "name": "Gnollerne",
+   "seat": null,
+   "stance": "enemy",
+   "type": "tribe",
    "status": "unknown",
    "leader": [],
    "sessions": [],
    "members": []
   },
-  "dvaergene": {
-   "name": "Dværgene",
+  "knights-of-the-river": {
+   "name": "Knights of the River",
    "seat": null,
-   "stance": "neutral",
-   "type": "clan",
-   "status": "active",
+   "stance": "unknown",
+   "type": "knightly-order",
+   "status": "unknown",
    "leader": [],
    "sessions": [],
    "members": []
   },
-  "opal-kulten": {
-   "name": "Opal kulten",
+  "dark-gem-kobolder": {
+   "name": "dark gem kobolder",
    "seat": null,
    "stance": "enemy",
-   "type": "religious-order",
+   "type": "clan",
+   "status": "active",
+   "leader": [],
+   "sessions": [
+    1
+   ],
+   "members": []
+  },
+  "flodhvisker-stammen": {
+   "name": "flodhvisker stammen",
+   "seat": null,
+   "stance": "neutral",
+   "type": "tribe",
+   "status": "unknown",
+   "leader": [],
+   "sessions": [
+    26
+   ],
+   "members": []
+  },
+  "dark-gem-klanen": {
+   "name": "Dark Gem klanen",
+   "seat": null,
+   "stance": "enemy",
+   "type": "clan",
    "status": "active",
    "leader": [],
    "sessions": [
     1,
-    8,
-    20,
-    47
+    8
    ],
    "members": [
-    "lady-lucille-vitano"
+    "kobold",
+    "den-store-stemme"
    ]
   },
-  "skyggekompagniet": {
-   "name": "Skyggekompagniet",
-   "seat": null,
-   "stance": "enemy",
-   "type": "",
-   "status": "",
-   "leader": [],
-   "sessions": [
-    47
-   ],
-   "members": []
-  },
-  "botreaux-court": {
-   "name": "Botreaux court",
-   "seat": "region:botreaux",
-   "stance": "neutral",
-   "type": "court",
+  "mielikki-tilhaengere": {
+   "name": "Mielikki tilhængere",
+   "seat": "soltraeet",
+   "stance": "ally",
+   "type": "religious-order",
    "status": "active",
    "leader": [],
+   "sessions": [
+    9,
+    12,
+    41
+   ],
+   "members": [
+    "seiran"
+   ]
+  },
+  "gron-huderne": {
+   "name": "grøn huderne",
+   "seat": null,
+   "stance": "neutral",
+   "type": "tribe",
+   "status": "unknown",
+   "leader": [],
    "sessions": [],
+   "members": []
+  },
+  "jullan-trade-delegation": {
+   "name": "Jullan trade delegation",
+   "seat": "kolitan",
+   "stance": "neutral",
+   "type": "political-body",
+   "status": "active",
+   "leader": [],
+   "sessions": [
+    20
+   ],
    "members": []
   },
   "the-queensguard": {
@@ -5902,29 +6015,190 @@
    ],
    "members": [
     "winston-wildwood",
-    "quartermaster-of-the-hold",
-    "lord-lady-of-the-coin",
-    "lord-barriston-samuel",
-    "mastersergeant-of-arms",
-    "lord-of-the-keep",
-    "tortin-mikkelborg",
-    "lord-commander-of-the-queensguard",
-    "sectionmaster",
     "lord-chaptermaster-cerilian-archhold",
-    "lord-chandler-virmingham",
-    "lord-magnus-flamehand",
-    "lord-lady-of-the-keep",
-    "knight-commander-of-the-house-guard",
-    "queen-neferata",
     "saren-valensia",
-    "dronningen-af-anaksa"
+    "lord-chandler-virmingham",
+    "dronningen-af-anaksa",
+    "tortin-mikkelborg",
+    "lord-lady-of-the-keep",
+    "lord-lady-of-the-coin",
+    "lord-magnus-flamehand",
+    "sectionmaster",
+    "quartermaster-of-the-hold",
+    "mastersergeant-of-arms",
+    "lord-commander-of-the-queensguard",
+    "knight-commander-of-the-house-guard",
+    "lord-barriston-samuel",
+    "queen-neferata",
+    "lord-of-the-keep"
    ]
   },
-  "nordlandets-stammer": {
-   "name": "Nordlandets stammer",
-   "seat": "region:nordheim",
+  "kongeradet": {
+   "name": "kongerådet",
+   "seat": null,
+   "stance": "neutral",
+   "type": "political-body",
+   "status": "unknown",
+   "leader": [],
+   "sessions": [],
+   "members": []
+  },
+  "queensguard-ambassadorer": {
+   "name": "Queensguard Ambassadører",
+   "seat": null,
+   "stance": "ally",
+   "type": "knightly-order",
+   "status": "active",
+   "leader": [],
+   "sessions": [],
+   "members": []
+  },
+  "warpaw-stammen": {
+   "name": "Warpaw stammen",
+   "seat": null,
    "stance": "neutral",
    "type": "tribe",
+   "status": "active",
+   "leader": [],
+   "sessions": [],
+   "members": [
+    "overhovdingen-hrothgar"
+   ]
+  },
+  "knights-of-the-realm": {
+   "name": "Knights of the Realm",
+   "seat": null,
+   "stance": "unknown",
+   "type": "knightly-order",
+   "status": "unknown",
+   "leader": [],
+   "sessions": [],
+   "members": []
+  },
+  "highguard-chapterhouse": {
+   "name": "Highguard Chapterhouse",
+   "seat": "anaksa",
+   "stance": "ally",
+   "type": "knightly-order",
+   "status": "unknown",
+   "leader": [],
+   "sessions": [],
+   "members": []
+  },
+  "draconkin": {
+   "name": "Draconkin",
+   "seat": null,
+   "stance": "unknown",
+   "type": "tribe",
+   "status": "unknown",
+   "leader": [],
+   "sessions": [
+    43
+   ],
+   "members": []
+  },
+  "adelhuset-vitano": {
+   "name": "Adelhuset Vitano",
+   "seat": "astley",
+   "stance": "ally",
+   "type": "noble-house",
+   "status": "active",
+   "leader": [
+    "edmund-af-vitano"
+   ],
+   "sessions": [],
+   "members": [
+    "orlock-helmsveil",
+    "pierre",
+    "edmund-af-vitano"
+   ]
+  },
+  "frostheim-klanen": {
+   "name": "Frostheim Klanen",
+   "seat": "region:nordheim",
+   "stance": "neutral",
+   "type": "clan",
+   "status": "unknown",
+   "leader": [],
+   "sessions": [
+    20
+   ],
+   "members": []
+  },
+  "druid-circles": {
+   "name": "Druid circles",
+   "seat": null,
+   "stance": "neutral",
+   "type": "druid-circle",
+   "status": "active",
+   "leader": [],
+   "sessions": [
+    25
+   ],
+   "members": [
+    "eldrak"
+   ]
+  },
+  "tempus-tilhaengere": {
+   "name": "Tempus tilhængere",
+   "seat": "astley",
+   "stance": "neutral",
+   "type": "religious-order",
+   "status": "active",
+   "leader": [],
+   "sessions": [
+    23
+   ],
+   "members": [
+    "zarafine"
+   ]
+  },
+  "horden": {
+   "name": "Horden",
+   "seat": null,
+   "stance": "enemy",
+   "type": "tribe",
+   "status": "unknown",
+   "leader": [],
+   "sessions": [
+    44,
+    45
+   ],
+   "members": []
+  },
+  "court-of-baronesse-avalande": {
+   "name": "Court of Baronesse Avalande",
+   "seat": "region:welles",
+   "stance": "neutral",
+   "type": "court",
+   "status": "active",
+   "leader": [
+    "baronesse-avalande"
+   ],
+   "sessions": [],
+   "members": []
+  },
+  "skjoldungerne": {
+   "name": "Skjoldungerne",
+   "seat": "astley",
+   "stance": "ally",
+   "type": "mercenary-company",
+   "status": "active",
+   "leader": [],
+   "sessions": [
+    38,
+    45
+   ],
+   "members": [
+    "merita-verplex",
+    "hans-baudler"
+   ]
+  },
+  "the-silver-drake-guild": {
+   "name": "The Silver Drake guild",
+   "seat": "region:valence",
+   "stance": "neutral",
+   "type": "merchant-guild",
    "status": "active",
    "leader": [],
    "sessions": [],
@@ -5940,18 +6214,43 @@
    "sessions": [],
    "members": []
   },
-  "slette-folket": {
-   "name": "Slette folket",
+  "zazmir-stamme": {
+   "name": "Zazmir stamme",
    "seat": null,
+   "stance": "unknown",
+   "type": "tribe",
+   "status": "unknown",
+   "leader": [],
+   "sessions": [
+    3
+   ],
+   "members": [
+    "azul"
+   ]
+  },
+  "nordlandets-stammer": {
+   "name": "Nordlandets stammer",
+   "seat": "region:nordheim",
    "stance": "neutral",
    "type": "tribe",
    "status": "active",
-   "leader": [
-    "overhovdingen-hrothgar"
-   ],
+   "leader": [],
    "sessions": [],
+   "members": []
+  },
+  "astley-byvagt": {
+   "name": "Astley Byvagt",
+   "seat": "astley",
+   "stance": "ally",
+   "type": "military-order",
+   "status": "active",
+   "leader": [],
+   "sessions": [
+    10
+   ],
    "members": [
-    "overhovdingen-hrothgar"
+    "vagtkaptajn-ved-nord-distriktet-i-astley",
+    "vagtkaptajn-samuel"
    ]
   },
   "solvhanden": {
@@ -5971,214 +6270,40 @@
     "lord-chandler-virmingham"
    ]
   },
-  "astley-byvagt": {
-   "name": "Astley Byvagt",
+  "adelhuset-urazzan": {
+   "name": "Adelhuset Urazzan",
    "seat": "astley",
-   "stance": "ally",
-   "type": "military-order",
+   "stance": "neutral",
+   "type": "noble-house",
    "status": "active",
    "leader": [],
-   "sessions": [
-    10
-   ],
-   "members": [
-    "vagtkaptajn-samuel",
-    "vagtkaptajn-ved-nord-distriktet-i-astley"
-   ]
+   "sessions": [],
+   "members": []
   },
-  "queens-guard-crest-jpg": {
-   "name": "Queens_guard_crest.jpg",
+  "familien-botreaux": {
+   "name": "familien Botreaux",
    "seat": null,
-   "stance": "unknown",
+   "stance": "neutral",
    "type": "",
    "status": "",
    "leader": [],
    "sessions": [],
-   "members": []
-  },
-  "frostheim-klanen": {
-   "name": "Frostheim Klanen",
-   "seat": "region:nordheim",
-   "stance": "neutral",
-   "type": "clan",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [
-    20
-   ],
-   "members": []
-  },
-  "dark-gem-kobolder": {
-   "name": "dark gem kobolder",
-   "seat": null,
-   "stance": "enemy",
-   "type": "clan",
-   "status": "active",
-   "leader": [],
-   "sessions": [
-    1
-   ],
-   "members": []
-  },
-  "waning-moon-merchant-house": {
-   "name": "Waning Moon merchant house",
-   "seat": "astley",
-   "stance": "ally",
-   "type": "merchant-company",
-   "status": "active",
-   "leader": [
-    "assana-lemieux"
-   ],
-   "sessions": [
-    38,
-    41,
-    45,
-    46
-   ],
    "members": [
-    "assana-lemieux"
+    "hertug-robert-de-ros",
+    "lallana-botreaux"
    ]
   },
-  "court-of-baronesse-avalande": {
-   "name": "Court of Baronesse Avalande",
-   "seat": "region:welles",
-   "stance": "neutral",
-   "type": "court",
-   "status": "active",
-   "leader": [
-    "baronesse-avalande"
-   ],
-   "sessions": [],
-   "members": []
-  },
-  "gnollerne": {
-   "name": "Gnollerne",
-   "seat": null,
-   "stance": "enemy",
-   "type": "tribe",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [],
-   "members": []
-  },
-  "gron-huderne": {
-   "name": "grøn huderne",
-   "seat": null,
-   "stance": "neutral",
-   "type": "tribe",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [],
-   "members": []
-  },
-  "tempus-tilhaengere": {
-   "name": "Tempus tilhængere",
-   "seat": "astley",
-   "stance": "neutral",
-   "type": "religious-order",
-   "status": "active",
-   "leader": [],
-   "sessions": [
-    23
-   ],
-   "members": [
-    "zarafine"
-   ]
-  },
-  "merchant-konglomeratet": {
-   "name": "Merchant Konglomeratet",
-   "seat": "wolfenburg",
-   "stance": "enemy",
-   "type": "merchant-guild",
-   "status": "active",
-   "leader": [],
-   "sessions": [],
-   "members": []
-  },
-  "astley-avengers": {
-   "name": "Astley Avengers",
-   "seat": "astley",
-   "stance": "ally",
-   "type": "knightly-order",
-   "status": "active",
-   "leader": [],
-   "sessions": [
-    22,
-    27,
-    38,
-    42,
-    43,
-    44
-   ],
-   "members": [
-    "logan",
-    "bjorn-of-nordheim",
-    "corwin",
-    "isilme",
-    "winston-wildwood",
-    "nibar-brassbit",
-    "viktor-baigorri",
-    "clarabel-lancaster",
-    "lord-adelston-magdova",
-    "assana-lemieux"
-   ]
-  },
-  "familien-narsi": {
-   "name": "Familien Narsi",
-   "seat": "solstice",
-   "stance": "neutral",
-   "type": "family",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [
-    1
-   ],
-   "members": []
-  },
-  "aethor-fladen": {
-   "name": "Aethor Flåden",
-   "seat": "region:nordheim",
-   "stance": "neutral",
-   "type": "fleet",
-   "status": "defunct",
-   "leader": [],
-   "sessions": [
-    42
-   ],
-   "members": []
-  },
-  "kongeradet": {
-   "name": "kongerådet",
-   "seat": null,
-   "stance": "neutral",
-   "type": "political-body",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [],
-   "members": []
-  },
-  "pillar-of-truth": {
-   "name": "Pillar of Truth",
+  "sangstrup-familien": {
+   "name": "Sangstrup familien",
    "seat": "astley",
    "stance": "unknown",
-   "type": "religious-order",
-   "status": "unknown",
+   "type": "",
+   "status": "",
    "leader": [],
    "sessions": [
-    21
+    13,
+    17
    ],
-   "members": [
-    "daine-waymar"
-   ]
-  },
-  "hvidhvalen": {
-   "name": "Hvidhvalen",
-   "seat": null,
-   "stance": "neutral",
-   "type": "tribe",
-   "status": "active",
-   "leader": [],
-   "sessions": [],
    "members": []
   },
   "azur-ordenen": {
@@ -6203,34 +6328,131 @@
     "merelda"
    ]
   },
+  "skyggekompagniet": {
+   "name": "Skyggekompagniet",
+   "seat": null,
+   "stance": "enemy",
+   "type": "",
+   "status": "",
+   "leader": [],
+   "sessions": [
+    47
+   ],
+   "members": []
+  },
+  "queens-guard-crest-jpg": {
+   "name": "Queens_guard_crest.jpg",
+   "seat": null,
+   "stance": "unknown",
+   "type": "",
+   "status": "",
+   "leader": [],
+   "sessions": [],
+   "members": []
+  },
+  "pillar-of-truth": {
+   "name": "Pillar of Truth",
+   "seat": "astley",
+   "stance": "unknown",
+   "type": "religious-order",
+   "status": "unknown",
+   "leader": [],
+   "sessions": [
+    21
+   ],
+   "members": [
+    "daine-waymar"
+   ]
+  },
+  "house-leitner": {
+   "name": "House Leitner",
+   "seat": "region:eresby",
+   "stance": "enemy",
+   "type": "noble-house",
+   "status": "weakened",
+   "leader": [],
+   "sessions": [
+    38
+   ],
+   "members": [
+    "kasimer-leitner",
+    "ulricha-leitner",
+    "dolph-leitner",
+    "erik-leitner"
+   ]
+  },
+  "gobliner": {
+   "name": "Gobliner",
+   "seat": null,
+   "stance": "enemy",
+   "type": "tribe",
+   "status": "unknown",
+   "leader": [],
+   "sessions": [
+    7,
+    10,
+    32,
+    34
+   ],
+   "members": []
+  },
+  "merchant-konglomeratet-1": {
+   "name": "Merchant Konglomeratet 1",
+   "seat": null,
+   "stance": "unknown",
+   "type": "",
+   "status": "",
+   "leader": [],
+   "sessions": [],
+   "members": [
+    "baron-zhaarko"
+   ]
+  },
+  "court-of-baron-zhaarko": {
+   "name": "Court of Baron Zhaarko",
+   "seat": "region:eresby",
+   "stance": "enemy",
+   "type": "court",
+   "status": "active",
+   "leader": [
+    "baron-zhaarko-af-eresby"
+   ],
+   "sessions": [],
+   "members": [
+    "marie-louise-duvall-af-miragehill",
+    "baron-zhaarko-af-eresby",
+    "arakas-zhaarko",
+    "baron-zhaarko"
+   ]
+  },
+  "hands-of-the-queen": {
+   "name": "Hands of the Queen",
+   "seat": null,
+   "stance": "ally",
+   "type": "knightly-order",
+   "status": "unknown",
+   "leader": [],
+   "sessions": [],
+   "members": []
+  },
+  "the-sentinel": {
+   "name": "The Sentinel",
+   "seat": "region:botreaux",
+   "stance": "unknown",
+   "type": "arcane-order",
+   "status": "unknown",
+   "leader": [],
+   "sessions": [],
+   "members": [
+    "duvall"
+   ]
+  },
   "drageaederne": {
    "name": "drageæderne",
    "seat": null,
    "stance": "enemy",
    "type": "tribe",
    "status": "unknown",
-   "leader": [],
-   "sessions": [],
-   "members": []
-  },
-  "warpaw-stammen": {
-   "name": "Warpaw stammen",
-   "seat": null,
-   "stance": "neutral",
-   "type": "tribe",
-   "status": "active",
-   "leader": [],
-   "sessions": [],
-   "members": [
-    "overhovdingen-hrothgar"
-   ]
-  },
-  "adelhuset-urazzan": {
-   "name": "Adelhuset Urazzan",
-   "seat": "astley",
-   "stance": "neutral",
-   "type": "noble-house",
-   "status": "active",
    "leader": [],
    "sessions": [],
    "members": []
@@ -6246,41 +6468,33 @@
     9
    ],
    "members": [
-    "vagtkaptajn-ved-nord-distriktet-i-astley",
     "tyra-volkmarr",
+    "vagtkaptajn-ved-nord-distriktet-i-astley",
     "edmund-af-vitano"
    ]
   },
-  "flodhvisker-stammen": {
-   "name": "flodhvisker stammen",
+  "heste-folket": {
+   "name": "Heste folket",
    "seat": null,
    "stance": "neutral",
    "type": "tribe",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [
-    26
-   ],
-   "members": []
-  },
-  "knights-of-the-river": {
-   "name": "Knights of the River",
-   "seat": null,
-   "stance": "unknown",
-   "type": "knightly-order",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [],
-   "members": []
-  },
-  "bjergenes-born": {
-   "name": "Bjergenes Børn",
-   "seat": null,
-   "stance": "neutral",
-   "type": "clan",
    "status": "active",
    "leader": [],
    "sessions": [],
+   "members": []
+  },
+  "stenvogterne": {
+   "name": "Stenvogterne",
+   "seat": null,
+   "stance": "neutral",
+   "type": "religious-order",
+   "status": "weakened",
+   "leader": [
+    "ukkadin-magmahand"
+   ],
+   "sessions": [
+    25
+   ],
    "members": [
     "ukkadin-magmahand"
    ]
@@ -6295,160 +6509,59 @@
    "sessions": [],
    "members": []
   },
-  "frost-giant-clan": {
-   "name": "Frost Giant Clan",
-   "seat": "region:nordheim",
+  "astley-historian-society": {
+   "name": "Astley historian society",
+   "seat": "astley",
+   "stance": "ally",
+   "type": "political-body",
+   "status": "active",
+   "leader": [],
+   "sessions": [
+    38
+   ],
+   "members": [
+    "jarell-flick"
+   ]
+  },
+  "astley-avengers": {
+   "name": "Astley Avengers",
+   "seat": "astley",
+   "stance": "ally",
+   "type": "knightly-order",
+   "status": "active",
+   "leader": [],
+   "sessions": [
+    22,
+    27,
+    38,
+    42,
+    43,
+    44
+   ],
+   "members": [
+    "nibar-brassbit",
+    "logan",
+    "viktor-baigorri",
+    "isilme",
+    "bjorn-of-nordheim",
+    "winston-wildwood",
+    "corwin",
+    "clarabel-lancaster",
+    "lord-adelston-magdova",
+    "assana-lemieux"
+   ]
+  },
+  "bjergenes-born": {
+   "name": "Bjergenes Børn",
+   "seat": null,
    "stance": "neutral",
    "type": "clan",
    "status": "active",
    "leader": [],
-   "sessions": [
-    32,
-    34
-   ],
-   "members": [
-    "icefang",
-    "hjarnak-icebone"
-   ]
-  },
-  "bla-nomader": {
-   "name": "blå nomader",
-   "seat": null,
-   "stance": "neutral",
-   "type": "tribe",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [
-    3
-   ],
-   "members": []
-  },
-  "draconkin": {
-   "name": "Draconkin",
-   "seat": null,
-   "stance": "unknown",
-   "type": "tribe",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [
-    43
-   ],
-   "members": []
-  },
-  "skjoldungerne": {
-   "name": "Skjoldungerne",
-   "seat": "astley",
-   "stance": "ally",
-   "type": "mercenary-company",
-   "status": "active",
-   "leader": [],
-   "sessions": [
-    38,
-    45
-   ],
-   "members": [
-    "hans-baudler",
-    "merita-verplex"
-   ]
-  },
-  "jernkniven": {
-   "name": "Jernkniven",
-   "seat": "astley",
-   "stance": "neutral",
-   "type": "thieves-guild",
-   "status": "defunct",
-   "leader": [],
-   "sessions": [
-    7
-   ],
-   "members": []
-  },
-  "dragefolket": {
-   "name": "dragefolket",
-   "seat": null,
-   "stance": "unknown",
-   "type": "tribe",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [],
-   "members": []
-  },
-  "highguard-chapterhouse": {
-   "name": "Highguard Chapterhouse",
-   "seat": "anaksa",
-   "stance": "ally",
-   "type": "knightly-order",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [],
-   "members": []
-  },
-  "court-of-baron-zhaarko": {
-   "name": "Court of Baron Zhaarko",
-   "seat": "region:eresby",
-   "stance": "enemy",
-   "type": "court",
-   "status": "active",
-   "leader": [
-    "baron-zhaarko-af-eresby"
-   ],
    "sessions": [],
    "members": [
-    "baron-zhaarko-af-eresby",
-    "marie-louise-duvall-af-miragehill",
-    "baron-zhaarko",
-    "arakas-zhaarko"
+    "ukkadin-magmahand"
    ]
-  },
-  "druid-circles": {
-   "name": "Druid circles",
-   "seat": null,
-   "stance": "neutral",
-   "type": "druid-circle",
-   "status": "active",
-   "leader": [],
-   "sessions": [
-    25
-   ],
-   "members": [
-    "eldrak"
-   ]
-  },
-  "mielikki-tilhaengere": {
-   "name": "Mielikki tilhængere",
-   "seat": "soltraeet",
-   "stance": "ally",
-   "type": "religious-order",
-   "status": "active",
-   "leader": [],
-   "sessions": [
-    9,
-    12,
-    41
-   ],
-   "members": [
-    "seiran"
-   ]
-  },
-  "hands-of-the-queen": {
-   "name": "Hands of the Queen",
-   "seat": null,
-   "stance": "ally",
-   "type": "knightly-order",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [],
-   "members": []
-  },
-  "queensguard-ambassadorer": {
-   "name": "Queensguard Ambassadører",
-   "seat": null,
-   "stance": "ally",
-   "type": "knightly-order",
-   "status": "active",
-   "leader": [],
-   "sessions": [],
-   "members": []
   },
   "the-iron-tithe": {
    "name": "The Iron Tithe",
@@ -6460,70 +6573,30 @@
    "sessions": [],
    "members": []
   },
-  "dark-gem-klanen": {
-   "name": "Dark Gem klanen",
-   "seat": null,
-   "stance": "enemy",
-   "type": "clan",
-   "status": "active",
-   "leader": [],
-   "sessions": [
-    1,
-    8
-   ],
-   "members": [
-    "den-store-stemme",
-    "kobold"
-   ]
-  },
-  "jullan-trade-delegation": {
-   "name": "Jullan trade delegation",
-   "seat": "kolitan",
+  "adelhuset-astleysson": {
+   "name": "Adelhuset Astleysson",
+   "seat": "astley",
    "stance": "neutral",
-   "type": "political-body",
+   "type": "noble-house",
    "status": "active",
    "leader": [],
-   "sessions": [
-    20
-   ],
+   "sessions": [],
    "members": []
   },
-  "familien-botreaux": {
-   "name": "familien Botreaux",
-   "seat": null,
-   "stance": "neutral",
+  "dawnspire-family": {
+   "name": "Dawnspire Family",
+   "seat": "astley",
+   "stance": "unknown",
    "type": "",
    "status": "",
    "leader": [],
-   "sessions": [],
-   "members": [
-    "lallana-botreaux",
-    "hertug-robert-de-ros"
-   ]
-  },
-  "grimskulls": {
-   "name": "Grimskulls",
-   "seat": null,
-   "stance": "enemy",
-   "type": "tribe",
-   "status": "unknown",
-   "leader": [],
-   "sessions": [],
-   "members": []
-  },
-  "skyggefolket": {
-   "name": "skyggefolket",
-   "seat": null,
-   "stance": "unknown",
-   "type": "tribe",
-   "status": "unknown",
-   "leader": [],
    "sessions": [
-    28,
-    32,
-    37
+    20,
+    38
    ],
-   "members": []
+   "members": [
+    "danica-dawnspire"
+   ]
   }
  },
  "threads": [
@@ -7127,19 +7200,6 @@
     "last": 32
    },
    {
-    "id": "madam-silvara-dawnspire",
-    "title": "Madam Silvara Dawnspire",
-    "kind": "People",
-    "sessions": [
-     7,
-     8,
-     9,
-     12,
-     20
-    ],
-    "last": 20
-   },
-   {
     "id": "ridderne-af-blodrosen",
     "title": "Ridderne af Blodrosen",
     "kind": "Factions",
@@ -7148,6 +7208,19 @@
      7,
      8,
      9,
+     20
+    ],
+    "last": 20
+   },
+   {
+    "id": "madam-silvara-dawnspire",
+    "title": "Madam Silvara Dawnspire",
+    "kind": "People",
+    "sessions": [
+     7,
+     8,
+     9,
+     12,
      20
     ],
     "last": 20
@@ -7361,8 +7434,8 @@
     "last": 9
    },
    {
-    "id": "paladine-templet-i-astley",
-    "title": "paladine templet i Astley",
+    "id": "paladine-s-bibliotek-i-astley",
+    "title": "Paladine's bibliotek i Astley",
     "kind": "Locations",
     "sessions": [
      7,
@@ -7371,8 +7444,8 @@
     "last": 9
    },
    {
-    "id": "paladine-s-bibliotek-i-astley",
-    "title": "Paladine's bibliotek i Astley",
+    "id": "paladine-templet-i-astley",
+    "title": "paladine templet i Astley",
     "kind": "Locations",
     "sessions": [
      7,
@@ -7391,9 +7464,9 @@
     "last": 8
    },
    {
-    "id": "baron-zhaarko",
-    "title": "Baron Zhaarko",
-    "kind": "People",
+    "id": "dark-gem-klanen",
+    "title": "Dark Gem klanen",
+    "kind": "Factions",
     "sessions": [
      1,
      8
@@ -7411,9 +7484,9 @@
     "last": 8
    },
    {
-    "id": "dark-gem-klanen",
-    "title": "Dark Gem klanen",
-    "kind": "Factions",
+    "id": "baron-zhaarko",
+    "title": "Baron Zhaarko",
+    "kind": "People",
     "sessions": [
      1,
      8
@@ -7441,9 +7514,9 @@
     "last": 2
    },
    {
-    "id": "jernurt",
-    "title": "jernurt",
-    "kind": "Items",
+    "id": "marie-louise-duvall-af-miragehill",
+    "title": "Marie Louise Duvall af Miragehill",
+    "kind": "People",
     "sessions": [
      1,
      2
@@ -7461,9 +7534,9 @@
     "last": 2
    },
    {
-    "id": "marie-louise-duvall-af-miragehill",
-    "title": "Marie Louise Duvall af Miragehill",
-    "kind": "People",
+    "id": "jernurt",
+    "title": "jernurt",
+    "kind": "Items",
     "sessions": [
      1,
      2

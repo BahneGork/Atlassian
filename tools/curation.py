@@ -26,10 +26,13 @@ PORTALS = [
 ]
 
 # kind: by | borg | taarn | hule | helligt | havn | vildmark | sted
-# id -> dict(note, map, at, kind, approx, parent, region, aliases, summary, where)
+# id -> dict(note, map, at, kind, approx, parent, region, aliases, summary, where, travel)
+# travel: a way to travel from here (teleportation circle and the like), as the logs describe it.
 PLACES = {
     # --- Welles ---
-    "astley": dict(note="Astley", map="erukana", at=[2459, 2447], kind="by", region="welles"),
+    "astley": dict(note="Astley", map="erukana", at=[2459, 2447], kind="by", region="welles",
+                   travel="Teleportationscirkel i Ye Olde Magic Shop. Nibar fik sekvensen fra butikken (session 43), "
+                          "og gruppen kom hjem gennem den fra Feywood (session 44)."),
     "soltraeet": dict(note="Soltræet", parent="astley", kind="helligt"),
     "visdommens-kammer": dict(note="Visdommens kammer", parent="soltraeet", kind="sted"),
     "krypten": dict(note="Krypten", parent="soltraeet", kind="hule"),
@@ -43,7 +46,8 @@ PLACES = {
     "alistair": dict(note="Alistairs handelsforretning", parent="astley", kind="sted",
                      name="Waning Moon merchant house"),
     "feywood": dict(note="Feywood", map="erukana", at=[2585, 2485], kind="vildmark", region="welles"),
-    "mausoleum": dict(note="Sir Seillings mausoleum", map="erukana", at=[2590, 2743], kind="hule", region="welles", aliases=["mausoleum"]),
+    "mausoleum": dict(note="Sir Seillings mausoleum", map="erukana", at=[2590, 2743], kind="hule", region="welles", aliases=["mausoleum"],
+                      travel="Teleportationscirkel. Nibar åbnede en cirkel hertil (session 47)."),
     "stirling": dict(note="Stirring", map="erukana", at=[2527, 2329], approx=True, kind="borg",
                      region="welles", name="Stirling", aliases=["Stirring", "Jarlsborg"],
                      where="Nord for Feywood og øst for Astley ifølge noterne. "
@@ -137,8 +141,10 @@ PLACES = {
                           aliases=["Nayaru's Blessing"]),
     "vardestjernen": dict(note="Vardestjernen", map="nordheim", at=[1036, 589], approx=True, kind="hule",
                           aliases=["Varde stjernen"],
-                          where="Nord-øst for Sorrow Vale – en dags rejse efter mantaen."),
-    "port-drakkan": dict(note="Port Drakkan", map="nordheim", at=[1907, 318], kind="havn"),
+                          where="Nord-øst for Sorrow Vale – en dags rejse efter mantaen.",
+                          travel="Teleportationscirkel i portalkammeret. Gruppen teleporterede herfra til Port Drakkan (session 40)."),
+    "port-drakkan": dict(note="Port Drakkan", map="nordheim", at=[1907, 318], kind="havn",
+                         travel="Teleportationscirkel i et kammer i byen. Gruppen ankom hertil fra Vardestjernen (session 40)."),
     "vinterspiret": dict(note="Vinterspiret", parent="port-drakkan", kind="taarn"),
     "port-alexander": dict(note="Port Alexander", map="nordheim", at=[1812, 752], kind="havn"),
     "grondalen": dict(note="Grøndalen", region="nordheim", kind="vildmark",
