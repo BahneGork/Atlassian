@@ -155,7 +155,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .summary { margin: 0 0 12px; }
 .summary a { color: var(--wax-dark); }
 .where { font-style: italic; color: var(--ink-soft); margin: 0 0 14px; font-size: 16px; }
-.travel { margin: 0 0 14px; padding-left: 10px; border-left: 3px solid var(--portal); font-size: 16px; }
+.travel-note { margin: 0 0 14px; padding-left: 10px; border-left: 3px solid var(--portal); font-size: 16px; }
 .panel h3 {
   font-family: var(--font-title); font-weight: 400; font-size: 18px; margin: 18px 0 6px;
   display: flex; align-items: center; gap: 10px;

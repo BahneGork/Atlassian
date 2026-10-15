@@ -452,7 +452,7 @@
         !p.at && !anchor(id) ? el("span", { class: "badge approx" }, "Ikke på kortet") : null),
       p.summary ? summary(p.summary) : null,
       p.where ? el("p", { class: "where" }, p.where) : null,
-      p.travel ? el("p", { class: "travel" }, p.travel) : null,
+      p.travel ? el("p", { class: "travel-note" }, p.travel) : null,
       sess.size ? [el("h3", {}, "Her har vi været"),
         el("div", { class: "chips" }, [...sess].sort((a, b) => a - b).map((n) =>
           el("button", { type: "button", class: "session-chip", title: sessionByNum(n)?.title, onclick: () => go(`session/${n}`) }, `Session ${n}`)))] : null,
