@@ -17,12 +17,16 @@ MAPS = {
     "erukana": {"name": "Erukana", "image": "maps/erukana.webp", "size": [4096, 3526]},
     "nordheim": {"name": "Nordheim", "image": "maps/nordheim.webp", "size": [2048, 1165],
                  "note": "Nordheim"},
+    # Town map "City of Astley - Anno 1517" (shared by the owner on Discord), with a resize artifact cropped off the bottom.
+    "astley": {"name": "Astley", "image": "maps/astley.webp", "size": [2048, 1994], "place": "astley"},
 }
 
 # Links between maps, drawn as signposts at the map edge.
 PORTALS = [
     {"map": "erukana", "to": "nordheim", "label": "Nordheim", "hint": "over havet mod nord", "at": [1250, 110]},
     {"map": "nordheim", "to": "erukana", "label": "Erukana", "hint": "syd for Drakespear", "at": [1760, 1085]},
+    {"map": "erukana", "to": "astley", "label": "Astley", "hint": "bykort", "at": [2380, 2470], "arrow": "⌕"},
+    {"map": "astley", "to": "erukana", "label": "Erukana", "hint": "tilbage til landkortet", "at": [1850, 60]},
 ]
 
 # kind: by | borg | taarn | hule | helligt | havn | vildmark | sted

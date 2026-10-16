@@ -112,7 +112,7 @@
       keyboard: true, title: label,
       icon: L.divIcon({ className: "signpost", iconSize: [0, 0], html: `<span>${label}<small>${hint}</small></span>` }),
     }).on("click", () => go(route));
-  for (const p of portals) signpost(p.at, `${p.to === "erukana" ? "↓" : "↑"} ${p.label}`, p.hint, `kort/${p.to}`).addTo(layers[p.map].pins);
+  for (const p of portals) signpost(p.at, `${p.arrow || (p.to === "erukana" ? "↓" : "↑")} ${p.label}`, p.hint, `kort/${p.to}`).addTo(layers[p.map].pins);
   for (const [id, o] of Object.entries(offmap)) {
     if (o.map) signpost(o.at, `${o.name} →`, o.hint, `udenfor/${id}`).addTo(layers[o.map].pins);
   }
@@ -453,6 +453,8 @@
       p.summary ? summary(p.summary) : null,
       p.where ? el("p", { class: "where" }, p.where) : null,
       p.travel ? el("p", { class: "travel-note" }, p.travel) : null,
+      Object.entries(maps).filter(([, m]) => m.place === id).map(([mid, m]) =>
+        el("p", {}, el("button", { type: "button", class: "session-chip", onclick: () => go(`kort/${mid}`) }, `Se bykortet over ${m.name} →`))),
       sess.size ? [el("h3", {}, "Her har vi været"),
         el("div", { class: "chips" }, [...sess].sort((a, b) => a - b).map((n) =>
           el("button", { type: "button", class: "session-chip", title: sessionByNum(n)?.title, onclick: () => go(`session/${n}`) }, `Session ${n}`)))] : null,
