@@ -44,6 +44,9 @@ python3 tools/apply_moves.py moves.json   # or paste the JSON on stdin
 python3 tools/build.py
 ```
 
+## Other campaigns
+The experience from building this atlas (how to read the notes, place maps, handle thin notes, and what in the code is Erukana-specific) is in the Claude skill `campaign-atlas` (`~/.claude/skills/campaign-atlas/SKILL.md` on the owner's machine). Start a Claude session in the other campaign's folder and ask it to assess the notes for an atlas.
+
 ## Layout
 - `index.html`, `css/atlas.css`, `js/atlas.js`: the site (no build step)
 - `data/erukana.json`: places, regions and sessions; `data/notes.json`: every note as reader-ready markdown with links and back-links (loaded when the reader is first opened)
