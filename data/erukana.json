@@ -49,17 +49,6 @@
    ]
   },
   {
-   "map": "erukana",
-   "to": "astley",
-   "label": "Astley",
-   "hint": "bykort",
-   "at": [
-    2380,
-    2470
-   ],
-   "arrow": "⌕"
-  },
-  {
    "map": "astley",
    "to": "erukana",
    "label": "Erukana",

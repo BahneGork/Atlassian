@@ -112,7 +112,7 @@
       keyboard: true, title: label,
       icon: L.divIcon({ className: "signpost", iconSize: [0, 0], html: `<span>${label}<small>${hint}</small></span>` }),
     }).on("click", () => go(route));
-  for (const p of portals) signpost(p.at, `${p.arrow || (p.to === "erukana" ? "↓" : "↑")} ${p.label}`, p.hint, `kort/${p.to}`).addTo(layers[p.map].pins);
+  for (const p of portals) signpost(p.at, `${p.to === "erukana" ? "↓" : "↑"} ${p.label}`, p.hint, `kort/${p.to}`).addTo(layers[p.map].pins);
   for (const [id, o] of Object.entries(offmap)) {
     if (o.map) signpost(o.at, `${o.name} →`, o.hint, `udenfor/${id}`).addTo(layers[o.map].pins);
   }

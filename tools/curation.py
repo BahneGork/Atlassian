@@ -25,7 +25,6 @@ MAPS = {
 PORTALS = [
     {"map": "erukana", "to": "nordheim", "label": "Nordheim", "hint": "over havet mod nord", "at": [1250, 110]},
     {"map": "nordheim", "to": "erukana", "label": "Erukana", "hint": "syd for Drakespear", "at": [1760, 1085]},
-    {"map": "erukana", "to": "astley", "label": "Astley", "hint": "bykort", "at": [2380, 2470], "arrow": "⌕"},
     {"map": "astley", "to": "erukana", "label": "Erukana", "hint": "tilbage til landkortet", "at": [1850, 60]},
 ]
 
