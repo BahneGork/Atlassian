@@ -107,6 +107,10 @@
    ],
    "people": [
     [
+     "Anders Lassen",
+     "anders-lassen"
+    ],
+    [
      "Beril Højmølle",
      "beril-hojmolle"
     ],
@@ -913,11 +917,40 @@
    "summary": "Colville (også stavet Coleville) er en by i [Baroniet Welles](#note/baroniet-welles) med ca. 50.000 indbyggere. Byen er et vigtigt rejsemål for [Astley Avengers](#note/astley-avengers) på deres vej til [Baronesse Avalande](#note/baronesse-avalande).",
    "url": "",
    "sessions": [],
-   "people": [],
+   "people": [
+    [
+     "Anders Lassen",
+     "anders-lassen"
+    ],
+    [
+     "Brokus Nevertin",
+     "brokus-nevertin"
+    ],
+    [
+     "Clara Lassen",
+     "clara-lassen"
+    ],
+    [
+     "Mishakal",
+     "mishakal"
+    ],
+    [
+     "Niam Nidvig",
+     "niam-nidvig"
+    ],
+    [
+     "Nimrod Lavassa",
+     "nimrod-lavassa"
+    ]
+   ],
    "factions": [
     [
      "Baronessens råd",
      "baronessens-rad"
+    ],
+    [
+     "Nidvig familien",
+     "nidvig-familien"
     ],
     [
      "Opal kulten",
@@ -974,9 +1007,18 @@
     [
      "Assana Lemieux",
      "assana-lemieux"
+    ],
+    [
+     "Nimrod Lavassa",
+     "nimrod-lavassa"
     ]
    ],
-   "factions": [],
+   "factions": [
+    [
+     "Opal kulten",
+     "opal-kulten"
+    ]
+   ],
    "visited": false,
    "noteId": "castle-brienne"
   },
@@ -1321,6 +1363,10 @@
     20.5
    ],
    "people": [
+    [
+     "Clara Lassen",
+     "clara-lassen"
+    ],
     [
      "Merelda",
      "merelda"
@@ -2635,6 +2681,81 @@
   }
  },
  "people": {
+  "clarabel-lancaster": {
+   "name": "Clarabel Lancaster",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "Human",
+   "social": "",
+   "role": "War cleric af Mielikki",
+   "aliases": [
+    "Clarabel Lancaster",
+    "Clarabel",
+    "Clara"
+   ],
+   "factions": [
+    "astley-avengers"
+   ],
+   "sessions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    20.5,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+   ],
+   "pc": true,
+   "statusNote": "",
+   "origin": "astley",
+   "period": [
+    1,
+    null
+   ]
+  },
   "logan": {
    "name": "Logan",
    "place": null,
@@ -2758,7 +2879,7 @@
    "place": null,
    "stance": "ally",
    "dead": false,
-   "status": "active",
+   "status": "inactive",
    "race": "Human",
    "social": "",
    "role": "Rogue",
@@ -3048,81 +3169,6 @@
     null
    ]
   },
-  "clarabel-lancaster": {
-   "name": "Clarabel Lancaster",
-   "place": null,
-   "stance": "ally",
-   "dead": false,
-   "status": "",
-   "race": "Human",
-   "social": "",
-   "role": "War cleric af Mielikki",
-   "aliases": [
-    "Clarabel Lancaster",
-    "Clarabel",
-    "Clara"
-   ],
-   "factions": [
-    "astley-avengers"
-   ],
-   "sessions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    20.5,
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
-    28,
-    29,
-    30,
-    31,
-    32,
-    33,
-    34,
-    35,
-    36,
-    37,
-    38,
-    39,
-    40,
-    41,
-    42,
-    43,
-    44,
-    45,
-    46,
-    47
-   ],
-   "pc": true,
-   "statusNote": "",
-   "origin": "astley",
-   "period": [
-    1,
-    null
-   ]
-  },
   "lord-fern": {
    "name": "Lord Fern",
    "place": "visdommens-kammer",
@@ -3138,7 +3184,8 @@
     41,
     44,
     46,
-    47
+    47,
+    48
    ],
    "pc": false,
    "statusNote": ""
@@ -3228,6 +3275,25 @@
    "factions": [],
    "sessions": [
     20
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "hofmesteren": {
+   "name": "Hofmesteren",
+   "place": null,
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "fiend (vildsvin)",
+   "social": "unspecified",
+   "role": "servant",
+   "aliases": [
+    "Hofmesteren i Spirenes hus"
+   ],
+   "factions": [],
+   "sessions": [
+    48
    ],
    "pc": false,
    "statusNote": ""
@@ -3451,6 +3517,32 @@
    "pc": false,
    "statusNote": ""
   },
+  "den-sorte-fyrste": {
+   "name": "Den sorte fyrste",
+   "place": null,
+   "stance": "neutral",
+   "dead": false,
+   "status": "",
+   "race": "unspecified (tidligere dødelig)",
+   "social": "baron",
+   "role": "antagonist, merchant",
+   "aliases": [
+    "Sjælebesidderen",
+    "Den sorte handler",
+    "Den mægtige",
+    "Graz'zts højre blad",
+    "Herren i huset"
+   ],
+   "factions": [
+    "opal-kulten"
+   ],
+   "sessions": [
+    47,
+    48
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
   "icefang": {
    "name": "Icefang",
    "place": "region:nordheim",
@@ -3599,6 +3691,23 @@
    "factions": [],
    "sessions": [
     3
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "anders-lassen": {
+   "name": "Anders Lassen",
+   "place": "colville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "commoner",
+   "role": "merchant",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    48
    ],
    "pc": false,
    "statusNote": ""
@@ -3929,7 +4038,8 @@
     "azur-ordenen"
    ],
    "sessions": [
-    47
+    47,
+    48
    ],
    "pc": false,
    "statusNote": ""
@@ -3956,6 +4066,23 @@
    "pc": false,
    "statusNote": ""
   },
+  "clara-lassen": {
+   "name": "Clara Lassen",
+   "place": "colville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "commoner",
+   "role": "apprentice",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    48
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
   "lord-commander-of-the-queensguard": {
    "name": "Lord Commander of the Queensguard",
    "place": null,
@@ -3970,6 +4097,28 @@
     "the-queensguard"
    ],
    "sessions": [],
+   "pc": false,
+   "statusNote": ""
+  },
+  "graz-zt": {
+   "name": "Graz'zt",
+   "place": null,
+   "stance": "enemy",
+   "dead": false,
+   "status": "",
+   "race": "demon",
+   "social": "royalty",
+   "role": "antagonist",
+   "aliases": [
+    "Grazzt",
+    "Gra'zzt",
+    "Ærkedæmonen Gra'zzt"
+   ],
+   "factions": [],
+   "sessions": [
+    19,
+    48
+   ],
    "pc": false,
    "statusNote": ""
   },
@@ -4241,7 +4390,8 @@
    ],
    "factions": [],
    "sessions": [
-    5
+    5,
+    48
    ],
    "pc": false,
    "statusNote": ""
@@ -4359,7 +4509,8 @@
    "factions": [],
    "sessions": [
     12,
-    47
+    47,
+    48
    ],
    "pc": false,
    "statusNote": ""
@@ -5138,7 +5289,8 @@
    ],
    "factions": [],
    "sessions": [
-    39
+    39,
+    48
    ],
    "pc": false,
    "statusNote": ""
@@ -5204,6 +5356,28 @@
    "pc": false,
    "statusNote": ""
   },
+  "niam-nidvig": {
+   "name": "Niam Nidvig",
+   "place": "colville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "human",
+   "social": "commoner",
+   "role": "informant",
+   "aliases": [
+    "Nidvig"
+   ],
+   "factions": [
+    "nidvig-familien"
+   ],
+   "sessions": [
+    47,
+    48
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
   "petyr-gottmann": {
    "name": "Petyr Gottmann",
    "place": "mistville",
@@ -5217,6 +5391,23 @@
    "factions": [],
    "sessions": [
     5
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "nimrod-lavassa": {
+   "name": "Nimrod Lavassa",
+   "place": null,
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "acolyte",
+   "role": "religious, informant",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    48
    ],
    "pc": false,
    "statusNote": ""
@@ -5259,6 +5450,23 @@
    ],
    "sessions": [
     46
+   ],
+   "pc": false,
+   "statusNote": ""
+  },
+  "brokus-nevertin": {
+   "name": "Brokus Nevertin",
+   "place": "colville",
+   "stance": "unknown",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "unspecified",
+   "role": "official",
+   "aliases": [],
+   "factions": [],
+   "sessions": [
+    48
    ],
    "pc": false,
    "statusNote": ""
@@ -5439,7 +5647,8 @@
    "factions": [],
    "sessions": [
     12,
-    47
+    47,
+    48
    ],
    "pc": false,
    "statusNote": ""
@@ -6026,10 +6235,12 @@
     1,
     8,
     20,
-    47
+    47,
+    48
    ],
    "members": [
-    "lady-lucille-vitano"
+    "lady-lucille-vitano",
+    "den-sorte-fyrste"
    ]
   },
   "skyggekompagniet": {
@@ -6204,6 +6415,20 @@
     "assana-lemieux"
    ]
   },
+  "nidvig-familien": {
+   "name": "Nidvig familien",
+   "seat": "colville",
+   "stance": "ally",
+   "type": "",
+   "status": "",
+   "leader": [],
+   "sessions": [
+    48
+   ],
+   "members": [
+    "niam-nidvig"
+   ]
+  },
   "court-of-baronesse-avalande": {
    "name": "Court of Baronesse Avalande",
    "seat": "region:welles",
@@ -6276,6 +6501,7 @@
     44
    ],
    "members": [
+    "clarabel-lancaster",
     "logan",
     "bjorn-of-nordheim",
     "corwin",
@@ -6283,7 +6509,6 @@
     "winston-wildwood",
     "nibar-brassbit",
     "viktor-baigorri",
-    "clarabel-lancaster",
     "lord-adelston-magdova",
     "assana-lemieux"
    ]
@@ -7292,6 +7517,20 @@
     "last": 32
    },
    {
+    "id": "corwin",
+    "title": "Corwin",
+    "kind": "Characters",
+    "sessions": [
+     28,
+     29,
+     32,
+     34,
+     35,
+     36
+    ],
+    "last": 36
+   },
+   {
     "id": "madam-silvara-dawnspire",
     "title": "Madam Silvara Dawnspire",
     "kind": "People",
@@ -7340,6 +7579,17 @@
      8
     ],
     "last": 8
+   },
+   {
+    "id": "stormfang",
+    "title": "stormfang",
+    "kind": "Items",
+    "sessions": [
+     24,
+     34,
+     36
+    ],
+    "last": 36
    },
    {
     "id": "elvira",
@@ -7636,7 +7886,7 @@
     "last": 2
    }
   ],
-  "latest": 47,
+  "latest": 48,
   "next": [
    {
     "session": 2,
@@ -7702,6 +7952,12 @@
      "Jægerne af Azurordenen kalder sig skyggekompagniet",
      "til colville og se om vi kan finde efterkommere af familien nidvig som slog opal kulten ned og se hvad de har af informationer om opal kulten.",
      "derefter til Astley og biblioteket for at undersøge den sorte fyrste og opal kulten og underdæmoner under Grazzts og sjælespejle"
+    ]
+   },
+   {
+    "session": 48,
+    "items": [
+     "Nibar og Victor vil forsøge at videre forhandle med Herren i huset"
     ]
    }
   ],
@@ -8828,5 +9084,41 @@
    "noteId": "47-200926-erukana-nissen-after-the-dragon-essence"
   }
  ],
- "unplaced": []
+ "unplaced": [
+  {
+   "note": "Azzagrat",
+   "summary": "Azzagrat er det 45. lag i Afgrunden (the Abyss) og Graz'zts trippelte kongerige. En del af Azzagrat er Den sorte fyrstes baroni.",
+   "url": ""
+  },
+  {
+   "note": "Deneir templet i Colville",
+   "summary": "Et tempel for Deneir, skriftens gud (se Deities of Ceynor), i Colville. Templet har et arkiv og et aflåst område med forvredne træreoler, hvor der er en følelse af utryghed.",
+   "url": ""
+  },
+  {
+   "note": "Det gyldne krus",
+   "summary": "Det gyldne krus er en kro i Colville. Hele stueetagen er en stor krostue med åbent køkken, og bygningen er bygget rundt om en gammel, stor træstamme.",
+   "url": ""
+  },
+  {
+   "note": "Saltfloden",
+   "summary": "Saltfloden er en flod i Afgrunden på vejen til Spirenes hus. En pram med en lille skikkelse fragter rejsende over. Prisen for overfarten er et vigtigt eller værdigt minde.",
+   "url": ""
+  },
+  {
+   "note": "Spirenes hus",
+   "summary": "Spirenes hus er Den sorte fyrstes hus i Afgrunden, hvor han holder audiens. Vejen dertil går igennem slangeskoven og over Saltfloden. Alle der besøger huset er kendt, og alle er velkomne med ægte handel i hjertet - ve dem som kommer efter dårlige handler eller tyveri.",
+   "url": ""
+  },
+  {
+   "note": "Teleportation Circles",
+   "summary": "En oversigt over de permanente teleportationscirkler, som Astley Avengers har fundet eller brugt. En cirkel har en sekvens (kode) af sigiler. Man skal kende sekvensen for at kunne teleportere til den. Nibar kaster teleportationerne med formularen Teleportation Circle.",
+   "url": ""
+  },
+  {
+   "note": "Zelatar",
+   "summary": "Zelatar er en by i Afgrunden, som mange besøger, både dødelige og ikke-dødelige. Byen går på tværs af lag 45, 46 og 47 i Afgrunden.",
+   "url": ""
+  }
+ ]
 }
