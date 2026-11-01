@@ -3119,7 +3119,8 @@
    ],
    "factions": [],
    "sessions": [
-    48
+    48,
+    49
    ],
    "pc": false,
    "statusNote": ""
@@ -6545,7 +6546,8 @@
    "leader": [],
    "sessions": [
     44,
-    45
+    45,
+    49
    ],
    "members": []
   },
@@ -7581,6 +7583,17 @@
     "last": 8
    },
    {
+    "id": "skyggefolket",
+    "title": "skyggefolket",
+    "kind": "Factions",
+    "sessions": [
+     28,
+     32,
+     37
+    ],
+    "last": 37
+   },
+   {
     "id": "stormfang",
     "title": "stormfang",
     "kind": "Items",
@@ -7886,7 +7899,7 @@
     "last": 2
    }
   ],
-  "latest": 48,
+  "latest": 49,
   "next": [
    {
     "session": 2,
