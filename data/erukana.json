@@ -155,6 +155,10 @@
      "lucious-vormend"
     ],
     [
+     "Malkesa",
+     "malkesa"
+    ],
+    [
      "Marskal Henry Willsfort",
      "marskal-henry-willsfort"
     ],
@@ -3169,12 +3173,12 @@
   "malkesa": {
    "name": "Malkesa",
    "place": null,
-   "stance": "unknown",
+   "stance": "neutral",
    "dead": false,
    "status": "",
    "race": "marilith",
    "social": "unspecified",
-   "role": "ally",
+   "role": "unknown",
    "aliases": [
     "Malkessa",
     "Marilithen"
